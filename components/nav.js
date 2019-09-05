@@ -45,9 +45,6 @@ const Nav = () => (
         text-align: center;
         justify-content: space-around;
       }
-      li:hover {
-        background-color: blue;
-      }
       nav > ul {
         padding: 4px 16px;
       }
@@ -61,7 +58,7 @@ const Nav = () => (
         font-size: 17px;
       }
       a:hover {
-        background-color: red;
+        color: #008080;
       }
     `}</style>
   </nav>

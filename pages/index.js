@@ -19,7 +19,8 @@ const links = [
 const Home = () => (
   <div>
     <Head>
-      <title>Home</title>
+      <link rel="theanikarede" type="image/*" href="/static/favicon.ico"/>
+      <title>~ The Anika Rede ~</title>
     </Head>
 
     <Nav />
