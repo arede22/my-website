@@ -7,7 +7,7 @@ const Nav = () => (
       <li> <a href="#About">About</a> </li>
       <li> <a href="#Portfolio">Portfolio</a> </li>
       <li> <a href="#Contact-Me">Contact Me</a> </li>
-      <li> <a href='../static/resume.pdf'> <a>Resume</a> </a> </li>
+      <li> <a href='../static/resume.pdf' target="_blank"> <a>Resume</a> </a> </li>
     </ul>
 
     <style jsx>{`
