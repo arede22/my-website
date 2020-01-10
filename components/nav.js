@@ -5,7 +5,7 @@ const Nav = () => (
     <ul>
       <li> <a href='/'> <a>Home</a> </a> </li>
       <li> <a href="#About">About</a> </li>
-      <li> <a href="#Research">Research</a> </li>
+{/*      <li> <a href="#Research">Research</a> </li> */}
       <li> <a href="#Portfolio">Portfolio</a> </li>
       <li> <a href="#Contact-Me">Contact Me</a> </li>
       <li> <a href='../static/resume.pdf' target="_blank"> Resume </a> </li>
@@ -43,7 +43,8 @@ const Nav = () => (
         font-size: 17px;
       }
       a:hover {
-        color: #008080;
+        background-color: blue;
+        color: red;
       }
     `}</style>
   </nav>
