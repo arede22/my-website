@@ -5,12 +5,12 @@ import Nav from '../components/nav'
 
 
 const links = [
-  { href: 'mailto:arede22@berkeley.edu', source: '../static/email.png' },
-  { href: 'https://www.instagram.com/rede.anika/', source: '../static/insta.png' },
-  { href: 'https://www.linkedin.com/in/anika-rede-ab443ba1/', source: '../static/linkedin.png' },
-  { href: 'https://github.com/arede22', source: '../static/github.png' }
+  { href: 'mailto:arede22@berkeley.edu', source: '../static/email' },
+  { href: 'https://www.instagram.com/rede.anika/', source: '../static/insta' },
+  { href: 'https://www.linkedin.com/in/anikarede/', source: '../static/linkedin' },
+  { href: 'https://github.com/arede22', source: '../static/github' }
 ].map(link => {
-  link.key = `nav-link-${link.href}-${link.source}`
+  link.key = `nav-link-${link.href}-${link.source}`.replace(/[^a-zA-Z0-9]/g, '')
   return link
 })
 
@@ -107,15 +107,13 @@ const Home = () => (
         <img src="../static/macho-cat.png" alt="macho-cat" />
         <img src="../static/coffee-mug.png" alt="coffee-mug" />
         </div>
-        <center>
         <ul className="A">
           {links.map(({ key, href, source }) => (
             <li className="B" key={key}>
-              <a href={href}><img src={source} /> </a>
+              <a href={href}><img src={source+'.png'} onmouseover={'this.src=' + source +'-hover.png'} onmouseout={'this.src='+source+'.png'} /> </a>
             </li>
           ))}
         </ul>
-        </center>
     </footer>
 
     <style jsx>{`
@@ -123,6 +121,17 @@ const Home = () => (
         background-image: url('../static/starting-background.png');
         background-repeat: no-repeat;
         background-size: cover;
+      }
+      .title {
+        width: 100%;
+        font-size: 48px;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.15;
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        padding-top: 15px;
+        padding-bottom: 20px;
       }
       .hero {
         width: 100%;
@@ -132,46 +141,44 @@ const Home = () => (
       .hero1 {
         width: 100%;
         color: white;
-        margin-left: 25px;
         display: grid;
         grid-template-columns: 400px 400px 400px;
         grid-gap: 20px;
+        margin-left: 25px;
       }
       .box {
         background-color: rgba(166, 166, 166, 0.5);
         color: white;
         border-radius: 5px;
         padding: 15px;
+        padding-top: 7.5px;
       }
-      .title {
-        padding-bottom: 20px;
-        margin-top: 100px;
-        margin-bottom: 50px;
-        width: 100%;
-        padding-top: 15px;
-        line-height: 1.15;
-        font-size: 48px;
+      .CV {
         text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
       }
       .section {
-        margin-top: 10px;
       	color: white;
         font-family: Arial, Helvetica, sans-serif;
       	font-size: 32px;
+        margin-top: 10px;
         margin-left: 20px;
-      }
-      .flex-bw {
-        display: flex;
-        justify-content: space-between;
       }
       .last_section {
       	color: white;
         font-family: Arial, Helvetica, sans-serif;
       	font-size: 32px;
-        margin-left: 0px;
         padding-top: 100px;
         padding-bottom: 100px;
+        margin-left: 0px;
+      }
+      .flex-bw {
+        display: flex;
+        justify-content: space-between;
+      }
+      .signature {
+        width: 70%;
+        padding-top: 40px;
+        padding-bottom: 40px;
       }
       .button {
         width: auto;
@@ -182,6 +189,15 @@ const Home = () => (
         border-radius: 4px;
         padding: 10px;
       }
+      .A {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+      }
+      .B {
+        display: flex;
+      }
       a {
         color: white;
         text-decoration: none;
@@ -189,22 +205,6 @@ const Home = () => (
       }
       ul {
         list-style: none;
-      }
-      .B {
-        display: flex;
-      }
-      .A {
-        margin: 0;
-        display: flex;
-        justify-content: space-around;
-      }
-      .signature {
-        width: 70%;
-        padding-top: 30px;
-        padding-bottom: 30px;
-      }
-      .CV {
-        text-align: center;
       }
     `}</style>
   </div>
