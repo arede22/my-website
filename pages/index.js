@@ -5,10 +5,10 @@ import Nav from '../components/nav'
 
 
 const links = [
-  { href: 'mailto:arede22@berkeley.edu', source: '../static/email' },
-  { href: 'https://www.instagram.com/rede.anika/', source: '../static/insta' },
-  { href: 'https://www.linkedin.com/in/anikarede/', source: '../static/linkedin' },
-  { href: 'https://github.com/arede22', source: '../static/github' }
+  { href: 'mailto:arede22@berkeley.edu', source: '../static/footer/email' },
+  { href: 'https://www.instagram.com/rede.anika/', source: '../static/footer/insta' },
+  { href: 'https://www.linkedin.com/in/anikarede/', source: '../static/footer/linkedin' },
+  { href: 'https://github.com/arede22', source: '../static/footer/github' }
 ].map(link => {
   link.key = `nav-link-${link.href}-${link.source}`.replace(/[^a-zA-Z0-9]/g, '')
   return link
@@ -18,50 +18,52 @@ const links = [
 const Home = () => (
   <div className="imagehere">
     <Head>
-      <link rel="apple-touch-icon" sizes="180x180" href="../static/apple-touch-icon.png"/>
-      <link rel="icon" type="image/png" sizes="32x32" href="../static/favicon-32x32.png"/>
-      <link rel="icon" type="image/png" sizes="16x16" href="../static/favicon-16x16.png"/>
-      <link rel="manifest" href="../static/site.webmanifest"/>
+      <link rel="apple-touch-icon" sizes="180x180" href="../static/favicon/apple-touch-icon.png"/>
+      <link rel="icon" type="image/png" sizes="32x32" href="../static/favicon/favicon-32x32.png"/>
+      <link rel="icon" type="image/png" sizes="16x16" href="../static/favicon/favicon-16x16.png"/>
+      <link rel="manifest" href="../static/favicon/site.webmanifest"/>
 
       <title>Anika Rede: Software Engineering</title>
     </Head>
     <Nav />
 
-    <h1 className='title'>Hi, my name is Anika Rede. </h1>
+    <center> <h1 className='title'>Hi, I'm Anika Rede. </h1>
+    <img src="../static/about/profile.jpeg" alt="Anika Rede" /> </center>
     <div className='hero'>
-      <p> I am a sophomore in UC Berkeley studying EECS (major) and Linguistics (minor). My areas of interest lie in AI, NLP, and mobile development. </p>
+      <p>I am a sophomore in UC Berkeley studying EECS (major) and Linguistics (minor). My areas of interest lie in AI, NLP, and mobile development.
+      <br/>I am currently looking for software engineering internship positions for summer 2020. <br/> </p>
+      <div className="C"> <a className='button' href='../static/about/resume.pdf' target="_blank"> Resumé </a> </div>
       <p> Take a quick peek at my resumé! </p>
-      <div className="C"> <a className='button' href='../static/resume.pdf' target="_blank"> Resumé </a> </div>
-      <img src="../static/profile.jpeg" alt="Anika Rede" hspace="20" vspace="20"/>
-      <p> I am currently looking for software engineering internship positions for summer 2020. </p>
     </div>
     <a name="About"></a> <h2 className='section'>About</h2>
-    <div className='hero1'>
-      <div className='box'>
-        <h3> Major Coursework </h3>
-          <ul> <li> Intro to Computer Science </li> <li> Data Structures & Algorithms </li> <li> Computer Architecture </li> <li> Discrete Mathematics and Probability Theory </li> <li> Designing Information Devices and Systems </li> <li> Optimization Models in Engineering </li> <li> Probability and Random Processes </li> </ul>
-        <h3> Minor Coursework </h3>
-          <ul> <li> Intro to Linguistics </li> <li> Intro to Syntax and Semantics </li> </ul>
+    <div>
+      <div className='hero1'>
+        <div className='box'>
+          <h3> Major Coursework </h3>
+            <ul> <li> Intro to Computer Science </li> <li> Data Structures & Algorithms </li> <li> Computer Architecture </li> <li> Discrete Mathematics and Probability Theory </li> <li> Designing Information Devices and Systems </li> <li> Optimization Models in Engineering </li> <li> Probability and Random Processes </li> </ul>
+          <h3> Minor Coursework </h3>
+            <ul> <li> Intro to Linguistics </li> <li> Intro to Syntax and Semantics </li> </ul>
+        </div>
+        <div className='box'>
+          <h3> Languages </h3>
+            <ul> <li> Javascript </li> <li> HTML </li> <li> CSS </li> <li> Python </li> <li> Scheme </li> <li> Java </li> <li> React </li> <li> C </li> </ul>
+          <h3> Skills </h3>
+            <ul> <li> Data visualization and simulation softwares (COMSOL, AutoCAD, MATLAB, SolidWorks) </li> <li> EE and CS knowledge and hands-on experience </li> <li> People skills, smooth communication, real personality </li> </ul>
+        </div>
+        <div className='box'>
+          <h3> Clubs </h3>
+            <ul> <li> Engineers Without Borders <p> Panama Team for two semesters where we just finished building a water distribution system for a poorly-funded Panamanian community <br/> Starting new domestic project next semester </p> </li> <li> Computer Science Kickstart <p> Intro to computer science week for female pre-freshmen <br/> Participated in the program myself when I entered Berkeley and giving back as a committee member </p> </li> <li> Association of Women in EECS <p> Networking events with industry professionals and professors coming in to talk woman-to-woman how to succeed in the tech world </p> </li> </ul>
+        </div>
       </div>
-      <div className='box'>
-        <h3> Languages </h3>
-          <ul> <li> Javascript </li> <li> HTML </li> <li> CSS </li> <li> Python </li> <li> Scheme </li> <li> Java </li> <li> React </li> </ul>
-      </div>
-      {/*<div className='box'>
-      <h3> Skills </h3>
-      <ul> </ul>
-      </div>*/}
-      <div className='box'>
-        <h3> Clubs </h3>
-          <ul> <li> Engineers Without Borders <p> Panama Water Distribution Team, going into three semesters in the club, starting new project next semester we just finished up the project this past semester -- describe process a little </p> </li> <li> Computer Science Kickstart <p> women's intro computer science week for pre-frosh I participated in when I came into freshman year, in committees to contribute to next annual meeting and social club as well </p> </li> <li> Association of Women in EECS <p> mostly social club, events with sponsors and people coming in to talk woman to woman about how to succeed in the tech world -- inspiring to me though I am not in a leading position </p> </li> </ul>
-      </div>
-      <div className='box'>
-        <h3> Past work experience </h3>
-          <ul> <li> Internship with Pulse Q&A in SF summer 2019 </li> <li> Part-time jobs as a barista in high-school café and student-worker at International Dining House and intern in IT Hub in high school </li> </ul>
-      </div>
-      <div className='box'>
-        <h3> Personal projects </h3>
-          <p> Currently working on personal website and a safety app and a little game </p>
+      <div className='hero2'>
+        <div className='box'>
+          <h3> Past work experience </h3>
+            <ul> <li> Software Engineering Intern @Pulse Q&A -- SF, Summer 2019 <p> Limited personnel previously led to outsourcing manual labor <br/> Automated internal tools improved efficiency of office (allowed focus on increasing traffic on the service's platform, marketing efforts, and bettering market-fit) </p> </li> <li> Research Intern @Jadoo Tech -- UC-Berkeley, Feb-Sept 2019 <p> Conducted research in physics theoretical equations and experiments for start-up in UC-Berkeley </p> </li> <li> Research Intern @Feng Labs -- CWRU, 2015-2018 <p> Quantified properties of metastatic breast cancer cells using MEMS microsensors </p> </li> <li> IT Hub Intern -- OH high-school <p> Both worked and volunteered at high-school's IT Helpdesk </p> </li> </ul>
+        </div>
+        <div className='box'>
+          <h3> Personal projects </h3>
+            <p> Currently working on: <ul> <li> Personal website using React & Next.js</li><li> Safety app for Berkeley using Swift </li> <li>Gameboy game using GB Studio </li> </ul> </p>
+        </div>
       </div>
     </div>
 {/*        <a name="Research"></a>
@@ -101,8 +103,8 @@ const Home = () => (
 
     <footer className="signature">
       <div className="flex-bw">
-        <img src="../static/macho-cat.png" alt="macho-cat" />
-        <img src="../static/coffee-mug.png" alt="coffee-mug" />
+        <img src="../static/footer/macho-cat.png" alt="macho-cat" />
+        <img src="../static/footer/coffee-mug.png" alt="coffee-mug" />
       </div>
       <ul className="A">
         {links.map(({ key, href, source }) => (
@@ -120,15 +122,22 @@ const Home = () => (
         background-size: cover;
       }
       .title {
-        width: 100%;
+        background-color: rgba(129, 207, 224, 0.4);
+        color: white;
+        width: 50%;
         font-size: 48px;
         font-family: Arial, Helvetica, sans-serif;
         line-height: 1.15;
+        display: flex;
+        justify-content: center;
         text-align: center;
+        border-radius: 8px;
         margin-top: 100px;
-        margin-bottom: 50px;
-        padding-top: 15px;
-        padding-bottom: 20px;
+        margin-bottom: 40px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-right: 10px;
+        padding-left: 10px;
       }
       .hero {
         width: 100%;
@@ -143,30 +152,37 @@ const Home = () => (
         grid-template-columns: 400px 400px 400px;
         grid-gap: 20px;
         margin-left: 25px;
+        margin-bottom: 20px;
+      }
+      .hero2 {
+        width: 100%;
+        color: white;
+        display: grid;
+        grid-template-columns: 600px 600px;
+        grid-gap: 20px;
+        margin-left: 25px;
       }
       .box {
         background-color: rgba(166, 166, 166, 0.5);
         color: white;
         border-radius: 5px;
-        padding: 15px;
+        padding: 20px;
         padding-top: 7.5px;
-      }
-      .CV {
-        text-align: center;
       }
       .section {
       	color: white;
         font-family: Arial, Helvetica, sans-serif;
       	font-size: 32px;
-        margin-top: 10px;
-        margin-left: 20px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-left: 25px;
       }
       .last_section {
       	color: white;
         font-family: Arial, Helvetica, sans-serif;
       	font-size: 32px;
         padding-top: 100px;
-        padding-bottom: 100px;
+        padding-bottom: 50px;
         margin-left: 0px;
       }
       .flex-bw {
@@ -204,9 +220,6 @@ const Home = () => (
         color: white;
         text-decoration: none;
         font-size: 17px;
-      }
-      ul {
-        list-style: none;
       }
     `}</style>
   </div>
