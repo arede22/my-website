@@ -13,6 +13,13 @@ const links = [
   return link
 })
 
+const imgStyle = {
+  padding: '10px',
+  borderColor: 'white',
+  borderWidth: '2px',
+  borderStyle: 'solid',
+}
+
 const Home = () => (
   <div className="imagehere">
     <Head>
@@ -27,17 +34,15 @@ const Home = () => (
 
     <center>
       <h1 className='title'>Hi, I'm Anika Rede. </h1>
-      <img src="../static/about/profile.jpeg" alt="Anika Rede" />
+      <img src="../static/about/profile.jpeg" alt="Anika Rede" hspace="5" style={imgStyle}/>
     </center>
-    <div className='hero'>
+    <div className='hero0'>
       <p>I am a sophomore in UC Berkeley studying EECS (major) and Linguistics (minor). My areas of interest lie in AI, NLP, and mobile development.
       <br/>I am currently looking for software engineering internship positions for summer 2020. </p>
       <center>
         <div className="resume-box">
-          <div className="C">
-            <a className='button' href='../static/about/resume.pdf' target="_blank"> Resumé </a>
-          </div>
           <p> Take a quick peek at my resumé! </p>
+          <a className='button' href='../static/about/resume.pdf' target="_blank"> Resumé </a>
         </div>
       </center>
     </div>
@@ -86,9 +91,9 @@ const Home = () => (
           <p> Projected projects: modified game like gameboy </p>
       </div>
     </div>
-    <div className='hero'>
+    <div className='hero3'>
       <a name="Contact-Me"></a> <h2 className='last_section'> Contact Me </h2>
-      <p> Super excited you browsed through my website, please contact me by whatever method might be best. <br/> Links to e-mail, Instagram, LinkedIn, and Github below! </p>
+      <p> Super excited you browsed through my website! <br /> Please contact me by whatever method might be best, e-mail works best. <br/> Links to e-mail, Instagram, LinkedIn, and Github below! </p>
     </div>
 
     <center>
@@ -97,9 +102,9 @@ const Home = () => (
           <img src="../static/footer/macho-cat.png" alt="macho-cat" />
           <img src="../static/footer/coffee-mug.png" alt="coffee-mug" />
         </div>
-        <ul className="A">
+        <ul className="contacts">
           {links.map(({ key, href, source }) => (
-            <li className="B" key={key}>
+            <li className="contact" key={key}>
               <a href={href}> <img src={source+'.png'} onMouseOver={e => {e.currentTarget.src = source + '-hover.png'}} onMouseOut={e => {e.currentTarget.src = source + '.png'}} /> </a>
             </li>
           ))}
@@ -124,26 +129,29 @@ const Home = () => (
         justify-content: center;
         text-align: center;
         border-radius: 8px;
-        margin-top: 100px;
-        margin-bottom: 30px;
-        padding-top: 25px;
-        padding-bottom: 25px;
-        padding-right: 10px;
-        padding-left: 10px;
+        margin-top: 120px;
+        margin-bottom: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 5px;
+        padding-left: 5px;
       }
       .resume-box {
         background-color: rgba(129, 207, 224, 0.4);
         width: 30%;
-        border-radius: 13px;
+        font-size: 18px;
+        border-radius: 15px;
         padding: 10px;
-        padding-top: 25px;
+        padding-bottom: 35px;
         margin-top: 15px;
-        font-size: 22.5px;
+        margin-bottom: 15px;
       }
-      .hero {
+      .hero0 {
         width: 100%;
         color: white;
+        font-size: 15px;
         text-align: center;
+        line-height: 1.5;
         margin-left: 20px;
       }
       .hero1 {
@@ -163,6 +171,16 @@ const Home = () => (
         grid-gap: 20px;
         margin-left: 40px;
       }
+      .hero3 {
+        width: 100%;
+        color: white;
+        font-size: 18px;
+        text-align: center;
+        line-height: 1.5;
+        margin-right: 15px;
+        margin-left: 15px;
+        margin-bottom: 150px;
+      }
       .box {
         background-color: rgba(166, 166, 166, 0.5);
         color: white;
@@ -179,30 +197,31 @@ const Home = () => (
       .section {
       	color: white;
         font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-      	font-size: 32px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        margin-left: 25px;
+      	font-size: 36px;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
       }
       .last_section {
       	color: white;
         font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-      	font-size: 40px;
+      	font-size: 36px;
         padding-top: 200px;
-        padding-bottom: 50px;
-        margin-left: 0px;
+        padding-bottom: 30px;
       }
       .flex-bw {
         display: flex;
         justify-content: space-between;
         margin-right: 80px;
         margin-left: 100px;
+        padding-right: 20px;
+        padding-left: 20px;
       }
       .signature {
-        width: 70%;
+        width: 80%;
         align: center;
         padding-top: 40px;
-        padding-bottom: 40px;
+        margin-top: 25px;
       }
       .button {
         width: auto;
@@ -212,23 +231,30 @@ const Home = () => (
         border-color: white;
         border-radius: 6px;
         padding: 10px;
-        margin-top: 10px;
         margin-bottom: 10px;
       }
-      .A {
+      .contacts {
+        background-color: rgba(166, 166, 166, 0.3);
         display: flex;
         justify-content: space-around;
-        margin: 0;
+        padding: 10px;
+        margin-top: 0px;
+        margin-bottom: 25px;
+        border-top: 3px solid gray;
       }
-      .B {
+      .contact {
         display: flex;
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
       }
       a {
         color: white;
         text-decoration: none;
         font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
       }
-      body {
+      p {
         font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
       }
       h1 {
@@ -245,6 +271,8 @@ const Home = () => (
       }
       li {
         font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        margin-top: 5px;
+        margin-bottom: 5px;
       }
     `}</style>
   </div>
