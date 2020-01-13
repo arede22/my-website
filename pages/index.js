@@ -21,7 +21,7 @@ const imgStyle = {
 }
 
 const Home = () => (
-  <div className="imagehere">
+  <div className='imagehere'>
     <Head>
       <link rel="apple-touch-icon" sizes="180x180" href="../static/favicon/apple-touch-icon.png"/>
       <link rel="icon" type="image/png" sizes="32x32" href="../static/favicon/favicon-32x32.png"/>
@@ -46,6 +46,7 @@ const Home = () => (
         </div>
       </center>
     </div>
+
     <a name="About"></a> <h2 className='section'>About</h2>
     <div>
       <div className='hero1'>
@@ -80,6 +81,7 @@ const Home = () => (
         </div>
       </div>
     </div>
+
     <a name="Portfolio"></a> <h2 className='section'> Portfolio </h2>
     <div className='hero2'>
       <div className='box'>
@@ -92,6 +94,7 @@ const Home = () => (
           <p> Projected projects: Gameboy game using GB Studio </p>
       </div>
     </div>
+
     <div className='hero3'>
       <a name="Contact-Me"></a> <h2 className='last_section'> Contact Me </h2>
       <p> Super excited you browsed through my website! <br /> Please contact me by whatever method might be best, e-mail works best. <br/> Links to e-mail, Instagram, LinkedIn, and Github below! </p>
@@ -118,6 +121,7 @@ const Home = () => (
         background-image: url('../static/starting-background.png');
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center center;
         overflow: hidden;
       }
       .title {
@@ -132,7 +136,7 @@ const Home = () => (
         text-align: center;
         border-radius: 8px;
         margin-top: 120px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         padding-top: 30px;
         padding-bottom: 30px;
         padding-right: 5px;
@@ -256,6 +260,9 @@ const Home = () => (
         color: white;
         text-decoration: none;
         font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      }
+      a:hover {
+        color: rgba(197, 239, 247, 1);
       }
       p {
         font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
