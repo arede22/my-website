@@ -71,7 +71,7 @@ const Home = () => (
       </div>
     </div>
     <a name="Portfolio"></a> <h2 className='section'> Portfolio </h2>
-    <div className='hero1'>
+    <div className='hero2'>
       <div className='box'>
         <h3> Class projects and extensions </h3>
           <p> Class projects and extensions thereof </p>
@@ -148,7 +148,7 @@ const Home = () => (
         display: grid;
         grid-template-columns: 400px 400px 400px;
         grid-gap: 20px;
-        margin-left: 25px;
+        margin-left: 40px;
         margin-bottom: 20px;
       }
       .hero2 {
@@ -157,7 +157,7 @@ const Home = () => (
         display: grid;
         grid-template-columns: 610px 610px;
         grid-gap: 20px;
-        margin-left: 25px;
+        margin-left: 40px;
       }
       .box {
         background-color: rgba(166, 166, 166, 0.5);
@@ -185,7 +185,7 @@ const Home = () => (
         font-family: Arial, Helvetica, sans-serif;
       	font-size: 32px;
         padding-top: 100px;
-        padding-bottom: 50px;
+        padding-bottom: 200px;
         margin-left: 0px;
       }
       .flex-bw {
