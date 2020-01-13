@@ -17,7 +17,7 @@ const imgStyle = {
   padding: '10px',
   borderColor: 'white',
   borderWidth: '2px',
-  borderStyle: 'solid',
+  borderStyle: 'solid double',
 }
 
 const Home = () => (
@@ -72,8 +72,11 @@ const Home = () => (
             <ul> <li> Software Engineering Intern @Pulse Q&A -- SF, Summer 2019 <ul> <li> Limited personnel previously led to outsourcing manual labor </li> <li> Automated internal tools improved efficiency of office (allowed focus on increasing traffic on the service's platform, marketing efforts, and bettering market-fit) </li> </ul> </li> <li> Research Intern @Jadoo Tech -- UC-Berkeley, Feb-Sept 2019 <ul> <li> Conducted research in physics theoretical equations and experiments for start-up in UC-Berkeley </li> </ul> </li> <li> Research Intern @Feng Labs -- CWRU, 2015-2018 <ul> <li> Quantified properties of metastatic breast cancer cells using MEMS microsensors </li> </ul> </li> <li> IT Hub Intern @Hathaway Brown-- OH high-school <ul> <li> Both worked and volunteered at high-school's IT Helpdesk </li> </ul> </li> </ul>
         </div>
         <div className='box'>
-          <h3> Personal projects </h3>
-            <p> Currently working on: <ul> <li> Personal website using React & Next.js</li><li> Safety app for Berkeley using Swift </li> <li>Gameboy game using GB Studio </li> </ul> </p>
+          <h3> Exploring pet projects </h3>
+            <ul> <li> CS personal website, safety app around Berkeley </li>
+            <li> Exploring ideas of NLP analysis with AI/ML </li>
+            <li> Modifying S1XT33N car from last semester to be hooked up bluetooth, wifi </li>
+            <li> Graphic design intro to Photoshop, Illustrator, Maya </li> </ul>
         </div>
       </div>
     </div>
@@ -81,14 +84,12 @@ const Home = () => (
     <div className='hero2'>
       <div className='box'>
         <h3> Class projects and extensions </h3>
-          <p> Class projects and extensions thereof </p>
-          <a href='https://www.youtube.com/watch?v=NzoLAY44HrQ' target="_blank"> Check here for universe physics simulation </a>
-          <a href='https://www.youtube.com/watch?v=cdlxhQVUIro' target="_blank"> Check here for game </a>
+          <ul> <li> S1XT33N on GitHub </li> <li> universe physics simulation link: <a href='https://www.youtube.com/watch?v=NzoLAY44HrQ' target="_blank"> click here </a> </li> <li> cs61b game link: <a href='https://www.youtube.com/watch?v=cdlxhQVUIro' target="_blank"> click here </a> </li> </ul>
       </div>
       <div className='box'>
         <h3> Personal projects </h3>
-          <p> Current projects: personal website, safety app </p>
-          <p> Projected projects: modified game like gameboy </p>
+          <p> Current projects: personal website React and Next.js, safety app Swift </p>
+          <p> Projected projects: Gameboy game using GB Studio </p>
       </div>
     </div>
     <div className='hero3'>
@@ -117,6 +118,7 @@ const Home = () => (
         background-image: url('../static/starting-background.png');
         background-repeat: no-repeat;
         background-size: cover;
+        overflow: hidden;
       }
       .title {
         background-color: rgba(129, 207, 224, 0.4);
@@ -149,7 +151,7 @@ const Home = () => (
       .hero0 {
         width: 100%;
         color: white;
-        font-size: 15px;
+        font-size: 16px;
         text-align: center;
         line-height: 1.5;
         margin-left: 20px;
@@ -160,7 +162,7 @@ const Home = () => (
         display: grid;
         grid-template-columns: 400px 400px 400px;
         grid-gap: 20px;
-        margin-left: 40px;
+        margin-left: 70px;
         margin-bottom: 20px;
       }
       .hero2 {
@@ -169,7 +171,7 @@ const Home = () => (
         display: grid;
         grid-template-columns: 610px 610px;
         grid-gap: 20px;
-        margin-left: 40px;
+        margin-left: 70px;
       }
       .hero3 {
         width: 100%;
@@ -222,6 +224,7 @@ const Home = () => (
         align: center;
         padding-top: 40px;
         margin-top: 25px;
+        margin-bottom: 25px;
       }
       .button {
         width: auto;
