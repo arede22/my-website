@@ -17,7 +17,18 @@ const imgStyle = {
   padding: '10px',
   borderColor: 'white',
   borderWidth: '2px',
-  borderStyle: 'solid double',
+  borderStyle: 'double',
+}
+
+const contactStyle = {
+  backgroundColor: 'rgba(129, 207, 224, 0.4)',
+  width: '60%',
+  fontSize: '18px',
+  borderRadius: '15px',
+  paddingTop: '25px',
+  paddingBottom: '25px',
+  paddingRight: '0px',
+  paddingLeft: '0px',
 }
 
 const Home = () => (
@@ -97,7 +108,9 @@ const Home = () => (
 
     <div className='hero3'>
       <a name="Contact-Me"></a> <h2 className='last_section'> Contact Me </h2>
-      <p> Super excited you browsed through my website! <br /> Please contact me by whatever method might be best, e-mail works best. <br/> Links to e-mail, Instagram, LinkedIn, and Github below! </p>
+      <center>
+        <p style={contactStyle}> Super excited you browsed through my website! <br /> Please contact me by whatever method might be best though e-mail works best. </p>
+      </center>
     </div>
 
     <center>
@@ -185,7 +198,7 @@ const Home = () => (
         line-height: 1.5;
         margin-right: 15px;
         margin-left: 15px;
-        margin-bottom: 150px;
+        margin-bottom: 120px;
       }
       .box {
         background-color: rgba(166, 166, 166, 0.5);
@@ -205,21 +218,21 @@ const Home = () => (
         font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
       	font-size: 36px;
         text-align: center;
-        margin-top: 50px;
-        margin-bottom: 50px;
+        margin-top: 75px;
+        margin-bottom: 75px;
       }
       .last_section {
       	color: white;
         font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
       	font-size: 36px;
-        padding-top: 200px;
-        padding-bottom: 30px;
+        padding-top: 180px;
+        padding-bottom: 35px;
       }
       .flex-bw {
         display: flex;
         justify-content: space-between;
-        margin-right: 80px;
-        margin-left: 100px;
+        margin-right: 75px;
+        margin-left: 75px;
         padding-right: 20px;
         padding-left: 20px;
       }
