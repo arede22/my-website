@@ -206,7 +206,7 @@ const Home = () => (
         border: 1px;
         border-style: solid;
         border-color: white;
-        border-radius: 4px;
+        border-radius: 6px;
         padding: 10px;
         margin-top: 10px;
         margin-bottom: 10px;
