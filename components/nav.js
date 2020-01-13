@@ -13,8 +13,7 @@ const Nav = () => (
     <style jsx>{`
       :global(body) {
         margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
-          Helvetica, sans-serif;
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
         background-color: #1a1a1a;
       }
       nav {
@@ -23,7 +22,6 @@ const Nav = () => (
         background-color: #303030;
       }
       ul {
-        width: 40%;
         margin: 0;
         display: flex;
         text-align: center;
@@ -42,8 +40,7 @@ const Nav = () => (
         font-size: 17px;
       }
       a:hover {
-        background-color: blue;
-        color: red;
+        color: rgba(129, 207, 224, 1);
       }
     `}</style>
   </nav>

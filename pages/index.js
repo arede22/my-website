@@ -13,6 +13,13 @@ const links = [
   return link
 })
 
+const imgStyle = {
+  padding: '10px',
+  borderColor: 'white',
+  borderWidth: '2px',
+  borderStyle: 'solid double',
+}
+
 const Home = () => (
   <div className="imagehere">
     <Head>
@@ -21,23 +28,23 @@ const Home = () => (
       <link rel="icon" type="image/png" sizes="16x16" href="../static/favicon/favicon-16x16.png"/>
       <link rel="manifest" href="../static/favicon/site.webmanifest"/>
 
-      <title>Anika Rede: Software Engineering</title>
+      <title>Anika Rede: Software Engineer</title>
     </Head>
     <Nav />
 
     <center>
       <h1 className='title'>Hi, I'm Anika Rede. </h1>
-      <img src="../static/about/profile.jpeg" alt="Anika Rede" />
+      <img src="../static/about/profile.jpeg" alt="Anika Rede" hspace="5" style={imgStyle}/>
     </center>
-    <div className='hero'>
+    <div className='hero0'>
       <p>I am a sophomore in UC Berkeley studying EECS (major) and Linguistics (minor). My areas of interest lie in AI, NLP, and mobile development.
       <br/>I am currently looking for software engineering internship positions for summer 2020. </p>
-      <center> <div className="resume-box">
-        <div className="C">
+      <center>
+        <div className="resume-box">
+          <p> Take a quick peek at my resumé! </p>
           <a className='button' href='../static/about/resume.pdf' target="_blank"> Resumé </a>
         </div>
-        <p> Take a quick peek at my resumé! </p>
-      </div> </center>
+      </center>
     </div>
     <a name="About"></a> <h2 className='section'>About</h2>
     <div>
@@ -65,43 +72,45 @@ const Home = () => (
             <ul> <li> Software Engineering Intern @Pulse Q&A -- SF, Summer 2019 <ul> <li> Limited personnel previously led to outsourcing manual labor </li> <li> Automated internal tools improved efficiency of office (allowed focus on increasing traffic on the service's platform, marketing efforts, and bettering market-fit) </li> </ul> </li> <li> Research Intern @Jadoo Tech -- UC-Berkeley, Feb-Sept 2019 <ul> <li> Conducted research in physics theoretical equations and experiments for start-up in UC-Berkeley </li> </ul> </li> <li> Research Intern @Feng Labs -- CWRU, 2015-2018 <ul> <li> Quantified properties of metastatic breast cancer cells using MEMS microsensors </li> </ul> </li> <li> IT Hub Intern @Hathaway Brown-- OH high-school <ul> <li> Both worked and volunteered at high-school's IT Helpdesk </li> </ul> </li> </ul>
         </div>
         <div className='box'>
-          <h3> Personal projects </h3>
-            <p> Currently working on: <ul> <li> Personal website using React & Next.js</li><li> Safety app for Berkeley using Swift </li> <li>Gameboy game using GB Studio </li> </ul> </p>
+          <h3> Exploring pet projects </h3>
+            <ul> <li> CS personal website, safety app around Berkeley </li>
+            <li> Exploring ideas of NLP analysis with AI/ML </li>
+            <li> Modifying S1XT33N car from last semester to be hooked up bluetooth, wifi </li>
+            <li> Graphic design intro to Photoshop, Illustrator, Maya </li> </ul>
         </div>
       </div>
     </div>
     <a name="Portfolio"></a> <h2 className='section'> Portfolio </h2>
-    <div className='hero1'>
+    <div className='hero2'>
       <div className='box'>
         <h3> Class projects and extensions </h3>
-          <p> Class projects and extensions thereof </p>
-          <a href='https://www.youtube.com/watch?v=NzoLAY44HrQ' target="_blank"> Check here for universe physics simulation </a>
-          <a href='https://www.youtube.com/watch?v=cdlxhQVUIro' target="_blank"> Check here for game </a>
+          <ul> <li> S1XT33N on GitHub </li> <li> universe physics simulation link: <a href='https://www.youtube.com/watch?v=NzoLAY44HrQ' target="_blank"> click here </a> </li> <li> cs61b game link: <a href='https://www.youtube.com/watch?v=cdlxhQVUIro' target="_blank"> click here </a> </li> </ul>
       </div>
       <div className='box'>
         <h3> Personal projects </h3>
-          <p> Current projects: personal website, safety app </p>
-          <p> Projected projects: modified game like gameboy </p>
+          <p> Current projects: personal website React and Next.js, safety app Swift </p>
+          <p> Projected projects: Gameboy game using GB Studio </p>
       </div>
     </div>
-    <div className='hero'>
-        <a name="Contact-Me"></a> <h2 className='last_section'> Contact Me </h2>
-        <p> Super excited you browsed through my website, please contact me by whatever method might be best. <br/> Links to e-mail, Instagram, LinkedIn, and Github below! </p>
+    <div className='hero3'>
+      <a name="Contact-Me"></a> <h2 className='last_section'> Contact Me </h2>
+      <p> Super excited you browsed through my website! <br /> Please contact me by whatever method might be best, e-mail works best. <br/> Links to e-mail, Instagram, LinkedIn, and Github below! </p>
     </div>
+
     <center>
-    <footer className="signature">
-      <div className="flex-bw">
-        <img src="../static/footer/macho-cat.png" alt="macho-cat" />
-        <img src="../static/footer/coffee-mug.png" alt="coffee-mug" />
-      </div>
-      <ul className="A">
-        {links.map(({ key, href, source }) => (
-          <li className="B" key={key}>
-            <a href={href}> <img src={source+'.png'} onMouseOver={e => {e.currentTarget.src = source + '-hover.png'}} onMouseOut={e => {e.currentTarget.src = source + '.png'}} /> </a>
-          </li>
-        ))}
-      </ul>
-    </footer>
+      <footer className="signature">
+        <div className="flex-bw">
+          <img src="../static/footer/macho-cat.png" alt="macho-cat" />
+          <img src="../static/footer/coffee-mug.png" alt="coffee-mug" />
+        </div>
+        <ul className="contacts">
+          {links.map(({ key, href, source }) => (
+            <li className="contact" key={key}>
+              <a href={href}> <img src={source+'.png'} onMouseOver={e => {e.currentTarget.src = source + '-hover.png'}} onMouseOut={e => {e.currentTarget.src = source + '.png'}} /> </a>
+            </li>
+          ))}
+        </ul>
+      </footer>
     </center>
 
     <style jsx>{`
@@ -109,37 +118,42 @@ const Home = () => (
         background-image: url('../static/starting-background.png');
         background-repeat: no-repeat;
         background-size: cover;
+        overflow: hidden;
       }
       .title {
         background-color: rgba(129, 207, 224, 0.4);
         color: white;
         width: 50%;
         font-size: 48px;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
         line-height: 1.15;
         display: flex;
         justify-content: center;
         text-align: center;
         border-radius: 8px;
-        margin-top: 100px;
-        margin-bottom: 30px;
-        padding-top: 25px;
-        padding-bottom: 25px;
-        padding-right: 10px;
-        padding-left: 10px;
+        margin-top: 120px;
+        margin-bottom: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 5px;
+        padding-left: 5px;
       }
       .resume-box {
         background-color: rgba(129, 207, 224, 0.4);
         width: 30%;
-        border-radius: 13px;
+        font-size: 18px;
+        border-radius: 15px;
         padding: 10px;
-        padding-top: 25px;
+        padding-bottom: 35px;
         margin-top: 15px;
+        margin-bottom: 15px;
       }
-      .hero {
+      .hero0 {
         width: 100%;
         color: white;
+        font-size: 16px;
         text-align: center;
+        line-height: 1.5;
         margin-left: 20px;
       }
       .hero1 {
@@ -148,7 +162,7 @@ const Home = () => (
         display: grid;
         grid-template-columns: 400px 400px 400px;
         grid-gap: 20px;
-        margin-left: 25px;
+        margin-left: 70px;
         margin-bottom: 20px;
       }
       .hero2 {
@@ -157,7 +171,17 @@ const Home = () => (
         display: grid;
         grid-template-columns: 610px 610px;
         grid-gap: 20px;
-        margin-left: 25px;
+        margin-left: 70px;
+      }
+      .hero3 {
+        width: 100%;
+        color: white;
+        font-size: 18px;
+        text-align: center;
+        line-height: 1.5;
+        margin-right: 15px;
+        margin-left: 15px;
+        margin-bottom: 150px;
       }
       .box {
         background-color: rgba(166, 166, 166, 0.5);
@@ -174,31 +198,33 @@ const Home = () => (
       }
       .section {
       	color: white;
-        font-family: Arial, Helvetica, sans-serif;
-      	font-size: 32px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        margin-left: 25px;
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      	font-size: 36px;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
       }
       .last_section {
       	color: white;
-        font-family: Arial, Helvetica, sans-serif;
-      	font-size: 32px;
-        padding-top: 100px;
-        padding-bottom: 50px;
-        margin-left: 0px;
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      	font-size: 36px;
+        padding-top: 200px;
+        padding-bottom: 30px;
       }
       .flex-bw {
         display: flex;
         justify-content: space-between;
         margin-right: 80px;
-        margin-left: 80px;
+        margin-left: 100px;
+        padding-right: 20px;
+        padding-left: 20px;
       }
       .signature {
-        width: 70%;
+        width: 80%;
         align: center;
         padding-top: 40px;
-        padding-bottom: 40px;
+        margin-top: 25px;
+        margin-bottom: 25px;
       }
       .button {
         width: auto;
@@ -208,20 +234,48 @@ const Home = () => (
         border-color: white;
         border-radius: 6px;
         padding: 10px;
-        margin-top: 10px;
         margin-bottom: 10px;
       }
-      .A {
+      .contacts {
+        background-color: rgba(166, 166, 166, 0.3);
         display: flex;
         justify-content: space-around;
-        margin: 0;
+        padding: 10px;
+        margin-top: 0px;
+        margin-bottom: 25px;
+        border-top: 3px solid gray;
       }
-      .B {
+      .contact {
         display: flex;
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
       }
       a {
         color: white;
         text-decoration: none;
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      }
+      p {
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      }
+      h1 {
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      }
+      h2 {
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      }
+      h3 {
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      }
+      ul {
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      }
+      li {
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        margin-top: 5px;
+        margin-bottom: 5px;
       }
     `}</style>
   </div>
