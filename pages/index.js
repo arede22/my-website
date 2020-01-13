@@ -228,7 +228,7 @@ const Home = () => (
         text-decoration: none;
         font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
       }
-      p {
+      body {
         font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
       }
       h1 {
