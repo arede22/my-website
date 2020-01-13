@@ -21,7 +21,7 @@ const Home = () => (
       <link rel="icon" type="image/png" sizes="16x16" href="../static/favicon/favicon-16x16.png"/>
       <link rel="manifest" href="../static/favicon/site.webmanifest"/>
 
-      <title>Anika Rede: Software Engineering</title>
+      <title>Anika Rede: Software Engineer</title>
     </Head>
     <Nav />
 
@@ -32,12 +32,14 @@ const Home = () => (
     <div className='hero'>
       <p>I am a sophomore in UC Berkeley studying EECS (major) and Linguistics (minor). My areas of interest lie in AI, NLP, and mobile development.
       <br/>I am currently looking for software engineering internship positions for summer 2020. </p>
-      <center> <div className="resume-box">
-        <div className="C">
-          <a className='button' href='../static/about/resume.pdf' target="_blank"> Resumé </a>
+      <center>
+        <div className="resume-box">
+          <div className="C">
+            <a className='button' href='../static/about/resume.pdf' target="_blank"> Resumé </a>
+          </div>
+          <p> Take a quick peek at my resumé! </p>
         </div>
-        <p> Take a quick peek at my resumé! </p>
-      </div> </center>
+      </center>
     </div>
     <a name="About"></a> <h2 className='section'>About</h2>
     <div>
@@ -85,23 +87,24 @@ const Home = () => (
       </div>
     </div>
     <div className='hero'>
-        <a name="Contact-Me"></a> <h2 className='last_section'> Contact Me </h2>
-        <p> Super excited you browsed through my website, please contact me by whatever method might be best. <br/> Links to e-mail, Instagram, LinkedIn, and Github below! </p>
+      <a name="Contact-Me"></a> <h2 className='last_section'> Contact Me </h2>
+      <p> Super excited you browsed through my website, please contact me by whatever method might be best. <br/> Links to e-mail, Instagram, LinkedIn, and Github below! </p>
     </div>
+
     <center>
-    <footer className="signature">
-      <div className="flex-bw">
-        <img src="../static/footer/macho-cat.png" alt="macho-cat" />
-        <img src="../static/footer/coffee-mug.png" alt="coffee-mug" />
-      </div>
-      <ul className="A">
-        {links.map(({ key, href, source }) => (
-          <li className="B" key={key}>
-            <a href={href}> <img src={source+'.png'} onMouseOver={e => {e.currentTarget.src = source + '-hover.png'}} onMouseOut={e => {e.currentTarget.src = source + '.png'}} /> </a>
-          </li>
-        ))}
-      </ul>
-    </footer>
+      <footer className="signature">
+        <div className="flex-bw">
+          <img src="../static/footer/macho-cat.png" alt="macho-cat" />
+          <img src="../static/footer/coffee-mug.png" alt="coffee-mug" />
+        </div>
+        <ul className="A">
+          {links.map(({ key, href, source }) => (
+            <li className="B" key={key}>
+              <a href={href}> <img src={source+'.png'} onMouseOver={e => {e.currentTarget.src = source + '-hover.png'}} onMouseOut={e => {e.currentTarget.src = source + '.png'}} /> </a>
+            </li>
+          ))}
+        </ul>
+      </footer>
     </center>
 
     <style jsx>{`
@@ -115,7 +118,7 @@ const Home = () => (
         color: white;
         width: 50%;
         font-size: 48px;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
         line-height: 1.15;
         display: flex;
         justify-content: center;
@@ -135,6 +138,7 @@ const Home = () => (
         padding: 10px;
         padding-top: 25px;
         margin-top: 15px;
+        font-size: 22.5px;
       }
       .hero {
         width: 100%;
@@ -174,7 +178,7 @@ const Home = () => (
       }
       .section {
       	color: white;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
       	font-size: 32px;
         margin-top: 30px;
         margin-bottom: 30px;
@@ -182,17 +186,17 @@ const Home = () => (
       }
       .last_section {
       	color: white;
-        font-family: Arial, Helvetica, sans-serif;
-      	font-size: 32px;
-        padding-top: 100px;
-        padding-bottom: 200px;
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      	font-size: 40px;
+        padding-top: 200px;
+        padding-bottom: 50px;
         margin-left: 0px;
       }
       .flex-bw {
         display: flex;
         justify-content: space-between;
         margin-right: 80px;
-        margin-left: 80px;
+        margin-left: 100px;
       }
       .signature {
         width: 70%;
@@ -206,7 +210,7 @@ const Home = () => (
         border: 1px;
         border-style: solid;
         border-color: white;
-        border-radius: 4px;
+        border-radius: 6px;
         padding: 10px;
         margin-top: 10px;
         margin-bottom: 10px;
@@ -222,6 +226,25 @@ const Home = () => (
       a {
         color: white;
         text-decoration: none;
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      }
+      p {
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      }
+      h1 {
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      }
+      h2 {
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      }
+      h3 {
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      }
+      ul {
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      }
+      li {
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
       }
     `}</style>
   </div>
