@@ -40,8 +40,6 @@ var colors = {
     darkGray: "rgba(74, 72, 71, 1)"
 };
 
-const blue = {}
-
 const Home = () => (
   <div className='body-background'>
     <Head>
@@ -61,7 +59,7 @@ const Home = () => (
       </center>
       <div className='welcome-body'>
         <p>I am a sophomore in UC Berkeley studying EECS (major) and Linguistics (minor). My areas of interest lie in AI, NLP, and mobile development.
-        <br/>I am currently looking for software engineering internship positions for summer 2020. </p>
+        <br />I am currently looking for software engineering internship positions for summer 2020. </p>
         <center>
           <div className="resume-box">
             <p> Take a quick peek at my resumé! </p>
@@ -77,32 +75,102 @@ const Home = () => (
         <div className='three-boxes'>
           <div className='box'>
             <h3> Major Coursework </h3>
-              <ul> <li> Intro to Computer Science </li> <li> Data Structures & Algorithms </li> <li> Computer Architecture </li> <li> Discrete Mathematics and Probability Theory </li> <li> Designing Information Devices and Systems </li> <li> Optimization Models in Engineering </li> <li> Probability and Random Processes </li> </ul>
+              <ul>
+                <li> Intro to Computer Science </li>
+                <li> Data Structures & Algorithms </li>
+                <li> Computer Architecture </li>
+                <li> Discrete Mathematics and Probability Theory </li>
+                <li> Designing Information Devices and Systems </li>
+                <li> Optimization Models in Engineering </li>
+                <li> Probability and Random Processes </li>
+              </ul>
             <h3> Minor Coursework </h3>
-              <ul> <li> Intro to Linguistics </li> <li> Intro to Syntax and Semantics </li> </ul>
+              <ul>
+                <li> Intro to Linguistics </li>
+                <li> Intro to Syntax and Semantics </li>
+              </ul>
           </div>
           <div className='box'>
             <h3> Languages </h3>
-              <ul className='rows'> <div className='cols'> <li> Javascript </li> <li> HTML </li> <li> CSS </li> <li> Python </li> </div> <div className='langs'> <li> Scheme </li> <li> Java </li> <li> React </li> <li> C </li> </div> </ul>
+              <ul className='rows'>
+                <div className='cols'>
+                  <li> Javascript </li>
+                  <li> HTML </li>
+                  <li> CSS </li>
+                  <li> Python </li>
+                </div>
+                <div className='cols'>
+                  <li> Scheme </li>
+                  <li> Java </li>
+                  <li> React </li>
+                  <li> C </li>
+                </div>
+              </ul>
             <h3> Skills </h3>
-              <ul> <li> Data visualization and simulation softwares (COMSOL, AutoCAD, MATLAB, SolidWorks) </li> <li> EE and CS knowledge and hands-on experience </li> <li> People skills, smooth communication, real personality </li> </ul>
+              <ul>
+                <li> Data visualization and simulation softwares (COMSOL, AutoCAD, MATLAB, SolidWorks) </li>
+                <li> EE and CS knowledge and hands-on experience </li>
+                <li> People skills, smooth communication, real personality </li>
+              </ul>
           </div>
           <div className='box'>
             <h3> Clubs </h3>
-              <ul> <li> Engineers Without Borders <ul> <li> Panama Team for two semesters where we just finished building a water distribution system for a poorly-funded Panamanian community </li> <li> Starting new domestic project next semester </li> </ul> </li> <li> Computer Science Kickstart <ul> <li> Intro to computer science week for female pre-freshmen </li> <li> Participated in the program myself when I entered Berkeley and giving back as a committee member </li> </ul> </li> <li> Association of Women in EECS <ul> <li> Networking events with industry professionals and professors coming in to talk woman-to-woman how to succeed in the tech world </li> </ul> </li> </ul>
+              <ul>
+                <li> Engineers Without Borders
+                  <ul>
+                    <li> Panama Team for two semesters where we just finished building a water distribution system for a poorly-funded Panamanian community </li>
+                    <li> Starting new domestic project next semester </li>
+                  </ul>
+                </li>
+                <li> Computer Science Kickstart
+                  <ul>
+                    <li> Intro to computer science week for female pre-freshmen </li>
+                    <li> Participated in the program myself when I entered Berkeley and giving back as a committee member </li>
+                  </ul>
+                </li>
+                <li> Association of Women in EECS
+                  <ul>
+                    <li> Networking events with industry professionals and professors coming in to talk woman-to-woman how to succeed in the tech world </li>
+                  </ul>
+                </li>
+              </ul>
           </div>
         </div>
         <div className='two-boxes'>
           <div className='box'>
             <h3> Past work experience </h3>
-              <ul> <li> Software Engineering Intern @Pulse Q&A -- SF, Summer 2019 <ul> <li> Limited personnel previously led to outsourcing manual labor </li> <li> Automated internal tools improved efficiency of office (allowed focus on increasing traffic on the service's platform, marketing efforts, and bettering market-fit) </li> </ul> </li> <li> Research Intern @Jadoo Tech -- UC-Berkeley, Feb-Sept 2019 <ul> <li> Conducted research in physics theoretical equations and experiments for start-up in UC-Berkeley </li> </ul> </li> <li> Research Intern @Feng Labs -- CWRU, 2015-2018 <ul> <li> Quantified properties of metastatic breast cancer cells using MEMS microsensors </li> </ul> </li> <li> IT Hub Intern @Hathaway Brown-- OH high-school <ul> <li> Both worked and volunteered at high-school's IT Helpdesk </li> </ul> </li> </ul>
+              <ul>
+                <li> Software Engineering Intern @Pulse Q&A -- SF, Summer 2019
+                  <ul>
+                    <li> Limited personnel previously led to outsourcing manual labor </li>
+                    <li> Automated internal tools improved efficiency of office (allowed focus on increasing traffic on the service's platform, marketing efforts, and bettering market-fit) </li>
+                  </ul>
+                </li>
+                <li> Research Intern @Jadoo Tech -- UC-Berkeley, Feb-Sept 2019
+                  <ul>
+                    <li> Conducted research in physics theoretical equations and experiments for start-up in UC-Berkeley </li>
+                  </ul>
+                </li>
+                <li> Research Intern @Feng Labs -- CWRU, 2015-2018
+                  <ul>
+                    <li> Quantified properties of metastatic breast cancer cells using MEMS microsensors </li>
+                  </ul>
+                </li>
+                <li> IT Hub Intern @Hathaway Brown-- OH high-school
+                  <ul>
+                    <li> Both worked and volunteered at high-school's IT Helpdesk </li>
+                  </ul>
+                </li>
+              </ul>
           </div>
           <div className='box'>
             <h3> Exploring pet projects </h3>
-              <ul> <li> CS personal website, safety app around Berkeley </li>
-              <li> Exploring ideas of NLP analysis with AI/ML </li>
-              <li> Modifying S1XT33N car from last semester to be hooked up bluetooth, wifi </li>
-              <li> Graphic design intro to Photoshop, Illustrator, Maya </li> </ul>
+              <ul>
+                <li> CS personal website, safety app around Berkeley </li>
+                <li> Exploring ideas of NLP analysis with AI/ML </li>
+                <li> Modifying S1XT33N car from last semester to be hooked up bluetooth, wifi </li>
+                <li> Graphic design intro to Photoshop, Illustrator, Maya </li>
+              </ul>
           </div>
         </div>
       </div>
@@ -113,12 +181,18 @@ const Home = () => (
       <div className='two-boxes'>
         <div className='box'>
           <h3> Class projects and extensions </h3>
-            <ul> <li> S1XT33N on GitHub </li> <li> universe physics simulation link: <a href='https://www.youtube.com/watch?v=NzoLAY44HrQ' target="_blank"> click here </a> </li> <li> cs61b game link: <a href='https://www.youtube.com/watch?v=cdlxhQVUIro' target="_blank"> click here </a> </li> </ul>
+            <ul>
+              <li> S1XT33N on GitHub </li>
+              <li> universe physics simulation link: <a href='https://www.youtube.com/watch?v=NzoLAY44HrQ' target="_blank"> click here </a> </li>
+              <li> cs61b game link: <a href='https://www.youtube.com/watch?v=cdlxhQVUIro' target="_blank"> click here </a> </li>
+            </ul>
         </div>
         <div className='box'>
           <h3> Personal projects </h3>
-            <p> Current projects: personal website React and Next.js, safety app Swift </p>
-            <p> Projected projects: Gameboy game using GB Studio </p>
+            <ul>
+              <li> Current projects: personal website React and Next.js, safety app Swift </li>
+              <li> Projected projects: Gameboy game using GB Studio </li>
+            </ul>
         </div>
       </div>
     </span>
@@ -126,7 +200,8 @@ const Home = () => (
     <div className='contact-me'>
       <a name="Contact-Me"></a> <h2 className='last_section'> Contact Me </h2>
       <center>
-        <p style={contactStyle}> Super excited you browsed through my website! <br /> Please contact me by whatever method might be best though e-mail works best. </p>
+        <p style={contactStyle}> Super excited you browsed through my website!
+        <br /> Please contact me by whatever method might be best though e-mail works best. </p>
       </center>
     </div>
 
