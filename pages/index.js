@@ -187,13 +187,13 @@ const Home = () => (
           <h3> Class projects and extensions </h3>
             <ul>
               <li> Voice-Activated Car -- Designing Information Devices/Systems Trained with PCA </li>
-                <img src="../static/portfolio/car.png" alt="car" height="30%" width="30%" vspace="10" style={centerPic} />
+                <img src="../static/portfolio/car.png" alt="car" height="40%" width="40%" vspace="10" style={centerPic} />
               <li> Mock GoogleMaps Berkeley-Localized -- Map Rastering, Autocomplete and Search, and Navigation </li>
-                <img src="../static/portfolio/map.png" alt="map" height="40%" width="40%" vspace="10" style={centerPic} />
+                <img src="../static/portfolio/map.png" alt="map" height="50%" width="50%" vspace="10" style={centerPic} />
               <li> Pixel Art Game -- Randomized Room Generation and Increasing Difficulty to Boss Level: </li>
                 <div style={{display: 'flex', justifyContent: 'space-between'}}>
-                  <img src="../static/portfolio/random-room.png" alt="random rooms" height="40%" width="40%" vspace="10" />
-                  <img src="../static/portfolio/boss.png" alt="boss level" height="40%" width="40%" vspace="10" />
+                  <img src="../static/portfolio/random-room.png" alt="random rooms" height="45%" width="45%" vspace="10" />
+                  <img src="../static/portfolio/boss.png" alt="boss level" height="45%" width="45%" vspace="10" />
                 </div>
                 <center>
                   <a href='https://www.youtube.com/watch?v=cdlxhQVUIro' target="_blank"> Click here for demo </a>
