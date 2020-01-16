@@ -13,15 +13,27 @@ const links = [
   return link
 })
 
-const imgStyle = {
-  padding: '10px',
-  borderColor: 'white',
-  borderWidth: '2px',
-  borderStyle: 'double',
+const profPic = {
+  paddingLeft: "41%",
 }
 
+const centerPic = {
+  display: 'block',
+  marginRight: 'auto',
+  marginLeft: 'auto'
+}
+
+var colors = {
+  transparentBlue: "rgba(129, 207, 224, 0.4)",
+  skyBlue: "rgba(197, 239, 247, 1)",
+  halfTransparentGray: "rgba(166, 166, 166, 0.5)",
+  transparentGray: "rgba(166, 166, 166, 0.3)",
+  lightGray: "#cfcfcf",
+  darkGray: "rgba(74, 72, 71, 1)"
+};
+
 const contactStyle = {
-  backgroundColor: 'rgba(129, 207, 224, 0.4)',
+  backgroundColor: colors.transparentBlue,
   width: '60%',
   fontSize: '18px',
   borderRadius: '15px',
@@ -30,15 +42,6 @@ const contactStyle = {
   paddingRight: '10px',
   paddingLeft: '10px',
 }
-
-var colors = {
-    transparentBlue: "rgba(129, 207, 224, 0.4)",
-    skyBlue: "rgba(197, 239, 247, 1)",
-    halfTransparentGray: "rgba(166, 166, 166, 0.5)",
-    transparentGray: "rgba(166, 166, 166, 0.3)",
-    lightGray: "#cfcfcf",
-    darkGray: "rgba(74, 72, 71, 1)"
-};
 
 const Home = () => (
   <div className='body-background'>
@@ -50,16 +53,17 @@ const Home = () => (
 
       <title>Anika Rede: Software Engineer</title>
     </Head>
+
     <Nav />
 
     <span className="intro">
       <center>
         <h1 className='welcome-title'>Hi, I'm Anika Rede. </h1>
-        <img src="../static/profile.jpeg" alt="Anika Rede" hspace="5" style={imgStyle}/>
       </center>
+      <img src="../static/profile.png" alt="Anika Rede" style={profPic} />
       <div className='welcome-body'>
         <p>I am a sophomore in UC Berkeley studying EECS (major) and Linguistics (minor). My areas of interest lie in AI, NLP, and mobile development.
-        <br />I am currently looking for software engineering internship positions for summer 2020. </p>
+        <br /> I am currently seeking software engineering internship positions for summer 2020. </p>
         <center>
           <div className="resume-box">
             <p> Take a quick peek at my resumé! </p>
@@ -114,6 +118,17 @@ const Home = () => (
               </ul>
           </div>
           <div className='box'>
+            <h3> Exploring pet projects (more below) </h3>
+              <ul>
+                <li> Safety app around Berkeley for Cal students </li>
+                <li> Improving on voice-activated car built last semester </li>
+                <li> Learning graphic design and animation software </li>
+                <li> Exploring projects using NLP analysis with AI/ML </li>
+              </ul>
+          </div>
+        </div>
+        <div className='two-boxes'>
+          <div className='box'>
             <h3> Clubs </h3>
               <ul>
                 <li> Engineers Without Borders
@@ -135,8 +150,6 @@ const Home = () => (
                 </li>
               </ul>
           </div>
-        </div>
-        <div className='two-boxes'>
           <div className='box'>
             <h3> Past work experience </h3>
               <ul>
@@ -163,35 +176,47 @@ const Home = () => (
                 </li>
               </ul>
           </div>
-          <div className='box'>
-            <h3> Exploring pet projects </h3>
-              <ul>
-                <li> CS personal website, safety app around Berkeley </li>
-                <li> Exploring ideas of NLP analysis with AI/ML </li>
-                <li> Modifying S1XT33N car from last semester to be hooked up bluetooth, wifi </li>
-                <li> Graphic design intro to Photoshop, Illustrator, Maya </li>
-              </ul>
-          </div>
         </div>
       </div>
     </span>
 
     <span className="portfolio">
       <a name="Portfolio"></a> <h2 className='section'> Portfolio </h2>
-      <div className='two-boxes'>
-        <div className='box'>
+      <div style={{marginLeft: '75px', marginRight: '75px'}}>
+        <div className='box' style={{marginBottom: '10px'}}>
           <h3> Class projects and extensions </h3>
             <ul>
-              <li> S1XT33N on GitHub </li>
-              <li> universe physics simulation link: <a href='https://www.youtube.com/watch?v=NzoLAY44HrQ' target="_blank"> click here </a> </li>
-              <li> cs61b game link: <a href='https://www.youtube.com/watch?v=cdlxhQVUIro' target="_blank"> click here </a> </li>
+              <li> Voice-Activated Car -- Designing Information Devices/Systems Trained with PCA </li>
+                <img src="../static/portfolio/car.png" alt="car" height="30%" width="30%" vspace="10" style={centerPic} />
+              <li> Mock GoogleMaps Berkeley-Localized -- Map Rastering, Autocomplete and Search, and Navigation </li>
+                <img src="../static/portfolio/map.png" alt="map" height="40%" width="40%" vspace="10" style={centerPic} />
+              <li> Pixel Art Game -- Randomized Room Generation and Increasing Difficulty to Boss Level: </li>
+                <div style={{display: 'flex', justifyContent: 'space-between'}}>
+                  <img src="../static/portfolio/random-room.png" alt="random rooms" height="40%" width="40%" vspace="10" />
+                  <img src="../static/portfolio/boss.png" alt="boss level" height="40%" width="40%" vspace="10" />
+                </div>
+                <center>
+                  <a href='https://www.youtube.com/watch?v=cdlxhQVUIro' target="_blank"> Click here for demo </a>
+                </center>
             </ul>
         </div>
         <div className='box'>
           <h3> Personal projects </h3>
             <ul>
-              <li> Current projects: personal website React and Next.js, safety app Swift </li>
-              <li> Projected projects: Gameboy game using GB Studio </li>
+              <li> Current projects:
+                <ul>
+                  <li> Personal website built with React and Next.js, allows playing with graphic design </li>
+                  <li> Safety app around Berkeley for students built using Swift </li>
+                  <li> Learning graphic design via Photoshop, Illustrator, and Maya </li>
+                </ul>
+              </li>
+              <li> Projected projects:
+                <ul>
+                  <li> Modifying voice-activated car built last semester to be hooked up to bluetooth and Wi-Fi </li>
+                  <li> Original pixel art Gameboy game built from scratch </li>
+                  <li> Image analysis to interpret and translate language with NLP using AI/ML </li>
+                </ul>
+              </li>
             </ul>
         </div>
       </div>
@@ -230,28 +255,37 @@ const Home = () => (
       .welcome-title {
         background-color: ${colors.transparentBlue};
         width: 50%;
-        display: flex;
-        justify-content: center;
         border-radius: 8px;
         text-align: center;
         font-size: 48px;
-        line-height: 1.15;
         padding: 30px 5px;
-        margin: 120px 15px 30px;
+        margin: 110px 15px 30px;
       }
       .resume-box {
         background-color: ${colors.transparentBlue};
-        width: 30%;
+        width: 25%;
         border-radius: 15px;
         font-size: 18px;
-        padding: 5px 15px 30px;
-        margin: 15px 20px;
+        padding: 2.5px 10px 30px;
+        margin: 20px 20px 30px;
       }
       .welcome-body {
         text-align: center;
         font-size: 16px;
         line-height: 1.5;
         margin: 5px 20px;
+      }
+      .box {
+        background-color: ${colors.halfTransparentGray};
+        border-radius: 5px;
+        overflow-x: auto;
+        padding: 7.5px 20px 20px;
+      }
+      .rows {
+        display: flex;
+      }
+      .cols {
+        flex: 50%;
       }
       .three-boxes {
         display: grid;
@@ -267,23 +301,6 @@ const Home = () => (
         overflow-x: auto;
         margin: 0px 60px;
       }
-      .contact-me {
-        text-align: center;
-        font-size: 18px;
-        line-height: 1.5;
-        margin: 0px 15px 120px;
-      }
-      .box {
-        background-color: ${colors.halfTransparentGray};
-        border-radius: 5px;
-        padding: 7.5px 20px 20px;
-      }
-      .rows {
-        display: flex;
-      }
-      .cols {
-        flex: 50%;
-      }
       .section {
         text-align: center;
       	font-size: 36px;
@@ -293,11 +310,17 @@ const Home = () => (
       	font-size: 36px;
         padding: 150px 0px 35px;
       }
+      .contact-me {
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.5;
+        margin: 0px 15px 120px;
+      }
       .flex-bw {
         display: flex;
         justify-content: space-between;
         padding: 0px 20px;
-        margin: 0% 6% 0% 10%;
+        margin: 0% 9.5% 0% 6%;
       }
       .signature {
         width: 80%;
@@ -305,12 +328,9 @@ const Home = () => (
         padding-top: 40px;
         margin: 25px 0px;
       }
-      .button {
-        width: auto;
-        border: 1px solid white;
-        border-radius: 6px;
-        padding: 10px;
-        margin-bottom: 10px;
+      .contact {
+        display: flex;
+        padding: 10px 15px;
       }
       .contacts {
         background-color: ${colors.transparentGray};
@@ -320,21 +340,21 @@ const Home = () => (
         padding: 10px 25px;
         margin: 0px 15px 25px;
       }
-      .contact {
-        display: flex;
-        padding: 10px 15px;
+      .button {
+        width: auto;
+        border: 1px solid white;
+        border-radius: 6px;
+        padding: 10px;
+        margin-bottom: 10px;
       }
-      a {
+      ul {
         color: white;
         font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-        text-decoration: none;
       }
-      a:hover {
-        color: ${colors.skyBlue};
-      }
-      p {
+      li {
         color: white;
         font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        margin: 5px 0px;
       }
       h1 {
         color: white;
@@ -348,14 +368,17 @@ const Home = () => (
         color: white;
         font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
       }
-      ul {
+      p {
         color: white;
         font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
       }
-      li {
+      a {
         color: white;
         font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-        margin: 5px 0px;
+        text-decoration: none;
+      }
+      a:hover {
+        color: ${colors.skyBlue};
       }
     `}</style>
   </div>
