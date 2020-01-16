@@ -182,7 +182,7 @@ const Home = () => (
 
     <span className="portfolio">
       <a name="Portfolio"></a> <h2 className='section'> Portfolio </h2>
-      <div style={{marginLeft: '75px', marginRight: '75px'}}>
+      <div className="two-boxes">
         <div className='box' style={{marginBottom: '10px'}}>
           <h3> Class projects and extensions </h3>
             <ul>
