@@ -7,9 +7,10 @@
     "export": "next export"
   },
   "dependencies": {
-    "serialize-javascript": ">=2.1.1",
     "next": "9.0.5",
     "react": "16.9.0",
-    "react-dom": "16.9.0"
+    "react-dom": "16.9.0",
+    "serialize-javascript": ">=2.1.1",
+    "styled-components": "^5.0.0"
   }
 }

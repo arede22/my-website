@@ -2,6 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
 import Nav from '../components/nav'
+import Exmodal from '../static/exmod.js'
+import { keyframes } from "styled-components"
 
 const links = [
   { href: 'mailto:arede22@berkeley.edu', source: '../static/footer/contact-me/email' },
@@ -12,10 +14,6 @@ const links = [
   link.key = `nav-link-${link.href}-${link.source}`.replace(/[^a-zA-Z0-9]/g, '')
   return link
 })
-
-const profPic = {
-  paddingLeft: "41%",
-}
 
 const centerPic = {
   display: 'block',
@@ -52,6 +50,8 @@ const Home = () => (
       <link rel="manifest" href="../static/favicon/site.webmanifest"/>
 
       <title>Anika Rede: Software Engineer</title>
+
+      <script type="text/javascript" src="../static/modal.js"></script>
     </Head>
 
     <Nav />
@@ -60,9 +60,17 @@ const Home = () => (
       <center>
         <h1 className='welcome-title'>Hi, I'm Anika Rede. </h1>
       </center>
-      <img src="../static/profile.png" alt="Anika Rede" style={profPic} />
+      <Exmodal />
+      {/*<img id="profPic" src="../static/profile.png" alt="Anika Rede" style={{marginLeft: "41%"}} />
+
+      <div id="myModal" className="modal">
+        <span className="close">&times;</span>
+        <img className="modal-content" id="img01"/>
+        <div id="caption1"></div>
+      </div> */}
+
       <div className='welcome-body'>
-        <p>I am a sophomore in UC Berkeley studying EECS (major) and Linguistics (minor). My areas of interest lie in AI, NLP, and mobile development.
+        <p>I am a sophomore in UC Berkeley studying EECS (major) and Linguistics (minor). My areas of interest lie in AI, NLP, and cloud computing.
         <br /> I am currently seeking software engineering internship positions for summer 2020. </p>
         <center>
           <div className="resume-box">
@@ -183,11 +191,12 @@ const Home = () => (
     <span className="portfolio">
       <a name="Portfolio"></a> <h2 className='section'> Portfolio </h2>
       <div className="two-boxes">
-        <div className='box' style={{marginBottom: '10px'}}>
+        <div className='box'>
           <h3> Class projects and extensions </h3>
             <ul>
               <li> Voice-Activated Car -- Designing Information Devices/Systems Trained with PCA </li>
                 <img src="../static/portfolio/car.png" alt="car" height="40%" width="40%" vspace="10" style={centerPic} />
+
               <li> Mock GoogleMaps Berkeley-Localized -- Map Rastering, Autocomplete and Search, and Navigation </li>
                 <img src="../static/portfolio/map.png" alt="map" height="50%" width="50%" vspace="10" style={centerPic} />
               <li> Pixel Art Game -- Randomized Room Generation and Increasing Difficulty to Boss Level: </li>
@@ -232,10 +241,6 @@ const Home = () => (
 
     <center>
       <footer className="signature">
-        <div className="flex-bw">
-          <img src="../static/footer/macho-cat.png" alt="macho-cat" />
-          <img src="../static/footer/coffee-mug.png" alt="coffee-mug" />
-        </div>
         <ul className="contacts">
           {links.map(({ key, href, source }) => (
             <li className="contact" key={key}>
@@ -247,6 +252,70 @@ const Home = () => (
     </center>
 
     <style jsx>{`
+      #profPic {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      #profPic:hover {
+        opacity: 0.7;
+      }
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+      }
+      .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+      }
+      #caption1 {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+        height: 150px;
+      }
+      .modal-content, #caption1 {
+        animation-name: zoom;
+        animation-duration: 0.6s;
+      }
+      @keyframes zoom {
+        from {transform:scale(0)}
+        to {transform:scale(1)}
+      }
+      .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+      .close:hover, .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      @media only screen and (max-width: 700px){
+        .modal-content {
+          width: 100%;
+        }
+      }
       .body-background {
         background: ${colors.darkGray} url('../static/starting-background.png') no-repeat center;
         background-size: cover;
@@ -260,6 +329,7 @@ const Home = () => (
         font-size: 48px;
         padding: 30px 5px;
         margin: 110px 15px 30px;
+        text-shadow: 2px 2px black;
       }
       .resume-box {
         background-color: ${colors.transparentBlue};
@@ -274,6 +344,7 @@ const Home = () => (
         font-size: 16px;
         line-height: 1.5;
         margin: 5px 20px;
+        text-shadow: 2px 2px black;
       }
       .box {
         background-color: ${colors.halfTransparentGray};
@@ -305,22 +376,18 @@ const Home = () => (
         text-align: center;
       	font-size: 36px;
         margin: 75px 0px;
+        text-shadow: 2px 2px black;
       }
       .last_section {
       	font-size: 36px;
         padding: 150px 0px 35px;
+        text-shadow: 2px 2px black;
       }
       .contact-me {
         text-align: center;
         font-size: 18px;
         line-height: 1.5;
-        margin: 0px 15px 120px;
-      }
-      .flex-bw {
-        display: flex;
-        justify-content: space-between;
-        padding: 0px 20px;
-        margin: 0% 9.5% 0% 6%;
+        margin: 30px 15px 240px;
       }
       .signature {
         width: 80%;
