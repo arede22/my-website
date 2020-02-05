@@ -1,7 +1,9 @@
-import React from 'react'
-import Link from 'next/link'
-import Head from 'next/head'
-import Nav from '../src/components/Nav.js'
+import React from 'react';
+import Link from 'next/link';
+import Head from 'next/head';
+import { Nav } from '../src/components';
+import { theme } from '../src/styles';
+const { colors, fonts, fontSizes } = theme;
 
 const links = [
   { href: 'mailto:arede22@berkeley.edu', source: '../static/footer/email' },
@@ -18,15 +20,6 @@ const centerPic = {
   marginRight: 'auto',
   marginLeft: 'auto'
 }
-
-var colors = {
-  transparentBlue: "rgba(129, 207, 224, 0.4)",
-  skyBlue: "rgba(197, 239, 247, 1)",
-  halfTransparentGray: "rgba(166, 166, 166, 0.5)",
-  transparentGray: "rgba(166, 166, 166, 0.3)",
-  lightGray: "#cfcfcf",
-  darkGray: "rgba(74, 72, 71, 1)"
-};
 
 const contactStyle = {
   backgroundColor: colors.transparentBlue,
@@ -65,8 +58,7 @@ const Home = () => (
       <img src="../static/profile.png" alt="This is me!" style={{marginLeft: '41%'}}/>
 
       <div className='welcome-body'>
-        <p>I am a sophomore in UC Berkeley studying Electrical Engineering and Computer Science (EECS) as my major
-        <br /> with concentration on AI and ML and Linguistics as my minor.
+        <p>I am a sophomore in UC Berkeley studying Electrical Engineering and Computer Science (EECS) concentrating in AI & ML and Linguistics as my minor.
         <br /> My areas of interest lie in applied Machine Learning, Natural Language Processing, and Cloud Computing.
         <br /> I am currently seeking software engineering internship positions for summer 2020. </p>
         <center>
@@ -298,6 +290,7 @@ const Home = () => (
       .nav-up {
         top: -60px;
       }
+
       #car {
         border-radius: 5px;
         cursor: pointer;
@@ -322,6 +315,7 @@ const Home = () => (
         transition: 0.3s;
       }
       #boss:hover {opacity: 0.7;}
+
       .modal {
         display: none;
         position: fixed;
@@ -472,32 +466,32 @@ const Home = () => (
       }
       ul {
         color: white;
-        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        font-family: ${fonts.Lucida};
       }
       li {
         color: white;
-        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        font-family: ${fonts.Lucida};
         margin: 5px 0px;
       }
       h1 {
         color: white;
-        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        font-family: ${fonts.Lucida};
       }
       h2 {
         color: white;
-        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        font-family: ${fonts.Lucida};
       }
       h3 {
         color: white;
-        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        font-family: ${fonts.Lucida};
       }
       p {
         color: white;
-        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        font-family: ${fonts.Lucida};
       }
       a {
         color: white;
-        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        font-family: ${fonts.Lucida};
         text-decoration: none;
       }
       a:hover {
