@@ -1,9 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
-import Nav from '../components/nav'
-import Exmodal from '../static/exmod.js'
-import { keyframes } from "styled-components"
+import Nav from '../src/components/Nav.js'
 
 const links = [
   { href: 'mailto:arede22@berkeley.edu', source: '../static/footer/contact-me/email' },
@@ -51,26 +49,25 @@ const Home = () => (
 
       <title>Anika Rede: Software Engineer</title>
 
-      <script type="text/javascript" src="../static/modal.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" />
+      <script async src="../static/nav-up.js" />
+      <script async src="../static/modal.js" />
     </Head>
 
-    <Nav />
+    <header className="nav-down">
+      <Nav />
+    </header>
 
     <span className="intro">
       <center>
         <h1 className='welcome-title'>Hi, I'm Anika Rede. </h1>
       </center>
-      <Exmodal />
-      {/*<img id="profPic" src="../static/profile.png" alt="Anika Rede" style={{marginLeft: "41%"}} />
-
-      <div id="myModal" className="modal">
-        <span className="close">&times;</span>
-        <img className="modal-content" id="img01"/>
-        <div id="caption1"></div>
-      </div> */}
+      <img src="../static/profile.png" alt="This is me!" style={{marginLeft: '41%'}}/>
 
       <div className='welcome-body'>
-        <p>I am a sophomore in UC Berkeley studying EECS (major) and Linguistics (minor). My areas of interest lie in AI, NLP, and cloud computing.
+        <p>I am a sophomore in UC Berkeley studying Electrical Engineering and Computer Science (EECS) as my major
+        <br /> with concentration on AI and ML and Linguistics as my minor.
+        <br /> My areas of interest lie in applied Machine Learning, Natural Language Processing, and Cloud Computing.
         <br /> I am currently seeking software engineering internship positions for summer 2020. </p>
         <center>
           <div className="resume-box">
@@ -90,11 +87,12 @@ const Home = () => (
               <ul>
                 <li> Intro to Computer Science </li>
                 <li> Data Structures & Algorithms </li>
-                <li> Computer Architecture </li>
                 <li> Discrete Mathematics and Probability Theory </li>
-                <li> Designing Information Devices and Systems </li>
-                <li> Optimization Models in Engineering </li>
                 <li> Probability and Random Processes </li>
+                <li> Optimization Models in Engineering </li>
+                <li> (Audited) Natural Language Processing </li>
+                <li> Computer Architecture </li>
+                <li> Designing Information Devices and Systems </li>
               </ul>
             <h3> Minor Coursework </h3>
               <ul>
@@ -103,26 +101,36 @@ const Home = () => (
               </ul>
           </div>
           <div className='box'>
-            <h3> Languages </h3>
+            <h3> Languages/Software Skills </h3>
               <ul className='rows'>
                 <div className='cols'>
-                  <li> Javascript </li>
-                  <li> HTML </li>
-                  <li> CSS </li>
+                  <li> Kotlin </li>
+                  <li> JavaScript </li>
                   <li> Python </li>
+                  <li> PyTorch </li>
+                  <li> C/C++ </li>
+                  <li> AutoCAD </li>
+                  <li> COMSOL </li>
+                  <li> Photoshop </li>
                 </div>
                 <div className='cols'>
-                  <li> Scheme </li>
+                  <li> Swift </li>
+                  <li> HTML/CSS </li>
                   <li> Java </li>
+                  <li> Tensorflow </li>
                   <li> React </li>
-                  <li> C </li>
+                  <li> MATLAB </li>
+                  <li> SolidWorks </li>
                 </div>
               </ul>
             <h3> Skills </h3>
               <ul>
-                <li> Data visualization and simulation softwares (COMSOL, AutoCAD, MATLAB, SolidWorks) </li>
-                <li> EE and CS knowledge and hands-on experience </li>
-                <li> People skills, smooth communication, real personality </li>
+                <li> Data visualization and simulation softwares used practically for research </li>
+                <li> Building software tools for use around offices and within academia </li>
+                <li> Planning and designing engineering systems for real-world use in Engineers Without Borders </li>
+                <li> EE and CS hands-on experience and extending course projects beyond the classroom </li>
+                <li> Mathematical skills to understand in-depth background on Machine Learning processes </li>
+                <li> People skills, smooth communication, & true personality </li>
               </ul>
           </div>
           <div className='box'>
@@ -131,7 +139,8 @@ const Home = () => (
                 <li> Safety app around Berkeley for Cal students </li>
                 <li> Improving on voice-activated car built last semester </li>
                 <li> Learning graphic design and animation software </li>
-                <li> Exploring projects using NLP analysis with AI/ML </li>
+                <li> Contributing to friends' personal projects </li>
+                <li> Exploring beginner projects using NLP analysis with AI/ML </li>
               </ul>
           </div>
         </div>
@@ -142,13 +151,13 @@ const Home = () => (
                 <li> Engineers Without Borders
                   <ul>
                     <li> Panama Team for two semesters where we just finished building a water distribution system for a poorly-funded Panamanian community </li>
-                    <li> Starting new domestic project next semester </li>
+                    <li> Starting new project next semester: hoping for a local project toward helping provide for the homeless in Berkeley/SF areas </li>
                   </ul>
                 </li>
                 <li> Computer Science Kickstart
                   <ul>
                     <li> Intro to computer science week for female pre-freshmen </li>
-                    <li> Participated in the program myself when I entered Berkeley and giving back as a committee member </li>
+                    <li> Participated in the program myself when I entered Berkeley and gave back as a committee member on Industrial Relations </li>
                   </ul>
                 </li>
                 <li> Association of Women in EECS
@@ -161,23 +170,28 @@ const Home = () => (
           <div className='box'>
             <h3> Past work experience </h3>
               <ul>
+                <li> (Computational Linguistics) Research Intern @ICSI (International Computer Science Institute) -- UC-Berkeley, Jan 2020 -- Current
+                  <ul>
+                    <li> Predicting the semantic components from morphologically complex words in polysynthetic languages of Karuk and Yurok </li>
+                  </ul>
+                </li>
                 <li> Software Engineering Intern @Pulse Q&A -- SF, Summer 2019
                   <ul>
                     <li> Limited personnel previously led to outsourcing manual labor </li>
                     <li> Automated internal tools improved efficiency of office (allowed focus on increasing traffic on the service's platform, marketing efforts, and bettering market-fit) </li>
                   </ul>
                 </li>
-                <li> Research Intern @Jadoo Tech -- UC-Berkeley, Feb-Sept 2019
+                <li> (EECS) Research Intern @Jadoo Tech -- UC-Berkeley, Feb-Sept 2019
                   <ul>
                     <li> Conducted research in physics theoretical equations and experiments for start-up in UC-Berkeley </li>
                   </ul>
                 </li>
-                <li> Research Intern @Feng Labs -- CWRU, 2015-2018
+                <li> (EECS) Research Intern @Feng Labs -- CWRU, 2015-2018
                   <ul>
                     <li> Quantified properties of metastatic breast cancer cells using MEMS microsensors </li>
                   </ul>
                 </li>
-                <li> IT Hub Intern @Hathaway Brown-- OH high-school
+                <li> IT Hub Intern @Hathaway Brown -- OH, 2015-2018
                   <ul>
                     <li> Both worked and volunteered at high-school's IT Helpdesk </li>
                   </ul>
@@ -195,14 +209,37 @@ const Home = () => (
           <h3> Class projects and extensions </h3>
             <ul>
               <li> Voice-Activated Car -- Designing Information Devices/Systems Trained with PCA </li>
-                <img src="../static/portfolio/car.png" alt="car" height="40%" width="40%" vspace="10" style={centerPic} />
+                <img id="car" src="../static/portfolio/car.png" alt="car" height="40%" width="40%" vspace="10" style={centerPic} />
+
+                <div id="popCar" className="modal">
+                  <span className="close" onClick="document.getElementById('popCar').style.display='none'">&times;</span>
+                  <img className="modal-content" id="img01" style={{maxWidth: '700px;'}} />
+                </div>
 
               <li> Mock GoogleMaps Berkeley-Localized -- Map Rastering, Autocomplete and Search, and Navigation </li>
-                <img src="../static/portfolio/map.png" alt="map" height="50%" width="50%" vspace="10" style={centerPic} />
+                <img id="map" src="../static/portfolio/map.png" alt="map" height="50%" width="50%" vspace="10" style={centerPic} />
+
+                <div id="popMap" className="modal">
+                  <span className="close" onClick="document.getElementById('popMap').style.display='none'">&times;</span>
+                  <img className="modal-content" id="img02" style={{maxHeight: '500px;'}}/>
+                </div>
+
               <li> Pixel Art Game -- Randomized Room Generation and Increasing Difficulty to Boss Level: </li>
                 <div style={{display: 'flex', justifyContent: 'space-between'}}>
-                  <img src="../static/portfolio/random-room.png" alt="random rooms" height="45%" width="45%" vspace="10" />
-                  <img src="../static/portfolio/boss.png" alt="boss level" height="45%" width="45%" vspace="10" />
+                  <img id='randrooms' src="../static/portfolio/random-room.png" alt="random rooms" height="45%" width="45%" vspace="10" />
+
+                  <div id="popRandrooms" className="modal">
+                    <span className="close" onClick="document.getElementById('popRandrooms').style.display='none'">&times;</span>
+                    <img className="modal-content" id="img03" style={{maxWidth: '700px;'}}/>
+                  </div>
+
+                  <img id='boss' src="../static/portfolio/boss.png" alt="boss level" height="45%" width="45%" vspace="10" />
+
+                  <div id="popBoss" className="modal">
+                    <span className="close" onClick="document.getElementById('popBoss').style.display='none'">&times;</span>
+                    <img className="modal-content" id="img04" style={{maxWidth: '700px;'}}/>
+                  </div>
+
                 </div>
                 <center>
                   <a href='https://www.youtube.com/watch?v=cdlxhQVUIro' target="_blank"> Click here for demo </a>
@@ -252,14 +289,39 @@ const Home = () => (
     </center>
 
     <style jsx>{`
-      #profPic {
+      header {
+        position: fixed;
+        top: 0;
+        transition: top 0.2s ease-in-out;
+        width: 100%;
+      }
+      .nav-up {
+        top: -60px;
+      }
+      #car {
         border-radius: 5px;
         cursor: pointer;
         transition: 0.3s;
       }
-      #profPic:hover {
-        opacity: 0.7;
+      #car:hover {opacity: 0.7;}
+      #map {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
       }
+      #map:hover {opacity: 0.7;}
+      #randrooms {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      #randrooms:hover {opacity: 0.7;}
+      #boss {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      #boss:hover {opacity: 0.7;}
       .modal {
         display: none;
         position: fixed;
@@ -270,28 +332,21 @@ const Home = () => (
         width: 100%;
         height: 100%;
         overflow: auto;
-        background-color: rgb(0, 0, 0);
-        background-color: rgba(0, 0, 0, 0.9);
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.9);
       }
       .modal-content {
         margin: auto;
         display: block;
         width: 80%;
-        max-width: 700px;
-      }
-      #caption1 {
-        margin: auto;
-        display: block;
-        width: 80%;
-        max-width: 700px;
-        text-align: center;
-        color: #ccc;
-        padding: 10px 0;
-        height: 150px;
-      }
-      .modal-content, #caption1 {
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
         animation-name: zoom;
         animation-duration: 0.6s;
+      }
+      @-webkit-keyframes zoom {
+        from {-webkit-transform:scale(0)}
+        to {-webkit-transform:scale(1)}
       }
       @keyframes zoom {
         from {transform:scale(0)}
@@ -306,7 +361,8 @@ const Home = () => (
         font-weight: bold;
         transition: 0.3s;
       }
-      .close:hover, .close:focus {
+      .close:hover,
+      .close:focus {
         color: #bbb;
         text-decoration: none;
         cursor: pointer;
@@ -446,6 +502,9 @@ const Home = () => (
       }
       a:hover {
         color: ${colors.skyBlue};
+      }
+      body {
+        padding-top: 60px;
       }
     `}</style>
   </div>
