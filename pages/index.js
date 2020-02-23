@@ -1,10 +1,14 @@
 import React from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
-import { Nav } from '../src/components';
+import { Nav, Modal, Footer } from '../src/components';
 import { theme } from '../src/styles';
-const { colors, fonts, fontSizes } = theme;
+const { colors, fonts, fontSizes, displays } = theme;
 
+// create react component for nav bar, footer,
+// can FINALLY use flexbox perhaps : calhacks.org/flexbox
+// position: relative; to make B move relative to A and C divs
+// material design, bootstrap, css tricks, mdn web docs
 const links = [
   { href: 'mailto:arede22@berkeley.edu', source: '../static/footer/email' },
   { href: 'https://www.instagram.com/berk_eng_doodler/', source: '../static/footer/insta' },
@@ -14,23 +18,6 @@ const links = [
   link.key = `nav-link-${link.href}-${link.source}`.replace(/[^a-zA-Z0-9]/g, '')
   return link
 })
-
-const centerPic = {
-  display: 'block',
-  marginRight: 'auto',
-  marginLeft: 'auto'
-}
-
-const contactStyle = {
-  backgroundColor: colors.transparentBlue,
-  width: '60%',
-  fontSize: '18px',
-  borderRadius: '15px',
-  paddingTop: '25px',
-  paddingBottom: '25px',
-  paddingRight: '10px',
-  paddingLeft: '10px',
-}
 
 const Home = () => (
   <div className='body-background'>
@@ -201,7 +188,7 @@ const Home = () => (
           <h3> Class projects and extensions </h3>
             <ul>
               <li> Voice-Activated Car -- Designing Information Devices/Systems Trained with PCA </li>
-                <img id="car" src="../static/portfolio/car.png" alt="car" height="40%" width="40%" vspace="10" style={centerPic} />
+                <img id="car" src="../static/portfolio/car.png" alt="car" height="40%" width="40%" vspace="10" style={displays.centerPic} />
 
                 <div id="popCar" className="modal">
                   <span className="close" onClick="document.getElementById('popCar').style.display='none'">&times;</span>
@@ -209,7 +196,7 @@ const Home = () => (
                 </div>
 
               <li> Mock GoogleMaps Berkeley-Localized -- Map Rastering, Autocomplete and Search, and Navigation </li>
-                <img id="map" src="../static/portfolio/map.png" alt="map" height="50%" width="50%" vspace="10" style={centerPic} />
+                <img id="map" src="../static/portfolio/map.png" alt="map" height="50%" width="50%" vspace="10" style={displays.centerPic} />
 
                 <div id="popMap" className="modal">
                   <span className="close" onClick="document.getElementById('popMap').style.display='none'">&times;</span>
@@ -263,22 +250,12 @@ const Home = () => (
     <div className='contact-me'>
       <a name="Contact-Me"></a> <h2 className='last_section'> Contact Me </h2>
       <center>
-        <p style={contactStyle}> Super excited you browsed through my website!
+        <p style={displays.contactStyle}> Super excited you browsed through my website!
         <br /> Please contact me by whatever method might be best though e-mail works best. </p>
       </center>
     </div>
 
-    <center>
-      <footer className="signature">
-        <ul className="contacts">
-          {links.map(({ key, href, source }) => (
-            <li className="contact" key={key}>
-              <a href={href}> <img src={source+'.png'} onMouseOver={e => {e.currentTarget.src = source + '-hover.png'}} onMouseOut={e => {e.currentTarget.src = source + '.png'}} /> </a>
-            </li>
-          ))}
-        </ul>
-      </footer>
-    </center>
+    <Footer />
 
     <style jsx>{`
       header {
@@ -438,24 +415,6 @@ const Home = () => (
         font-size: 18px;
         line-height: 1.5;
         margin: 30px 15px 240px;
-      }
-      .signature {
-        width: 80%;
-        align: center;
-        padding-top: 40px;
-        margin: 25px 0px;
-      }
-      .contact {
-        display: flex;
-        padding: 10px 15px;
-      }
-      .contacts {
-        background-color: ${colors.transparentGray};
-        display: flex;
-        justify-content: space-around;
-        border-top: 3px solid ${colors.lightGray};
-        padding: 10px 25px;
-        margin: 0px 15px 25px;
       }
       .button {
         width: auto;

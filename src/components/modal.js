@@ -1,19 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { theme } from '../styles';
-const { colors, fontSizes, fonts } = theme;
+const { colors, fontSizes, fonts, displays } = theme;
 
-const Modal = ({trigger, img, content, close}) => (
+const Modal = (props) => (
+  const { trigger, img, content, close } = this.props
 
-  <nav>
-    <ul>
-      <li> <a href='/'> <a>Home</a> </a> </li>
-      <li> <a href="#About">About</a> </li>
-      <li> <a href="#Portfolio">Portfolio</a> </li>
-      <li> <a href="#Contact-Me">Contact Me</a> </li>
-      <li> <a href="resume.pdf" target="_blank"> Resume </a> </li>
-    </ul>
-  </nav>
+  <img id="map" src="../static/portfolio/map.png" alt="map" height="50%" width="50%" vspace="10" style={displays.centerPic} />
+
+  <div id="popMap" className="modal">
+    <span className="close" onClick="document.getElementById('popMap').style.display='none'">&times;</span>
+    <img className="modal-content" id="img02" style={{maxHeight: '500px;'}}/>
+  </div>
 );
 Modal.propTypes = {
   trigger: PropTypes.string,

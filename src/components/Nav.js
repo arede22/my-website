@@ -1,6 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+// component did mount for if state or lifecycle required
+// function if not (faster in general)
+
 const Nav = () => (
   <nav>
     <ul>

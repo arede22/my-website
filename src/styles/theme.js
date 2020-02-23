@@ -16,6 +16,26 @@ const theme = {
     a: '10px',
     b: '11px',
     c: '12px'
+  },
+
+  displays: {
+    threeBoxGrid: {},
+    twoBoxGrid: {},
+    centerPic: {
+      display: 'block',
+      marginRight: 'auto',
+      marginLeft: 'auto'
+    },
+    contactStyle: {
+      backgroundColor: "rgba(129, 207, 224, 0.4)",
+      width: '60%',
+      fontSize: '18px',
+      borderRadius: '15px',
+      paddingTop: '25px',
+      paddingBottom: '25px',
+      paddingRight: '10px',
+      paddingLeft: '10px',
+    },
   }
 }
 
