@@ -4,4 +4,4 @@
 2. Created using React framework launched with Nuxt.js
      - Also shows personal portfolio
 
-![Image](../static/profile.png)	
+![Profile](profile.png)
