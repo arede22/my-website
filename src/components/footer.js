@@ -1,6 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { theme } from '../styles';
+import styled, { css } from 'styled-components';
 const { colors, fontSizes, fonts, displays } = theme;
 
 const links = [

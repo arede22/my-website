@@ -4,6 +4,7 @@ import Portfolio from './portfolio';
 import Footer from './footer';
 import Projects from './projects';
 import Work from './work-experience';
+import Header from './header';
 
 export {
   Modal,
@@ -11,5 +12,6 @@ export {
   Portfolio,
   Footer,
   Projects,
-  Work
+  Work,
+  Header
 };

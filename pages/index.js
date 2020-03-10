@@ -1,52 +1,32 @@
 import React from 'react';
 import Link from 'next/link';
-import Head from 'next/head';
-import { Nav, Modal, Footer } from '../src/components';
+import { Nav, Modal, Footer, Header, Projects } from '../src/components';
 import { theme } from '../src/styles';
 const { colors, fonts, fontSizes, displays } = theme;
 
 // can FINALLY use flexbox perhaps : calhacks.org/flexbox
 // position: relative; to make B move relative to A and C divs
 // material design, bootstrap, css tricks, mdn web docs
-const links = [
-  { href: 'mailto:arede22@berkeley.edu', source: '../static/footer/email' },
-  { href: 'https://www.instagram.com/berk_eng_doodler/', source: '../static/footer/insta' },
-  { href: 'https://www.linkedin.com/in/anikarede/', source: '../static/footer/linkedin' },
-  { href: 'https://github.com/arede22', source: '../static/footer/github' }
-].map(link => {
-  link.key = `nav-link-${link.href}-${link.source}`.replace(/[^a-zA-Z0-9]/g, '')
-  return link
-})
 
 const Home = () => (
   <div className='body-background'>
-    <Head>
-      <link rel="apple-touch-icon" sizes="180x180" href="../static/favicon/apple-touch-icon.png"/>
-      <link rel="icon" type="image/png" sizes="32x32" href="../static/favicon/favicon-32x32.png"/>
-      <link rel="icon" type="image/png" sizes="16x16" href="../static/favicon/favicon-16x16.png"/>
-      <link rel="manifest" href="../static/favicon/site.webmanifest"/>
-
-      <title>Anika Rede: Software Engineer </title>
-
-      <script async src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" />
-      <script async src="../static/nav-up.js" />
-      <script async src="../static/modal.js" />
-    </Head>
+    <Header />
 
     <header className="nav-down">
       <Nav />
     </header>
+    <Projects />
 
-    <span className="intro">
+    {/*<span className="intro">
       <center>
         <h1 className='welcome-title'>Hi, I'm Anika Rede.</h1>
       </center>
       <img src="../static/profile.png" alt="This is me!" style={{marginLeft: '41%'}}/>
 
       <div className='welcome-body'>
-        <p>I am a sophomore in UC Berkeley studying Electrical Engineering and Computer Science (EECS) concentrating in AI & ML and Linguistics as my minor.
-        <br /> My areas of interest lie in applied Machine Learning, Natural Language Processing, and Cloud Computing.
-        <br /> I am currently seeking software engineering internship positions for summer 2020. </p>
+        <p>I am a sophomore in UC Berkeley studying Electrical Engineering and Computer Science (EECS)
+        <br /> concentrating in AI & ML with Linguistics as my minor.
+        <br /> My areas of interest lie in ML, NLP, and Cloud Computing. </p>
         <center>
           <div className="resume-box">
             <p> Take a quick peek at my resumé! </p>
@@ -187,7 +167,6 @@ const Home = () => (
           <h3> Class projects and extensions </h3>
             <ul>
               <li> Voice-Activated Car -- Designing Information Devices/Systems Trained with PCA </li>
-                <Modal trigger="car" img="../static/portfolio/car.png" pop="popCar" content="img01" />
                 <img id="car" src="../static/portfolio/car.png" alt="car" height="40%" width="40%" vspace="10" style={displays.centerPic} />
 
                 <div id="popCar" className="modal">
@@ -460,7 +439,8 @@ const Home = () => (
       body {
         padding-top: 60px;
       }
-    `}</style>
+    `}</style>*/}
+
   </div>
 )
 
