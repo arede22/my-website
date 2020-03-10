@@ -5,7 +5,6 @@ import { Nav, Modal, Footer } from '../src/components';
 import { theme } from '../src/styles';
 const { colors, fonts, fontSizes, displays } = theme;
 
-// create react component for nav bar, footer,
 // can FINALLY use flexbox perhaps : calhacks.org/flexbox
 // position: relative; to make B move relative to A and C divs
 // material design, bootstrap, css tricks, mdn web docs
@@ -27,9 +26,9 @@ const Home = () => (
       <link rel="icon" type="image/png" sizes="16x16" href="../static/favicon/favicon-16x16.png"/>
       <link rel="manifest" href="../static/favicon/site.webmanifest"/>
 
-      <title>Anika Rede: Software Engineer</title>
+      <title>Anika Rede: Software Engineer </title>
 
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" />
+      <script async src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" />
       <script async src="../static/nav-up.js" />
       <script async src="../static/modal.js" />
     </Head>
@@ -40,7 +39,7 @@ const Home = () => (
 
     <span className="intro">
       <center>
-        <h1 className='welcome-title'>Hi, I'm Anika Rede. </h1>
+        <h1 className='welcome-title'>Hi, I'm Anika Rede.</h1>
       </center>
       <img src="../static/profile.png" alt="This is me!" style={{marginLeft: '41%'}}/>
 
@@ -188,6 +187,7 @@ const Home = () => (
           <h3> Class projects and extensions </h3>
             <ul>
               <li> Voice-Activated Car -- Designing Information Devices/Systems Trained with PCA </li>
+                <Modal trigger="car" img="../static/portfolio/car.png" pop="popCar" content="img01" />
                 <img id="car" src="../static/portfolio/car.png" alt="car" height="40%" width="40%" vspace="10" style={displays.centerPic} />
 
                 <div id="popCar" className="modal">
@@ -345,7 +345,7 @@ const Home = () => (
       }
       .body-background {
         background: ${colors.darkGray} url('../static/starting-background.png') no-repeat center;
-        background-size: cover;
+        background-size: 100% 100%;
         overflow: auto;
       }
       .welcome-title {
@@ -401,6 +401,7 @@ const Home = () => (
       }
       .section {
         text-align: center;
+        justify-content: center;
       	font-size: 36px;
         margin: 75px 0px;
         text-shadow: 2px 2px black;
