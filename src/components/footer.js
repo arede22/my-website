@@ -1,5 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { theme } from '../styles';
+const { colors, fontSizes, fonts, displays } = theme;
+
 
 // component did mount for if state or lifecycle required
 // function if not (faster in general)
