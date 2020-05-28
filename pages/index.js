@@ -15,9 +15,8 @@ const Home = () => (
     <header className="nav-down">
       <Nav />
     </header>
-    <Projects />
 
-    {/*<span className="intro">
+    <span className="intro">
       <center>
         <h1 className='welcome-title'>Hi, I'm Anika Rede.</h1>
       </center>
@@ -439,7 +438,7 @@ const Home = () => (
       body {
         padding-top: 60px;
       }
-    `}</style>*/}
+    `}</style>
 
   </div>
 )
