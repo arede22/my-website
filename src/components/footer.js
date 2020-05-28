@@ -4,12 +4,12 @@ import styled, { css } from 'styled-components';
 const { colors, fontSizes, fonts, displays } = theme;
 
 const links = [
-  { href: 'mailto:arede22@berkeley.edu', source: '../static/footer/email' },
-  { href: 'https://www.instagram.com/berk_eng_doodler/', source: '../static/footer/insta' },
-  { href: 'https://www.linkedin.com/in/anikarede/', source: '../static/footer/linkedin' },
-  { href: 'https://github.com/arede22', source: '../static/footer/github' }
+  { href: 'mailto:arede22@berkeley.edu', src: '../static/footer/email' },
+  { href: 'https://www.instagram.com/berk_eng_doodler/', src: '../static/footer/insta' },
+  { href: 'https://www.linkedin.com/in/anikarede/', src: '../static/footer/linkedin' },
+  { href: 'https://github.com/arede22', src: '../static/footer/github' }
 ].map(link => {
-  link.key = `nav-link-${link.href}-${link.source}`.replace(/[^a-zA-Z0-9]/g, '')
+  link.key = `nav-link-${link.href}-${link.src}`.replace(/[^a-zA-Z0-9]/g, '')
   return link
 })
 
