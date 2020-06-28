@@ -3,11 +3,13 @@ import { theme } from '../styles';
 import styled, { css } from 'styled-components';
 const { colors, fontSizes, fonts, displays } = theme;
 
+const stat = '../static/footer'
+
 const links = [
-  { href: 'mailto:arede22@berkeley.edu', src: '../static/footer/email' },
-  { href: 'https://www.instagram.com/berk_eng_doodler/', src: '../static/footer/insta' },
-  { href: 'https://www.linkedin.com/in/anikarede/', src: '../static/footer/linkedin' },
-  { href: 'https://github.com/arede22', src: '../static/footer/github' }
+  { href: 'mailto:arede22@berkeley.edu', src: stat + '/email' },
+  { href: 'https://www.instagram.com/berk_eng_doodler/', src: stat + '/insta' },
+  { href: 'https://www.linkedin.com/in/anikarede/', src: stat + '/linkedin' },
+  { href: 'https://github.com/arede22', src: stat + '/github' }
 ].map(link => {
   link.key = `nav-link-${link.href}-${link.src}`.replace(/[^a-zA-Z0-9]/g, '')
   return link
@@ -18,15 +20,16 @@ function Footer() {
     <center>
       <footer className="signature">
         <ul className="contacts">
-          {links.map(({ key, href, source }) => (
+          {links.map(({ key, href, src }) => (
             <li className="contact" key={key}>
-              <a href={href} target="_blank"> <img src={source+'.png'} onMouseOver={e => {e.currentTarget.src = source + '-hover.png'}} onMouseOut={e => {e.currentTarget.src = source + '.png'}} /> </a>
+              <a href={href} target="_blank"> <img src={src+'.png'} onMouseOver={e => {e.currentTarget.src = src + '-hover.png'}} onMouseOut={e => {e.currentTarget.src = src + '.png'}} /> </a>
             </li>
           ))}
         </ul>
-        <p style={{color: 'white'}}>
+        <div> <button style={{color: colors.lightGray, fontSize: fontSizes.lg, fontFamily: fonts.Lucida}}> <a href='/' style={{textDecoration:'none', color: 'black'}}>/\ Top</a> </button> </div>
+        <div> <p style={{color: 'white'}}>
           Made by Anika Rede | <a target="_blank" href="https://github.com/arede22/my-website" style={{color: colors.skyBlue, textDecoration: "none"}}> GitHub </a>
-        </p>
+        </p> </div>
       </footer>
 
       <style jsx>{`

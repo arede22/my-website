@@ -1,9 +1,5 @@
 import React from 'react';
 import Head from 'next/head';
-import styled, { css } from 'styled-components';
-
-// use flexbox
-// position: relative; to make B move relative to A and C divs
 
 const Header = () => (
   <Head>
@@ -18,7 +14,6 @@ const Header = () => (
     <script async src="../../static/nav-up.js" />
     <script async src="../../static/modal.js" />
   </Head>
-
 )
 
-export default Header
+export default Header;

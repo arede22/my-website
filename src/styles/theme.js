@@ -13,9 +13,9 @@ const theme = {
   },
 
   fontSizes: {
-    a: '10px',
-    b: '11px',
-    c: '12px'
+    sm: '10px',
+    med: '11px',
+    lg: '40px'
   },
 
   displays: {

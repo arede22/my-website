@@ -10,7 +10,7 @@ const { colors, fontSizes, fonts, displays } = theme;
 const Nav = () => (
   <nav>
     <ul>
-      <li> <a href='/'> <a>Home</a> </a> </li>
+      <li> <a href='/'>Home</a> </li>
       <li> <a href="#About">About</a> </li>
       <li> <a href="#Portfolio">Portfolio</a> </li>
       <li> <a href="#Contact-Me">Contact Me</a> </li>
