@@ -9,15 +9,6 @@ const { colors, fonts, fontSizes, displays } = theme;
 // can FINALLY use flexbox perhaps : calhacks.org/flexbox
 // position: relative; to make B move relative to A and C divs
 // material design, bootstrap, css tricks, mdn web docs
-const links = [
-  { href: 'mailto:arede22@berkeley.edu', source: '../static/footer/email' },
-  { href: 'https://www.instagram.com/berk_eng_doodler/', source: '../static/footer/insta' },
-  { href: 'https://www.linkedin.com/in/anikarede/', source: '../static/footer/linkedin' },
-  { href: 'https://github.com/arede22', source: '../static/footer/github' }
-].map(link => {
-  link.key = `nav-link-${link.href}-${link.source}`.replace(/[^a-zA-Z0-9]/g, '')
-  return link
-})
 
 const Home = () => (
   <div className='body-background'>

@@ -1,13 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
-
-const StyledWrapper = styled.div`
-  display: block;
-  &:after {
-    content: '';
-  }
-`
 
 const Portfolio = ({ data }) => (
 
@@ -19,8 +11,5 @@ const Portfolio = ({ data }) => (
     <li> <a href="resume.pdf" target="_blank"> Resume </a> </li>
   </ul>
 )
-Portfolio.propTypes = {
-  data: PropTypes.number,
-};
 
 export default Portfolio
