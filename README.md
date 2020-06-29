@@ -24,4 +24,4 @@ Updating project:
     Page loader
     Make compatible with different media
 
-<center> ![Profile Image](./static/3-color-trace.png) </center>
+<div align=”center”> ![Profile Image](./static/3-color-trace.png) </div>
