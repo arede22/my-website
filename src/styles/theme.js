@@ -34,6 +34,6 @@ const theme = {
       paddingLeft: '10px',
     },
   }
-}
+};
 
 export default theme;

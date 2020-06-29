@@ -11,9 +11,9 @@ const Header = () => (
     <title>Anika Rede: Software Engineer </title>
 
     <script async src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" />
-    <script async src="../../static/nav-up.js" />
-    <script async src="../../static/modal.js" />
+    <script async src="../../static/scripts/nav-up.js" />
+    <script async src="../../static/scripts/modal.js" />
   </Head>
-)
+);
 
 export default Header;

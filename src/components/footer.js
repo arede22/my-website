@@ -51,7 +51,6 @@ const Link = styled.a`
   text-decoration: none;
 `;
 
-
 function Footer() {
   return (
     <StyledWrapper>
@@ -83,6 +82,6 @@ function Footer() {
       `}</style>
     </StyledWrapper>
   )
-}
+};
 
 export default Footer;

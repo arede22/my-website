@@ -5,6 +5,6 @@ const colors = {
     transparentGray: "rgba(166, 166, 166, 0.3)",
     lightGray: "#cfcfcf",
     darkGray: "rgba(74, 72, 71, 1)"
-}
+};
 
 export default colors;

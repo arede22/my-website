@@ -5,7 +5,7 @@ const { colors, fontSizes, fonts, displays } = theme;
 
 function handleClick(pop) {
   document.getElementById(pop).style.display='none';
-}
+};
 
 function Modal(props) {
 
@@ -21,4 +21,4 @@ function Modal(props) {
   )
 };
 
-export default Modal
+export default Modal;

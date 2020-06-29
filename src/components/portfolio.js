@@ -17,6 +17,6 @@ const Portfolio = ({ data }) => (
     <li> <a href="#Contact-Me">Contact Me</a> </li>
     <li> <a href="resume.pdf" target="_blank"> Resume </a> </li>
   </ul>
-)
+);
 
-export default Portfolio
+export default Portfolio;

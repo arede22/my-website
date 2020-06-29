@@ -13,6 +13,6 @@ const Projects = () => (
     <div className="b" style={{position: "relative", backgroundColor: "green", height: "100px", width: "100px", left: "25px", top: "20px"}}>
     </div>
   </div>
-)
+);
 
-export default Projects
+export default Projects;
