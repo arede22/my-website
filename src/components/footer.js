@@ -18,6 +18,8 @@ const links = ref.map(link => {
 const StyledWrapper = styled.div`
   margin: auto;
   align: center;
+  display: flex;
+  justify-content: center;
 `;
 
 const FooterStyle = styled.footer`
@@ -63,8 +65,8 @@ function Footer() {
           ))}
         </ULWrapper>
         <StyledWrapper>
-          <Button>
-            <Link href='/' style={{color: 'black'}}>/\ Top </Link>
+          <Button id="scrolltop">
+            <p style={{color: 'black'}}>/\ Top </p>
           </Button>
         </StyledWrapper>
         <StyledWrapper>

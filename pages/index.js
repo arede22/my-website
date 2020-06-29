@@ -10,9 +10,10 @@ const { colors, fonts, fontSizes, displays } = theme;
 
 const Home = () => (
   <div className='body-background'>
-    {/*<Header />
+    <Header />
+    <div style={{height: '700px', color: 'green'}}> </div>
 
-    <header className="nav-down">
+    {/*<header className="nav-down">
       <Nav />
     </header>
 
