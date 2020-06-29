@@ -6,7 +6,7 @@ const { colors, fontSizes, fonts, displays } = theme;
 // use flexbox
 // position: relative; to make B move relative to A and C divs
 
-const Projects = () => (
+const Project = () => (
   <div>
     <div class="a" style={{position: "absolute", backgroundColor: "pink", height: "100px", width: "100px"}}>
     </div>
@@ -15,4 +15,4 @@ const Projects = () => (
   </div>
 );
 
-export default Projects;
+export default Project;
