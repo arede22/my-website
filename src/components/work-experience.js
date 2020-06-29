@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { theme } from '../styles';
 const { colors, fontSizes, fonts, displays } = theme;
 // position: relative; to make B move relative to A and C divs

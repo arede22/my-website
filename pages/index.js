@@ -10,7 +10,7 @@ const { colors, fonts, fontSizes, displays } = theme;
 
 const Home = () => (
   <div className='body-background'>
-    <Header />
+    {/*<Header />
 
     <header className="nav-down">
       <Nav />
@@ -231,7 +231,7 @@ const Home = () => (
         <p style={displays.contactStyle}> Super excited you browsed through my website!
         <br /> Please contact me by whatever method might be best though e-mail works best. </p>
       </center>
-    </div>
+    </div>*/}
 
     <Footer />
 

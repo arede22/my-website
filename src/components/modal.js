@@ -1,6 +1,6 @@
 import React from 'react';
 import { theme } from '../styles';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 const { colors, fontSizes, fonts, displays } = theme;
 
 function handleClick(pop) {

@@ -19,12 +19,9 @@ const theme = {
   },
 
   displays: {
-    threeBoxGrid: {},
-    twoBoxGrid: {},
     centerPic: {
       display: 'block',
-      marginRight: 'auto',
-      marginLeft: 'auto'
+      margin: '0 auto',
     },
     contactStyle: {
       backgroundColor: "rgba(129, 207, 224, 0.4)",
