@@ -11,13 +11,8 @@ const { colors, fonts, fontSizes, displays } = theme;
 const Home = () => (
   <div className='body-background'>
     <Header />
-    <div style={{height: '700px', color: 'green'}}> </div>
-
-    {/*<header className="nav-down">
-      <Nav />
-    </header>
-
-    <span className="intro">
+    <Nav />
+ {/*<span className="intro">
       <center>
         <h1 className='welcome-title'>Hi, I'm Anika Rede.</h1>
       </center>
@@ -237,6 +232,11 @@ const Home = () => (
     <Footer />
 
     <style jsx>{`
+      :global(body) {
+        margin: 0;
+        font-family: ${fonts.Lucida};
+        background-color: ${colors.bodyBackground};
+      }
       header {
         position: fixed;
         top: 0;

@@ -7,50 +7,58 @@ const { colors, fontSizes, fonts, displays } = theme;
 // component did mount for if state or lifecycle required
 // function if not (faster in general)
 
+const NavWrapper = styled.header`
+  position: fixed;
+  top: 0;
+  transition: top 0.2s ease-in-out;
+  width: 100%;
+`;
+
+const StyledNav = styled.nav`
+  text-align: center;
+  padding: 10px 0px;
+  background-color: ${colors.black};
+`;
+
+const ULWrapper = styled.ul`
+  margin: 0;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+`;
+
+const LIWrapper = styled.li`
+  display: flex;
+  padding: 6px 8px;
+`;
+
+const Link = styled.a`
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+`;
+
 const Nav = () => (
-  <nav>
-    <ul>
-      <li> <a href='/'>Home</a> </li>
-      <li> <a href="#About">About</a> </li>
-      <li> <a href="#Portfolio">Portfolio</a> </li>
-      <li> <a href="#Contact-Me">Contact Me</a> </li>
-      <li> <a href="resume.pdf" target="_blank"> Resume </a> </li>
-    </ul>
+  <NavWrapper className="nav-down">
+    <StyledNav>
+      <ULWrapper>
+        <LIWrapper> <Link href='/'>Home</Link> </LIWrapper>
+        <LIWrapper> <Link href="#About">About</Link> </LIWrapper>
+        <LIWrapper> <Link href="#Portfolio">Portfolio</Link> </LIWrapper>
+        <LIWrapper> <Link href="#Contact-Me">Contact Me</Link> </LIWrapper>
+        <LIWrapper> <Link href="resume.pdf" target="_blank"> Resume </Link> </LIWrapper>
+      </ULWrapper>
+    </StyledNav>
 
     <style jsx>{`
-      :global(body) {
-        margin: 0;
-        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-        background-color: #1a1a1a;
-      }
-      nav {
-        text-align: center;
-        padding: 10px 0px;
-        background-color: #303030;
-      }
-      ul {
-        margin: 0;
-        display: flex;
-        text-align: center;
-        justify-content: space-around;
-      }
       nav > ul {
         padding: 4px 16px;
-      }
-      li {
-        display: flex;
-        padding: 6px 8px;
-      }
-      a {
-        color: white;
-        text-decoration: none;
-        font-size: 17px;
       }
       a:hover {
         color: rgba(129, 207, 224, 1);
       }
     `}</style>
-  </nav>
+  </NavWrapper>
 );
 
 export default Nav;

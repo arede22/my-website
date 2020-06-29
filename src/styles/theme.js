@@ -5,7 +5,9 @@ const theme = {
     halfTransparentGray: "rgba(166, 166, 166, 0.5)",
     transparentGray: "rgba(166, 166, 166, 0.3)",
     lightGray: "#cfcfcf",
-    darkGray: "rgba(74, 72, 71, 1)"
+    darkGray: "rgba(74, 72, 71, 1)",
+    black: "#303030",
+    bodyBackground: "#1a1a1a",
   },
 
   fonts: {
