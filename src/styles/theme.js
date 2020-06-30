@@ -1,4 +1,4 @@
-// colors, fonts, fontSizes, displays used throughout the project
+// colors, fonts, fontSizes used throughout the project
 const theme = {
   colors: {
 
@@ -30,25 +30,6 @@ const theme = {
 
   },
 
-  displays: {
-
-    centerPic: {
-      display: 'block',
-      margin: '0 auto',
-    },
-
-    contactStyle: {
-      backgroundColor: "rgba(129, 207, 224, 0.4)",
-      width: '60%',
-      fontSize: '18px',
-      borderRadius: '15px',
-      paddingTop: '25px',
-      paddingBottom: '25px',
-      paddingRight: '10px',
-      paddingLeft: '10px',
-    },
-
-  }
 };
 
 // export

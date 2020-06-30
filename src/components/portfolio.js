@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { theme } from '../styles';
-const { colors, fontSizes, fonts, displays } = theme;
+const { colors, fonts } = theme;
 // Coursework
 // Skills
 // Softwares and comfortability
@@ -17,35 +17,78 @@ const H2Style = styled.h2`
   font-size: 36px;
   margin: 75px 0px;
   text-shadow: 2px 2px black;
+  color: white;
+  font-family: ${fonts.Lucida};
+`;
+const H3Style = styled.h3`
+  color: white;
+  font-family: ${fonts.Lucida};
+`;
+const TwoGrid = styled.div`
+  display: grid;
+  grid-template-columns: 610px 610px;
+  grid-gap: 20px;
+  overflow-x: auto;
+  margin: 0px 60px;
+`;
+const Box = styled.div`
+  background-color: ${colors.halfTransparentGray};
+  border-radius: 5px;
+  overflow-x: auto;
+  padding: 7.5px 20px 20px;
+`;
+const ULWrapper = styled.ul`
+  color: white;
+  font-family: ${fonts.Lucida};
+`;
+const LIWrapper = styled.li`
+  color: white;
+  font-family: ${fonts.Lucida};
+  margin: 5px 0px;
+`;
+const PStyle = styled.p`
+  color: white;
+  font-family: ${fonts.Lucida};
+  text-align: center;
+`;
+const Link = styled.a`
+  color: white;
+  font-family: ${fonts.Lucida};
+  text-decoration: none;
+
+  &:hover {
+    color: ${colors.skyBlue};
+  }
+
 `;
 
 // export main component
 export default function Portfolio() {
   return (
 
-    <span className="portfolio">
+    <StyledWrapper>
       <a name="Portfolio"></a> <H2Style> Portfolio </H2Style>
-      <div className="two-boxes">
-        <div className='box'>
-          <h3> Class projects and extensions </h3>
-            <ul>
-              <li> Voice-Activated Car -- Designing Information Devices/Systems Trained with PCA </li>
-                <img id="car" src="../static/portfolio/car.png" alt="car" height="40%" width="40%" vspace="10" style={displays.centerPic} />
+      <TwoGrid>
+        <Box>
+          <H3Style> Class projects and extensions </H3Style>
+            <ULWrapper>
+              <LIWrapper> Voice-Activated Car -- Designing Information Devices/Systems Trained with PCA </LIWrapper>
+                <img id="car" src="../static/portfolio/car.png" alt="car" height="40%" width="40%" vspace="10" style={{display: 'block', margin: '0 auto'}} />
 
                 <div id="popCar" className="modal">
                   <span className="close" onClick="document.getElementById('popCar').style.display='none'">&times;</span>
                   <img className="modal-content" id="img01" style={{maxWidth: '700px;'}} />
                 </div>
 
-              <li> Mock GoogleMaps Berkeley-Localized -- Map Rastering, Autocomplete and Search, and Navigation </li>
-                <img id="map" src="../static/portfolio/map.png" alt="map" height="50%" width="50%" vspace="10" style={displays.centerPic} />
+              <LIWrapper> Mock GoogleMaps Berkeley-Localized -- Map Rastering, Autocomplete and Search, and Navigation </LIWrapper>
+                <img id="map" src="../static/portfolio/map.png" alt="map" height="50%" width="50%" vspace="10" style={{display: 'block', margin: '0 auto'}} />
 
                 <div id="popMap" className="modal">
                   <span className="close" onClick="document.getElementById('popMap').style.display='none'">&times;</span>
                   <img className="modal-content" id="img02" style={{maxHeight: '500px;'}}/>
                 </div>
 
-              <li> Pixel Art Game -- Randomized Room Generation and Increasing Difficulty to Boss Level: </li>
+              <LIWrapper> Pixel Art Game -- Randomized Room Generation and Increasing Difficulty to Boss Level: </LIWrapper>
                 <div style={{display: 'flex', justifyContent: 'space-between'}}>
                   <img id='randrooms' src="../static/portfolio/random-room.png" alt="random rooms" height="45%" width="45%" vspace="10" />
 
@@ -62,31 +105,31 @@ export default function Portfolio() {
                   </div>
 
                 </div>
-                <center>
-                  <a href='https://www.youtube.com/watch?v=cdlxhQVUIro' target="_blank"> Click here for demo </a>
-                </center>
-            </ul>
-        </div>
-        <div className='box'>
-          <h3> Personal projects </h3>
-            <ul>
-              <li> Current projects:
-                <ul>
-                  <li> Personal website built with React and Next.js, allows playing with graphic design </li>
-                  <li> Safety app around Berkeley for students built using Swift </li>
-                  <li> Learning graphic design via Photoshop, Illustrator, and Maya </li>
-                </ul>
-              </li>
-              <li> Projected projects:
-                <ul>
-                  <li> Modifying voice-activated car built last semester to be hooked up to bluetooth and Wi-Fi </li>
-                  <li> Original pixel art Gameboy game built from scratch </li>
-                  <li> Image analysis to interpret and translate language with NLP using AI/ML </li>
-                </ul>
-              </li>
-            </ul>
-        </div>
-      </div>
+                <PStyle>
+                  <Link href='https://www.youtube.com/watch?v=cdlxhQVUIro' target="_blank"> Click here for demo </Link>
+                </PStyle>
+            </ULWrapper>
+        </Box>
+        <Box>
+          <H3Style> Personal projects </H3Style>
+            <ULWrapper>
+              <LIWrapper> Current projects:
+                <ULWrapper>
+                  <LIWrapper> Personal website built with React and Next.js, allows playing with graphic design </LIWrapper>
+                  <LIWrapper> Safety app around Berkeley for students built using Swift </LIWrapper>
+                  <LIWrapper> Learning graphic design via Photoshop, Illustrator, and Maya </LIWrapper>
+                </ULWrapper>
+              </LIWrapper>
+              <LIWrapper> Projected projects:
+                <ULWrapper>
+                  <LIWrapper> Modifying voice-activated car built last semester to be hooked up to bluetooth and Wi-Fi </LIWrapper>
+                  <LIWrapper> Original pixel art Gameboy game built from scratch </LIWrapper>
+                  <LIWrapper> Image analysis to interpret and translate language with NLP using AI/ML </LIWrapper>
+                </ULWrapper>
+              </LIWrapper>
+            </ULWrapper>
+        </Box>
+      </TwoGrid>
 
       <style jsx>{`
         #car {
@@ -164,79 +207,9 @@ export default function Portfolio() {
             width: 100%;
           }
         }
-        .box {
-          background-color: ${colors.halfTransparentGray};
-          border-radius: 5px;
-          overflow-x: auto;
-          padding: 7.5px 20px 20px;
-        }
-        .rows {
-          display: flex;
-        }
-        .cols {
-          flex: 50%;
-        }
-        .three-boxes {
-          display: grid;
-          grid-template-columns: 400px 400px 400px;
-          grid-gap: 20px;
-          overflow-x: auto;
-          margin: 0px 60px 20px;
-        }
-        .two-boxes {
-          display: grid;
-          grid-template-columns: 610px 610px;
-          grid-gap: 20px;
-          overflow-x: auto;
-          margin: 0px 60px;
-        }
-        .button {
-          width: auto;
-          border: 1px solid white;
-          border-radius: 6px;
-          padding: 10px;
-          margin-bottom: 10px;
-        }
-        ul {
-          color: white;
-          font-family: ${fonts.Lucida};
-        }
-        li {
-          color: white;
-          font-family: ${fonts.Lucida};
-          margin: 5px 0px;
-        }
-        h1 {
-          color: white;
-          font-family: ${fonts.Lucida};
-        }
-        h2 {
-          color: white;
-          font-family: ${fonts.Lucida};
-        }
-        h3 {
-          color: white;
-          font-family: ${fonts.Lucida};
-        }
-        p {
-          color: white;
-          font-family: ${fonts.Lucida};
-        }
-        a {
-          color: white;
-          font-family: ${fonts.Lucida};
-          text-decoration: none;
-        }
-        a:hover {
-          color: ${colors.skyBlue};
-        }
-        body {
-          padding-top: 60px;
-        }
-
       `} </style>
 
-    </span>
+    </StyledWrapper>
 
   )
 };

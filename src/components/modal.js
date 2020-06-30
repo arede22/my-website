@@ -1,7 +1,7 @@
 import React from 'react';
 import { theme } from '../styles';
 import styled from 'styled-components';
-const { colors, fontSizes, fonts, displays } = theme;
+const { colors, fonts } = theme;
 
 // script?
 function handleClick(pop) {
@@ -12,7 +12,7 @@ function handleClick(pop) {
 export default function Modal({ props }) {
   return (
     <div>
-      <img id={this.props.trigger} src={this.props.img} alt={this.props.trigger} height="50%" width="50%" vspace="10" style={displays.centerPic} />
+      <img id={this.props.trigger} src={this.props.img} alt={this.props.trigger} height="50%" width="50%" vspace="10" style={{display: 'block', margin: '0 auto'}} />
 
       <div id={this.props.pop} className="modal">
         <span className="close" onClick="handleClick({this.props.pop})">&times;</span>
