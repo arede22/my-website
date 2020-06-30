@@ -48,10 +48,10 @@ const LIWrapper = styled.li`
   color: white;
   font-family: ${fonts.Lucida};
 `;
-const Rows = styled.(ULWrapper)`
+const Rows = styled(ULWrapper)`
   display: flex;
 `;
-const Cols = styled.(StyledWrapper)`
+const Cols = styled(StyledWrapper)`
   flex: 50%;
 `;
 

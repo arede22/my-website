@@ -80,13 +80,14 @@ export default function Portfolio() {
               <LIWrapper> Voice-Activated Car -- Designing Information Devices/Systems Trained with PCA </LIWrapper>
 
                 <Modal trigger="car" img="../static/portfolio/car.png" pop="popCar" content="img01" />
-                <img id="car" src="../static/portfolio/car.png" alt="car" height="40%" width="40%" vspace="10" style={{display: 'block', margin: '0 auto'}} />
+                {/*<div>
+                  <img id="car" src="../static/portfolio/car.png" alt="car" height="40%" width="40%" vspace="10" style={{display: 'block', margin: '0 auto'}} />
 
-                <div id="popCar" className="modal">
-                  <span className="close" onClick="document.getElementById('popCar').style.display='none'">&times;</span>
-                  <img className="modal-content" id="img01" style={{maxWidth: '700px;'}} />
-                </div>
-
+                  <div id="popCar" className="modal">
+                    <span className="close" onClick="document.getElementById('popCar').style.display='none'">&times;</span>
+                    <img className="modal-content" id="img01" style={{maxWidth: '700px;'}} />
+                  </div>
+                </div>*/}
   {/*            <LIWrapper> Mock GoogleMaps Berkeley-Localized -- Map Rastering, Autocomplete and Search, and Navigation </LIWrapper>
                 <img id="map" src="../static/portfolio/map.png" alt="map" height="50%" width="50%" vspace="10" style={{display: 'block', margin: '0 auto'}} />
 
@@ -118,7 +119,7 @@ export default function Portfolio() {
   */}          </ULWrapper>
         </Box>
         <Box>
-          <H3Style> Personal projects </H3Style>
+          <H3Style> Personal Projects </H3Style>
 {/*            <ULWrapper>
               <LIWrapper> Current projects:
                 <ULWrapper>
@@ -138,7 +139,7 @@ export default function Portfolio() {
 */}        </Box>
       </TwoGrid>
 
-      <style jsx>{`
+      {/*<style jsx>{`
         #car {
           border-radius: 5px;
           cursor: pointer;
@@ -215,7 +216,7 @@ export default function Portfolio() {
           }
         }
       `} </style>
-
+*/}
     </StyledWrapper>
 
   )

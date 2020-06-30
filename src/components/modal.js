@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { theme } from '../styles';
 import styled, { keyframes } from 'styled-components';
 const { colors, fonts } = theme;
@@ -71,21 +71,29 @@ const CloseHandler = styled.span`
 
 `;
 
-// script?
-function handleClick(pop) {
-  document.getElementById(pop).style.display='none';
-};
-
 // export main component
-export default function Modal({ props }) {
+export default function Modal(props) {
+  // state
+  const [popUp, setPopUp] = useState(
+    false
+  );
+
   return (
     <StyledWrapper>
-      <ImgStyle id={this.props.trigger} src={this.props.img} alt={this.props.trigger} height="50%" width="50%" vspace="10" />
+      <a onClick={() => setPopUp(!popUp)}> <ImgStyle id={props.trigger} src={props.img} alt={props.trigger} height="50%" width="50%" vspace="10" /> </a>
 
-      <ModalStyle id={this.props.pop}>
-        <CloseHandler onClick={ handleClick({this.props.pop}) }>&times;</CloseHandler>
-        <ContentStyle id={this.props.content} />
-      </ModalStyle>
+      {popUp &&
+        <ModalStyle id={props.pop}>
+          <CloseHandler onClick={ handleClick(props.pop) }>&times;</CloseHandler>
+          <ContentStyle id={props.content} />
+        </ModalStyle>
+      }
+      {/*
+      <div style={{backgroundColor: 'pink', height: '30px', width: '30px'}}> </div>
+      <ModalStyle id={props.pop}>
+        <CloseHandler onClick={ handleClick(props.pop) }>&times;</CloseHandler>
+        <ContentStyle id={props.content} />
+      </ModalStyle>*/}
     </StyledWrapper>
   )
 };

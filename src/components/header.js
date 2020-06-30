@@ -1,11 +1,5 @@
 import React from 'react';
 import Head from 'next/head';
-import styled from 'styled-components';
-
-// styles and wrappers
-const StyledWrapper = styled.div`
-  margin: 0;
-`;
 
 // export main component
 export default function Header() {
@@ -18,10 +12,10 @@ export default function Header() {
 
       <title>Anika Rede: Software Engineer</title>
 
-      <script async src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" />
-      <script async src="../../static/scripts/nav-up.js" />
-      <script async src="../../static/scripts/modal.js" />
-      <script async src="../../static/scripts/scroll-top.js" />
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript" />
+      <script src="../../static/scripts/nav-up.js" type="text/javascript" />
+      <script src="../../static/scripts/modal-loader.js" type="text/javascript" />
+      <script src="../../static/scripts/scroll-top.js" type="text/javascript" />
     </Head>
   )
 };

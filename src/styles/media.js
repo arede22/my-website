@@ -9,7 +9,7 @@ const size = {
   laptopL: '1440px',
   desktop: '2560px'
 }
-export const device = {
+export const media = {
   mobileS: `(min-width: ${size.mobileS})`,
   mobileM: `(min-width: ${size.mobileM})`,
   mobileL: `(min-width: ${size.mobileL})`,
