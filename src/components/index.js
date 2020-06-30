@@ -1,13 +1,13 @@
 // final main components seen on website
-export { default as Header } from './Header';
-export { default as Nav } from './Nav';
-export { default as Welcome } from './Welcome';
-export { default as Intro } from './Intro';
-export { default as Portfolio } from './Portfolio';
-export { default as ContactMe } from './ContactMe';
-export { default as Footer } from './Footer';
+export { default as Header } from './header';
+export { default as Nav } from './nav';
+export { default as Welcome } from './welcome';
+export { default as Intro } from './intro';
+export { default as Portfolio } from './portfolio';
+export { default as ContactMe } from './contactMe';
+export { default as Footer } from './footer';
 
 // sub-components used in the above ones
-export { default as Modal } from './Modal';
-export { default as WorkExperience } from './WorkExperience';
-export { default as Project } from './Project';
+export { default as Modal } from './modal';
+export { default as WorkExperience } from './workExperience';
+export { default as Project } from './project';

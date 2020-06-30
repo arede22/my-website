@@ -3,6 +3,16 @@
 1. Demonstrating HTML/CSS and JavaScript skills
 2. Created using React.js application launched with Next for static website
 
+Recently changed:
+  Added some React components for abstractions (look up state, props, and lifecycle if needed at that time)
+  Updated jsx to wrappers/styles in styled-components to ready for abstractions
+Yet to-do:
+  Need to update jsx to wrappers/styles for modals so need to figure out modals
+  Add in a 'scroll to top' button
+  Sketch out a good scheme for design, now that abstractions are done everything should go smoother
+  Graphic design for background
+  Animation gif for loading screen
+
 Updating project:
   1. Launch via CLI:
     npm run build

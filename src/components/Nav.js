@@ -34,7 +34,6 @@ const Link = styled.a`
 
   &:hover {
     color: ${colors.seaBlue};
-
   }
 `;
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { theme } from '../styles';
+import Modal from './modal';
 const { colors, fonts } = theme;
 // Coursework
 // Skills
@@ -77,6 +78,8 @@ export default function Portfolio() {
           <H3Style> Class projects and extensions </H3Style>
             <ULWrapper>
               <LIWrapper> Voice-Activated Car -- Designing Information Devices/Systems Trained with PCA </LIWrapper>
+
+                <Modal trigger="car" img="../static/portfolio/car.png" pop="popCar" content="img01" />
                 <img id="car" src="../static/portfolio/car.png" alt="car" height="40%" width="40%" vspace="10" style={{display: 'block', margin: '0 auto'}} />
 
                 <div id="popCar" className="modal">
@@ -84,7 +87,7 @@ export default function Portfolio() {
                   <img className="modal-content" id="img01" style={{maxWidth: '700px;'}} />
                 </div>
 
-              <LIWrapper> Mock GoogleMaps Berkeley-Localized -- Map Rastering, Autocomplete and Search, and Navigation </LIWrapper>
+  {/*            <LIWrapper> Mock GoogleMaps Berkeley-Localized -- Map Rastering, Autocomplete and Search, and Navigation </LIWrapper>
                 <img id="map" src="../static/portfolio/map.png" alt="map" height="50%" width="50%" vspace="10" style={{display: 'block', margin: '0 auto'}} />
 
                 <div id="popMap" className="modal">
@@ -112,11 +115,11 @@ export default function Portfolio() {
                 <PStyle>
                   <Link href='https://www.youtube.com/watch?v=cdlxhQVUIro' target="_blank"> Click here for demo </Link>
                 </PStyle>
-            </ULWrapper>
+  */}          </ULWrapper>
         </Box>
         <Box>
           <H3Style> Personal projects </H3Style>
-            <ULWrapper>
+{/*            <ULWrapper>
               <LIWrapper> Current projects:
                 <ULWrapper>
                   <LIWrapper> Personal website built with React and Next.js, allows playing with graphic design </LIWrapper>
@@ -132,7 +135,7 @@ export default function Portfolio() {
                 </ULWrapper>
               </LIWrapper>
             </ULWrapper>
-        </Box>
+*/}        </Box>
       </TwoGrid>
 
       <style jsx>{`

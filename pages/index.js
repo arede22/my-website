@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
-import { Header, Nav, Welcome, Intro, Portfolio, ContactMe, Footer } from '../src/components';
-import { theme } from '../src/styles';
+import { Header, Nav, Welcome, Intro, Portfolio, ContactMe, Footer } from '../src/components'; // '@components'
+import { theme } from '../src/styles'; // '@styles'
 const { colors, fonts } = theme;
 
 // styles and wrappers
@@ -28,9 +28,9 @@ export default function Home() {
 
         <Nav />
 
-        <Welcome />
+{/*        <Welcome />
         <Intro />
-        <Portfolio />
+*/}        <Portfolio />
         <ContactMe />
 
         <Footer />

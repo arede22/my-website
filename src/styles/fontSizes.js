@@ -1,5 +1,5 @@
 // taken from theme, may use this instead for imports
-const fontsizes = {
+const fontSizes = {
   sm: '10px',
   med: '11px',
   lg: '40px',
@@ -8,4 +8,4 @@ const fontsizes = {
 };
 
 // export
-export default fontsizes;
+export default fontSizes;
