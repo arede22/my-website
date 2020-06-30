@@ -36,6 +36,9 @@ export default function Home() {
           background-color: ${colors.bodyBackground};
           padding-top: 60px;
         }
+        .nav-up {
+          top: -66px;
+        }
       `}</style>
 
     </StyledWrapper>

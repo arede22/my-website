@@ -2,8 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { theme } from '../styles';
 const { colors, fontSizes, fonts, displays } = theme;
-// component did mount for if state or lifecycle required
-// function if not (faster in general)
 
 // styles and wrappers
 const NavWrapper = styled.header`
@@ -43,7 +41,7 @@ const Link = styled.a`
 // export main component
 export default function Nav() {
   return (
-    <NavWrapper className="nav-down" id="navbar">
+    <NavWrapper id="navbar">
       <StyledNav>
         <ULWrapper>
           <LIWrapper> <Link href='/'>Home</Link> </LIWrapper>
@@ -53,12 +51,6 @@ export default function Nav() {
           <LIWrapper> <Link href="resume.pdf" target="_blank"> Resume </Link> </LIWrapper>
         </ULWrapper>
       </StyledNav>
-
-      <style jsx>{`
-        .nav-up {
-          top: -66px;
-        }
-      `} </style>
     </NavWrapper>
   )
 };
