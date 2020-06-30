@@ -1,6 +1,7 @@
 import React from 'react';
 import { Header, Nav, Welcome, Intro, Portfolio, ContactMe, Footer } from '../src/components';
 import { theme } from '../src/styles';
+import styled from 'styled-components';
 const { colors, fonts, fontSizes, displays } = theme;
 // flexbox: calhacks.org/flexbox
 // position: relative; --> to make B move relative to A and C divs
@@ -13,74 +14,73 @@ const StyledWrapper = styled.div`
   overflow: auto;
 `;
 
-// main component
-const Home = () => (
-  <StyledWrapper>
-    <Header />
+// export main component
+export default function Home() {
+  return (
+    <StyledWrapper>
+      <Header />
 
-    <Nav />
+      <Nav />
 
-    <Welcome />
-    <Intro />
-    <Portfolio />
-    <ContactMe />
+      <Welcome />
+      <Intro />
+      <Portfolio />
+      <ContactMe />
 
-    <Footer />
+      <Footer />
 
-    <style jsx>{`
-      :global(body) {
-        margin: 0;
-        font-family: ${fonts.Lucida};
-        background-color: ${colors.bodyBackground};
-        padding-top: 60px;
-      }
-      .nav-up {
-        top: -60px;
-      }
-      .button {
-        width: auto;
-        border: 1px solid white;
-        border-radius: 6px;
-        padding: 10px;
-        margin-bottom: 10px;
-      }
-      ul {
-        color: white;
-        font-family: ${fonts.Lucida};
-      }
-      li {
-        color: white;
-        font-family: ${fonts.Lucida};
-        margin: 5px 0px;
-      }
-      h1 {
-        color: white;
-        font-family: ${fonts.Lucida};
-      }
-      h2 {
-        color: white;
-        font-family: ${fonts.Lucida};
-      }
-      h3 {
-        color: white;
-        font-family: ${fonts.Lucida};
-      }
-      p {
-        color: white;
-        font-family: ${fonts.Lucida};
-      }
-      a {
-        color: white;
-        font-family: ${fonts.Lucida};
-        text-decoration: none;
-      }
-      a:hover {
-        color: ${colors.skyBlue};
-      }
-    `}</style>
+      <style jsx>{`
+        :global(body) {
+          margin: 0;
+          font-family: ${fonts.Lucida};
+          background-color: ${colors.bodyBackground};
+          padding-top: 60px;
+        }
+        .nav-up {
+          top: -60px;
+        }
+        .button {
+          width: auto;
+          border: 1px solid white;
+          border-radius: 6px;
+          padding: 10px;
+          margin-bottom: 10px;
+        }
+        ul {
+          color: white;
+          font-family: ${fonts.Lucida};
+        }
+        li {
+          color: white;
+          font-family: ${fonts.Lucida};
+          margin: 5px 0px;
+        }
+        h1 {
+          color: white;
+          font-family: ${fonts.Lucida};
+        }
+        h2 {
+          color: white;
+          font-family: ${fonts.Lucida};
+        }
+        h3 {
+          color: white;
+          font-family: ${fonts.Lucida};
+        }
+        p {
+          color: white;
+          font-family: ${fonts.Lucida};
+        }
+        a {
+          color: white;
+          font-family: ${fonts.Lucida};
+          text-decoration: none;
+        }
+        a:hover {
+          color: ${colors.skyBlue};
+        }
+      `}</style>
 
-  </StyledWrapper>
-);
-
-// export
-export default Home;
+    </StyledWrapper>
+  )
+};
