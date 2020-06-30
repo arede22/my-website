@@ -1,13 +1,15 @@
 import React from 'react';
 import Head from 'next/head';
+import styled from 'styled-components';
 
 // styles and wrappers
 const StyledWrapper = styled.div`
   margin: 0;
 `;
 
-// main component
-const Header = () => (
+// export main component
+export default function Header() {
+  return (
     <Head>
       <link rel="apple-touch-icon" sizes="180x180" href="../../static/favicon/apple-touch-icon.png"/>
       <link rel="icon" type="image/png" sizes="32x32" href="../../static/favicon/favicon-32x32.png"/>
@@ -21,7 +23,5 @@ const Header = () => (
       <script async src="../../static/scripts/modal.js" />
       <script async src="../../static/scripts/scroll-top.js" />
     </Head>
-);
-
-// export
-export default Header;
+  )
+};

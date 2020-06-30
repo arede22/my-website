@@ -9,10 +9,9 @@ const StyledWrapper = styled.div`
   margin: 0;
 `;
 
-// main component
-const WorkExperience = () => (
-  <p> hi </p>
-);
-
-// export
-export default WorkExperience;
+// export main component
+export default function WorkExperience() {
+  return (
+    <p> hi </p>
+  )
+};

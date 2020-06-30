@@ -2,7 +2,7 @@
 var didScroll;
 var lastScrollTop = 0;
 var delta = 5;
-var navbarHeight = $('header').outerHeight();
+var navbarHeight = $('header').outerHeight(); // #id
 
 $(window).scroll(function(event){
     didScroll = true;
@@ -22,10 +22,10 @@ function hasScrolled() {
         return;
 
     if (st > lastScrollTop && st > navbarHeight){
-        $('header').removeClass('nav-down').addClass('nav-up');
+        $('header').removeClass('nav-down').addClass('nav-up'); // #id
     } else {
         if(st + $(window).height() < $(document).height()) {
-            $('header').removeClass('nav-up').addClass('nav-down');
+            $('header').removeClass('nav-up').addClass('nav-down'); // #id
         }
     }
 

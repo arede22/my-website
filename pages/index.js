@@ -1,7 +1,7 @@
 import React from 'react';
+import styled from 'styled-components';
 import { Header, Nav, Welcome, Intro, Portfolio, ContactMe, Footer } from '../src/components';
 import { theme } from '../src/styles';
-import styled from 'styled-components';
 const { colors, fonts, fontSizes, displays } = theme;
 // flexbox: calhacks.org/flexbox
 // position: relative; --> to make B move relative to A and C divs

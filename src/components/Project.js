@@ -11,14 +11,13 @@ const StyledWrapper = styled.div`
 `;
 
 // main component
-const Project = () => (
-  <div>
-    <div class="a" style={{position: "absolute", backgroundColor: "pink", height: "100px", width: "100px"}}>
+export default function Project() {
+  return (
+    <div>
+      <div class="a" style={{position: "absolute", backgroundColor: "pink", height: "100px", width: "100px"}}>
+      </div>
+      <div className="b" style={{position: "relative", backgroundColor: "green", height: "100px", width: "100px", left: "25px", top: "20px"}}>
+      </div>
     </div>
-    <div className="b" style={{position: "relative", backgroundColor: "green", height: "100px", width: "100px", left: "25px", top: "20px"}}>
-    </div>
-  </div>
-);
-
-// export
-export default Project;
+  )
+};

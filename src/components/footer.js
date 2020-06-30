@@ -49,37 +49,36 @@ const Link = styled.a`
   text-decoration: none;
 `;
 
-// main component
-const Footer = () => (
-  <StyledWrapper>
-    <FooterStyle>
-      <ULWrapper>
-        {links.map(({ key, href, src }) => (
-          <LIWrapper key={key}>
-            <a href={href} target="_blank"> <img src={src + '.png'} onMouseOver={e => {e.currentTarget.src = src + '-hover.png'}} onMouseOut={e => {e.currentTarget.src = src + '.png'}} /> </a>
-          </LIWrapper>
-        ))}
-      </ULWrapper>
+// export main component
+  export default function Footer() {
+    return (
       <StyledWrapper>
-        <Button id="scrolltop">
-          <p style={{color: 'black'}}>/\ Top </p>
-        </Button>
-      </StyledWrapper>
-      <StyledWrapper>
-        <p style={{color: 'white'}}>
-          Made by Anika Rede | <Link target="_blank" href="https://github.com/arede22/my-website" style={{color: colors.skyBlue}}> GitHub </Link>
-        </p>
-      </StyledWrapper>
-    </FooterStyle>
+        <FooterStyle>
+          <ULWrapper>
+            {links.map(({ key, href, src }) => (
+              <LIWrapper key={key}>
+                <a href={href} target="_blank"> <img src={src + '.png'} onMouseOver={e => {e.currentTarget.src = src + '-hover.png'}} onMouseOut={e => {e.currentTarget.src = src + '.png'}} /> </a>
+              </LIWrapper>
+            ))}
+          </ULWrapper>
+          <StyledWrapper>
+            <Button id="scrolltop">
+              <p style={{color: 'black'}}>/\ Top </p>
+            </Button>
+          </StyledWrapper>
+          <StyledWrapper>
+            <p style={{color: 'white'}}>
+              Made by Anika Rede | <Link target="_blank" href="https://github.com/arede22/my-website" style={{color: colors.skyBlue}}> GitHub </Link>
+            </p>
+          </StyledWrapper>
+        </FooterStyle>
 
-    <style jsx>{`
-      p {
-        text-align: center;
-        font-family: ${fonts.Lucida}
-      }
-    `}</style>
-  </StyledWrapper>
-)
-
-// export
-export default Footer;
+        <style jsx>{`
+          p {
+            text-align: center;
+            font-family: ${fonts.Lucida}
+          }
+        `}</style>
+    </StyledWrapper>
+  )
+};

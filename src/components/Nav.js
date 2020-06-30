@@ -33,72 +33,68 @@ const Link = styled.a`
   font-size: 17px;
 `;
 
-// main component
-const Nav = () => (
-  <NavWrapper className="nav-down">
-    <StyledNav>
-      <ULWrapper>
-        <LIWrapper> <Link href='/'>Home</Link> </LIWrapper>
-        <LIWrapper> <Link href="#About">About</Link> </LIWrapper>
-        <LIWrapper> <Link href="#Portfolio">Portfolio</Link> </LIWrapper>
-        <LIWrapper> <Link href="#Contact-Me">Contact Me</Link> </LIWrapper>
-        <LIWrapper> <Link href="resume.pdf" target="_blank"> Resume </Link> </LIWrapper>
-      </ULWrapper>
-    </StyledNav>
+// export main component
+export default function Nav() {
+  return (
+    <NavWrapper className="nav-down">
+      <StyledNav>
+        <ULWrapper>
+          <LIWrapper> <Link href='/'>Home</Link> </LIWrapper>
+          <LIWrapper> <Link href="#About">About</Link> </LIWrapper>
+          <LIWrapper> <Link href="#Portfolio">Portfolio</Link> </LIWrapper>
+          <LIWrapper> <Link href="#Contact-Me">Contact Me</Link> </LIWrapper>
+          <LIWrapper> <Link href="resume.pdf" target="_blank"> Resume </Link> </LIWrapper>
+        </ULWrapper>
+      </StyledNav>
 
-    <style jsx>{`
-      nav > ul {
-        padding: 4px 16px;
-      }
-      a:hover {
-        color: rgba(129, 207, 224, 1);
-      }
-      .button {
-        width: auto;
-        border: 1px solid white;
-        border-radius: 6px;
-        padding: 10px;
-        margin-bottom: 10px;
-      }
-      ul {
-        color: white;
-        font-family: ${fonts.Lucida};
-      }
-      li {
-        color: white;
-        font-family: ${fonts.Lucida};
-        margin: 5px 0px;
-      }
-      h1 {
-        color: white;
-        font-family: ${fonts.Lucida};
-      }
-      h2 {
-        color: white;
-        font-family: ${fonts.Lucida};
-      }
-      h3 {
-        color: white;
-        font-family: ${fonts.Lucida};
-      }
-      p {
-        color: white;
-        font-family: ${fonts.Lucida};
-      }
-      a {
-        color: white;
-        font-family: ${fonts.Lucida};
-        text-decoration: none;
-      }
-      a:hover {
-        color: ${colors.skyBlue};
-      }
-      body {
-        padding-top: 60px;
-      }
-    `}</style>
-  </NavWrapper>
-);
-
-// export
-export default Nav;
+      <style jsx>{`
+        nav > ul {
+          padding: 4px 16px;
+        }
+        a:hover {
+          color: rgba(129, 207, 224, 1);
+        }
+        .button {
+          width: auto;
+          border: 1px solid white;
+          border-radius: 6px;
+          padding: 10px;
+          margin-bottom: 10px;
+        }
+        ul {
+          color: white;
+          font-family: ${fonts.Lucida};
+        }
+        li {
+          color: white;
+          font-family: ${fonts.Lucida};
+          margin: 5px 0px;
+        }
+        h1 {
+          color: white;
+          font-family: ${fonts.Lucida};
+        }
+        h2 {
+          color: white;
+          font-family: ${fonts.Lucida};
+        }
+        h3 {
+          color: white;
+          font-family: ${fonts.Lucida};
+        }
+        p {
+          color: white;
+          font-family: ${fonts.Lucida};
+        }
+        a {
+          color: white;
+          font-family: ${fonts.Lucida};
+          text-decoration: none;
+        }
+        body {
+          padding-top: 60px;
+        }
+      `}</style>
+    </NavWrapper>
+  )
+};
