@@ -57,16 +57,11 @@ const CloseHandler = styled.span`
   font-weight: bold;
   transition: 0.3s;
 
-  &:hover {
+  &:hover,&:focus {
     color: ${colors.medGray};
     text-decoration: none;
     cursor: pointer;
   },
-  &:focus {
-    color: ${colors.medGray};
-    text-decoration: none;
-    cursor: pointer;
-  }
 
 `;
 
@@ -83,7 +78,7 @@ export default function Modal(props) {
 
       {popUp &&
         <ModalStyle id={props.pop}>
-          <CloseHandler onClick={ handleClick(props.pop) }>&times;</CloseHandler>
+          <CloseHandler onClick={ () => setPopUp(!popUp) }>&times;</CloseHandler>
           <ContentStyle id={props.content} />
         </ModalStyle>
       }

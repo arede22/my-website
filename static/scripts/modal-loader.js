@@ -1,66 +1,75 @@
 // image modals i.e. popups script
 $(document).ready(function () {
-  var popCar = document.getElementById('popCar');
+  console.log('start');
 
-  var car = document.getElementById('car');
-  var img01 = document.getElementById("img01");
-  car.onclick = function(){
-      popCar.style.display = "block";
-      img01.src = this.src;
-      img01.alt = this.alt;
-  }
+  try {
+    var popCar = document.getElementById('popCar');
 
-  var span0 = document.getElementsByClassName("close")[0];
+    var car = document.getElementById('car');
+    var img01 = document.getElementById("img01");
+    car.onclick = function(){
+        popCar.style.display = "block";
+        img01.src = this.src;
+        img01.alt = this.alt;
+    }
 
-  span0.onclick = function() {
-    popCar.style.display = "none";
-  }
+    var span0 = document.getElementsByClassName("close")[0];
 
-  var popMap = document.getElementById('popMap');
+    span0.onclick = function() {
+      popCar.style.display = "none";
+    }
 
-  var map = document.getElementById('map');
-  var img02 = document.getElementById("img02");
-  map.onclick = function(){
-      popMap.style.display = "block";
-      img02.src = this.src;
-      img02.alt = this.alt;
-  }
+    // repeats
+    var popMap = document.getElementById('popMap');
 
-  var span1 = document.getElementsByClassName("close")[1];
+    var map = document.getElementById('map');
+    var img02 = document.getElementById("img02");
+    map.onclick = function(){
+        popMap.style.display = "block";
+        img02.src = this.src;
+        img02.alt = this.alt;
+    }
 
-  span1.onclick = function() {
-    popMap.style.display = "none";
-  }
+    var span1 = document.getElementsByClassName("close")[1];
 
-  var popRandrooms = document.getElementById('popRandrooms');
+    span1.onclick = function() {
+      popMap.style.display = "none";
+    }
 
-  var randrooms = document.getElementById('randrooms');
-  var img03 = document.getElementById("img03");
-  randrooms.onclick = function(){
-      popRandrooms.style.display = "block";
-      img03.src = this.src;
-      img03.alt = this.alt;
-  }
+    // repeats
+    var popRandrooms = document.getElementById('popRandrooms');
 
-  var span2 = document.getElementsByClassName("close")[2];
+    var randrooms = document.getElementById('randrooms');
+    var img03 = document.getElementById("img03");
+    randrooms.onclick = function(){
+        popRandrooms.style.display = "block";
+        img03.src = this.src;
+        img03.alt = this.alt;
+    }
 
-  span2.onclick = function() {
-    popRandrooms.style.display = "none";
-  }
+    var span2 = document.getElementsByClassName("close")[2];
 
-  var popBoss = document.getElementById('popBoss');
+    span2.onclick = function() {
+      popRandrooms.style.display = "none";
+    }
 
-  var boss = document.getElementById('boss');
-  var img04 = document.getElementById("img04");
-  boss.onclick = function(){
-      popBoss.style.display = "block";
-      img04.src = this.src;
-      img04.alt = this.alt;
-  }
+    // repeats
+    var popBoss = document.getElementById('popBoss');
 
-  var span3 = document.getElementsByClassName("close")[3];
+    var boss = document.getElementById('boss');
+    var img04 = document.getElementById("img04");
+    boss.onclick = function(){
+        popBoss.style.display = "block";
+        img04.src = this.src;
+        img04.alt = this.alt;
+    }
 
-  span3.onclick = function() {
-    popBoss.style.display = "none";
+    var span3 = document.getElementsByClassName("close")[3];
+
+    span3.onclick = function() {
+      popBoss.style.display = "none";
+    }
+  } catch(e) {
+    console.log(e);
   }
 });
