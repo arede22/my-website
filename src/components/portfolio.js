@@ -7,6 +7,10 @@ const { colors, fonts } = theme;
 // Softwares and comfortability
 // Currently exploring pet projects
 
+// flexbox: calhacks.org/flexbox
+// position: relative; --> to make B move relative to A and C divs
+// material design, bootstrap, css tricks, mdn web docs
+
 // styles and wrappers
 const StyledWrapper = styled.div`
   margin: 0;

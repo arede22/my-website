@@ -7,7 +7,7 @@ const { colors, fonts } = theme;
 const NavWrapper = styled.header`
   position: fixed;
   top: 0;
-  transition: top 0.2s ease-in-out;
+  transition: top 0.3s ease-in-out;
   width: 100%;
 `;
 const StyledNav = styled.nav`

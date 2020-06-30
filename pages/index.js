@@ -3,9 +3,6 @@ import styled, { createGlobalStyle } from 'styled-components';
 import { Header, Nav, Welcome, Intro, Portfolio, ContactMe, Footer } from '../src/components';
 import { theme } from '../src/styles';
 const { colors, fonts } = theme;
-// flexbox: calhacks.org/flexbox
-// position: relative; --> to make B move relative to A and C divs
-// material design, bootstrap, css tricks, mdn web docs
 
 // styles and wrappers
 const GlobalStyle = createGlobalStyle`
