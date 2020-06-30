@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { theme } from '../styles';
-const { colors, fonts } = theme;
+const { colors, fonts, fontSizes } = theme;
 
 // styles and wrappers
 const StyledWrapper = styled.div`
@@ -15,7 +15,7 @@ const H1Style = styled.h1`
   width: 50%;
   border-radius: 8px;
   text-align: center;
-  font-size: 48px;
+  font-size: ${fontSizes.lg};
   padding: 30px 5px;
   margin: 110px 15px 30px;
   text-shadow: 2px 2px black;
@@ -27,7 +27,7 @@ const ImgStyle = styled.img`
 `;
 const WelcomeStyle = styled.div`
   text-align: center;
-  font-size: 16px;
+  font-size: ${fontSizes.sm1};
   line-height: 1.5;
   margin: 5px 20px;
   text-shadow: 2px 2px black;
@@ -36,7 +36,7 @@ const ResumeBox = styled.div`
   background-color: ${colors.transparentBlue};
   width: 25%;
   border-radius: 15px;
-  font-size: 18px;
+  font-size: ${fontSizes.sm3};
   padding: 2.5px 10px 30px;
   margin: 20px 20px 30px;
 `;

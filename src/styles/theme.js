@@ -8,11 +8,14 @@ const theme = {
 
     halfTransparentGray: "rgba(166, 166, 166, 0.5)",
     transparentGray: "rgba(166, 166, 166, 0.3)",
+    lightestGray: "#f1f1f1",
     lightGray: "#cfcfcf",
+    medGray: "#bbb",
     darkGray: "rgba(74, 72, 71, 1)",
 
     bodyBackground: "#1a1a1a",
     black: "#303030",
+    transparentBlack: "rgba(0,0,0,0.9)",
 
   },
 
@@ -24,9 +27,12 @@ const theme = {
 
   fontSizes: {
 
-    sm: '10px',
-    med: '11px',
-    lg: '40px'
+    sm1: '16px',
+    sm2: '17px',
+    sm3: '18px',
+    med1: '36px',
+    med2: '40px',
+    lg: '48px'
 
   },
 

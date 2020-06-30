@@ -1,19 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
 import { theme } from '../styles';
-const { colors, fonts } = theme;
+const { colors, fonts, fontSizes } = theme;
 
 // styles and wrappers
 const StyledWrapper = styled.div`
   text-align: center;
-  font-size: 18px;
+  font-size: ${fontSizes.sm3};
   line-height: 1.5;
   margin: 30px 15px 240px;
 `;
 const H2Style = styled.h2`
-  font-size: 36px;
+  font-size: ${fontSizes.med1};
   padding: 150px 0px 35px;
   text-shadow: 2px 2px black;
+  color: white;
+  font-family: ${fonts.Lucida};
 `;
 const PStyle = styled.p`
   text-align: center;

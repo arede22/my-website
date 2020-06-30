@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { theme } from '../styles';
-const { colors, fonts } = theme;
+const { colors, fonts, fontSizes } = theme;
 
 // styles and wrappers
 const StyledWrapper = styled.div`
@@ -10,7 +10,7 @@ const StyledWrapper = styled.div`
 const H2Style = styled.h2`
   text-align: center;
   justify-content: center;
-  font-size: 36px;
+  font-size: ${fontSizes.med1};
   margin: 75px 0px;
   text-shadow: 2px 2px black;
   color: white;

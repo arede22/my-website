@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { theme } from '../styles';
 import Modal from './modal';
-const { colors, fonts } = theme;
+const { colors, fonts, fontSizes } = theme;
 // Coursework
 // Skills
 // Softwares and comfortability
@@ -19,7 +19,7 @@ const StyledWrapper = styled.div`
 const H2Style = styled.h2`
   text-align: center;
   justify-content: center;
-  font-size: 36px;
+  font-size: ${fontSizes.med1};
   margin: 75px 0px;
   text-shadow: 2px 2px black;
   color: white;
@@ -175,8 +175,7 @@ export default function Portfolio() {
           width: 100%;
           height: 100%;
           overflow: auto;
-          background-color: rgb(0,0,0);
-          background-color: rgba(0,0,0,0.9);
+          background-color: ${colors.transparentBlack};
         }
         .modal-content {
           margin: auto;
@@ -199,14 +198,14 @@ export default function Portfolio() {
           position: absolute;
           top: 15px;
           right: 35px;
-          color: #f1f1f1;
-          font-size: 40px;
+          color: ${colors.lightestGray};
+          font-size: ${fontSizes.med2};
           font-weight: bold;
           transition: 0.3s;
         }
         .close:hover,
         .close:focus {
-          color: #bbb;
+          color: ${colors.medGray};
           text-decoration: none;
           cursor: pointer;
         }

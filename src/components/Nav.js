@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { theme } from '../styles';
-const { colors, fonts } = theme;
+const { colors, fonts, fontSizes } = theme;
 
 // styles and wrappers
 const NavWrapper = styled.header`
@@ -29,7 +29,7 @@ const LIWrapper = styled.li`
 const Link = styled.a`
   color: white;
   text-decoration: none;
-  font-size: 17px;
+  font-size: ${fontSizes.sm2};
   font-family: ${fonts.Lucida};
 
   &:hover {

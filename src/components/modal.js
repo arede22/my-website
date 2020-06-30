@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { theme } from '../styles';
 import styled, { keyframes } from 'styled-components';
-const { colors, fonts } = theme;
+const { colors, fonts, fontSizes } = theme;
 // flexbox: calhacks.org/flexbox
 // position: relative; --> to make B move relative to A and C divs
 // material design, bootstrap, css tricks, mdn web docs
@@ -33,8 +33,7 @@ const ModalStyle = styled.div`
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.9);
+  background-color: ${colors.transparentBlack};
 `;
 const ContentStyle = styled.img`
   margin: auto;
@@ -53,18 +52,18 @@ const CloseHandler = styled.span`
   position: absolute;
   top: 15px;
   right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
+  color: ${colors.lightestGray};
+  font-size: ${fontSizes.med2};
   font-weight: bold;
   transition: 0.3s;
 
   &:hover {
-    color: #bbb;
+    color: ${colors.medGray};
     text-decoration: none;
     cursor: pointer;
   },
   &:focus {
-    color: #bbb;
+    color: ${colors.medGray};
     text-decoration: none;
     cursor: pointer;
   }
@@ -89,11 +88,15 @@ export default function Modal(props) {
         </ModalStyle>
       }
       {/*
+        Filler
       <div style={{backgroundColor: 'pink', height: '30px', width: '30px'}}> </div>
+
+        Content
       <ModalStyle id={props.pop}>
         <CloseHandler onClick={ handleClick(props.pop) }>&times;</CloseHandler>
         <ContentStyle id={props.content} />
-      </ModalStyle>*/}
+      </ModalStyle>
+      */}
     </StyledWrapper>
   )
 };
