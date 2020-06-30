@@ -2,11 +2,34 @@
 var didScroll;
 var lastScrollTop = 0;
 var delta = 5;
-var navbarHeight = $('header').outerHeight(); // #id
+var navbarHeight = $('#navbar').outerHeight();
+console.log(navbarHeight);
 
 $(window).scroll(function(event){
     didScroll = true;
 });
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    var diff = Math.abs(lastScrollTop - st)
+    console.log(diff);
+
+    if(diff <= delta)
+        return;
+
+    if (st > lastScrollTop && st > navbarHeight){
+        $('#navbar').removeClass('nav-down').addClass('nav-up');
+        console.log('case1')
+    } else {
+        if(st + $(window).height() < $(document).height()) {
+            $('#navbar').removeClass('nav-up').addClass('nav-down');
+            console.log('case2')
+        }
+        console.log('case3')
+    }
+
+    lastScrollTop = st;
+}
 
 setInterval(function() {
     if (didScroll) {
@@ -14,20 +37,3 @@ setInterval(function() {
         didScroll = false;
     }
 }, 250);
-
-function hasScrolled() {
-    var st = $(this).scrollTop();
-
-    if(Math.abs(lastScrollTop - st) <= delta)
-        return;
-
-    if (st > lastScrollTop && st > navbarHeight){
-        $('header').removeClass('nav-down').addClass('nav-up'); // #id
-    } else {
-        if(st + $(window).height() < $(document).height()) {
-            $('header').removeClass('nav-up').addClass('nav-down'); // #id
-        }
-    }
-
-    lastScrollTop = st;
-}

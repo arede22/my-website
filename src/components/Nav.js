@@ -22,6 +22,7 @@ const ULWrapper = styled.ul`
   display: flex;
   text-align: center;
   justify-content: space-around;
+  padding: 4px 16px;
 `;
 const LIWrapper = styled.li`
   display: flex;
@@ -31,12 +32,18 @@ const Link = styled.a`
   color: white;
   text-decoration: none;
   font-size: 17px;
+  font-family: ${fonts.Lucida};
+
+  &:hover {
+    color: ${colors.seaBlue};
+
+  }
 `;
 
 // export main component
 export default function Nav() {
   return (
-    <NavWrapper className="nav-down">
+    <NavWrapper className="nav-down" id="navbar">
       <StyledNav>
         <ULWrapper>
           <LIWrapper> <Link href='/'>Home</Link> </LIWrapper>
@@ -48,53 +55,10 @@ export default function Nav() {
       </StyledNav>
 
       <style jsx>{`
-        nav > ul {
-          padding: 4px 16px;
+        .nav-up {
+          top: -66px;
         }
-        a:hover {
-          color: rgba(129, 207, 224, 1);
-        }
-        .button {
-          width: auto;
-          border: 1px solid white;
-          border-radius: 6px;
-          padding: 10px;
-          margin-bottom: 10px;
-        }
-        ul {
-          color: white;
-          font-family: ${fonts.Lucida};
-        }
-        li {
-          color: white;
-          font-family: ${fonts.Lucida};
-          margin: 5px 0px;
-        }
-        h1 {
-          color: white;
-          font-family: ${fonts.Lucida};
-        }
-        h2 {
-          color: white;
-          font-family: ${fonts.Lucida};
-        }
-        h3 {
-          color: white;
-          font-family: ${fonts.Lucida};
-        }
-        p {
-          color: white;
-          font-family: ${fonts.Lucida};
-        }
-        a {
-          color: white;
-          font-family: ${fonts.Lucida};
-          text-decoration: none;
-        }
-        body {
-          padding-top: 60px;
-        }
-      `}</style>
+      `} </style>
     </NavWrapper>
   )
 };
