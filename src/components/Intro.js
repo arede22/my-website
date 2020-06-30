@@ -1,222 +1,186 @@
 import React from 'react';
 import styled from 'styled-components';
 import { theme } from '../styles';
-const { colors, fontSizes, fonts, displays } = theme;
+const { colors, fonts } = theme;
 
 // styles and wrappers
 const StyledWrapper = styled.div`
   margin: 0;
 `;
+const H2Style = styled.h2`
+  text-align: center;
+  justify-content: center;
+  font-size: 36px;
+  margin: 75px 0px;
+  text-shadow: 2px 2px black;
+  color: white;
+  font-family: ${fonts.Lucida};
+`;
+const H3Style = styled.h3`
+  color: white;
+  font-family: ${fonts.Lucida};
+`;
+const ThreeGrid = styled.div`
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-gap: 20px;
+  overflow-x: auto;
+  margin: 0px 60px 20px;
+`;
+const TwoGrid = styled.div`
+  display: grid;
+  grid-template-columns: 610px 610px;
+  grid-gap: 20px;
+  overflow-x: auto;
+  margin: 0px 60px;
+`;
+const Box = styled.div`
+  background-color: ${colors.halfTransparentGray};
+  border-radius: 5px;
+  overflow-x: auto;
+  padding: 7.5px 20px 20px;
+`;
+const ULWrapper = styled.ul`
+  color: white;
+  font-family: ${fonts.Lucida};
+`;
+const LIWrapper = styled.li`
+  color: white;
+  font-family: ${fonts.Lucida};
+`;
+const Rows = styled.(ULWrapper)`
+  display: flex;
+`;
+const Cols = styled.(StyledWrapper)`
+  flex: 50%;
+`;
 
 // export main component
 export default function Intro() {
   return (
-    <span className="about">
-      <a name="About"></a> <h2 className='section'>About</h2>
-      <div>
-        <div className='three-boxes'>
-          <div className='box'>
-            <h3> Major Coursework </h3>
-              <ul>
-                <li> Intro to Computer Science </li>
-                <li> Data Structures & Algorithms </li>
-                <li> Discrete Mathematics and Probability Theory </li>
-                <li> Probability and Random Processes </li>
-                <li> Optimization Models in Engineering </li>
-                <li> (Audited) Natural Language Processing </li>
-                <li> Computer Architecture </li>
-                <li> Designing Information Devices and Systems </li>
-              </ul>
-            <h3> Minor Coursework </h3>
-              <ul>
-                <li> Intro to Linguistics </li>
-                <li> Intro to Syntax and Semantics </li>
-              </ul>
-          </div>
-          <div className='box'>
-            <h3> Languages/Software Skills </h3>
-              <ul className='rows'>
-                <div className='cols'>
-                  <li> Kotlin </li>
-                  <li> JavaScript </li>
-                  <li> Python </li>
-                  <li> PyTorch </li>
-                  <li> C/C++ </li>
-                  <li> AutoCAD </li>
-                  <li> COMSOL </li>
-                  <li> Photoshop </li>
-                </div>
-                <div className='cols'>
-                  <li> Swift </li>
-                  <li> HTML/CSS </li>
-                  <li> Java </li>
-                  <li> Tensorflow </li>
-                  <li> React </li>
-                  <li> MATLAB </li>
-                  <li> SolidWorks </li>
-                </div>
-              </ul>
-            <h3> Skills </h3>
-              <ul>
-                <li> Data visualization and simulation softwares used practically for research </li>
-                <li> Building software tools for use around offices and within academia </li>
-                <li> Planning and designing engineering systems for real-world use in Engineers Without Borders </li>
-                <li> EE and CS hands-on experience and extending course projects beyond the classroom </li>
-                <li> Mathematical skills to understand in-depth background on Machine Learning processes </li>
-                <li> People skills, smooth communication, & true personality </li>
-              </ul>
-          </div>
-          <div className='box'>
-            <h3> Exploring pet projects (more below) </h3>
-              <ul>
-                <li> Safety app around Berkeley for Cal students </li>
-                <li> Improving on voice-activated car built last semester </li>
-                <li> Learning graphic design and animation software </li>
-                <li> Contributing to friends' personal projects </li>
-                <li> Exploring beginner projects using NLP analysis with AI/ML </li>
-              </ul>
-          </div>
-        </div>
-        <div className='two-boxes'>
-          <div className='box'>
-            <h3> Clubs </h3>
-              <ul>
-                <li> Engineers Without Borders
-                  <ul>
-                    <li> Panama Team for two semesters where we just finished building a water distribution system for a poorly-funded Panamanian community </li>
-                    <li> Starting new project next semester: hoping for a local project toward helping provide for the homeless in Berkeley/SF areas </li>
-                  </ul>
-                </li>
-                <li> Computer Science Kickstart
-                  <ul>
-                    <li> Intro to computer science week for female pre-freshmen </li>
-                    <li> Participated in the program myself when I entered Berkeley and gave back as a committee member on Industrial Relations </li>
-                  </ul>
-                </li>
-                <li> Association of Women in EECS
-                  <ul>
-                    <li> Networking events with industry professionals and professors coming in to talk woman-to-woman how to succeed in the tech world </li>
-                  </ul>
-                </li>
-              </ul>
-          </div>
-          <div className='box'>
-            <h3> Past work experience </h3>
-              <ul>
-                <li> (Computational Linguistics) Research Intern @ICSI (International Computer Science Institute) -- UC-Berkeley, Jan 2020 -- Current
-                  <ul>
-                    <li> Predicting the semantic components from morphologically complex words in polysynthetic languages of Karuk and Yurok </li>
-                  </ul>
-                </li>
-                <li> Software Engineering Intern @Pulse Q&A -- SF, Summer 2019
-                  <ul>
-                    <li> Limited personnel previously led to outsourcing manual labor </li>
-                    <li> Automated internal tools improved efficiency of office (allowed focus on increasing traffic on the service's platform, marketing efforts, and bettering market-fit) </li>
-                  </ul>
-                </li>
-                <li> (EECS) Research Intern @Jadoo Tech -- UC-Berkeley, Feb-Sept 2019
-                  <ul>
-                    <li> Conducted research in physics theoretical equations and experiments for start-up in UC-Berkeley </li>
-                  </ul>
-                </li>
-                <li> (EECS) Research Intern @Feng Labs -- CWRU, 2015-2018
-                  <ul>
-                    <li> Quantified properties of metastatic breast cancer cells using MEMS microsensors </li>
-                  </ul>
-                </li>
-                <li> IT Hub Intern @Hathaway Brown -- OH, 2015-2018
-                  <ul>
-                    <li> Both worked and volunteered at high-school's IT Helpdesk </li>
-                  </ul>
-                </li>
-              </ul>
-          </div>
-        </div>
-      </div>
-
-      <style jsx> {`
-        .section {
-          text-align: center;
-          justify-content: center;
-        	font-size: 36px;
-          margin: 75px 0px;
-          text-shadow: 2px 2px black;
-        }
-        .box {
-          background-color: ${colors.halfTransparentGray};
-          border-radius: 5px;
-          overflow-x: auto;
-          padding: 7.5px 20px 20px;
-        }
-        .rows {
-          display: flex;
-        }
-        .cols {
-          flex: 50%;
-        }
-        .three-boxes {
-          display: grid;
-          grid-template-columns: 400px 400px 400px;
-          grid-gap: 20px;
-          overflow-x: auto;
-          margin: 0px 60px 20px;
-        }
-        .two-boxes {
-          display: grid;
-          grid-template-columns: 610px 610px;
-          grid-gap: 20px;
-          overflow-x: auto;
-          margin: 0px 60px;
-        }
-
-        .button {
-          width: auto;
-          border: 1px solid white;
-          border-radius: 6px;
-          padding: 10px;
-          margin-bottom: 10px;
-        }
-        ul {
-          color: white;
-          font-family: ${fonts.Lucida};
-        }
-        li {
-          color: white;
-          font-family: ${fonts.Lucida};
-          margin: 5px 0px;
-        }
-        h1 {
-          color: white;
-          font-family: ${fonts.Lucida};
-        }
-        h2 {
-          color: white;
-          font-family: ${fonts.Lucida};
-        }
-        h3 {
-          color: white;
-          font-family: ${fonts.Lucida};
-        }
-        p {
-          color: white;
-          font-family: ${fonts.Lucida};
-        }
-        a {
-          color: white;
-          font-family: ${fonts.Lucida};
-          text-decoration: none;
-        }
-        a:hover {
-          color: ${colors.skyBlue};
-        }
-        body {
-          padding-top: 60px;
-        }
-
-
-      `} </style>
-
-    </span>
+    <StyledWrapper>
+      <a name="About"></a> <H2Style>About</H2Style>
+      <StyledWrapper>
+        <ThreeGrid>
+          <Box>
+            <H3Style> Major Coursework </H3Style>
+              <ULWrapper>
+                <LIWrapper> Intro to Computer Science </LIWrapper>
+                <LIWrapper> Data Structures & Algorithms </LIWrapper>
+                <LIWrapper> Discrete Mathematics and Probability Theory </LIWrapper>
+                <LIWrapper> Probability and Random Processes </LIWrapper>
+                <LIWrapper> Optimization Models in Engineering </LIWrapper>
+                <LIWrapper> (Audited) Natural Language Processing </LIWrapper>
+                <LIWrapper> Computer Architecture </LIWrapper>
+                <LIWrapper> Designing Information Devices and Systems </LIWrapper>
+              </ULWrapper>
+            <H3Style> Minor Coursework </H3Style>
+              <ULWrapper>
+                <LIWrapper> Intro to Linguistics </LIWrapper>
+                <LIWrapper> Intro to Syntax and Semantics </LIWrapper>
+              </ULWrapper>
+          </Box>
+          <Box>
+            <H3Style> Languages/Software Skills </H3Style>
+              <Rows>
+                <Cols>
+                  <LIWrapper> Kotlin </LIWrapper>
+                  <LIWrapper> JavaScript </LIWrapper>
+                  <LIWrapper> Python </LIWrapper>
+                  <LIWrapper> PyTorch </LIWrapper>
+                  <LIWrapper> C/C++ </LIWrapper>
+                  <LIWrapper> AutoCAD </LIWrapper>
+                  <LIWrapper> COMSOL </LIWrapper>
+                  <LIWrapper> Photoshop </LIWrapper>
+                </Cols>
+                <Cols>
+                  <LIWrapper> Swift </LIWrapper>
+                  <LIWrapper> HTML/CSS </LIWrapper>
+                  <LIWrapper> Java </LIWrapper>
+                  <LIWrapper> Tensorflow </LIWrapper>
+                  <LIWrapper> React </LIWrapper>
+                  <LIWrapper> MATLAB </LIWrapper>
+                  <LIWrapper> SolidWorks </LIWrapper>
+                </Cols>
+              </Rows>
+            <H3Style> Skills </H3Style>
+              <ULWrapper>
+                <LIWrapper> Data visualization and simulation softwares used practically for research </LIWrapper>
+                <LIWrapper> Building software tools for use around offices and within academia </LIWrapper>
+                <LIWrapper> Planning and designing engineering systems for real-world use in Engineers Without Borders </LIWrapper>
+                <LIWrapper> EE and CS hands-on experience and extending course projects beyond the classroom </LIWrapper>
+                <LIWrapper> Mathematical skills to understand in-depth background on Machine Learning processes </LIWrapper>
+                <LIWrapper> People skills, smooth communication, & true personality </LIWrapper>
+              </ULWrapper>
+          </Box>
+          <Box>
+            <H3Style> Exploring pet projects (more below) </H3Style>
+              <ULWrapper>
+                <LIWrapper> Safety app around Berkeley for Cal students </LIWrapper>
+                <LIWrapper> Improving on voice-activated car built last semester </LIWrapper>
+                <LIWrapper> Learning graphic design and animation software </LIWrapper>
+                <LIWrapper> Contributing to friends' personal projects </LIWrapper>
+                <LIWrapper> Exploring beginner projects using NLP analysis with AI/ML </LIWrapper>
+              </ULWrapper>
+          </Box>
+        </ThreeGrid>
+        <TwoGrid>
+          <Box>
+            <H3Style> Clubs </H3Style>
+              <ULWrapper>
+                <LIWrapper> Engineers Without Borders
+                  <ULWrapper>
+                    <LIWrapper> Panama Team for two semesters where we just finished building a water distribution system for a poorly-funded Panamanian community </LIWrapper>
+                    <LIWrapper> Starting new project next semester: hoping for a local project toward helping provide for the homeless in Berkeley/SF areas </LIWrapper>
+                  </ULWrapper>
+                </LIWrapper>
+                <LIWrapper> Computer Science Kickstart
+                  <ULWrapper>
+                    <LIWrapper> Intro to computer science week for female pre-freshmen </LIWrapper>
+                    <LIWrapper> Participated in the program myself when I entered Berkeley and gave back as a committee member on Industrial Relations </LIWrapper>
+                  </ULWrapper>
+                </LIWrapper>
+                <LIWrapper> Association of Women in EECS
+                  <ULWrapper>
+                    <LIWrapper> Networking events with industry professionals and professors coming in to talk woman-to-woman how to succeed in the tech world </LIWrapper>
+                  </ULWrapper>
+                </LIWrapper>
+              </ULWrapper>
+          </Box>
+          <Box>
+            <H3Style> Past work experience </H3Style>
+              <ULWrapper>
+                <LIWrapper> (Computational Linguistics) Research Intern @ICSI (International Computer Science Institute) -- UC-Berkeley, Jan 2020 -- Current
+                  <ULWrapper>
+                    <LIWrapper> Predicting the semantic components from morphologically complex words in polysynthetic languages of Karuk and Yurok </LIWrapper>
+                  </ULWrapper>
+                </LIWrapper>
+                <LIWrapper> Software Engineering Intern @Pulse Q&A -- SF, Summer 2019
+                  <ULWrapper>
+                    <LIWrapper> Limited personnel previously led to outsourcing manual labor </LIWrapper>
+                    <LIWrapper> Automated internal tools improved efficiency of office (allowed focus on increasing traffic on the service's platform, marketing efforts, and bettering market-fit) </LIWrapper>
+                  </ULWrapper>
+                </LIWrapper>
+                <LIWrapper> (EECS) Research Intern @Jadoo Tech -- UC-Berkeley, Feb-Sept 2019
+                  <ULWrapper>
+                    <LIWrapper> Conducted research in physics theoretical equations and experiments for start-up in UC-Berkeley </LIWrapper>
+                  </ULWrapper>
+                </LIWrapper>
+                <LIWrapper> (EECS) Research Intern @Feng Labs -- CWRU, 2015-2018
+                  <ULWrapper>
+                    <LIWrapper> Quantified properties of metastatic breast cancer cells using MEMS microsensors </LIWrapper>
+                  </ULWrapper>
+                </LIWrapper>
+                <LIWrapper> IT Hub Intern @Hathaway Brown -- OH, 2015-2018
+                  <ULWrapper>
+                    <LIWrapper> Both worked and volunteered at high-school's IT Helpdesk </LIWrapper>
+                  </ULWrapper>
+                </LIWrapper>
+              </ULWrapper>
+          </Box>
+        </TwoGrid>
+      </StyledWrapper>
+    </StyledWrapper>
 
   )
 };

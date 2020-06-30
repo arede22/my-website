@@ -11,13 +11,20 @@ const { colors, fontSizes, fonts, displays } = theme;
 const StyledWrapper = styled.div`
   margin: 0;
 `;
+const H2Style = styled.h2`
+  text-align: center;
+  justify-content: center;
+  font-size: 36px;
+  margin: 75px 0px;
+  text-shadow: 2px 2px black;
+`;
 
 // export main component
 export default function Portfolio() {
   return (
 
     <span className="portfolio">
-      <a name="Portfolio"></a> <h2 className='section'> Portfolio </h2>
+      <a name="Portfolio"></a> <H2Style> Portfolio </H2Style>
       <div className="two-boxes">
         <div className='box'>
           <h3> Class projects and extensions </h3>
@@ -82,13 +89,6 @@ export default function Portfolio() {
       </div>
 
       <style jsx>{`
-        .section {
-          text-align: center;
-          justify-content: center;
-          font-size: 36px;
-          margin: 75px 0px;
-          text-shadow: 2px 2px black;
-        }
         #car {
           border-radius: 5px;
           cursor: pointer;

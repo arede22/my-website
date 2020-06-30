@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { theme } from '../styles';
-const { colors, fontSizes, fonts, displays } = theme;
+const { colors, fonts } = theme;
 
 // styles and wrappers
 const NavWrapper = styled.header`
@@ -44,10 +44,10 @@ export default function Nav() {
     <NavWrapper id="navbar">
       <StyledNav>
         <ULWrapper>
-          <LIWrapper> <Link href='/'>Home</Link> </LIWrapper>
-          <LIWrapper> <Link href="#About">About</Link> </LIWrapper>
-          <LIWrapper> <Link href="#Portfolio">Portfolio</Link> </LIWrapper>
-          <LIWrapper> <Link href="#Contact-Me">Contact Me</Link> </LIWrapper>
+          <LIWrapper> <Link href='/'> Home </Link> </LIWrapper>
+          <LIWrapper> <Link href="#About"> About </Link> </LIWrapper>
+          <LIWrapper> <Link href="#Portfolio"> Portfolio </Link> </LIWrapper>
+          <LIWrapper> <Link href="#Contact-Me"> Contact Me </Link> </LIWrapper>
           <LIWrapper> <Link href="resume.pdf" target="_blank"> Resume </Link> </LIWrapper>
         </ULWrapper>
       </StyledNav>

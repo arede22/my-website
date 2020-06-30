@@ -1,7 +1,7 @@
 import React from 'react';
 import { theme } from '../styles';
 import styled from 'styled-components';
-const { colors, fontSizes, fonts, displays } = theme;
+const { colors, fonts } = theme;
 
 // constants
 const ref = [
@@ -40,45 +40,34 @@ const LIWrapper = styled.li`
   display: flex;
   padding: 10px 15px;
 `;
-const Button = styled.button`
-  color: ${colors.lightGray};
-  font-size: ${fontSizes.med};
-  font-family: ${fonts.Lucida};
-`;
 const Link = styled.a`
   text-decoration: none;
+  color: ${colors.skyBlue};
+`;
+const PStyle = styled.p`
+  text-align: center;
+  font-family: ${fonts.Lucida};
+  color: white;
 `;
 
 // export main component
-  export default function Footer() {
-    return (
-      <StyledWrapper>
-        <FooterStyle>
-          <ULWrapper>
-            {links.map(({ key, href, src }) => (
-              <LIWrapper key={key}>
-                <a href={href} target="_blank"> <img src={src + '.png'} onMouseOver={e => {e.currentTarget.src = src + '-hover.png'}} onMouseOut={e => {e.currentTarget.src = src + '.png'}} /> </a>
-              </LIWrapper>
-            ))}
-          </ULWrapper>
-          <StyledWrapper>
-            <Button id="scrolltop">
-              <p style={{color: 'black'}}>/\ Top </p>
-            </Button>
-          </StyledWrapper>
-          <StyledWrapper>
-            <p style={{color: 'white'}}>
-              Made by Anika Rede | <Link target="_blank" href="https://github.com/arede22/my-website" style={{color: colors.skyBlue}}> GitHub </Link>
-            </p>
-          </StyledWrapper>
-        </FooterStyle>
-
-        <style jsx>{`
-          p {
-            text-align: center;
-            font-family: ${fonts.Lucida}
-          }
-        `}</style>
+export default function Footer() {
+  return (
+    <StyledWrapper>
+      <FooterStyle>
+        <ULWrapper>
+          {links.map(({ key, href, src }) => (
+            <LIWrapper key={key}>
+              <a href={href} target="_blank"> <img src={src + '.png'} onMouseOver={e => {e.currentTarget.src = src + '-hover.png'}} onMouseOut={e => {e.currentTarget.src = src + '.png'}} /> </a>
+            </LIWrapper>
+          ))}
+        </ULWrapper>
+        <StyledWrapper>
+          <PStyle>
+            Made by Anika Rede | <Link target="_blank" href="https://github.com/arede22/my-website"> GitHub </Link>
+          </PStyle>
+        </StyledWrapper>
+      </FooterStyle>
     </StyledWrapper>
   )
 };
