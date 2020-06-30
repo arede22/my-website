@@ -1,3 +1,4 @@
+// scrolls the navbar up and down when navigating the website
 var didScroll;
 var lastScrollTop = 0;
 var delta = 5;

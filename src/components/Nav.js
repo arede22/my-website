@@ -12,25 +12,21 @@ const NavWrapper = styled.header`
   transition: top 0.2s ease-in-out;
   width: 100%;
 `;
-
 const StyledNav = styled.nav`
   text-align: center;
   padding: 10px 0px;
   background-color: ${colors.black};
 `;
-
 const ULWrapper = styled.ul`
   margin: 0;
   display: flex;
   text-align: center;
   justify-content: space-around;
 `;
-
 const LIWrapper = styled.li`
   display: flex;
   padding: 6px 8px;
 `;
-
 const Link = styled.a`
   color: white;
   text-decoration: none;

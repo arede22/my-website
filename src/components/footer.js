@@ -10,7 +10,6 @@ const ref = [
   { href: 'https://www.linkedin.com/in/anikarede/', src: '../static/footer/linkedin' },
   { href: 'https://github.com/arede22', src: '../static/footer/github' }
 ];
-
 const links = ref.map(link => {
   link.key = `nav-link-${link.href}-${link.src}`.replace(/[^a-zA-Z0-9]/g, '')
   return link
@@ -23,14 +22,12 @@ const StyledWrapper = styled.div`
   display: flex;
   justify-content: center;
 `;
-
 const FooterStyle = styled.footer`
   width: 80%;
   align: center;
   padding-top: 40px;
   margin: 25px auto;
 `;
-
 const ULWrapper = styled.ul`
   background-color: ${colors.transparentGray};
   display: flex;
@@ -39,18 +36,15 @@ const ULWrapper = styled.ul`
   padding: 10px 25px;
   margin: 0px 15px 10px;
 `;
-
 const LIWrapper = styled.li`
   display: flex;
   padding: 10px 15px;
 `;
-
 const Button = styled.button`
   color: ${colors.lightGray};
   font-size: ${fontSizes.med};
   font-family: ${fonts.Lucida};
 `;
-
 const Link = styled.a`
   text-decoration: none;
 `;

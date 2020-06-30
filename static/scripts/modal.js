@@ -1,3 +1,4 @@
+// image modals i.e. popups script
 var popCar = document.getElementById('popCar');
 
 var car = document.getElementById('car');

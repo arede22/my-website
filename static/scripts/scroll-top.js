@@ -1,3 +1,4 @@
+// slow animated scroll to top from button
 $(document).scroll(function(){
 
     var scroll_pos = $(window).scrollTop();
