@@ -6,8 +6,10 @@
 Recently changed:
   Added some React components for abstractions (look up state, props, and lifecycle if needed at that time)
   Updated jsx to wrappers/styles in styled-components to ready for abstractions
-Yet to-do:
   Need to update jsx to wrappers/styles for modals so need to figure out modals
+Yet to-do:
+  Change px to em
+  Figure out modals
   Add in a 'scroll to top' button
   Sketch out a good scheme for design, now that abstractions are done everything should go smoother
   Graphic design for background

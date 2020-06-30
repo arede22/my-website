@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { theme } from '../styles';
+import { theme, media } from '../styles';
 import Modal from './modal';
 const { colors, fonts, fontSizes } = theme;
 // Coursework
@@ -35,6 +35,14 @@ const TwoGrid = styled.div`
   grid-gap: 20px;
   overflow-x: auto;
   margin: 0px 60px;
+
+  @media ${media.laptop} {
+    max-width: 800px;
+  }
+
+  @media ${media.desktop} {
+    max-width: 1400px;
+  }
 `;
 const Box = styled.div`
   background-color: ${colors.halfTransparentGray};
