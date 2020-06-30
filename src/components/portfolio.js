@@ -2,12 +2,17 @@ import React from 'react';
 import styled from 'styled-components';
 import { theme } from '../styles';
 const { colors, fontSizes, fonts, displays } = theme;
+// Coursework
+// Skills
+// Softwares and comfortability
+// Currently exploring pet projects
 
-//Coursework
-//Skills
-//Softwares and comfortability
-//Currently exploring pet projects
+// styles and wrappers
+const StyledWrapper = styled.div`
+  margin: 0;
+`;
 
+// main component
 const Portfolio = () => (
 
   <span className="portfolio">
@@ -74,8 +79,165 @@ const Portfolio = () => (
           </ul>
       </div>
     </div>
+
+    <style jsx>{`
+      .section {
+        text-align: center;
+        justify-content: center;
+        font-size: 36px;
+        margin: 75px 0px;
+        text-shadow: 2px 2px black;
+      }
+      #car {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      #car:hover {opacity: 0.7;}
+      #map {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      #map:hover {opacity: 0.7;}
+      #randrooms {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      #randrooms:hover {opacity: 0.7;}
+      #boss {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      #boss:hover {opacity: 0.7;}
+
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.9);
+      }
+      .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+      }
+      @-webkit-keyframes zoom {
+        from {-webkit-transform:scale(0)}
+        to {-webkit-transform:scale(1)}
+      }
+      @keyframes zoom {
+        from {transform:scale(0)}
+        to {transform:scale(1)}
+      }
+      .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+      .close:hover,
+      .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      @media only screen and (max-width: 700px){
+        .modal-content {
+          width: 100%;
+        }
+      }
+      .box {
+        background-color: ${colors.halfTransparentGray};
+        border-radius: 5px;
+        overflow-x: auto;
+        padding: 7.5px 20px 20px;
+      }
+      .rows {
+        display: flex;
+      }
+      .cols {
+        flex: 50%;
+      }
+      .three-boxes {
+        display: grid;
+        grid-template-columns: 400px 400px 400px;
+        grid-gap: 20px;
+        overflow-x: auto;
+        margin: 0px 60px 20px;
+      }
+      .two-boxes {
+        display: grid;
+        grid-template-columns: 610px 610px;
+        grid-gap: 20px;
+        overflow-x: auto;
+        margin: 0px 60px;
+      }
+      .button {
+        width: auto;
+        border: 1px solid white;
+        border-radius: 6px;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+      ul {
+        color: white;
+        font-family: ${fonts.Lucida};
+      }
+      li {
+        color: white;
+        font-family: ${fonts.Lucida};
+        margin: 5px 0px;
+      }
+      h1 {
+        color: white;
+        font-family: ${fonts.Lucida};
+      }
+      h2 {
+        color: white;
+        font-family: ${fonts.Lucida};
+      }
+      h3 {
+        color: white;
+        font-family: ${fonts.Lucida};
+      }
+      p {
+        color: white;
+        font-family: ${fonts.Lucida};
+      }
+      a {
+        color: white;
+        font-family: ${fonts.Lucida};
+        text-decoration: none;
+      }
+      a:hover {
+        color: ${colors.skyBlue};
+      }
+      body {
+        padding-top: 60px;
+      }
+
+    `} </style>
+
   </span>
 
 );
 
+// export
 export default Portfolio;

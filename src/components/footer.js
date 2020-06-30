@@ -3,6 +3,7 @@ import { theme } from '../styles';
 import styled from 'styled-components';
 const { colors, fontSizes, fonts, displays } = theme;
 
+// constants
 const ref = [
   { href: 'mailto:arede22@berkeley.edu', src: '../static/footer/email' },
   { href: 'https://www.instagram.com/berk_eng_doodler/', src: '../static/footer/insta' },
@@ -15,6 +16,7 @@ const links = ref.map(link => {
   return link
 });
 
+// styles and wrappers
 const StyledWrapper = styled.div`
   margin: auto;
   align: center;
@@ -53,37 +55,37 @@ const Link = styled.a`
   text-decoration: none;
 `;
 
-function Footer() {
-  return (
-    <StyledWrapper>
-      <FooterStyle>
-        <ULWrapper>
-          {links.map(({ key, href, src }) => (
-            <LIWrapper key={key}>
-              <a href={href} target="_blank"> <img src={src + '.png'} onMouseOver={e => {e.currentTarget.src = src + '-hover.png'}} onMouseOut={e => {e.currentTarget.src = src + '.png'}} /> </a>
-            </LIWrapper>
-          ))}
-        </ULWrapper>
-        <StyledWrapper>
-          <Button id="scrolltop">
-            <p style={{color: 'black'}}>/\ Top </p>
-          </Button>
-        </StyledWrapper>
-        <StyledWrapper>
-          <p style={{color: 'white'}}>
-            Made by Anika Rede | <Link target="_blank" href="https://github.com/arede22/my-website" style={{color: colors.skyBlue}}> GitHub </Link>
-          </p>
-        </StyledWrapper>
-      </FooterStyle>
+// main component
+const Footer = () => (
+  <StyledWrapper>
+    <FooterStyle>
+      <ULWrapper>
+        {links.map(({ key, href, src }) => (
+          <LIWrapper key={key}>
+            <a href={href} target="_blank"> <img src={src + '.png'} onMouseOver={e => {e.currentTarget.src = src + '-hover.png'}} onMouseOut={e => {e.currentTarget.src = src + '.png'}} /> </a>
+          </LIWrapper>
+        ))}
+      </ULWrapper>
+      <StyledWrapper>
+        <Button id="scrolltop">
+          <p style={{color: 'black'}}>/\ Top </p>
+        </Button>
+      </StyledWrapper>
+      <StyledWrapper>
+        <p style={{color: 'white'}}>
+          Made by Anika Rede | <Link target="_blank" href="https://github.com/arede22/my-website" style={{color: colors.skyBlue}}> GitHub </Link>
+        </p>
+      </StyledWrapper>
+    </FooterStyle>
 
-      <style jsx>{`
-        p {
-          text-align: center;
-          font-family: ${fonts.Lucida}
-        }
-      `}</style>
-    </StyledWrapper>
-  )
-};
+    <style jsx>{`
+      p {
+        text-align: center;
+        font-family: ${fonts.Lucida}
+      }
+    `}</style>
+  </StyledWrapper>
+)
 
+// export
 export default Footer;

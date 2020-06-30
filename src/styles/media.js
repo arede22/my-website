@@ -1,3 +1,4 @@
+// taken from theme, may use this instead for imports
 const media = {
     desktop: '1px',
     phone: '2px',
@@ -5,4 +6,5 @@ const media = {
     etc: '4px'
 };
 
+// export
 export default media;

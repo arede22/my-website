@@ -3,6 +3,12 @@ import styled from 'styled-components';
 import { theme } from '../styles';
 const { colors, fontSizes, fonts, displays } = theme;
 
+// styles and wrappers
+const StyledWrapper = styled.div`
+  margin: 0;
+`;
+
+// main component
 const Intro = () => (
   <span className="about">
     <a name="About"></a> <h2 className='section'>About</h2>
@@ -126,8 +132,65 @@ const Intro = () => (
         </div>
       </div>
     </div>
+
+    <style jsx> {`
+      .section {
+        text-align: center;
+        justify-content: center;
+      	font-size: 36px;
+        margin: 75px 0px;
+        text-shadow: 2px 2px black;
+      }
+      .button {
+        width: auto;
+        border: 1px solid white;
+        border-radius: 6px;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+      ul {
+        color: white;
+        font-family: ${fonts.Lucida};
+      }
+      li {
+        color: white;
+        font-family: ${fonts.Lucida};
+        margin: 5px 0px;
+      }
+      h1 {
+        color: white;
+        font-family: ${fonts.Lucida};
+      }
+      h2 {
+        color: white;
+        font-family: ${fonts.Lucida};
+      }
+      h3 {
+        color: white;
+        font-family: ${fonts.Lucida};
+      }
+      p {
+        color: white;
+        font-family: ${fonts.Lucida};
+      }
+      a {
+        color: white;
+        font-family: ${fonts.Lucida};
+        text-decoration: none;
+      }
+      a:hover {
+        color: ${colors.skyBlue};
+      }
+      body {
+        padding-top: 60px;
+      }
+
+
+    `} </style>
+
   </span>
 
 );
 
+// export
 export default Intro;

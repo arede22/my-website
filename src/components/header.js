@@ -1,7 +1,12 @@
 import React from 'react';
 import Head from 'next/head';
-import Nav from './Nav';
 
+// styles and wrappers
+const StyledWrapper = styled.div`
+  margin: 0;
+`;
+
+// main component
 const Header = () => (
     <Head>
       <link rel="apple-touch-icon" sizes="180x180" href="../../static/favicon/apple-touch-icon.png"/>
@@ -18,4 +23,5 @@ const Header = () => (
     </Head>
 );
 
+// export
 export default Header;

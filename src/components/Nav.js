@@ -1,12 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { theme } from '../styles';
 const { colors, fontSizes, fonts, displays } = theme;
-
 // component did mount for if state or lifecycle required
 // function if not (faster in general)
 
+// styles and wrappers
 const NavWrapper = styled.header`
   position: fixed;
   top: 0;
@@ -38,6 +37,7 @@ const Link = styled.a`
   font-size: 17px;
 `;
 
+// main component
 const Nav = () => (
   <NavWrapper className="nav-down">
     <StyledNav>
@@ -57,8 +57,52 @@ const Nav = () => (
       a:hover {
         color: rgba(129, 207, 224, 1);
       }
+      .button {
+        width: auto;
+        border: 1px solid white;
+        border-radius: 6px;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+      ul {
+        color: white;
+        font-family: ${fonts.Lucida};
+      }
+      li {
+        color: white;
+        font-family: ${fonts.Lucida};
+        margin: 5px 0px;
+      }
+      h1 {
+        color: white;
+        font-family: ${fonts.Lucida};
+      }
+      h2 {
+        color: white;
+        font-family: ${fonts.Lucida};
+      }
+      h3 {
+        color: white;
+        font-family: ${fonts.Lucida};
+      }
+      p {
+        color: white;
+        font-family: ${fonts.Lucida};
+      }
+      a {
+        color: white;
+        font-family: ${fonts.Lucida};
+        text-decoration: none;
+      }
+      a:hover {
+        color: ${colors.skyBlue};
+      }
+      body {
+        padding-top: 60px;
+      }
     `}</style>
   </NavWrapper>
 );
 
+// export
 export default Nav;

@@ -1,3 +1,4 @@
+// colors, fonts, fontsizes, displays used throughout the project
 const theme = {
   colors: {
     transparentBlue: "rgba(129, 207, 224, 0.4)",
@@ -38,4 +39,5 @@ const theme = {
   }
 };
 
+// export
 export default theme;

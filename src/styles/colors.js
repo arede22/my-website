@@ -1,3 +1,4 @@
+// taken from theme, may use this instead for imports
 const colors = {
     transparentBlue: "rgba(129, 207, 224, 0.4)",
     skyBlue: "rgba(197, 239, 247, 1)",
@@ -7,4 +8,5 @@ const colors = {
     darkGray: "rgba(74, 72, 71, 1)"
 };
 
+// export
 export default colors;
