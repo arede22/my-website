@@ -24,8 +24,6 @@ const ImgWrapper = styled.a`
   margin: 0 auto;
 `;
 const ImgStyle = styled.img`
-  /* display: block;
-  margin: 0 auto; */
   height: 50%;
   width: 50%;
   max-width: 300px;
@@ -73,9 +71,9 @@ const CloseHandler = styled.span`
 // export main component
 export default function Modal(props) {
   // state
-  const [popUp, setPopUp] = useState(
-    false
-  );
+  // const [popUp, setPopUp] = useState(
+  //   false
+  // );
 
   return (
     <StyledWrapper>
@@ -87,19 +85,11 @@ export default function Modal(props) {
 
       <ImgWrapper> <ImgStyle id={props.trigger} src={props.img} alt={props.trigger} vspace="10" /> </ImgWrapper>
 
+      {/*
+        add in:
       <ModalStyle id={props.pop} className="modal">
         <CloseHandler id="close">&times;</CloseHandler>
-        <ContentStyle className="modal-content" id="img01" alt="modal" />
-      </ModalStyle>
-
-      {/*
-        Filler
-      <div style={{backgroundColor: 'pink', height: '30px', width: '30px'}}> </div>
-
-        Content
-      <ModalStyle id={props.pop}>
-        <CloseHandler onClick={ handleClick(props.pop) }>&times;</CloseHandler>
-        <ContentStyle id={props.content} />
+        <ContentStyle className="modal-content" alt="modal" id={props.content} />
       </ModalStyle>
       */}
     </StyledWrapper>

@@ -69,9 +69,7 @@ export default function Welcome() {
       <ImgStyle src="../static/profile.png" alt="This is me!" />
 
       <WelcomeStyle>
-        <PStyle>I am a sophomore in UC Berkeley studying Electrical Engineering and Computer Science (EECS)
-        <br /> concentrating in AI & ML with Linguistics as my minor.
-        <br /> My areas of interest lie in ML, NLP, and Cloud Computing. </PStyle>
+        <PStyle>I am a sophomore in UC Berkeley studying Electrical Engineering and Computer Science (EECS) concentrating in AI & ML with Linguistics as my minor. My areas of interest lie in ML, NLP, and Cloud Computing. </PStyle>
         <ResumeBox>
           <PStyle> Take a quick peek at my resumé! </PStyle>
           <ResumeButton href="resume.pdf" target="_blank"> Resumé </ResumeButton>

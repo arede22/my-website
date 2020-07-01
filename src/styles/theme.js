@@ -36,6 +36,26 @@ const theme = {
 
   },
 
+  hrefs: {
+
+    mail: 'mailto:arede22@berkeley.edu',
+    ig: 'https://www.instagram.com/berk_eng_doodler/',
+    linkedin: 'https://www.linkedin.com/in/anikarede/',
+    github: 'https://github.com/arede22',
+    webRepo: 'https://github.com/arede22/my-website',
+    gameVid: 'https://www.youtube.com/watch?v=cdlxhQVUIro'
+
+  },
+
+  iconSrcs: {
+
+    mail: '../static/footer/email',
+    ig: '../static/footer/insta',
+    linkedin: '../static/footer/linkedin',
+    github: '../static/footer/github'
+
+  }
+
 };
 
 // export

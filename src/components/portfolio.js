@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { theme, media } from '../styles';
 import Modal from './modal';
-const { colors, fonts, fontSizes } = theme;
+const { colors, fonts, fontSizes, hrefs } = theme;
 // Coursework
 // Skills
 // Softwares and comfortability
@@ -122,7 +122,7 @@ export default function Portfolio() {
 
                 </div>
                 <PStyle>
-                  <Link href='https://www.youtube.com/watch?v=cdlxhQVUIro' target="_blank"> Click here for demo </Link>
+                  <Link href={hrefs.gameVid} target="_blank"> Click here for demo </Link>
                 </PStyle>
   */}          </ULWrapper>
         </Box>

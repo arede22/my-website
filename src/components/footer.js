@@ -1,14 +1,14 @@
 import React from 'react';
 import { theme } from '../styles';
 import styled from 'styled-components';
-const { colors, fonts } = theme;
+const { colors, fonts, hrefs, iconSrcs } = theme;
 
 // constants
 const ref = [
-  { href: 'mailto:arede22@berkeley.edu', src: '../static/footer/email' },
-  { href: 'https://www.instagram.com/berk_eng_doodler/', src: '../static/footer/insta' },
-  { href: 'https://www.linkedin.com/in/anikarede/', src: '../static/footer/linkedin' },
-  { href: 'https://github.com/arede22', src: '../static/footer/github' }
+  { href: hrefs.mail, src: iconSrcs.mail },
+  { href: hrefs.ig, src: iconSrcs.ig },
+  { href: hrefs.linkedin, src: iconSrcs.linkedin },
+  { href: hrefs.github, src: iconSrcs.github }
 ];
 const links = ref.map(link => {
   link.key = `nav-link-${link.href}-${link.src}`.replace(/[^a-zA-Z0-9]/g, '')
@@ -64,7 +64,7 @@ export default function Footer() {
         </ULWrapper>
         <StyledWrapper>
           <PStyle>
-            Made by Anika Rede | <Link target="_blank" href="https://github.com/arede22/my-website"> GitHub </Link>
+            Made by Anika Rede | <Link target="_blank" href={hrefs.webRepo}> GitHub </Link>
           </PStyle>
         </StyledWrapper>
       </FooterStyle>

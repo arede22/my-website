@@ -28,10 +28,10 @@ export default function Home() {
 
         <Nav />
 
-{/*        <Welcome />
+        <Welcome />
         <Intro />
-*/}        <Portfolio />
-        {/*<ContactMe />*/}
+        <Portfolio />
+        <ContactMe />
 
         <Footer />
 
