@@ -3,9 +3,9 @@ const theme = {
 
   colors: {
 
-    transparentBlue: "rgba(129, 207, 224, 0.4)",
-    skyBlue: "rgba(197, 239, 247, 1)",
+    transparentSeaBlue: "rgba(129, 207, 224, 0.4)",
     seaBlue: "rgba(129, 207, 224, 1)",
+    skyBlue: "rgba(197, 239, 247, 1)",
 
     halfTransparentGray: "rgba(166, 166, 166, 0.5)",
     transparentGray: "rgba(166, 166, 166, 0.3)",
@@ -15,8 +15,8 @@ const theme = {
     darkGray: "rgba(74, 72, 71, 1)",
 
     bodyBackground: "#1a1a1a",
-    black: "#303030",
     transparentBlack: "rgba(0,0,0,0.9)",
+    black: "#303030",
 
   },
 
@@ -60,15 +60,10 @@ const theme = {
   imgSrcs: {
 
     backgroundImg: '../static/starting-background.png',
-
     profile: '../static/profile.png',
-
     car: '../static/portfolio/car.png',
-
     map: '../static/portfolio/map.png',
-
     randRooms: '../static/portfolio/random-room.png',
-
     boss: '../static/portfolio/boss.png',
 
   }

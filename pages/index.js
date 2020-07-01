@@ -34,7 +34,6 @@ export default function Home() {
         <ContactMe />
 
         <Footer />
-
       </StyledWrapper>
     </React.Fragment>
   )

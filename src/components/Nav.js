@@ -4,6 +4,17 @@ import { theme } from '../styles';
 const { colors, fonts, fontSizes } = theme;
 
 // styles and wrappers
+const MobileWrapper = styled.header`
+  position: fixed;
+  top: 0;
+  transition: top 0.2s ease-in-out;
+  width: 100%;
+  overflow: hidden;
+
+  @media (min-width: 600px) {
+    display: none;
+  }
+`;
 const NavWrapper = styled.header`
   position: fixed;
   top: 0;
@@ -21,10 +32,21 @@ const ULWrapper = styled.ul`
   text-align: center;
   justify-content: space-around;
   padding: 4px 16px;
+
+  @media (max-width: 600px) {
+    display: none;
+  }
 `;
 const LIWrapper = styled.li`
   display: flex;
   padding: 6px 8px;
+
+  &:active {
+    background-color: ${colors.lightGray};
+    &:after {
+      content: ' \/';
+    }
+  }
 `;
 const Link = styled.a`
   color: white;
@@ -44,12 +66,24 @@ export default function Nav() {
       <StyledNav>
         <ULWrapper>
           <LIWrapper> <Link href='/'> Home </Link> </LIWrapper>
-          <LIWrapper> <Link href="#About"> About </Link> </LIWrapper>
-          <LIWrapper> <Link href="#Portfolio"> Portfolio </Link> </LIWrapper>
-          <LIWrapper> <Link href="#Contact-Me"> Contact Me </Link> </LIWrapper>
-          <LIWrapper> <Link href="resume.pdf" target="_blank"> Resume </Link> </LIWrapper>
+          <LIWrapper className="extra"> <Link href="#About"> About </Link> </LIWrapper>
+          <LIWrapper className="extra"> <Link href="#Portfolio"> Portfolio </Link> </LIWrapper>
+          <LIWrapper className="extra"> <Link href="#Contact-Me"> Contact Me </Link> </LIWrapper>
+          <LIWrapper className="extra"> <Link href="resume.pdf" target="_blank"> Resume </Link> </LIWrapper>
         </ULWrapper>
       </StyledNav>
+
+      <style jsx>{`
+
+        @media only screen and (max-width: 600px) {
+          li.extra {
+            display: none;
+          }
+        }
+
+      `}
+      </style>
+
     </NavWrapper>
   )
 };

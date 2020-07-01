@@ -19,7 +19,7 @@ const H2Style = styled.h2`
 `;
 const PStyle = styled.p`
   text-align: center;
-  background-color: ${colors.transparentBlue};
+  background-color: ${colors.transparentSeaBlue};
   width: 60%;
   fontSize: 18px;
   borderRadius: 15px;

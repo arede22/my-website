@@ -13,6 +13,7 @@ Recently changed:
   Need to update jsx to wrappers/styles for modals so need to figure out modals
 
   Mostly modified @styles, nav, welcome, intro, contactme, and footer -- staged for finalizing design ideas
+  Made media file properly, now can access from rest of files
 
 Yet to-do:
   Sketch out a good scheme for design, now that abstractions are done everything should go smoother
@@ -20,7 +21,6 @@ Yet to-do:
   Finalize design ideas, modify @styles, nav, welcome, intro, contactme, and footer toward that end
   Think of portfolio ideas, forget about modals not nice to look at
 
-  Change px to em
   Design for different media
 
   Add in a 'scroll to top' button

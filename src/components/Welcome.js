@@ -7,11 +7,11 @@ const { colors, fonts, fontSizes, imgSrcs } = theme;
 const StyledWrapper = styled.div`
   margin: 0 auto;
   text-align: center;
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
 `;
 const H1Style = styled.h1`
-  background-color: ${colors.transparentBlue};
+  background-color: ${colors.transparentSeaBlue};
   width: 50%;
   border-radius: 8px;
   text-align: center;
@@ -33,7 +33,7 @@ const WelcomeStyle = styled.div`
   text-shadow: 2px 2px black;
 `;
 const ResumeBox = styled.div`
-  background-color: ${colors.transparentBlue};
+  background-color: ${colors.transparentSeaBlue};
   width: 25%;
   border-radius: 15px;
   font-size: ${fontSizes.sm3};

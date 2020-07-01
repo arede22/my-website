@@ -47,7 +47,7 @@ const ContentStyle = styled.img`
   animation-name: ${zoom};
   animation-duration: 0.6s;
   max-height: 500px;
-  @media only screen and (max-width: 700px){
+  @media (max-width: 700px) {
     width: 100%;
   };
 `;
