@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 import { Header, Nav, Welcome, Intro, Portfolio, ContactMe, Footer } from '../src/components'; // '@components'
 import { theme } from '../src/styles'; // '@styles'
-const { colors, fonts } = theme;
+const { colors, fonts, imgSrcs } = theme;
 
 // styles and wrappers
 const GlobalStyle = createGlobalStyle`
@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 const StyledWrapper = styled.div`
-  background: ${colors.darkGray} url('../static/starting-background.png') no-repeat center;
+  background: ${colors.darkGray} url(${imgSrcs.backgroundImg}) no-repeat center;
   background-size: 100% 100%;
   overflow: auto;
 `;

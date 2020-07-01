@@ -1,5 +1,6 @@
-// colors, fonts, fontSizes used throughout the project
+// theme colors, fonts, font sizes, hrefs, icon srcs, and img srcs used throughout project
 const theme = {
+
   colors: {
 
     transparentBlue: "rgba(129, 207, 224, 0.4)",
@@ -53,6 +54,22 @@ const theme = {
     ig: '../static/footer/insta',
     linkedin: '../static/footer/linkedin',
     github: '../static/footer/github'
+
+  },
+
+  imgSrcs: {
+
+    backgroundImg: '../static/starting-background.png',
+
+    profile: '../static/profile.png',
+
+    car: '../static/portfolio/car.png',
+
+    map: '../static/portfolio/map.png',
+
+    randRooms: '../static/portfolio/random-room.png',
+
+    boss: '../static/portfolio/boss.png',
 
   }
 

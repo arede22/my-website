@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { theme } from '../styles';
-const { colors, fonts, fontSizes } = theme;
+const { colors, fonts, fontSizes, imgSrcs } = theme;
 
 // styles and wrappers
 const StyledWrapper = styled.div`
@@ -66,10 +66,12 @@ export default function Welcome() {
   return (
     <StyledWrapper>
       <H1Style>Hi, I'm Anika Rede.</H1Style>
-      <ImgStyle src="../static/profile.png" alt="This is me!" />
+      <ImgStyle src={imgSrcs.profile} alt="This is me!" />
 
       <WelcomeStyle>
-        <PStyle>I am a sophomore in UC Berkeley studying Electrical Engineering and Computer Science (EECS) concentrating in AI & ML with Linguistics as my minor. My areas of interest lie in ML, NLP, and Cloud Computing. </PStyle>
+        <PStyle>
+          I am a sophomore in UC Berkeley studying Electrical Engineering and Computer Science (EECS) concentrating in AI & ML with Linguistics as my minor. My areas of interest lie in ML, NLP, and Cloud Computing.
+        </PStyle>
         <ResumeBox>
           <PStyle> Take a quick peek at my resumé! </PStyle>
           <ResumeButton href="resume.pdf" target="_blank"> Resumé </ResumeButton>

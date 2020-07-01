@@ -32,8 +32,11 @@ const PStyle = styled.p`
 export default function ContactMe() {
   return (
     <StyledWrapper>
-      <a name="Contact-Me"></a> <H2Style> Contact Me </H2Style>
-      <PStyle> Super excited you browsed through my website! Please contact me by whatever method might be best though e-mail works best. </PStyle>
+      <a name="Contact-Me"></a>
+      <H2Style> Contact Me </H2Style>
+      <PStyle>
+        Super excited you browsed through my website! Please contact me by whatever method might be best though e-mail works best.
+      </PStyle>
     </StyledWrapper>
   )
 };

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { theme, media } from '../styles';
 import Modal from './modal';
-const { colors, fonts, fontSizes, hrefs } = theme;
+const { colors, fonts, fontSizes, hrefs, imgSrcs } = theme;
 // Coursework
 // Skills
 // Softwares and comfortability
@@ -74,157 +74,58 @@ const Link = styled.a`
   }
 
 `;
+const SpaceBetween = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
 
 // export main component
 export default function Portfolio() {
   return (
-
     <StyledWrapper>
-      <a name="Portfolio"></a> <H2Style> Portfolio </H2Style>
+      <a name="Portfolio"></a>
+      <H2Style> Portfolio </H2Style>
       <TwoGrid>
         <Box>
           <H3Style> Class projects and extensions </H3Style>
-            <ULWrapper>
-              <LIWrapper> Voice-Activated Car -- Designing Information Devices/Systems Trained with PCA </LIWrapper>
+          <ULWrapper>
+            <LIWrapper> Voice-Activated Car -- Designing Information Devices/Systems Trained with PCA </LIWrapper>
 
-                <Modal trigger="car" img="../static/portfolio/car.png" pop="popCar" content="img01" />
-                {/*<div>
-                  <img id="car" src="../static/portfolio/car.png" alt="car" height="40%" width="40%" vspace="10" style={{display: 'block', margin: '0 auto'}} />
+              <Modal trigger="car" img={imgSrcs.car} pop="popCar" content="img01" />
+            <LIWrapper> Mock GoogleMaps Berkeley-Localized -- Map Rastering, Autocomplete and Search, and Navigation </LIWrapper>
+              <Modal trigger="map" img={imgSrcs.map} pop="popMap" content="img02" />
 
-                  <div id="popCar" className="modal">
-                    <span className="close" onClick="document.getElementById('popCar').style.display='none'">&times;</span>
-                    <img className="modal-content" id="img01" style={{maxWidth: '700px;'}} />
-                  </div>
-                </div>*/}
-  {/*            <LIWrapper> Mock GoogleMaps Berkeley-Localized -- Map Rastering, Autocomplete and Search, and Navigation </LIWrapper>
-                <img id="map" src="../static/portfolio/map.png" alt="map" height="50%" width="50%" vspace="10" style={{display: 'block', margin: '0 auto'}} />
+            <LIWrapper> Pixel Art Game -- Randomized Room Generation and Increasing Difficulty to Boss Level: </LIWrapper>
+              <SpaceBetween>
+                <Modal trigger="randRooms" img={imgSrcs.randRooms} pop="popRandRooms" content="img03" />
 
-                <div id="popMap" className="modal">
-                  <span className="close" onClick="document.getElementById('popMap').style.display='none'">&times;</span>
-                  <img className="modal-content" id="img02" style={{maxHeight: '500px;'}}/>
-                </div>
-
-              <LIWrapper> Pixel Art Game -- Randomized Room Generation and Increasing Difficulty to Boss Level: </LIWrapper>
-                <div style={{display: 'flex', justifyContent: 'space-between'}}>
-                  <img id='randrooms' src="../static/portfolio/random-room.png" alt="random rooms" height="45%" width="45%" vspace="10" />
-
-                  <div id="popRandrooms" className="modal">
-                    <span className="close" onClick="document.getElementById('popRandrooms').style.display='none'">&times;</span>
-                    <img className="modal-content" id="img03" style={{maxWidth: '700px;'}}/>
-                  </div>
-
-                  <img id='boss' src="../static/portfolio/boss.png" alt="boss level" height="45%" width="45%" vspace="10" />
-
-                  <div id="popBoss" className="modal">
-                    <span className="close" onClick="document.getElementById('popBoss').style.display='none'">&times;</span>
-                    <img className="modal-content" id="img04" style={{maxWidth: '700px;'}}/>
-                  </div>
-
-                </div>
-                <PStyle>
-                  <Link href={hrefs.gameVid} target="_blank"> Click here for demo </Link>
-                </PStyle>
-  */}          </ULWrapper>
+                <Modal trigger="boss" img={imgSrcs.boss} pop="popBoss" content="img04" />
+              </SpaceBetween>
+              <PStyle>
+                <Link href={hrefs.gameVid} target="_blank"> Click here for DEMO </Link>
+              </PStyle>
+          </ULWrapper>
         </Box>
         <Box>
           <H3Style> Personal Projects </H3Style>
-{/*            <ULWrapper>
-              <LIWrapper> Current projects:
-                <ULWrapper>
-                  <LIWrapper> Personal website built with React and Next.js, allows playing with graphic design </LIWrapper>
-                  <LIWrapper> Safety app around Berkeley for students built using Swift </LIWrapper>
-                  <LIWrapper> Learning graphic design via Photoshop, Illustrator, and Maya </LIWrapper>
-                </ULWrapper>
-              </LIWrapper>
-              <LIWrapper> Projected projects:
-                <ULWrapper>
-                  <LIWrapper> Modifying voice-activated car built last semester to be hooked up to bluetooth and Wi-Fi </LIWrapper>
-                  <LIWrapper> Original pixel art Gameboy game built from scratch </LIWrapper>
-                  <LIWrapper> Image analysis to interpret and translate language with NLP using AI/ML </LIWrapper>
-                </ULWrapper>
-              </LIWrapper>
-            </ULWrapper>
-*/}        </Box>
+          <ULWrapper>
+            <LIWrapper> Current projects:
+              <ULWrapper>
+                <LIWrapper> Personal website built with React and Next.js, allows playing with graphic design </LIWrapper>
+                <LIWrapper> Safety app around Berkeley for students built using Swift </LIWrapper>
+                <LIWrapper> Learning graphic design via Photoshop, Illustrator, and Maya </LIWrapper>
+              </ULWrapper>
+            </LIWrapper>
+            <LIWrapper> Projected projects:
+              <ULWrapper>
+                <LIWrapper> Modifying voice-activated car built last semester to be hooked up to bluetooth and Wi-Fi </LIWrapper>
+                <LIWrapper> Original pixel art Gameboy game built from scratch </LIWrapper>
+                <LIWrapper> Image analysis to interpret and translate language with NLP using AI/ML </LIWrapper>
+              </ULWrapper>
+            </LIWrapper>
+          </ULWrapper>
+        </Box>
       </TwoGrid>
-
-      {/*<style jsx>{`
-        #car {
-          border-radius: 5px;
-          cursor: pointer;
-          transition: 0.3s;
-        }
-        #car:hover {opacity: 0.7;}
-        #map {
-          border-radius: 5px;
-          cursor: pointer;
-          transition: 0.3s;
-        }
-        #map:hover {opacity: 0.7;}
-        #randrooms {
-          border-radius: 5px;
-          cursor: pointer;
-          transition: 0.3s;
-        }
-        #randrooms:hover {opacity: 0.7;}
-        #boss {
-          border-radius: 5px;
-          cursor: pointer;
-          transition: 0.3s;
-        }
-        #boss:hover {opacity: 0.7;}
-
-        .modal {
-          display: none;
-          position: fixed;
-          z-index: 1;
-          padding-top: 100px;
-          left: 0;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          overflow: auto;
-          background-color: ${colors.transparentBlack};
-        }
-        .modal-content {
-          margin: auto;
-          display: block;
-          width: 80%;
-          -webkit-animation-name: zoom;
-          -webkit-animation-duration: 0.6s;
-          animation-name: zoom;
-          animation-duration: 0.6s;
-        }
-        @-webkit-keyframes zoom {
-          from {-webkit-transform:scale(0)}
-          to {-webkit-transform:scale(1)}
-        }
-        @keyframes zoom {
-          from {transform:scale(0)}
-          to {transform:scale(1)}
-        }
-        .close {
-          position: absolute;
-          top: 15px;
-          right: 35px;
-          color: ${colors.lightestGray};
-          font-size: ${fontSizes.med2};
-          font-weight: bold;
-          transition: 0.3s;
-        }
-        .close:hover,
-        .close:focus {
-          color: ${colors.medGray};
-          text-decoration: none;
-          cursor: pointer;
-        }
-        @media only screen and (max-width: 700px){
-          .modal-content {
-            width: 100%;
-          }
-        }
-      `} </style>
-*/}
     </StyledWrapper>
-
   )
 };
