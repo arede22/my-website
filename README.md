@@ -1,7 +1,7 @@
 ## Personal Website/Portfolio
 
 <p align="center">
-  <img src="./static/3-color-trace.png" alt="Profile Image" />
+  <img src="./static/genImages/3-color-trace.png" alt="Profile Image" />
 </p>
 
 1. Demonstrating HTML/CSS and JavaScript skills

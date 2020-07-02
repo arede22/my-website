@@ -9,7 +9,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     font-family: ${fonts.Lucida};
-    background-color: ${colors.bodyBackground};
+    color: white;
   }
 `;
 const StyledWrapper = styled.div`

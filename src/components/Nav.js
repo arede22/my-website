@@ -33,10 +33,8 @@ const Link = styled.a`
   font-family: ${fonts.Lucida};
 
   &:hover {
-    color: ${colors.transparentSeaBlue};
-    /* background-color: yellow; */
+    color: ${colors.moreSeaBlue};
   },
-
 `;
 
 // export main component
@@ -47,11 +45,10 @@ export default function Nav() {
     <NavWrapper id="navbar">
       <StyledNav>
         <ULWrapper>
-          {/*onMouseOut={e => {e.currentTarget.style.color = 'white'}}*/}
-          <LIWrapper> <Link href='/' id='home' onMouseOver={e => {prevColor = e.currentTarget.style.color; e.currentTarget.style.color = colors.transparentSeaBlue;}} onMouseOut={e => {e.currentTarget.style.color = prevColor}}> Home </Link> </LIWrapper>
-          <LIWrapper className="extra"> <Link href="#About" id='about' onMouseOver={e => {prevColor = e.currentTarget.style.color; e.currentTarget.style.color = colors.transparentSeaBlue;}} onMouseOut={e => {e.currentTarget.style.color = prevColor}}> About </Link> </LIWrapper>
-          <LIWrapper className="extra"> <Link href="#Portfolio" id='portfolio' onMouseOver={e => {prevColor = e.currentTarget.style.color; e.currentTarget.style.color = colors.transparentSeaBlue;}} onMouseOut={e => {e.currentTarget.style.color = prevColor}}> Portfolio </Link> </LIWrapper>
-          <LIWrapper className="extra"> <Link href="#Contact-Me" id='contact-me' onMouseOver={e => {prevColor = e.currentTarget.style.color; e.currentTarget.style.color = colors.transparentSeaBlue;}} onMouseOut={e => {e.currentTarget.style.color = prevColor}}> Contact Me </Link> </LIWrapper>
+          <LIWrapper> <Link href='/' id='home' onMouseOver={e => {prevColor = e.currentTarget.style.color; e.currentTarget.style.color = colors.moreSeaBlue;}} onMouseOut={e => {e.currentTarget.style.color = prevColor}}> Home </Link> </LIWrapper>
+          <LIWrapper className="extra"> <Link href="#About" id='about' onMouseOver={e => {prevColor = e.currentTarget.style.color; e.currentTarget.style.color = colors.moreSeaBlue;}} onMouseOut={e => {e.currentTarget.style.color = prevColor}}> About </Link> </LIWrapper>
+          <LIWrapper className="extra"> <Link href="#Portfolio" id='portfolio' onMouseOver={e => {prevColor = e.currentTarget.style.color; e.currentTarget.style.color = colors.moreSeaBlue;}} onMouseOut={e => {e.currentTarget.style.color = prevColor}}> Portfolio </Link> </LIWrapper>
+          <LIWrapper className="extra"> <Link href="#Contact-Me" id='contact-me' onMouseOver={e => {prevColor = e.currentTarget.style.color; e.currentTarget.style.color = colors.moreSeaBlue;}} onMouseOut={e => {e.currentTarget.style.color = prevColor}}> Contact Me </Link> </LIWrapper>
           <LIWrapper className="extra"> <Link href="resume.pdf" target="_blank"> Resume </Link> </LIWrapper>
         </ULWrapper>
       </StyledNav>
