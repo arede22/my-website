@@ -59,7 +59,7 @@ const Cols = styled(StyledWrapper)`
 export default function Intro() {
   return (
     <StyledWrapper>
-      <a name="About"></a>
+      <a name="About" id="about-anchor"></a>
       <H2Style>About</H2Style>
       <StyledWrapper>
         <ThreeGrid>

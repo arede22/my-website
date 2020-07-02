@@ -83,7 +83,7 @@ const SpaceBetween = styled.div`
 export default function Portfolio() {
   return (
     <StyledWrapper>
-      <a name="Portfolio"></a>
+      <a name="Portfolio" id="portfolio-anchor"></a>
       <H2Style> Portfolio </H2Style>
       <TwoGrid>
         <Box>
