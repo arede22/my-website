@@ -1,7 +1,7 @@
 import React from 'react';
 import { theme } from '../styles';
 import styled from 'styled-components';
-const { colors, fonts, hrefs, iconSrcs } = theme;
+const { colors, hrefs, iconSrcs } = theme;
 
 // constants
 const ref = [
@@ -46,8 +46,6 @@ const Link = styled.a`
 `;
 const PStyle = styled.p`
   text-align: center;
-  font-family: ${fonts.Lucida};
-  color: white;
 `;
 
 // export main component

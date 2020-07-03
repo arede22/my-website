@@ -1,29 +1,29 @@
 import React from 'react';
 import styled from 'styled-components';
 import { theme } from '../styles';
-const { colors, fonts, fontSizes, imgSrcs } = theme;
+const { colors, fontSizes, imgSrcs } = theme;
 
 // styles and wrappers
 const StyledWrapper = styled.div`
   margin: 0 auto;
   text-align: center;
-  /* display: flex;
-  justify-content: center; */
 `;
 const H1Style = styled.h1`
   background-color: ${colors.transparentSeaBlue};
   width: 50%;
-  border-radius: 8px;
+  border-radius: 12px;
   text-align: center;
   font-size: ${fontSizes.lg};
   padding: 30px 5px;
-  margin: 110px 15px 30px;
+  margin: 0 auto;
   text-shadow: 2px 2px black;
-  color: white;
-  font-family: ${fonts.Lucida};
+
+  @media (max-width: 600px) {
+    font-size: ${fontSizes.sm3};
+  }
 `;
 const ImgStyle = styled.img`
-  margin-left: 41%;
+  margin: 0 auto;
 `;
 const WelcomeStyle = styled.div`
   text-align: center;
@@ -31,34 +31,29 @@ const WelcomeStyle = styled.div`
   line-height: 1.5;
   margin: 5px 20px;
   text-shadow: 2px 2px black;
+
+  @media (max-width: 600px) {
+    font-size: ${fontSizes.sm0};
+  }
 `;
 const ResumeBox = styled.div`
   background-color: ${colors.transparentSeaBlue};
   width: 25%;
-  border-radius: 15px;
+  border-radius: 12px;
   font-size: ${fontSizes.sm3};
   padding: 2.5px 10px 30px;
   margin: 20px 20px 30px;
 `;
 const ResumeButton = styled.a`
-  width: auto;
+  width: 30%;
   border: 1px solid white;
-  border-radius: 6px;
+  border-radius: 8px;
   padding: 10px;
-  margin-bottom: 10px;
-  background-color: white;
-  color: white;
-  font-family: ${fonts.Lucida};
   text-decoration: none;
 
   &:hover {
-    color: ${colors.skyBlue};
-
+    color: ${colors.moreSeaBlue};
   }
-`;
-const PStyle = styled.p`
-  color: white;
-  font-family: ${fonts.Lucida};
 `;
 
 // export main component
@@ -69,11 +64,11 @@ export default function Welcome() {
       <ImgStyle src={imgSrcs.profile} alt="This is me!" />
 
       <WelcomeStyle>
-        <PStyle>
+        <p>
           I am a sophomore in UC Berkeley studying Electrical Engineering and Computer Science (EECS) concentrating in AI & ML with Linguistics as my minor. My areas of interest lie in ML, NLP, and Cloud Computing.
-        </PStyle>
+        </p>
         <ResumeBox>
-          <PStyle> Take a quick peek at my resumé! </PStyle>
+          <p> Take a quick peek at my resumé! </p>
           <ResumeButton href="resume.pdf" target="_blank"> Resumé </ResumeButton>
         </ResumeBox>
       </WelcomeStyle>

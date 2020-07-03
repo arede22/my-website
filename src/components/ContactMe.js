@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { theme } from '../styles';
-const { colors, fonts, fontSizes } = theme;
+const { colors, fontSizes } = theme;
 
 // styles and wrappers
 const StyledWrapper = styled.div`
@@ -14,8 +14,6 @@ const H2Style = styled.h2`
   font-size: ${fontSizes.med1};
   padding: 150px 0px 35px;
   text-shadow: 2px 2px black;
-  color: white;
-  font-family: ${fonts.Lucida};
 `;
 const PStyle = styled.p`
   text-align: center;
@@ -24,15 +22,16 @@ const PStyle = styled.p`
   fontSize: 18px;
   borderRadius: 15px;
   padding: 25px 10px;
-  color: white;
-  font-family: ${fonts.Lucida};
+`;
+const AnchorPoint = styled.a`
+  margin-bottom: 10px;
 `;
 
 // export main component
 export default function ContactMe() {
   return (
     <StyledWrapper>
-      <a name="Contact-Me" id="contactme-anchor"></a>
+      <AnchorPoint name="Contact-Me" id="contactme-anchor"></AnchorPoint>
       <H2Style> Contact Me </H2Style>
       <PStyle>
         Super excited you browsed through my website! Please contact me by whatever method might be best though e-mail works best.

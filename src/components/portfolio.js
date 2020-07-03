@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { theme, media } from '../styles';
 import Modal from './modal';
-const { colors, fonts, fontSizes, hrefs, imgSrcs } = theme;
+const { colors, fontSizes, hrefs, imgSrcs } = theme;
 // Coursework
 // Skills
 // Softwares and comfortability
@@ -22,12 +22,6 @@ const H2Style = styled.h2`
   font-size: ${fontSizes.med1};
   margin: 75px 0px;
   text-shadow: 2px 2px black;
-  color: white;
-  font-family: ${fonts.Lucida};
-`;
-const H3Style = styled.h3`
-  color: white;
-  font-family: ${fonts.Lucida};
 `;
 const TwoGrid = styled.div`
   display: grid;
@@ -50,23 +44,13 @@ const Box = styled.div`
   overflow-x: auto;
   padding: 7.5px 20px 20px;
 `;
-const ULWrapper = styled.ul`
-  color: white;
-  font-family: ${fonts.Lucida};
-`;
 const LIWrapper = styled.li`
-  color: white;
-  font-family: ${fonts.Lucida};
   margin: 5px 0px;
 `;
 const PStyle = styled.p`
-  color: white;
-  font-family: ${fonts.Lucida};
   text-align: center;
 `;
 const Link = styled.a`
-  color: white;
-  font-family: ${fonts.Lucida};
   text-decoration: none;
 
   &:hover {
@@ -78,17 +62,20 @@ const SpaceBetween = styled.div`
   display: flex;
   justify-content: space-between;
 `;
+const AnchorPoint = styled.a`
+  margin-bottom: 10px;
+`;
 
 // export main component
 export default function Portfolio() {
   return (
     <StyledWrapper>
-      <a name="Portfolio" id="portfolio-anchor"></a>
+      <AnchorPoint name="Portfolio" id="portfolio-anchor"></AnchorPoint>
       <H2Style> Portfolio </H2Style>
       <TwoGrid>
         <Box>
-          <H3Style> Class projects and extensions </H3Style>
-          <ULWrapper>
+          <h3> Class projects and extensions </h3>
+          <ul>
             <LIWrapper> Voice-Activated Car -- Designing Information Devices/Systems Trained with PCA </LIWrapper>
 
               <Modal trigger="car" img={imgSrcs.car} pop="popCar" content="img01" />
@@ -104,26 +91,26 @@ export default function Portfolio() {
               <PStyle>
                 <Link href={hrefs.gameVid} target="_blank"> Click here for DEMO </Link>
               </PStyle>
-          </ULWrapper>
+          </ul>
         </Box>
         <Box>
-          <H3Style> Personal Projects </H3Style>
-          <ULWrapper>
+          <h3> Personal Projects </h3>
+          <ul>
             <LIWrapper> Current projects:
-              <ULWrapper>
+              <ul>
                 <LIWrapper> Personal website built with React and Next.js, allows playing with graphic design </LIWrapper>
                 <LIWrapper> Safety app around Berkeley for students built using Swift </LIWrapper>
                 <LIWrapper> Learning graphic design via Photoshop, Illustrator, and Maya </LIWrapper>
-              </ULWrapper>
+              </ul>
             </LIWrapper>
             <LIWrapper> Projected projects:
-              <ULWrapper>
+              <ul>
                 <LIWrapper> Modifying voice-activated car built last semester to be hooked up to bluetooth and Wi-Fi </LIWrapper>
                 <LIWrapper> Original pixel art Gameboy game built from scratch </LIWrapper>
                 <LIWrapper> Image analysis to interpret and translate language with NLP using AI/ML </LIWrapper>
-              </ULWrapper>
+              </ul>
             </LIWrapper>
-          </ULWrapper>
+          </ul>
         </Box>
       </TwoGrid>
     </StyledWrapper>

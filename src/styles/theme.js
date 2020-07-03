@@ -1,4 +1,6 @@
-// theme colors, fonts, font sizes, hrefs, icon srcs, and img srcs used throughout project
+// theme colors, font sizes, hrefs, icon srcs, and img srcs used throughout project
+
+// need proper theme colors:
 const theme = {
 
   colors: {
@@ -23,11 +25,13 @@ const theme = {
   fonts: {
 
     Lucida: "'Lucida Sans Unicode', 'Lucida Grande', sans-serif",
+    Oswald: "'Oswald', sans-serif"
 
   },
 
   fontSizes: {
-
+// best sizes for mobile: sm0-3
+    sm0: '14px',
     sm1: '16px',
     sm2: '17px',
     sm3: '18px',
@@ -61,6 +65,7 @@ const theme = {
 
     backgroundImg: '../static/genImages/starting-background.png',
     profile: '../static/genImages/profile.png',
+    dropdown: '../../static/genImages/downarrow.svg',
     car: '../static/portfolio/car.png',
     map: '../static/portfolio/map.png',
     randRooms: '../static/portfolio/random-room.png',

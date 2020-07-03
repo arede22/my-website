@@ -10,6 +10,8 @@ export default function Header() {
       <link rel="icon" type="image/png" sizes="16x16" href="../../static/favicon/favicon-16x16.png"/>
       <link rel="manifest" href="../../static/favicon/site.webmanifest"/>
 
+      <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet" />
+
       <title>Anika Rede: Software Engineer</title>
 
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript" />

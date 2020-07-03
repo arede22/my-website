@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { theme } from '../styles';
-const { colors, fonts, fontSizes } = theme;
+const { colors, fontSizes, imgSrcs } = theme;
 
 // styles and wrappers
 const NavWrapper = styled.header`
@@ -41,19 +41,23 @@ const OptLIWrapper = styled(LIWrapper)`
   }
 `;
 const Link = styled.a`
-  color: white;
   text-decoration: none;
   font-size: ${fontSizes.sm2};
-  font-family: ${fonts.Lucida};
 
   &:hover {
     color: ${colors.moreSeaBlue};
   }
+
+  @media (max-width: 600px) {
+    font-size: ${fontSizes.sm0}
+  }
 `;
 const HomeLink = styled(Link)`
+  color: ${colors.seaBlue};
+
   @media (max-width: 600px) {
     &::after {
-      content: url('../../static/downarrow.svg');
+      content: url(${imgSrcs.dropdown});
     }
   }
 `;

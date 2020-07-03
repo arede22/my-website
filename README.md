@@ -15,13 +15,17 @@ Recently changed:
   Mostly modified @styles, nav, welcome, intro, contactme, and footer -- staged for finalizing design ideas
   Made media file properly, now can access from rest of files
 
+  Not using modals any more, not pretty to look at
+  Figured out navbar for mobile screens
+
 Yet to-do:
+  Dropdown menu for mobile screens
   Sketch out a good scheme for design, now that abstractions are done everything should go smoother
 
+  Get color palette and apply (plus graphic design background Illustrator)
   Finalize design ideas, modify @styles, nav, welcome, intro, contactme, and footer toward that end
-  Think of portfolio ideas, forget about modals not nice to look at
-
-  Design for different media
+  Think of portfolio and info layouts + act on it
+  Design for different media -- font-sizes, widths
 
   Add in a 'scroll to top' button
   Graphic design for background

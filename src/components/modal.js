@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { theme } from '../styles';
 import styled, { keyframes } from 'styled-components';
-const { colors, fonts, fontSizes } = theme;
+const { colors, fontSizes } = theme;
 // flexbox: calhacks.org/flexbox
 // position: relative; --> to make B move relative to A and C divs
 // material design, bootstrap, css tricks, mdn web docs
@@ -83,7 +83,7 @@ export default function Modal(props) {
         <div style={{backgroundColor: 'pink', height: '30px', width: '30px'}}> </div>
       */}
 
-      <ImgWrapper> <ImgStyle id={props.trigger} src={props.img} alt={props.trigger} vspace="10" /> </ImgWrapper>
+      <ImgWrapper> <ImgStyle id={props.trigger} src={props.img} alt={props.trigger} /> </ImgWrapper>
 
       {/*
         add in:
