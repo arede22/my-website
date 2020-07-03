@@ -112,6 +112,16 @@ export default function Portfolio() {
             </LIWrapper>
           </ul>
         </Box>
+        <Box>
+          <h3> Exploring pet projects (more below) </h3>
+          <ul>
+            <li> Safety app around Berkeley for Cal students </li>
+            <li> Improving on voice-activated car built last semester </li>
+            <li> Learning graphic design and animation software </li>
+            <li> Contributing to friends' personal projects </li>
+            <li> Exploring beginner projects using NLP analysis with AI/ML </li>
+          </ul>
+        </Box>
       </TwoGrid>
     </StyledWrapper>
   )

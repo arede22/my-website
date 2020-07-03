@@ -2,12 +2,13 @@ import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 import { Header, Nav, Welcome, Intro, Portfolio, ContactMe, Footer } from '../src/components'; // '@components'
 import { theme } from '../src/styles'; // '@styles'
-const { colors, fonts, imgSrcs } = theme;
+const { colors, fonts, imgSrcs, fontSizes } = theme;
 
 // styles and wrappers
 const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
+    font-size: ${fontSizes.sm3};
     font-family: ${fonts.Lucida};
     color: white;
   }

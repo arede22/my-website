@@ -47,13 +47,23 @@ const Cols = styled(StyledWrapper)`
 const AnchorPoint = styled.a`
   margin-bottom: 10px;
 `;
+const ULWrapper = styled.ul`
+  color: ${colors.transparentSeaBlue};
+`;
+const LIWrapper = styled.li`
+  color: ${colors.lightGray};
+  line-height: 1.5;
+`;
+const H3Style = styled.h3`
+  font-size: ${fontSizes.lg};
+`;
 
 // export main component
 export default function Intro() {
   return (
     <StyledWrapper>
       <AnchorPoint name="About" id="about-anchor"></AnchorPoint>
-      <H2Style>About</H2Style>
+      <H2Style>About Me</H2Style>
       <StyledWrapper>
         <ThreeGrid>
           <Box>
@@ -107,16 +117,6 @@ export default function Intro() {
               <li> People skills, smooth communication, & true personality </li>
             </ul>
           </Box>
-          <Box>
-            <h3> Exploring pet projects (more below) </h3>
-            <ul>
-              <li> Safety app around Berkeley for Cal students </li>
-              <li> Improving on voice-activated car built last semester </li>
-              <li> Learning graphic design and animation software </li>
-              <li> Contributing to friends' personal projects </li>
-              <li> Exploring beginner projects using NLP analysis with AI/ML </li>
-            </ul>
-          </Box>
         </ThreeGrid>
         <TwoGrid>
           <Box>
@@ -142,17 +142,35 @@ export default function Intro() {
             </ul>
           </Box>
           <Box>
-          <h3> Major Coursework </h3>
-          <ul>
-            <li> Intro to Computer Science </li>
-            <li> Data Structures & Algorithms </li>
-            <li> Discrete Mathematics and Probability Theory </li>
-            <li> Probability and Random Processes </li>
-            <li> Optimization Models in Engineering </li>
-            <li> (Audited) Natural Language Processing </li>
-            <li> Computer Architecture </li>
-            <li> Designing Information Devices and Systems </li>
-          </ul>
+          <H3Style> Past work experience </H3Style>
+          <ULWrapper>
+            <LIWrapper> (Computational Linguistics) Research Intern @ICSI (International Computer Science Institute) -- UC-Berkeley, Jan 2020 -- Current
+              <ULWrapper>
+                <LIWrapper> Predicting the semantic components from morphologically complex words in polysynthetic languages of Karuk and Yurok </LIWrapper>
+              </ULWrapper>
+            </LIWrapper>
+            <LIWrapper> Software Engineering Intern @Pulse Q&A -- SF, Summer 2019
+              <ULWrapper>
+                <LIWrapper> Limited personnel previously led to outsourcing manual labor </LIWrapper>
+                <LIWrapper> Automated internal tools improved efficiency of office (allowed focus on increasing traffic on the service's platform, marketing efforts, and bettering market-fit) </LIWrapper>
+              </ULWrapper>
+            </LIWrapper>
+            <LIWrapper> (EECS) Research Intern @Jadoo Tech -- UC-Berkeley, Feb-Sept 2019
+              <ULWrapper>
+                <LIWrapper> Conducted research in physics theoretical equations and experiments for start-up in UC-Berkeley </LIWrapper>
+              </ULWrapper>
+            </LIWrapper>
+            <LIWrapper> (EECS) Research Intern @Feng Labs -- CWRU, 2015-2018
+              <ULWrapper>
+                <LIWrapper> Quantified properties of metastatic breast cancer cells using MEMS microsensors </LIWrapper>
+              </ULWrapper>
+            </LIWrapper>
+            <LIWrapper> IT Hub Intern @Hathaway Brown -- OH, 2015-2018
+              <ULWrapper>
+                <LIWrapper> Both worked and volunteered at high-school's IT Helpdesk </LIWrapper>
+              </ULWrapper>
+            </LIWrapper>
+          </ULWrapper>
 
           </Box>
         </TwoGrid>

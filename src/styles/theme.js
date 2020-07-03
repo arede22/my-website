@@ -7,11 +7,11 @@ const theme = {
 
     transparentSeaBlue: "rgba(129, 207, 224, 0.4)",
     moreSeaBlue: "rgba(197, 239, 247, 0.7)",
-    seaBlue: "rgba(129, 207, 224, 1)",
-    skyBlue: "rgba(197, 239, 247, 1)",
+    seaBlue: "rgb(129, 207, 224)",
+    skyBlue: "rgb(197, 239, 247)",
 
-    halfTransparentGray: "rgba(166, 166, 166, 0.5)",
     transparentGray: "rgba(166, 166, 166, 0.3)",
+    halfTransparentGray: "rgba(166, 166, 166, 0.5)",
     lightestGray: "#f1f1f1",
     lightGray: "#cfcfcf",
     medGray: "#bbb",

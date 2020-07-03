@@ -27,6 +27,9 @@ const FooterStyle = styled.footer`
   align: center;
   padding-top: 40px;
   margin: 25px auto;
+  @media (max-width: 600px) {
+    width: 60%;
+  }
 `;
 const ULWrapper = styled.ul`
   background-color: ${colors.transparentGray};
@@ -43,9 +46,21 @@ const LIWrapper = styled.li`
 const Link = styled.a`
   text-decoration: none;
   color: ${colors.skyBlue};
+
+  &:hover {
+    color: ${colors.transparentSeaBlue}
+  }
 `;
 const PStyle = styled.p`
   text-align: center;
+`;
+const ImgStyle = styled.img`
+  margin: 0 auto;
+
+  @media (max-width: 600px) {
+    height: 50%;
+    width: 50%;
+  }
 `;
 
 // export main component
@@ -56,7 +71,7 @@ export default function Footer() {
         <ULWrapper>
           {links.map(({ key, href, src }) => (
             <LIWrapper key={key}>
-              <a href={href} target="_blank"> <img src={src + '.png'} onMouseOver={e => {e.currentTarget.src = src + '-hover.png'}} onMouseOut={e => {e.currentTarget.src = src + '.png'}} /> </a>
+              <a href={href} target="_blank"> <ImgStyle src={src + '.png'} onMouseOver={e => {e.currentTarget.src = src + '-hover.png'}} onMouseOut={e => {e.currentTarget.src = src + '.png'}} /> </a>
             </LIWrapper>
           ))}
         </ULWrapper>
