@@ -9,6 +9,10 @@ const NavWrapper = styled.header`
   top: 0;
   transition: top 0.2s ease-in-out;
   width: 100%;
+
+  @media (max-width: 600px) {
+    position: relative;
+  }
 `;
 const StyledNav = styled.nav`
   text-align: center;
@@ -21,10 +25,20 @@ const ULWrapper = styled.ul`
   text-align: center;
   justify-content: space-around;
   padding: 4px 16px;
+
+  @media (max-width: 600px) {
+    display: inline-block;
+    justify-content: center;
+  }
 `;
 const LIWrapper = styled.li`
   display: flex;
   padding: 6px 8px;
+`;
+const OptLIWrapper = styled(LIWrapper)`
+  @media (max-width: 600px) {
+    display: none;
+  }
 `;
 const Link = styled.a`
   color: white;
@@ -34,7 +48,14 @@ const Link = styled.a`
 
   &:hover {
     color: ${colors.moreSeaBlue};
-  },
+  }
+`;
+const HomeLink = styled(Link)`
+  @media (max-width: 600px) {
+    &::after {
+      content: url('../../static/downarrow.svg');
+    }
+  }
 `;
 
 // export main component
@@ -45,25 +66,13 @@ export default function Nav() {
     <NavWrapper id="navbar">
       <StyledNav>
         <ULWrapper>
-          <LIWrapper> <Link href='/' id='home' onMouseOver={e => {prevColor = e.currentTarget.style.color; e.currentTarget.style.color = colors.moreSeaBlue;}} onMouseOut={e => {e.currentTarget.style.color = prevColor}}> Home </Link> </LIWrapper>
-          <LIWrapper className="extra"> <Link href="#About" id='about' onMouseOver={e => {prevColor = e.currentTarget.style.color; e.currentTarget.style.color = colors.moreSeaBlue;}} onMouseOut={e => {e.currentTarget.style.color = prevColor}}> About </Link> </LIWrapper>
-          <LIWrapper className="extra"> <Link href="#Portfolio" id='portfolio' onMouseOver={e => {prevColor = e.currentTarget.style.color; e.currentTarget.style.color = colors.moreSeaBlue;}} onMouseOut={e => {e.currentTarget.style.color = prevColor}}> Portfolio </Link> </LIWrapper>
-          <LIWrapper className="extra"> <Link href="#Contact-Me" id='contact-me' onMouseOver={e => {prevColor = e.currentTarget.style.color; e.currentTarget.style.color = colors.moreSeaBlue;}} onMouseOut={e => {e.currentTarget.style.color = prevColor}}> Contact Me </Link> </LIWrapper>
-          <LIWrapper className="extra"> <Link href="resume.pdf" target="_blank"> Resume </Link> </LIWrapper>
+          <LIWrapper> <HomeLink href='/' id='home' onMouseOver={e => {prevColor = e.currentTarget.style.color; e.currentTarget.style.color = colors.moreSeaBlue;}} onMouseOut={e => {e.currentTarget.style.color = prevColor}} style={{color: colors.transparentSeaBlue}}> Home </HomeLink> </LIWrapper>
+          <OptLIWrapper className="extra"> <Link href="#About" id='about' onMouseOver={e => {prevColor = e.currentTarget.style.color; e.currentTarget.style.color = colors.moreSeaBlue;}} onMouseOut={e => {e.currentTarget.style.color = prevColor}}> About </Link> </OptLIWrapper>
+          <OptLIWrapper className="extra"> <Link href="#Portfolio" id='portfolio' onMouseOver={e => {prevColor = e.currentTarget.style.color; e.currentTarget.style.color = colors.moreSeaBlue;}} onMouseOut={e => {e.currentTarget.style.color = prevColor}}> Portfolio </Link> </OptLIWrapper>
+          <OptLIWrapper className="extra"> <Link href="#Contact-Me" id='contact-me' onMouseOver={e => {prevColor = e.currentTarget.style.color; e.currentTarget.style.color = colors.moreSeaBlue;}} onMouseOut={e => {e.currentTarget.style.color = prevColor}}> Contact Me </Link> </OptLIWrapper>
+          <OptLIWrapper className="extra"> <Link href="resume.pdf" target="_blank"> Resume </Link> </OptLIWrapper>
         </ULWrapper>
       </StyledNav>
-
-      <style jsx>{`
-
-        @media only screen and (max-width: 600px) {
-          li.extra {
-            display: none;
-          }
-        }
-
-      `}
-      </style>
-
     </NavWrapper>
   )
 };
