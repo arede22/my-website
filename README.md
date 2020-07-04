@@ -38,17 +38,20 @@ Main to-dos:
   Javascript and Ajax scripts
   Add in API calls
   Page loader
+  Opt blog section
 
 Updating project:
-  1. Launch via CLI:
-    npm run build
-    npm run export
-    cd out
-    serve -p 8080
-  2. Running into node module issues on build, if solving takes too long do:
-    npm uninstall
-    delete .next
-    delete node_modules
-    delete package_lock.json
-    npm install
-    and launch the application
+  1. Launch via CLI (build/ship):
+     npm run build
+     npm run export
+     cd out
+     serve -p 8080
+  2. Launch dev:
+     npm run dev
+  3. Running into node module issues on build, if solving takes too long do:
+     npm uninstall
+     delete .next
+     delete node_modules
+     delete package_lock.json
+     npm install
+     launch the application

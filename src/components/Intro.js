@@ -38,7 +38,7 @@ const Box = styled.div`
   overflow-x: auto;
   padding: 7.5px 20px 20px;
 `;
-const Rows = styled(ul)`
+const Rows = styled.ul`
   display: flex;
 `;
 const Cols = styled(StyledWrapper)`
