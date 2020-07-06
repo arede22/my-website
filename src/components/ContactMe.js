@@ -6,6 +6,8 @@ const { colors, fontSizes } = theme;
 // styles and wrappers
 const StyledWrapper = styled.div`
   text-align: center;
+  display: flex;
+  justify-content: center;
   font-size: ${fontSizes.sm3};
   line-height: 1.5;
   margin: 30px 15px 240px;
