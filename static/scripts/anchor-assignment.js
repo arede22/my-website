@@ -15,11 +15,10 @@ $(document).ready ( function() {
       } else if ( $(window).scrollTop() <= offset3 ) {
         document.getElementById('portfolio').style.color = blue;
         list.splice(2, 1);
-      } else if ( $(window).scrollTop() > offset3 ) {
+      } else {
         document.getElementById('contact-me').style.color = blue;
         list.pop();
       }
-
 
       for (var i = 0; i < 3; i++) {
         document.getElementById(list[i]).style.color = 'white';

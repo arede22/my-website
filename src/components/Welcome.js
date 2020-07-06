@@ -5,7 +5,7 @@ const { colors, fontSizes, imgSrcs } = theme;
 
 // styles and wrappers
 const StyledWrapper = styled.div`
-  margin: 0 auto;
+  margin: 70px auto;
   text-align: center;
 `;
 const H1Style = styled.h1`
@@ -14,16 +14,28 @@ const H1Style = styled.h1`
   border-radius: 12px;
   text-align: center;
   font-size: ${fontSizes.lg};
-  padding: 30px 5px;
-  margin: 0 auto;
+  padding: 20px 10px;
+  margin: 30px auto;
   text-shadow: 2px 2px black;
 
+  &::selection {
+    background-color: ${colors.skyBlue};
+    color: ${colors.darkGray};
+    text-shadow: none;
+  }
+
   @media (max-width: 600px) {
-    font-size: ${fontSizes.sm3};
+    font-size: ${fontSizes.med1};
   }
 `;
 const ImgStyle = styled.img`
   margin: 0 auto;
+
+  @media (max-width: 600px) {
+    margin: 0 30px;
+    max-width: 100%;
+    height: auto;
+  }
 `;
 const WelcomeStyle = styled.div`
   text-align: center;
@@ -38,18 +50,20 @@ const WelcomeStyle = styled.div`
 `;
 const ResumeBox = styled.div`
   background-color: ${colors.transparentSeaBlue};
-  width: 25%;
+  width: 40%;
   border-radius: 12px;
-  font-size: ${fontSizes.sm3};
   padding: 2.5px 10px 30px;
   margin: 20px 20px 30px;
 `;
 const ResumeButton = styled.a`
-  width: 30%;
+  width: 35%;
   border: 1px solid white;
   border-radius: 8px;
-  padding: 10px;
+  padding: 15px;
   text-decoration: none;
+  color: white;
+  background-color: ${colors.skyBlue};
+  font-size: ${fontSizes.sm3};
 
   &:hover {
     color: ${colors.moreSeaBlue};

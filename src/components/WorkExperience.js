@@ -9,16 +9,17 @@ const { colors, fonts, fontSizes } = theme;
 // styles and wrappers
 const StyledWrapper = styled.div`
   margin: 0;
-  font-family: ${fonts.Oswald};
+  color: white;
 `;
 const ULWrapper = styled.ul`
-  color: ${colors.transparentSeaBlue};
+  color: white;
 `;
 const LIWrapper = styled.li`
-  color: ${colors.lightGray};
+  color: white;
   line-height: 1.5;
 `;
 const H3Style = styled.h3`
+  color: white;
   font-size: ${fontSizes.lg};
 `;
 

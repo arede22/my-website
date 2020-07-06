@@ -1,5 +1,3 @@
-// theme colors, font sizes, hrefs, icon srcs, and img srcs used throughout project
-
 // need proper theme colors:
 const theme = {
 
@@ -66,6 +64,7 @@ const theme = {
   imgSrcs: {
 
     backgroundImg: '../static/genImages/starting-background.png',
+    // backgroundImgSm: '../static/genImages/starting-background-sm.png',
     profile: '../static/genImages/profile.png',
     dropdown: '../../static/genImages/downarrow.svg',
     car: '../static/portfolio/car.png',

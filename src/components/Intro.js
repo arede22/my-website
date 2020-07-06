@@ -1,15 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 import { theme } from '../styles';
+import WorkExperience from './workExperience';
 const { colors, fontSizes } = theme;
 
 // styles and wrappers
 const StyledWrapper = styled.div`
   margin: 0;
 
-  /* @media (max-width: 600px) {
+  @media (max-width: 600px) {
     display: inline-block;
-  } */
+  }
 `;
 const H2Style = styled.h2`
   text-align: center;
@@ -142,6 +143,7 @@ export default function Intro() {
             </ul>
           </Box>
           <Box>
+          <WorkExperience />
           <H3Style> Past work experience </H3Style>
           <ULWrapper>
             <LIWrapper> (Computational Linguistics) Research Intern @ICSI (International Computer Science Institute) -- UC-Berkeley, Jan 2020 -- Current

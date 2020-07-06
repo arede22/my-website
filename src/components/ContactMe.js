@@ -15,13 +15,17 @@ const H2Style = styled.h2`
   padding: 150px 0px 35px;
   text-shadow: 2px 2px black;
 `;
-const PStyle = styled.p`
+const ContactBox = styled.div`
   text-align: center;
   background-color: ${colors.transparentSeaBlue};
   width: 60%;
-  fontSize: 18px;
-  borderRadius: 15px;
+  fontSize: ${fontSizes.sm3};
+  border-radius: 15px;
   padding: 25px 10px;
+
+  @media (max-width: 600px) {
+    width: 400px;
+  }
 `;
 const AnchorPoint = styled.a`
   margin-bottom: 10px;
@@ -33,9 +37,11 @@ export default function ContactMe() {
     <StyledWrapper>
       <AnchorPoint name="Contact-Me" id="contactme-anchor"></AnchorPoint>
       <H2Style> Contact Me </H2Style>
-      <PStyle>
-        Super excited you browsed through my website! Please contact me by whatever method might be best though e-mail works best.
-      </PStyle>
+      <ContactBox>
+        <p>
+          Super excited you browsed through my website! Please contact me by whatever method might be best though e-mail works best.
+        </p>
+      </ContactBox>
     </StyledWrapper>
   )
 };

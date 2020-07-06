@@ -15,6 +15,7 @@ export default function Header() {
       <title>Anika Rede: Software Engineer</title>
 
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript" />
+      <script src="../../static/scripts/resizing.js" type="text/javascript" />
       <script src="../../static/scripts/nav-up.js" type="text/javascript" />
       <script src="../../static/scripts/anchor-assignment.js" type="text/javascript" />
       {/*<script src="../../static/scripts/modal-loader.js" type="text/javascript" />*/}
