@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { theme, media } from '../styles';
-import Modal from './modal';
 const { colors, fontSizes, hrefs, imgSrcs } = theme;
 // Coursework
 // Skills

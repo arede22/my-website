@@ -13,14 +13,14 @@ const StyledWrapper = styled.div`
 const CenterPiece = styled.div`
   position: absolute;
   background-color: pink;
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
 `;
 const SidePiece = styled.div`
   position: relative;
   background-color: green;
-  height: 200px;
-  width: 200px;
+  height: 100px;
+  width: 100px;
 `;
 
 // main component

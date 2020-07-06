@@ -18,7 +18,6 @@ export default function Header() {
       <script src="../../static/scripts/resizing.js" type="text/javascript" />
       <script src="../../static/scripts/nav-up.js" type="text/javascript" />
       <script src="../../static/scripts/anchor-assignment.js" type="text/javascript" />
-      {/*<script src="../../static/scripts/modal-loader.js" type="text/javascript" />*/}
       <script src="../../static/scripts/mobile-home-hover.js" type="text/javascript" />
       <script src="../../static/scripts/scroll-top.js" type="text/javascript" />
     </Head>

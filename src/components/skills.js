@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { theme } from '../styles';
-const { colors } = theme;
+const { colors, fontSizes } = theme;
 
 const ULWrapper = styled.ul`
   color: ${colors.transparentSeaBlue};

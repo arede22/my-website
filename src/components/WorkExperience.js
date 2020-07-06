@@ -2,14 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 import { theme } from '../styles';
 const { colors, fonts, fontSizes } = theme;
-// flexbox: calhacks.org/flexbox
-// position: relative; --> to make B move relative to A and C divs
-// material design, bootstrap, css tricks, mdn web docs
 
 // styles and wrappers
 const StyledWrapper = styled.div`
   margin: 0;
-  color: white;
+  background-color: black;
 `;
 const ULWrapper = styled.ul`
   color: white;

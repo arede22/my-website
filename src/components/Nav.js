@@ -92,7 +92,7 @@ export default function Nav() {
   var prevColor;
 
   return (
-    <NavWrapper>
+    <NavWrapper id="navbar">
       <Banner>
         <BannerName>
           <BannerLi> A </BannerLi>
@@ -102,7 +102,7 @@ export default function Nav() {
           <BannerLi> A </BannerLi>
         </BannerName>
       </Banner>
-      <StyledNav id="navbar">
+      <StyledNav>
         <ULWrapper>
           <LIWrapper> <HomeLink href='/' id='home' onMouseOver={e => {prevColor = e.currentTarget.style.color; e.currentTarget.style.color = colors.moreSeaBlue;}} onMouseOut={e => {e.currentTarget.style.color = prevColor}} style={{color: colors.transparentSeaBlue}}> Home </HomeLink> </LIWrapper>
           <OptLIWrapper className="extra"> <Link href="#About" id='about' onMouseOver={e => {prevColor = e.currentTarget.style.color; e.currentTarget.style.color = colors.moreSeaBlue;}} onMouseOut={e => {e.currentTarget.style.color = prevColor}}> About </Link> </OptLIWrapper>
@@ -111,15 +111,6 @@ export default function Nav() {
           <OptLIWrapper className="extra"> <Link href="resume.pdf" target="_blank"> Resume </Link> </OptLIWrapper>
         </ULWrapper>
       </StyledNav>
-      {/*<Banner>
-        <BannerName name="anika">
-          <BannerLi> A </BannerLi>
-          <BannerLi> N </BannerLi>
-          <BannerLi> I </BannerLi>
-          <BannerLi> K </BannerLi>
-          <BannerLi> A </BannerLi>
-        </BannerName>
-      </Banner>*/}
     </NavWrapper>
   )
 };

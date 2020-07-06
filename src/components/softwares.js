@@ -1,15 +1,22 @@
 import React from 'react';
 import styled from 'styled-components';
 import { theme } from '../styles';
-const { colors } = theme;
+const { colors, fontSizes } = theme;
 
+const StyledWrapper = styled.div`
+  margin: 0;
+
+  @media (max-width: 600px) {
+    display: inline-block;
+  }
+`;
 const Box = styled.div`
   background-color: ${colors.halfTransparentGray};
   border-radius: 5px;
   overflow-x: auto;
   padding: 7.5px 20px 20px;
 `;
-const Rows = styled(ul)`
+const Rows = styled.ul`
   display: flex;
 `;
 const Cols = styled(StyledWrapper)`

@@ -1,6 +1,7 @@
 import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 import { Header, Nav, Welcome, Intro, Portfolio, ContactMe, Footer } from '../src/components'; // '@components'
+import { Courses, Softwares, Skills, Clubs, WorkExperience, Project } from '../src/components'; // '@components'
 import { theme, media } from '../src/styles'; // '@styles'
 const { colors, fonts, imgSrcs, fontSizes } = theme;
 
@@ -38,15 +39,20 @@ export default function Home() {
       <GlobalStyle />
       <StyledWrapper id="body">
         <Header />
-
-        <Nav />
+        {/*<Courses />
+        <Softwares />
+        <Skills />
+        <Clubs />
+        <WorkExperience />
+        <Project />*/}
+        {/*<Nav />
 
         <Welcome />
         <Intro />
         <Portfolio />
         <ContactMe />
 
-        <Footer />
+        <Footer />*/}
       </StyledWrapper>
     </React.Fragment>
   )
