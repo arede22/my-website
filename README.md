@@ -23,7 +23,7 @@
 </ul>
 
 <b> Yet to-do: </b>
-<ul>
+<ul style="list-style-type:none; line-height:1.5;">
   <li> Dropdown menu for mobile screens </li>
   <li> Sketch out a good scheme for design, now that abstractions are done everything should go smoother </li>
 
@@ -38,7 +38,7 @@
 </ul>
 
 <b> Main to-dos: </b>
-<ul>
+<ul style="list-style-type:none; line-height:1.5;">
   <li> Make compatible with different media </li>
   <li> See if necessary to incorporate react-dom, react-router, react bootstrap, etc. </li>
   <li> Javascript and Ajax scripts </li>
@@ -54,7 +54,6 @@
      <li> npm run export </li>
      <li> cd out </li>
      <li> serve -p 8080 </li>
-    </ul>
   2. Launch dev:
      npm run dev
   3. Running into node module issues on build, if solving takes too long do:
@@ -65,4 +64,3 @@
      <li> delete package_lock.json </li>
      <li> npm install </li>
      <li> launch the application </li>
-    </ul>
