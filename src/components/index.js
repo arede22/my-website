@@ -8,6 +8,8 @@ export { default as ContactMe } from './contactMe';
 export { default as Footer } from './footer';
 
 // sub-components used in the above ones
+export { default as Modal } from './modal';
+
 export { default as Courses } from './courses';
 export { default as Softwares } from './softwares';
 export { default as Skills } from './skills';

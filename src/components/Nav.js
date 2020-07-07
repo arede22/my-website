@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { theme } from '../styles';
-const { colors, fontSizes, imgSrcs } = theme;
+const { colors, fontSizes } = theme;
 
 // styles and wrappers
 const NavWrapper = styled.header`

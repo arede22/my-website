@@ -39,12 +39,14 @@ export default function Home() {
       <GlobalStyle />
       <StyledWrapper id="body">
         <Header />
-        {/*<Courses />
+
+        <Courses />
         <Softwares />
         <Skills />
         <Clubs />
         <WorkExperience />
-        <Project />*/}
+        <Project />
+
         {/*<Nav />
 
         <Welcome />
@@ -53,6 +55,7 @@ export default function Home() {
         <ContactMe />
 
         <Footer />*/}
+
       </StyledWrapper>
     </React.Fragment>
   )

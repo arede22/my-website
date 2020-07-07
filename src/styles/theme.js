@@ -64,7 +64,7 @@ const theme = {
   imgSrcs: {
 
     backgroundImg: '../static/genImages/starting-background.png',
-    // backgroundImgSm: '../static/genImages/starting-background-sm.png',
+    backgroundImgSm: '../static/genImages/starting-background.png',
     profile: '../static/genImages/profile.png',
     dropdown: '../../static/genImages/downarrow.svg',
     car: '../static/portfolio/car.png',

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Modal from './modal';
 import { theme, media } from '../styles';
 const { colors, fontSizes, hrefs, imgSrcs } = theme;
 // Coursework
@@ -77,15 +78,15 @@ export default function Portfolio() {
           <ul>
             <LIWrapper> Voice-Activated Car -- Designing Information Devices/Systems Trained with PCA </LIWrapper>
 
-              <Modal trigger="car" img={imgSrcs.car} pop="popCar" content="img01" />
+              <Modal trigger="car" img={imgSrcs.car} pop="popCar" content="img01" aria={imgSrcs.replace('../static/portfolio/', '').replace('.png', '')} />
             <LIWrapper> Mock GoogleMaps Berkeley-Localized -- Map Rastering, Autocomplete and Search, and Navigation </LIWrapper>
-              <Modal trigger="map" img={imgSrcs.map} pop="popMap" content="img02" />
+              <Modal trigger="map" img={imgSrcs.map} pop="popMap" content="img02" aria={imgSrcs.replace('../static/portfolio/', '').replace('.png', '')} />
 
             <LIWrapper> Pixel Art Game -- Randomized Room Generation and Increasing Difficulty to Boss Level: </LIWrapper>
               <SpaceBetween>
-                <Modal trigger="randRooms" img={imgSrcs.randRooms} pop="popRandRooms" content="img03" />
+                <Modal trigger="randRooms" img={imgSrcs.randRooms} pop="popRandRooms" content="img03" aria={imgSrcs.replace('../static/portfolio/', '').replace('.png', '')} />
 
-                <Modal trigger="boss" img={imgSrcs.boss} pop="popBoss" content="img04" />
+                <Modal trigger="boss" img={imgSrcs.boss} pop="popBoss" content="img04" aria={imgSrcs.replace('../static/portfolio/', '').replace('.png', '')} />
               </SpaceBetween>
               <PStyle>
                 <Link href={hrefs.gameVid} target="_blank"> Click here for DEMO </Link>

@@ -71,7 +71,7 @@ export default function Footer() {
         <ULWrapper>
           {links.map(({ key, href, src }) => (
             <LIWrapper key={key}>
-              <a href={href} target="_blank"> <ImgStyle src={src + '.png'} onMouseOver={e => {e.currentTarget.src = src + '-hover.png'}} onMouseOut={e => {e.currentTarget.src = src + '.png'}} /> </a>
+              <a href={href} target="_blank"> <ImgStyle src={src + '.png'} aria-label={src.replace('../static/footer/', "Anika's ")} onMouseOver={e => {e.currentTarget.src = src + '-hover.png'}} onMouseOut={e => {e.currentTarget.src = src + '.png'}} /> </a>
             </LIWrapper>
           ))}
         </ULWrapper>

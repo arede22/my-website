@@ -75,7 +75,7 @@ export default function Welcome() {
   return (
     <StyledWrapper>
       <H1Style>Hi, I'm Anika Rede.</H1Style>
-      <ImgStyle src={imgSrcs.profile} alt="This is me!" />
+      <ImgStyle src={imgSrcs.profile} aria-label="This is me!" />
 
       <WelcomeStyle>
         <p>
