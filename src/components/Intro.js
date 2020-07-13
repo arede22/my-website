@@ -23,20 +23,20 @@ const ThreeGrid = styled.div`
   display: grid;
   grid-template-columns: 400px 400px 400px;
   grid-gap: 20px;
-  overflow-x: auto;
+  /* overflow-x: auto; */
   margin: 0px 60px 20px;
 `;
 const TwoGrid = styled.div`
   display: grid;
   grid-template-columns: 610px 610px;
   grid-gap: 20px;
-  overflow-x: auto;
+  /* overflow-x: auto; */
   margin: 0px 60px;
 `;
 const Box = styled.div`
   background-color: ${colors.halfTransparentGray};
-  border-radius: 5px;
-  overflow-x: auto;
+  /* border-radius: 5px; */
+  /* overflow-x: auto; */
   padding: 7.5px 20px 20px;
 `;
 const Rows = styled.ul`
@@ -46,7 +46,7 @@ const Cols = styled(StyledWrapper)`
   flex: 50%;
 `;
 const AnchorPoint = styled.a`
-  margin-bottom: 10px;
+  margin: 0 auto;
 `;
 const ULWrapper = styled.ul`
   color: ${colors.transparentSeaBlue};
@@ -144,36 +144,6 @@ export default function Intro() {
           </Box>
           <Box>
           <WorkExperience />
-          <H3Style> Past work experience </H3Style>
-          <ULWrapper>
-            <LIWrapper> (Computational Linguistics) Research Intern @ICSI (International Computer Science Institute) -- UC-Berkeley, Jan 2020 -- Current
-              <ULWrapper>
-                <LIWrapper> Predicting the semantic components from morphologically complex words in polysynthetic languages of Karuk and Yurok </LIWrapper>
-              </ULWrapper>
-            </LIWrapper>
-            <LIWrapper> Software Engineering Intern @Pulse Q&A -- SF, Summer 2019
-              <ULWrapper>
-                <LIWrapper> Limited personnel previously led to outsourcing manual labor </LIWrapper>
-                <LIWrapper> Automated internal tools improved efficiency of office (allowed focus on increasing traffic on the service's platform, marketing efforts, and bettering market-fit) </LIWrapper>
-              </ULWrapper>
-            </LIWrapper>
-            <LIWrapper> (EECS) Research Intern @Jadoo Tech -- UC-Berkeley, Feb-Sept 2019
-              <ULWrapper>
-                <LIWrapper> Conducted research in physics theoretical equations and experiments for start-up in UC-Berkeley </LIWrapper>
-              </ULWrapper>
-            </LIWrapper>
-            <LIWrapper> (EECS) Research Intern @Feng Labs -- CWRU, 2015-2018
-              <ULWrapper>
-                <LIWrapper> Quantified properties of metastatic breast cancer cells using MEMS microsensors </LIWrapper>
-              </ULWrapper>
-            </LIWrapper>
-            <LIWrapper> IT Hub Intern @Hathaway Brown -- OH, 2015-2018
-              <ULWrapper>
-                <LIWrapper> Both worked and volunteered at high-school's IT Helpdesk </LIWrapper>
-              </ULWrapper>
-            </LIWrapper>
-          </ULWrapper>
-
           </Box>
         </TwoGrid>
       </StyledWrapper>

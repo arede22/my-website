@@ -27,21 +27,25 @@ const TwoGrid = styled.div`
   display: grid;
   grid-template-columns: 610px 610px;
   grid-gap: 20px;
-  overflow-x: auto;
+  /* overflow-x: auto; */
   margin: 0px 60px;
 
   @media ${media.laptop} {
     max-width: 800px;
   }
 
+  @media ${media.laptopL} {
+    max-width: 1000px;
+  }
+
   @media ${media.desktop} {
-    max-width: 1400px;
+    max-width: 1200px;
   }
 `;
 const Box = styled.div`
   background-color: ${colors.halfTransparentGray};
-  border-radius: 5px;
-  overflow-x: auto;
+  /* border-radius: 5px; */
+  /* overflow-x: auto; */
   padding: 7.5px 20px 20px;
 `;
 const LIWrapper = styled.li`
@@ -63,7 +67,7 @@ const SpaceBetween = styled.div`
   justify-content: space-between;
 `;
 const AnchorPoint = styled.a`
-  margin-bottom: 10px;
+  margin: 0 auto;
 `;
 
 // export main component
@@ -78,15 +82,15 @@ export default function Portfolio() {
           <ul>
             <LIWrapper> Voice-Activated Car -- Designing Information Devices/Systems Trained with PCA </LIWrapper>
 
-              <Modal trigger="car" img={imgSrcs.car} pop="popCar" content="img01" aria={imgSrcs.replace('../static/portfolio/', '').replace('.png', '')} />
+              <Modal trigger="car" img={imgSrcs.car} pop="popCar" content="img01" aria={imgSrcs.car.replace('../static/portfolio/', '').replace('.png', '')} />
             <LIWrapper> Mock GoogleMaps Berkeley-Localized -- Map Rastering, Autocomplete and Search, and Navigation </LIWrapper>
-              <Modal trigger="map" img={imgSrcs.map} pop="popMap" content="img02" aria={imgSrcs.replace('../static/portfolio/', '').replace('.png', '')} />
+              <Modal trigger="map" img={imgSrcs.map} pop="popMap" content="img02" aria={imgSrcs.map.replace('../static/portfolio/', '').replace('.png', '')} />
 
             <LIWrapper> Pixel Art Game -- Randomized Room Generation and Increasing Difficulty to Boss Level: </LIWrapper>
               <SpaceBetween>
-                <Modal trigger="randRooms" img={imgSrcs.randRooms} pop="popRandRooms" content="img03" aria={imgSrcs.replace('../static/portfolio/', '').replace('.png', '')} />
+                <Modal trigger="randRooms" img={imgSrcs.randRooms} pop="popRandRooms" content="img03" aria={imgSrcs.randRooms.replace('../static/portfolio/', '').replace('.png', '')} />
 
-                <Modal trigger="boss" img={imgSrcs.boss} pop="popBoss" content="img04" aria={imgSrcs.replace('../static/portfolio/', '').replace('.png', '')} />
+                <Modal trigger="boss" img={imgSrcs.boss} pop="popBoss" content="img04" aria={imgSrcs.boss.replace('../static/portfolio/', '').replace('.png', '')} />
               </SpaceBetween>
               <PStyle>
                 <Link href={hrefs.gameVid} target="_blank"> Click here for DEMO </Link>

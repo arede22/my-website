@@ -12,8 +12,8 @@ const StyledWrapper = styled.div`
 `;
 const Box = styled.div`
   background-color: ${colors.halfTransparentGray};
-  border-radius: 5px;
-  overflow-x: auto;
+  /* border-radius: 5px; */
+  /* overflow-x: auto; */
   padding: 7.5px 20px 20px;
 `;
 const Rows = styled.ul`

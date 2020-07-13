@@ -9,20 +9,16 @@ const NavWrapper = styled.header`
   top: 0;
   transition: top 0.2s ease-in-out;
   width: 100%;
-  margin-bottom: 66px;
-
-  @media (max-width: 600px) {
-    position: relative;
-  }
+  margin: 0 auto;
 `;
 const StyledNav = styled.nav`
   text-align: center;
   padding: 10px 0px;
   background-color: ${colors.black};
-
-  @media (max-width: 600px) {
-    position: relative;
-  }
+  /* position: fixed;
+  top: 40px; */
+  width: 100%;
+  margin: 0 auto;
 `;
 const ULWrapper = styled.ul`
   margin: 0;
@@ -51,7 +47,7 @@ const Link = styled.a`
   color: white;
 
   &:hover {
-    color: ${colors.moreSeaBlue};
+    color: ${colors.skyBlue};
   }
 `;
 const HomeLink = styled(Link)`
@@ -73,6 +69,7 @@ const Banner = styled.div`
   background-color: white;
   margin: 0 auto;
   width: 100%;
+  display: inline-block;
 `;
 const BannerName = styled.ul`
   display: flex;
@@ -85,6 +82,9 @@ const BannerLi = styled.li`
   display: flex;
   padding: 6px 8px;
   color: ${colors.orange};
+`;
+const BannerLI = styled(BannerLi)`
+  font-style: italic;
 `;
 
 // export main component
@@ -100,6 +100,14 @@ export default function Nav() {
           <BannerLi> I </BannerLi>
           <BannerLi> K </BannerLi>
           <BannerLi> A </BannerLi>
+        </BannerName>
+        <div style={{textAlign: 'center', fontStyle: 'italic'}}>
+          <h3> [ uh - nee - kah ] </h3>
+        </div>
+        <BannerName>
+          <BannerLI> [ uh </BannerLI>
+          <BannerLI> - nee </BannerLI>
+          <BannerLI> - kah ] </BannerLI>
         </BannerName>
       </Banner>
       <StyledNav>

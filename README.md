@@ -18,12 +18,12 @@
 <ul>
   <li> Not using modals any more, not pretty to look at (still have infrastructure) </li>
   <li> Figured out navbar for mobile screens </li>
-
   <li> Style components compartmentally </li>
 </ul>
 
 <b> Yet to-do: </b>
-<ul style="list-style-type:none; line-height:1.5;">
+<ul>
+  <li> Anchorpoints also change url for #section </li>
   <li> Dropdown menu for mobile screens </li>
   <li> Sketch out a good scheme for design, now that abstractions are done everything should go smoother </li>
 
@@ -32,13 +32,13 @@
   <li> Think of portfolio and info layouts + act on it </li>
   <li> Design for different media -- font-sizes, widths </li>
 
-  <li> Add in a 'scroll to top' button </li>
+  <li> Add in a sticky 'scroll to top' button (up arrow) </li>
   <li> Graphic design for background </li>
   <li> Animation gif for loading screen </li>
 </ul>
 
 <b> Main to-dos: </b>
-<ul style="list-style-type:none; line-height:1.5;">
+<ul>
   <li> Make compatible with different media </li>
   <li> See if necessary to incorporate react-dom, react-router, react bootstrap, etc. </li>
   <li> Javascript and Ajax scripts </li>
@@ -48,19 +48,7 @@
 </ul>
 
 <b> Updating project: </b>
-  1. Launch via CLI (build/ship):
-    <ul>
-     <li> npm run build </li>
-     <li> npm run export </li>
-     <li> cd out </li>
-     <li> serve -p 8080 </li>
+  1. Launch via CLI (build/ship): npm run build, npm run export, cd out, serve -p 8080
   2. Launch dev:
      npm run dev
-  3. Running into node module issues on build, if solving takes too long do:
-    <ul>
-     <li> npm uninstall </li>
-     <li> delete .next </li>
-     <li> delete node_modules </li>
-     <li> delete package_lock.json </li>
-     <li> npm install </li>
-     <li> launch the application </li>
+  3. Running into node module issues on build, if solving takes too long do: npm uninstall, delete .next, delete node_modules, delete package_lock.json, npm install, launch the application

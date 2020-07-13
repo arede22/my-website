@@ -6,7 +6,8 @@ const { colors, fonts, fontSizes } = theme;
 // styles and wrappers
 const StyledWrapper = styled.div`
   margin: 0;
-  background-color: black;
+  font-family: ${fonts.Lucida};
+  font-size: ${fontSizes.sm3}
 `;
 const ULWrapper = styled.ul`
   color: white;
@@ -17,7 +18,7 @@ const LIWrapper = styled.li`
 `;
 const H3Style = styled.h3`
   color: white;
-  font-size: ${fontSizes.lg};
+  font-size: ${fontSizes.med1};
 `;
 
 // design as timeline (vertical; med-thick w/ stops; ul-clickable and hover-info)

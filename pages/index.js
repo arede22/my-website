@@ -12,18 +12,24 @@ const GlobalStyle = createGlobalStyle`
     font-size: ${fontSizes.sm3};
     font-family: ${fonts.Lucida};
     color: white;
+    background-color: ${colors.darkGray}
   }
 `;
 const StyledWrapper = styled.div`
   background: ${colors.darkGray} url(${imgSrcs.backgroundImg}) no-repeat center;
   background-size: 100% 100%;
-  overflow: auto;
+  /* overflow: auto; */
 
   @media (max-width: 600px) {
     background: ${colors.darkGray} url(${imgSrcs.backgroundImgSm}) no-repeat center;
+    background-size: 100% 100%;
   }
 
   /* @media ${media.laptop} {
+    max-width: 800px;
+  }
+
+  @media ${media.laptopL} {
     max-width: 1000px;
   }
 
@@ -40,21 +46,21 @@ export default function Home() {
       <StyledWrapper id="body">
         <Header />
 
-        <Courses />
+        {/*<Courses />
         <Softwares />
         <Skills />
         <Clubs />
         <WorkExperience />
-        <Project />
+        <Project />*/}
 
         {/*<Nav />
 
         <Welcome />
         <Intro />
-        <Portfolio />
+        <Portfolio />*/}
         <ContactMe />
 
-        <Footer />*/}
+        <Footer />
 
       </StyledWrapper>
     </React.Fragment>
