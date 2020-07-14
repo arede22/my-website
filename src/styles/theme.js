@@ -5,9 +5,9 @@ const theme = {
 
     orange: "#f79555",
 
-    transparentSeaBlue: "rgba(129, 207, 224, 0.4)", // active navbar tab
+    transparentSeaBlue: "rgba(129, 207, 224, 0.4)", // background for boxes
     moreSeaBlue: "rgba(197, 239, 247, 0.7)", // hover-over navbar
-    seaBlue: "rgba(129, 207, 224, 1)",
+    seaBlue: "rgba(129, 207, 224, 1)", // active navbar
     skyBlue: "rgba(197, 239, 247, 1)", // hover-over link
 
     transparentGray: "rgba(166, 166, 166, 0.3)",

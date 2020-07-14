@@ -5,7 +5,7 @@ const { colors, fontSizes, imgSrcs } = theme;
 
 // styles and wrappers
 const StyledWrapper = styled.div`
-  margin: 70px auto;
+  margin: 140px 70px auto;
   text-align: center;
 `;
 const H1Style = styled.h1`
@@ -13,7 +13,7 @@ const H1Style = styled.h1`
   width: 50%;
   border-radius: 12px;
   text-align: center;
-  font-size: ${fontSizes.lg};
+  font-size: ${fontSizes.med2};
   padding: 20px 10px;
   margin: 30px auto;
   text-shadow: 2px 2px black;
@@ -25,10 +25,10 @@ const H1Style = styled.h1`
   }
 
   @media (max-width: 600px) {
-    font-size: ${fontSizes.med1};
   }
 `;
 const ImgStyle = styled.img`
+font-size: ${fontSizes.med1};
   margin: 0 auto;
 
   @media (max-width: 600px) {
@@ -62,7 +62,7 @@ const ResumeButton = styled.a`
   padding: 15px;
   text-decoration: none;
   color: white;
-  background-color: ${colors.skyBlue};
+  background-color: ${colors.lightGray};
   font-size: ${fontSizes.sm3};
 
   &:hover {
@@ -79,10 +79,11 @@ export default function Welcome() {
 
       <WelcomeStyle>
         <p>
-          I am a sophomore in UC Berkeley studying Electrical Engineering and Computer Science (EECS) concentrating in AI & ML with Linguistics as my minor. My areas of interest lie in ML, NLP, and Cloud Computing.
+          Allow me to introduce myself! I started out my CS career a couple years ago and almost immediately found my passion in the field: natural language processing.
+          <br /> However, I want to acquaint myself with software engineering and AI/ML as a bridge before delving into NLP. I want some experience in SWE, NLP, or animation.
         </p>
         <ResumeBox>
-          <p> Take a quick peek at my resumé! </p>
+          <p> If you'd like, you can take a quick peek at my resumé! </p>
           <ResumeButton href="resume.pdf" target="_blank"> Resumé </ResumeButton>
         </ResumeBox>
       </WelcomeStyle>

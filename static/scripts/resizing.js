@@ -3,4 +3,4 @@ $(document).ready(function () {
     document.getElementById("body").innerHTML = window.innerWidth;
   }
 
-)}
+})

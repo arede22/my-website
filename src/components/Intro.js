@@ -36,8 +36,11 @@ const TwoGrid = styled.div`
 const Box = styled.div`
   background-color: ${colors.halfTransparentGray};
   /* border-radius: 5px; */
-  /* overflow-x: auto; */
+  overflow-x: auto;
   padding: 7.5px 20px 20px;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 30px;
 `;
 const Rows = styled.ul`
   display: flex;
@@ -63,10 +66,9 @@ const H3Style = styled.h3`
 export default function Intro() {
   return (
     <StyledWrapper>
-      <AnchorPoint name="About" id="about-anchor"></AnchorPoint>
+      <AnchorPoint name="Intro" id="intro-anchor"></AnchorPoint>
       <H2Style>About Me</H2Style>
       <StyledWrapper>
-        <ThreeGrid>
           <Box>
             <h3> Major Coursework </h3>
             <ul>
@@ -118,8 +120,6 @@ export default function Intro() {
               <li> People skills, smooth communication, & true personality </li>
             </ul>
           </Box>
-        </ThreeGrid>
-        <TwoGrid>
           <Box>
             <h3> Clubs </h3>
             <ul>
@@ -145,7 +145,6 @@ export default function Intro() {
           <Box>
           <WorkExperience />
           </Box>
-        </TwoGrid>
       </StyledWrapper>
     </StyledWrapper>
   )

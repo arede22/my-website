@@ -5,9 +5,9 @@ $(document).ready(function () {
   window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollPos > currentScrollPos) {
-      document.getElementById("navbar").style.top = "0"; // 40px
+      document.getElementById("navbar").style.top = "0";
     } else {
-      document.getElementById("navbar").style.top = "-68px"; // -28px
+      document.getElementById("navbar").style.top = "-140px";
     }
     prevScrollPos = currentScrollPos;
   }

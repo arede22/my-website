@@ -76,7 +76,6 @@ export default function Portfolio() {
     <StyledWrapper>
       <AnchorPoint name="Portfolio" id="portfolio-anchor"></AnchorPoint>
       <H2Style> Portfolio </H2Style>
-      <TwoGrid>
         <Box>
           <h3> Class projects and extensions </h3>
           <ul>
@@ -126,7 +125,6 @@ export default function Portfolio() {
             <li> Exploring beginner projects using NLP analysis with AI/ML </li>
           </ul>
         </Box>
-      </TwoGrid>
     </StyledWrapper>
   )
 };

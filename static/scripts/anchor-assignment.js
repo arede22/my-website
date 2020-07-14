@@ -1,16 +1,16 @@
 $(document).ready ( function() {
-    var offset1 = $("#about-anchor").offset().top;
+    var offset1 = $("#intro-anchor").offset().top;
     var offset2 = $("#portfolio-anchor").offset().top;
     var offset3 = $("#contactme-anchor").offset().top;
 
     $(window).on('scroll', function() {
-      var list = ['home', 'about', 'portfolio', 'contact-me'];
+      var list = ['home', 'intro', 'portfolio', 'contact-me'];
       const blue = "rgba(129, 207, 224, 1)";
       if ( $(window).scrollTop() < offset1 ) {
         document.getElementById('home').style.color = blue;
         list.shift();
       } else if ( $(window).scrollTop() <= offset2 ) {
-        document.getElementById('about').style.color = blue;
+        document.getElementById('intro').style.color = blue;
         list.splice(1, 1);
       } else if ( $(window).scrollTop() <= offset3 ) {
         document.getElementById('portfolio').style.color = blue;
