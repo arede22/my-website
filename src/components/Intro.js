@@ -65,8 +65,9 @@ const H3Style = styled.h3`
 // export main component
 export default function Intro() {
   return (
+    <React.Fragment>
+    <AnchorPoint name="Intro" id="intro-anchor"></AnchorPoint>
     <StyledWrapper>
-      <AnchorPoint name="Intro" id="intro-anchor"></AnchorPoint>
       <H2Style>About Me</H2Style>
       <StyledWrapper>
           <Box>
@@ -147,5 +148,6 @@ export default function Intro() {
           </Box>
       </StyledWrapper>
     </StyledWrapper>
+    </React.Fragment>
   )
 };

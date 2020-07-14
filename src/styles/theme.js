@@ -25,7 +25,8 @@ const theme = {
   fonts: {
 
     Lucida: "'Lucida Sans Unicode', 'Lucida Grande', sans-serif",
-    Oswald: "'Oswald', sans-serif"
+    Oswald: "'Oswald', sans-serif",
+    Cardo: "'Cardo', serif"
 
   },
 
@@ -71,6 +72,7 @@ const theme = {
     map: '../static/portfolio/map.png',
     randRooms: '../static/portfolio/random-room.png',
     boss: '../static/portfolio/boss.png',
+    tree: '../static/portfolio/tree.svg'
 
   }
 

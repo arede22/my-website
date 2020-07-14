@@ -78,12 +78,13 @@ const BannerName = styled.ul`
 `;
 const BannerLi = styled.li`
   display: flex;
-  padding: 2px 6px 8px;
+  padding: 4px 8px;
   color: ${colors.orange};
 `;
 const BannerLI = styled(BannerLi)`
   font-size: ${fontSizes.sm1};
   font-style: italic;
+  padding: 0 8px 8px;
 `;
 
 // export main component

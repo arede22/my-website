@@ -36,8 +36,9 @@ const AnchorPoint = styled.a`
 // export main component
 export default function ContactMe() {
   return (
+    <React.Fragment>
+    <AnchorPoint name="Contact-Me" id="contactme-anchor"></AnchorPoint>
     <StyledWrapper>
-      <AnchorPoint name="Contact-Me" id="contactme-anchor"></AnchorPoint>
       <H2Style> Contact Me </H2Style>
       <ContactBox>
         <p>
@@ -45,5 +46,6 @@ export default function ContactMe() {
         </p>
       </ContactBox>
     </StyledWrapper>
+    </React.Fragment>
   )
 };

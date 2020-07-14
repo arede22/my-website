@@ -53,7 +53,7 @@ const ResumeBox = styled.div`
   width: 40%;
   border-radius: 12px;
   padding: 2.5px 10px 30px;
-  margin: 20px 20px 30px;
+  margin: 20px auto;
 `;
 const ResumeButton = styled.a`
   width: 35%;

@@ -45,8 +45,12 @@ const TwoGrid = styled.div`
 const Box = styled.div`
   background-color: ${colors.halfTransparentGray};
   /* border-radius: 5px; */
-  /* overflow-x: auto; */
+  overflow-x: auto;
   padding: 7.5px 20px 20px;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 30px;
+
 `;
 const LIWrapper = styled.li`
   margin: 5px 0px;
@@ -73,9 +77,11 @@ const AnchorPoint = styled.a`
 // export main component
 export default function Portfolio() {
   return (
+    <React.Fragment>
+    <AnchorPoint name="Portfolio" id="portfolio-anchor"></AnchorPoint>
     <StyledWrapper>
-      <AnchorPoint name="Portfolio" id="portfolio-anchor"></AnchorPoint>
       <H2Style> Portfolio </H2Style>
+        <img src={imgSrcs.tree} alt="interactive tree">
         <Box>
           <h3> Class projects and extensions </h3>
           <ul>
@@ -126,5 +132,6 @@ export default function Portfolio() {
           </ul>
         </Box>
     </StyledWrapper>
+    </React.Fragment>
   )
 };
