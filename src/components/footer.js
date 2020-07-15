@@ -27,9 +27,6 @@ const FooterStyle = styled.footer`
   align: center;
   padding-top: 40px;
   margin: 25px auto;
-  @media (max-width: 600px) {
-    width: 60%;
-  }
 `;
 const ULWrapper = styled.ul`
   background-color: ${colors.transparentGray};
@@ -37,7 +34,8 @@ const ULWrapper = styled.ul`
   justify-content: space-around;
   border-top: 3px solid ${colors.lightGray};
   padding: 10px 25px;
-  margin: 0px 15px 10px;
+  margin: 10px 15px;
+  margin-top: 0;
 `;
 const LIWrapper = styled.li`
   display: flex;
@@ -58,8 +56,8 @@ const ImgStyle = styled.img`
   margin: 0 auto;
 
   @media (max-width: 600px) {
-    height: 50%;
-    width: 50%;
+    height: 16px;
+    width: 16px;
   }
 `;
 

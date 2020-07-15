@@ -17,7 +17,7 @@ const LIWrapper = styled.li`
   line-height: 1.5;
 `;
 const H3Style = styled.h3`
-  font-size: ${fontSizes.lg};
+  font-size: ${fontSizes.sm3};
 `;
 
 

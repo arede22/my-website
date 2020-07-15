@@ -10,37 +10,43 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     font-size: ${fontSizes.sm3};
-    font-family: ${fonts.Lucida}; /* was ${fonts.Lucida}*/
+    font-family: ${fonts.Lucida};
     color: white;
-    background-color: ${colors.darkGray};
+    background: ${colors.darkGray} url(${imgSrcs.backgroundImg}) repeat-y center;
+
+    @media (max-width: 600px) {
+      background: ${colors.darkGray} url(${imgSrcs.backgroundImgSm}) repeat-y center;
+    }
+
+    // @media ${media.laptop} {
+    //   max-width: 800px;
+    // }
+    //
+    // @media ${media.laptopL} {
+    //   max-width: 1000px;
+    // }
+    //
+    // @media ${media.desktop} {
+    //   max-width: 1200px;
+    // }
   }
-  h1, h2, h3, h4, h5, h6 { /* just added*/
+  h1, h2, h3, h4 {
    font-family: ${fonts.Oswald};
    text-transform: uppercase;
+   text-shadow: black 2px 2px;
   }
-`;
-const StyledWrapper = styled.div`
-  background: ${colors.darkGray} url(${imgSrcs.backgroundImg}) repeat-y center; /* background-repeat: repeat-y*/
-  /* background-attachment: fixed; */
-  /* background-size: 100% 100%; */
-  /* overflow: auto; */
-
-  @media (max-width: 600px) {
-    background: ${colors.darkGray} url(${imgSrcs.backgroundImgSm}) no-repeat center;
-    background-size: 100% 100%;
+  h1 {
+    font-size: ${fontSizes.med2};
   }
-
-  /* @media ${media.laptop} {
-    max-width: 800px;
+  h2 {
+    font-size: ${fontSizes.med1};
   }
-
-  @media ${media.laptopL} {
-    max-width: 1000px;
+  h3 {
+    font-size: ${fontSizes.sm3};
   }
-
-  @media ${media.desktop} {
-    max-width: 1200px;
-  } */
+  h4 {
+    font-size: ${fontSizes.sm2};
+  }
 `;
 const Button = styled.button`
   display: none;
@@ -78,26 +84,23 @@ const Button = styled.button`
 // <WorkExperience />
 // <Project />
 
-
 // export main component
 export default function Home() {
   return (
     <React.Fragment>
       <GlobalStyle />
-      <StyledWrapper id="body">
-        <Header />
+      <Header />
 
-        <Nav />
+      <Nav />
 
-        <Welcome />
-        <Button id="scrolltop">Top</Button>
-        <Intro />
-        <Portfolio />
-        <ContactMe />
+      <Welcome />
+      <Button id="scrolltop">Top</Button>
+      <Intro />
+      <Portfolio />
+      <ContactMe />
 
-        <Footer />
+      <Footer />
 
-      </StyledWrapper>
     </React.Fragment>
   )
 };

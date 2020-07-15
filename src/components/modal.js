@@ -19,10 +19,11 @@ const StyledWrapper = styled.div`
 const ImgWrapper = styled.a`
   display: block;
   margin: 0 auto;
+  width: 90%;
 `;
 const ImgStyle = styled.img`
-  height: 50%;
-  width: 50%;
+  height: 70%;
+  width: 70%;
   max-width: 300px;
 `;
 const ModalStyle = styled.div`
@@ -65,30 +66,26 @@ const CloseHandler = styled.span`
 
 `;
 
+// W3 Modal
+// <ModalStyle id={props.pop} className="modal">
+//   <CloseHandler id="close">&times;</CloseHandler>
+//   <ContentStyle className="modal-content" aria-label={props.aria} id={props.content} />
+// </ModalStyle>
+
+// popup elem
+// state
+// const [popUp, setPopUp] = useState(
+//   false
+// );
+// <a onClick={() => setPopUp(!popUp)}> <ImgStyle id={props.trigger} src={props.img} aria-label={props.aria} height="50%" width="50%" vspace="10" /> </a>*/}
+// popUp &&
+//   <div style={{backgroundColor: 'pink', height: '30px', width: '30px'}}> </div>
+
 // export main component
 export default function Modal(props) {
-  // state
-  // const [popUp, setPopUp] = useState(
-  //   false
-  // );
-
   return (
     <StyledWrapper>
-      {/*<a onClick={() => setPopUp(!popUp)}> <ImgStyle id={props.trigger} src={props.img} aria-label={props.aria} height="50%" width="50%" vspace="10" /> </a>*/}
-
-      {/*popUp &&
-        <div style={{backgroundColor: 'pink', height: '30px', width: '30px'}}> </div>
-      */}
-
       <ImgWrapper> <ImgStyle id={props.trigger} src={props.img} aria-label={props.aria}/> </ImgWrapper>
-
-      {/*
-        add in:
-      <ModalStyle id={props.pop} className="modal">
-        <CloseHandler id="close">&times;</CloseHandler>
-        <ContentStyle className="modal-content" aria-label={props.aria} id={props.content} />
-      </ModalStyle>
-      */}
     </StyledWrapper>
   )
 };

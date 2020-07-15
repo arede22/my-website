@@ -5,7 +5,7 @@ const { colors, fontSizes, imgSrcs } = theme;
 
 // styles and wrappers
 const StyledWrapper = styled.div`
-  margin: 140px 70px auto;
+  margin: 160px auto;
   text-align: center;
 `;
 const H1Style = styled.h1`
@@ -16,12 +16,10 @@ const H1Style = styled.h1`
   font-size: ${fontSizes.med2};
   padding: 20px 10px;
   margin: 30px auto;
-  text-shadow: 2px 2px black;
 
   &::selection {
     background-color: ${colors.skyBlue};
     color: ${colors.darkGray};
-    text-shadow: none;
   }
 
   @media (max-width: 600px) {
@@ -42,7 +40,6 @@ const WelcomeStyle = styled.div`
   font-size: ${fontSizes.sm1};
   line-height: 1.5;
   margin: 5px 20px;
-  text-shadow: 2px 2px black;
 
   @media (max-width: 600px) {
     font-size: ${fontSizes.sm0};
@@ -52,14 +49,14 @@ const ResumeBox = styled.div`
   background-color: ${colors.transparentSeaBlue};
   width: 40%;
   border-radius: 12px;
-  padding: 2.5px 10px 30px;
+  padding: 25px;
   margin: 20px auto;
 `;
 const ResumeButton = styled.a`
   width: 35%;
   border: 1px solid white;
   border-radius: 8px;
-  padding: 15px;
+  padding: 10px;
   text-decoration: none;
   color: white;
   background-color: ${colors.lightGray};
@@ -68,6 +65,10 @@ const ResumeButton = styled.a`
   &:hover {
     color: ${colors.moreSeaBlue};
   }
+`;
+const PStyle = styled.p`
+  font-size: ${fontSizes.sm3};
+  color: white;
 `;
 
 // export main component
@@ -78,12 +79,12 @@ export default function Welcome() {
       <ImgStyle src={imgSrcs.profile} aria-label="This is me!" />
 
       <WelcomeStyle>
-        <p>
+        <PStyle>
           Allow me to introduce myself! I started out my CS career a couple years ago and almost immediately found my passion in the field: natural language processing.
           <br /> However, I want to acquaint myself with software engineering and AI/ML as a bridge before delving into NLP. I want some experience in SWE, NLP, or animation.
-        </p>
+        </PStyle>
         <ResumeBox>
-          <p> If you'd like, you can take a quick peek at my resumé! </p>
+          <PStyle> If you'd like, you can take a quick peek at my resumé! </PStyle>
           <ResumeButton href="resume.pdf" target="_blank"> Resumé </ResumeButton>
         </ResumeBox>
       </WelcomeStyle>

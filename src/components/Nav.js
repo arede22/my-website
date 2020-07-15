@@ -54,7 +54,7 @@ const HomeLink = styled(Link)`
   @media (max-width: 600px) {
     &::after {
       content: '';
-      border: solid gray;
+      border: solid ${colors.transparentSeaBlue};
       border-width: 0 3px 3px 0;
       display: inline-block;
       padding: 3px;
@@ -75,16 +75,28 @@ const BannerName = styled.ul`
   justify-content: space-around;
   margin: 0;
   padding: 0 40px;
+
+  @media (max-width: 600px) {
+    padding: 0 10px;
+  }
 `;
 const BannerLi = styled.li`
   display: flex;
   padding: 4px 8px;
   color: ${colors.orange};
+
+  @media (max-width: 600px) {
+    font-size: ${fontSizes.sm1};
+  }
 `;
 const BannerLI = styled(BannerLi)`
   font-size: ${fontSizes.sm1};
   font-style: italic;
   padding: 0 8px 8px;
+
+  @media (max-width: 600px) {
+    font-size: ${fontSizes.sm0};
+  }
 `;
 
 // export main component
