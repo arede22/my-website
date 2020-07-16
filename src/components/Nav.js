@@ -84,6 +84,7 @@ const BannerLi = styled.li`
   display: flex;
   padding: 4px 8px;
   color: ${colors.orange};
+  text-shadow: black 1px 1px;
 
   @media (max-width: 600px) {
     font-size: ${fontSizes.sm1};

@@ -36,15 +36,18 @@ const GlobalStyle = createGlobalStyle`
    text-shadow: black 2px 2px;
   }
   h1 {
-    font-size: ${fontSizes.med2};
+    font-size: ${fontSizes.lg};
   }
   h2 {
-    font-size: ${fontSizes.med1};
+    font-size: ${fontSizes.med2};
   }
   h3 {
-    font-size: ${fontSizes.sm3};
+    font-size: ${fontSizes.med1};
   }
   h4 {
+    font-size: ${fontSizes.sm3};
+  }
+  h5 {
     font-size: ${fontSizes.sm2};
   }
 `;
@@ -58,7 +61,6 @@ const Button = styled.button`
   outline: none;
   background-color: red;
   color: white;
-  cursor: pointer;
   padding: 15px;
   border-radius: 10px;
   font-size: 18px;
@@ -84,6 +86,8 @@ const Button = styled.button`
 // <WorkExperience />
 // <Project />
 
+// <Button id="scrolltop">Top</Button>
+
 // export main component
 export default function Home() {
   return (
@@ -94,9 +98,11 @@ export default function Home() {
       <Nav />
 
       <Welcome />
-      <Button id="scrolltop">Top</Button>
-      <Intro />
-      <Portfolio />
+      {/*<Button id="scrolltop">Top</Button>*/}
+      <Intro /> {/* Courses, languages, college info -- progress bars */}
+      {/* Timeline w/ work and class extension projects */}
+      {/* Skills acquired, desired */}
+      <Portfolio /> {/* Tree of projects and portfolio */}
       <ContactMe />
 
       <Footer />

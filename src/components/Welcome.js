@@ -46,11 +46,16 @@ const WelcomeStyle = styled.div`
   }
 `;
 const ResumeBox = styled.div`
-  background-color: ${colors.transparentSeaBlue};
   width: 40%;
   border-radius: 12px;
-  padding: 25px;
-  margin: 20px auto;
+  margin: 10px auto;
+  background-color: ${colors.transparentSeaBlue};
+  width: 60%;
+  padding: 25px 20px;
+
+  @media (max-width: 600px) {
+    width: 50%;
+  }
 `;
 const ResumeButton = styled.a`
   width: 35%;
@@ -59,7 +64,7 @@ const ResumeButton = styled.a`
   padding: 10px;
   text-decoration: none;
   color: white;
-  background-color: ${colors.lightGray};
+  background-color: ${colors.seaBlue};
   font-size: ${fontSizes.sm3};
 
   &:hover {
@@ -67,8 +72,9 @@ const ResumeButton = styled.a`
   }
 `;
 const PStyle = styled.p`
-  font-size: ${fontSizes.sm3};
   color: white;
+  line-height: 1.5;
+  font-size: ${fontSizes.sm1};
 `;
 
 // export main component
@@ -80,8 +86,10 @@ export default function Welcome() {
 
       <WelcomeStyle>
         <PStyle>
-          Allow me to introduce myself! I started out my CS career a couple years ago and almost immediately found my passion in the field: natural language processing.
-          <br /> However, I want to acquaint myself with software engineering and AI/ML as a bridge before delving into NLP. I want some experience in SWE, NLP, or animation.
+          Allow me to introduce myself!
+          <br /> I started out my CS career a couple years ago and almost immediately found my passion in the field: natural language processing.
+          <br /> However, I want to acquaint myself with software engineering and AI/ML as a bridge before delving into NLP.
+          <br /> Currently, I am looking for an internship that can give me some experience in SWE, NLP, or animation.
         </PStyle>
         <ResumeBox>
           <PStyle> If you'd like, you can take a quick peek at my resumé! </PStyle>

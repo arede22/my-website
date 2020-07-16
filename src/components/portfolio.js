@@ -39,17 +39,19 @@ const Box = styled.div`
   margin-bottom: 30px;
 `;
 const ULWrapper = styled.ul`
-  color: ${colors.transparentSeaBlue};
+  color: white;
 `;
 const LIWrapper = styled.li`
   margin: 5px 0px;
 `;
 const PStyle = styled.p`
   text-align: center;
+  margin: 0 auto;
 `;
 const Link = styled.a`
   text-decoration: none;
   color: white;
+  text-align: center;
 
   &:hover {
     color: ${colors.skyBlue};
@@ -67,7 +69,12 @@ export default function Portfolio() {
       <AnchorPoint name="Portfolio" id="portfolio-anchor"></AnchorPoint>
       <StyledWrapper>
         <H2Style> Portfolio </H2Style>
-          <ImgStyle src={imgSrcs.tree} alt="interactive tree" width="50%" height="50%" />
+          {/*<ImgStyle src={imgSrcs.tree} aria-label="interactive tree" width="50%" height="50%" usemap='#projmap' />
+          <map className="projmap" id="projmap">
+            <area shape="circle" coords="98,31,30" alt="Car" href="https://www.google.com/" onClick={console.log('hi')}/>
+            <area shape="circle" coords="290,172,333" alt="Maps" href="https://www.youtube.com/" />
+            <area shape="circle" coords="337,300,44" alt="Game" href="https://www.duckduckgo.com/" />
+          </map>*/}
           <Box>
             <H3Style> Extensions of Class Projects </H3Style>
             <ULWrapper>

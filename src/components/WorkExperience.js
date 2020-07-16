@@ -6,8 +6,6 @@ const { colors, fonts, fontSizes } = theme;
 // styles and wrappers
 const StyledWrapper = styled.div`
   margin: 0;
-  /* font-family: ${fonts.Lucida};
-  font-size: ${fontSizes.sm3} */
 `;
 const ULWrapper = styled.ul`
   color: white;

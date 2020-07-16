@@ -21,7 +21,7 @@ const ContactBox = styled.div`
   background-color: ${colors.transparentSeaBlue};
   width: 60%;
   border-radius: 15px;
-  padding: 25px 10px;
+  padding: 25px 20px;
 
   @media (max-width: 600px) {
     width: 50%;
@@ -41,15 +41,15 @@ const PStyle = styled.p`
 export default function ContactMe() {
   return (
     <React.Fragment>
-    <AnchorPoint name="Contact-Me" id="contactme-anchor"></AnchorPoint>
-    <StyledWrapper>
-      <H2Style> Contact Me </H2Style>
-      <ContactBox>
-        <PStyle>
-          Thank you for browsing through my website! <br /> Please contact me by whatever method might be best though e-mail works best.
-        </PStyle>
-      </ContactBox>
-    </StyledWrapper>
+      <AnchorPoint name="Contact-Me" id="contactme-anchor"></AnchorPoint>
+      <StyledWrapper>
+        <H2Style> Contact Me </H2Style>
+        <ContactBox>
+          <PStyle>
+            Thank you for browsing through my website! <br /> Please contact me by whatever method might be best though e-mail works best.
+          </PStyle>
+        </ContactBox>
+      </StyledWrapper>
     </React.Fragment>
   )
 };

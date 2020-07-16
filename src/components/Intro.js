@@ -12,7 +12,7 @@ const AnchorPoint = styled.a`
   margin: 0 auto;
 `;
 const StyledWrapper = styled.div`
-  margin: 0;
+  margin: 10px 0;
 
   @media (max-width: 600px) {
     display: inline-block;
@@ -41,15 +41,17 @@ const Cols = styled(StyledWrapper)`
   flex: 50%;
 `;
 const ULWrapper = styled.ul`
-  color: ${colors.transparentSeaBlue};
+  color: white;
 `;
 const LIWrapper = styled.li`
-  color: ${colors.lightGray};
+  color: white;
   line-height: 1.5;
 `;
 const PStyle = styled.p`
-  text-align: center;
+  text-align: left;
 `;
+
+// Courses, languages, college info -- progress bars
 
 // export main component
 export default function Intro() {
@@ -62,14 +64,14 @@ export default function Intro() {
           <Box>
             <H3Style> Major Coursework </H3Style>
             <ULWrapper>
-              <LIWrapper> Intro to Computer Science </LIWrapper>
-              <LIWrapper> Data Structures & Algorithms </LIWrapper>
+              <LIWrapper> Intro to Computer Science (Python, Scheme, SQL) </LIWrapper>
+              <LIWrapper> Data Structures & Algorithms (Java) </LIWrapper>
               <LIWrapper> Discrete Mathematics and Probability Theory </LIWrapper>
-              <LIWrapper> Probability and Random Processes </LIWrapper>
+              <LIWrapper> Probability and Random Processes (Jupyter Notebook) </LIWrapper>
               <LIWrapper> Optimization Models in Engineering </LIWrapper>
               <LIWrapper> (Audited) Natural Language Processing </LIWrapper>
-              <LIWrapper> Computer Architecture </LIWrapper>
-              <LIWrapper> Designing Information Devices and Systems </LIWrapper>
+              <LIWrapper> Computer Architecture (C) </LIWrapper>
+              <LIWrapper> Designing Information Devices and Systems (labs) </LIWrapper>
             </ULWrapper>
             <H3Style> Minor Coursework </H3Style>
             <ULWrapper>
@@ -81,23 +83,25 @@ export default function Intro() {
             <H3Style> Languages/Software Skills </H3Style>
             <Rows>
               <Cols>
+              <h4> Langs </h4>
                 <LIWrapper> Kotlin </LIWrapper>
                 <LIWrapper> JavaScript </LIWrapper>
                 <LIWrapper> Python </LIWrapper>
-                <LIWrapper> PyTorch </LIWrapper>
+                <LIWrapper> Swift </LIWrapper>
                 <LIWrapper> C/C++ </LIWrapper>
-                <LIWrapper> AutoCAD </LIWrapper>
-                <LIWrapper> COMSOL </LIWrapper>
-                <LIWrapper> Photoshop </LIWrapper>
+                <LIWrapper> Java </LIWrapper>
+                <LIWrapper> HTML/CSS </LIWrapper>
               </Cols>
               <Cols>
-                <LIWrapper> Swift </LIWrapper>
-                <LIWrapper> HTML/CSS </LIWrapper>
-                <LIWrapper> Java </LIWrapper>
+              <h4> Libraries, Softwares, Frameworks </h4>
+                <LIWrapper> PyTorch </LIWrapper>
+                <LIWrapper> COMSOL </LIWrapper>
+                <LIWrapper> AutoCAD </LIWrapper>
                 <LIWrapper> Tensorflow </LIWrapper>
                 <LIWrapper> React </LIWrapper>
                 <LIWrapper> MATLAB </LIWrapper>
                 <LIWrapper> SolidWorks </LIWrapper>
+                <LIWrapper> Photoshop, Illustrator </LIWrapper>
               </Cols>
             </Rows>
             <H3Style> Skills </H3Style>

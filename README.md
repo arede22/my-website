@@ -45,6 +45,8 @@
   <li> Add in Github, Spotify, Youtube, and Instagram API calls </li>
   <li> Page loader </li>
   <li> Opt blog section </li>
+  <li> Accessibility: aria </li>
+  <li> Other parts of portfolio </li>
 </ul>
 
 <b> Updating project: </b>
