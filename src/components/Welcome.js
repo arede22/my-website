@@ -21,17 +21,14 @@ const H1Style = styled.h1`
     background-color: ${colors.skyBlue};
     color: ${colors.darkGray};
   }
-
-  @media (max-width: 600px) {
-  }
 `;
 const ImgStyle = styled.img`
-font-size: ${fontSizes.med1};
+  font-size: ${fontSizes.med1};
   margin: 0 auto;
 
   @media (max-width: 600px) {
     margin: 0 30px;
-    max-width: 100%;
+    max-width: 360px;
     height: auto;
   }
 `;
@@ -51,7 +48,7 @@ const ResumeBox = styled.div`
   margin: 10px auto;
   background-color: ${colors.transparentSeaBlue};
   width: 60%;
-  padding: 25px 20px;
+  padding: 20px 20px 40px;
 
   @media (max-width: 600px) {
     width: 50%;
@@ -61,11 +58,11 @@ const ResumeButton = styled.a`
   width: 35%;
   border: 1px solid white;
   border-radius: 8px;
-  padding: 10px;
+  padding: 7.5px;
   text-decoration: none;
   color: white;
   background-color: ${colors.seaBlue};
-  font-size: ${fontSizes.sm3};
+  font-size: ${fontSizes.sm2};
 
   &:hover {
     color: ${colors.moreSeaBlue};
@@ -75,6 +72,7 @@ const PStyle = styled.p`
   color: white;
   line-height: 1.5;
   font-size: ${fontSizes.sm1};
+  text-shadow: black 1px 1px;
 `;
 
 // export main component

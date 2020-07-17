@@ -37,18 +37,45 @@ const GlobalStyle = createGlobalStyle`
   }
   h1 {
     font-size: ${fontSizes.lg};
+
+    @media (max-width: 600px) {
+      font-size: ${fontSizes.med2};
+    }
   }
   h2 {
     font-size: ${fontSizes.med2};
+
+    @media (max-width: 600px) {
+      font-size: ${fontSizes.med1};
+    }
   }
   h3 {
     font-size: ${fontSizes.med1};
+
+    @media (max-width: 600px) {
+      font-size: ${fontSizes.sm3};
+    }
   }
   h4 {
     font-size: ${fontSizes.sm3};
+
+    @media (max-width: 600px) {
+      font-size: ${fontSizes.sm2};
+    }
   }
   h5 {
     font-size: ${fontSizes.sm2};
+
+    @media (max-width: 600px) {
+      font-size: ${fontSizes.sm1};
+    }
+  }
+  p {
+    font-size: ${fontSizes.sm1};
+
+    @media (max-width: 600px) {
+      font-size: ${fontSizes.sm0};
+    }
   }
 `;
 const Button = styled.button`

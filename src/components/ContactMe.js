@@ -31,6 +31,7 @@ const PStyle = styled.p`
   line-height: 1.5;
   text-align: center;
   font-size: ${fontSizes.sm3};
+  text-shadow: black 1px 1px;
 
   @media (max-width: 600px) {
     font-size: ${fontSizes.sm1};

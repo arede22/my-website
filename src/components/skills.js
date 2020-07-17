@@ -5,6 +5,7 @@ const { colors, fontSizes } = theme;
 // bootstrap and js progress bars
 const ULWrapper = styled.ul`
   color: ${colors.transparentSeaBlue};
+  padding: 0 40px;
 `;
 const LIWrapper = styled.li`
   color: ${colors.lightGray};

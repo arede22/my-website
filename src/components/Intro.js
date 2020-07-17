@@ -36,12 +36,14 @@ const Box = styled.div`
 `;
 const Rows = styled.ul`
   display: flex;
+  padding: 0 15px;
 `;
 const Cols = styled(StyledWrapper)`
   flex: 50%;
 `;
 const ULWrapper = styled.ul`
   color: white;
+  padding: 0 40px;
 `;
 const LIWrapper = styled.li`
   color: white;

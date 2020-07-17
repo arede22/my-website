@@ -40,6 +40,7 @@ const Box = styled.div`
 `;
 const ULWrapper = styled.ul`
   color: white;
+  padding: 0 40px;
 `;
 const LIWrapper = styled.li`
   margin: 5px 0px;

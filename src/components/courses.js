@@ -11,6 +11,7 @@ const Box = styled.div`
 `;
 const ULWrapper = styled.ul`
   color: ${colors.transparentSeaBlue};
+  padding: 0 40px;
 `;
 const LIWrapper = styled.li`
   color: ${colors.lightGray};

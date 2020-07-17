@@ -80,6 +80,13 @@ const BannerName = styled.ul`
     padding: 0 10px;
   }
 `;
+const BannerPron = styled(BannerName)`
+  padding: 0 60px;
+
+  @media (max-width: 330px) {
+    display: none;
+  }
+`;
 const BannerLi = styled.li`
   display: flex;
   padding: 4px 8px;
@@ -114,11 +121,11 @@ export default function Nav() {
           <BannerLi> K </BannerLi>
           <BannerLi> A </BannerLi>
         </BannerName>
-        <BannerName style={{padding: '0 60px'}}>
+        <BannerPron>
           <BannerLI> [ uh  </BannerLI>
           <BannerLI> - nee </BannerLI>
           <BannerLI> - kah ] </BannerLI>
-        </BannerName>
+        </BannerPron>
       </Banner>
       <StyledNav>
         <ULWrapper>

@@ -9,6 +9,7 @@ const StyledWrapper = styled.div`
 `;
 const ULWrapper = styled.ul`
   color: white;
+  padding: 0 40px;
 `;
 const LIWrapper = styled.li`
   color: white;
@@ -16,7 +17,8 @@ const LIWrapper = styled.li`
 `;
 const H3Style = styled.h3`
   color: white;
-  font-size: ${fontSizes.med1};
+  font-size: ${fontSizes.sm3};
+  margin: 0;
 `;
 
 // design as timeline (vertical; med-thick w/ stops; ul-clickable and hover-info)
@@ -25,7 +27,7 @@ const H3Style = styled.h3`
 export default function WorkExperience() {
   return (
     <StyledWrapper>
-      <H3Style> Past work experience </H3Style>
+      <H3Style> Work experience </H3Style>
       <ULWrapper>
         <LIWrapper> (Computational Linguistics) Research Intern @ICSI (International Computer Science Institute) -- UC-Berkeley, Jan 2020 -- Current
           <ULWrapper>
