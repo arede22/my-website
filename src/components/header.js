@@ -1,6 +1,11 @@
 import React from 'react';
 import Head from 'next/head';
 
+// styles and wrappers
+const StyledWrapper = styled.div`
+  margin: 0;
+`;
+
 // export main component
 export default function Header() {
   return (
