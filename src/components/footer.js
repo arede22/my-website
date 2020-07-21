@@ -3,6 +3,8 @@ import { theme } from '../styles';
 import styled from 'styled-components';
 const { colors, hrefs, iconSrcs } = theme;
 
+// const fetch = require("node-fetch"); FIGURE OUT FETCH for git
+
 // constants
 const ref = [
   { href: hrefs.mail, src: iconSrcs.mail },
@@ -14,6 +16,11 @@ const links = ref.map(link => {
   link.key = `nav-link-${link.href}-${link.src}`.replace(/[^a-zA-Z0-9]/g, '')
   return link
 });
+// const githubJson = fetch('https://api.github.com/users/arede22/repos');
+// for i in githubJson {
+//  list.append(i["stargazers_count"])
+//  list2.append(i["forks_count"])
+// }
 
 // styles and wrappers
 const StyledWrapper = styled.div`
@@ -36,6 +43,10 @@ const ULWrapper = styled.ul`
   padding: 10px 25px;
   margin: 10px 15px;
   margin-top: 0;
+`;
+const GithubWrapper = styled(ULWrapper)`
+  width: 50%;
+  margin: 0 auto;
 `;
 const LIWrapper = styled.li`
   display: flex;
@@ -73,7 +84,13 @@ export default function Footer() {
             </LIWrapper>
           ))}
         </ULWrapper>
-        <StyledWrapper>
+{/*        <StyledWrapper>
+          <GithubWrapper>
+            {
+            }
+          </GithubWrapper>
+        </StyledWrapper>
+*/}     <StyledWrapper>
           <PStyle>
             Made by Anika Rede | <Link target="_blank" href={hrefs.webRepo}> GitHub </Link>
           </PStyle>

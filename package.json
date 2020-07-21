@@ -1,5 +1,5 @@
 {
-  "name": "my-website",
+  "name": "theanikarede",
   "version": "2.0.0",
   "private": true,
   "scripts": {
@@ -13,6 +13,7 @@
     "lodash": ">=4.17.19",
     "minimist": ">=1.2.3",
     "next": ">=9.3.2",
+    "node-fetch": "^2.6.0",
     "react": "16.9.0",
     "react-dom": "16.9.0",
     "serialize-javascript": "^4.0.0",

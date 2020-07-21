@@ -1,5 +1,6 @@
 // need proper theme colors:
 const theme = {
+  // need contrasting colors
 
   colors: {
 

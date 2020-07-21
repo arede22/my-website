@@ -54,6 +54,7 @@ const PStyle = styled.p`
 `;
 
 // Courses, languages, college info -- progress bars
+// languages, lines of code: https://codetabs.com/count-loc/count-loc-online.html
 
 // export main component
 export default function Intro() {
