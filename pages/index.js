@@ -115,6 +115,8 @@ const Button = styled.button`
 
 // <Button id="scrolltop">Top</Button>
 
+// more personal type things: instagram, facebook, profiles and hobbies and spotify -- can add api calls here
+
 // export main component
 export default function Home() {
   return (
@@ -125,10 +127,10 @@ export default function Home() {
       <Nav />
 
       <Welcome />
-      {/*<Button id="scrolltop">Top</Button>*/}
+      {/*<Button id="scrolltop">Top</Button> -- assign script in header */}
       <Intro /> {/* Courses, languages, college info -- progress bars */}
-      {/* Timeline w/ work and class extension projects */}
       {/* Skills acquired, desired */}
+      {/* Timeline w/ work and class extension projects -- assign script in header */}
       <Portfolio /> {/* Tree of projects and portfolio */}
       <ContactMe />
 

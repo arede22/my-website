@@ -47,6 +47,7 @@
   <li> Opt blog section </li>
   <li> Accessibility: aria </li>
   <li> Other parts of portfolio </li>
+  <li> Theming: Light/Dark/Invert </li>
 </ul>
 
 <b> Updating project: </b>

@@ -1,8 +1,43 @@
 // need proper theme colors:
 const theme = {
   // need contrasting colors
-
+  // two theme settings: dark and light
   colors: {
+
+    // cerulean: #007ba7
+    // seagreen: #00a780
+    // shades/tints of cerulean:
+    //    black: #00070a
+    //    #00161e
+    //    #002431
+    //    #003345
+    //    #004159
+    //    #00506c
+    //    #005e80
+    //    #006d93
+    //    #007ba7
+    //    #0089bb
+    //    #0098ce
+    //    #00a6e2
+    //    #00b5f5
+    //    periwinkle-dark,light: #a7e8ff, #bbedff
+
+    // tones of cerulean:
+    //    gray: #4d575a
+    //    #475a60
+    //    #405d67
+    //    #3a606d
+    //    #336374
+    //    #2d667a
+    //    #276980
+    //    #206c87
+    //    #1a6f8d
+    //    #137294
+    //    #0d759a
+    //    #0678a1
+    //    #007ba7
+
+    // check color blindness simulator
 
     orange: "#f79555",
 
@@ -59,7 +94,9 @@ const theme = {
     mail: '../static/footer/email',
     ig: '../static/footer/insta',
     linkedin: '../static/footer/linkedin',
-    github: '../static/footer/github'
+    github: '../static/footer/github',
+    star: '../static/footer/star.png',
+    fork: '../static/footer/fork.png',
 
   },
 

@@ -93,7 +93,7 @@ export default function Portfolio() {
                   <Modal trigger="boss" img={imgSrcs.boss} pop="popBoss" content="img04" aria={imgSrcs.boss.replace('../static/portfolio/', '').replace('.png', '')} />
                 </SpaceBetween>
                 <PStyle>
-                  <Link href={hrefs.gameVid} target="_blank"> Click here for DEMO </Link>
+                  <Link href={hrefs.gameVid} target="_blank" rel="nofollow noopener noreferrer"> Click here for DEMO </Link>
                 </PStyle>
               </LIWrapper>
             </ULWrapper>

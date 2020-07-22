@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { theme } from '../styles';
 import styled from 'styled-components';
-const { colors, hrefs, iconSrcs } = theme;
+const { colors, hrefs, fontSizes, iconSrcs } = theme;
 
-// const fetch = require("node-fetch"); FIGURE OUT FETCH for git
+// stackoverflow, hackerrank, spotify
+// CALHACKS
+// dailycal
 
 // constants
 const ref = [
@@ -16,11 +18,6 @@ const links = ref.map(link => {
   link.key = `nav-link-${link.href}-${link.src}`.replace(/[^a-zA-Z0-9]/g, '')
   return link
 });
-// const githubJson = fetch('https://api.github.com/users/arede22/repos');
-// for i in githubJson {
-//  list.append(i["stargazers_count"])
-//  list2.append(i["forks_count"])
-// }
 
 // styles and wrappers
 const StyledWrapper = styled.div`
@@ -43,10 +40,6 @@ const ULWrapper = styled.ul`
   padding: 10px 25px;
   margin: 10px 15px;
   margin-top: 0;
-`;
-const GithubWrapper = styled(ULWrapper)`
-  width: 50%;
-  margin: 0 auto;
 `;
 const LIWrapper = styled.li`
   display: flex;
@@ -71,26 +64,76 @@ const ImgStyle = styled.img`
     width: 16px;
   }
 `;
+const GithubWrapper = styled.div`
+  width: 70%;
+  margin: 0 auto;
+`;
+const GithubLink = styled.a`
+  text-decoration: none;
+  font-size: ${fontSizes.sm1};
+  color: ${colors.orange};
+`;
+const StyledGitHubInfo = styled.div`
+  color: red;
+  text-align: center;
+`;
+const Icon = styled.img`
+  height: 50%;
+  width: auto;
+`;
 
 // export main component
 export default function Footer() {
+  // taken from bchiang/v4
+  const [githubInfo, setGitHubInfo] = useState({
+    stars: 0,
+    forks: 0,
+  });
+
+  useEffect(() => {
+    if (process.env.NODE_ENV !== 'production') {
+      return;
+    }
+    fetch('https://api.github.com/repos/arede22/theanikarede')//https://api.github.com/repos/arede22/theanikarede
+      .then(response => response.json())
+      .then(json => {
+        const { stargazers_count, forks_count } = json;
+        setGitHubInfo({
+          stars: stargazers_count,
+          forks: forks_count,
+        });
+      })
+      .catch(e => console.error(e));
+  }, []);
+
   return (
     <StyledWrapper>
       <FooterStyle>
         <ULWrapper>
           {links.map(({ key, href, src }) => (
             <LIWrapper key={key}>
-              <a href={href} target="_blank"> <ImgStyle src={src + '.png'} aria-label={src.replace('../static/footer/', "Anika's ")} onMouseOver={e => {e.currentTarget.src = src + '-hover.png'}} onMouseOut={e => {e.currentTarget.src = src + '.png'}} /> </a>
+              <a href={href} target="_blank" rel="nofollow noopener noreferrer"> <ImgStyle src={src + '.png'} aria-label={src.replace('../static/footer/', "Anika's ")} onMouseOver={e => {e.currentTarget.src = src + '-hover.png'}} onMouseOut={e => {e.currentTarget.src = src + '.png'}} /> </a>
             </LIWrapper>
           ))}
         </ULWrapper>
-{/*        <StyledWrapper>
-          <GithubWrapper>
-            {
-            }
-          </GithubWrapper>
-        </StyledWrapper>
-*/}     <StyledWrapper>
+        <GithubWrapper>
+          <GithubLink href="https://github.com/arede22/theanikarede" target="_blank" rel="nofollow noopener noreferrer">
+            <div> Bye! </div>
+            {/*{githubInfo.stars && githubInfo.forks && (*/}
+              <StyledGitHubInfo>
+                <span>
+                  <Icon src={iconSrcs.star} alt="Stars: "/>
+                  <span>{githubInfo.stars.toLocaleString()}</span>
+                </span>
+                <span>
+                  <Icon src={iconSrcs.fork} alt="Forks: " />
+                  <span>{githubInfo.forks.toLocaleString()}</span>
+                </span>
+              </StyledGitHubInfo>
+            {/*)}*/}
+          </GithubLink>
+        </GithubWrapper>
+        <StyledWrapper>
           <PStyle>
             Made by Anika Rede | <Link target="_blank" href={hrefs.webRepo}> GitHub </Link>
           </PStyle>
