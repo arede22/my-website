@@ -128,6 +128,7 @@ export default function Home() {
 
       <Welcome />
       {/*<Button id="scrolltop">Top</Button> -- assign script in header */}
+      {/*Toggle button for light/dark themes */}
       <Intro /> {/* Courses, languages, college info -- progress bars */}
       {/* Skills acquired, desired */}
       {/* Timeline w/ work and class extension projects -- assign script in header */}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { theme } from '../styles';
 import WorkExperience from './workExperience';
@@ -6,6 +6,20 @@ import Clubs from './clubs';
 import Courses from './courses';
 import Softwares from './softwares';
 const { colors, fontSizes } = theme;
+
+var repos = [];
+
+fetch('https://api.github.com/users/arede22/repos')
+  .then(response => response.json())
+  .then(json => {
+    for (var i in json) {
+      var { name } = json[i];
+      repos.push(name);
+    }
+  })
+  .catch(e => console.error(e));
+
+const avoidLanguages = ["JSON", "Markdown"];
 
 // styles and wrappers
 const AnchorPoint = styled.a`
@@ -58,6 +72,37 @@ const PStyle = styled.p`
 
 // export main component
 export default function Intro() {
+  // taken from bchiang/v4
+  var totalLoc = 0;
+
+  var [loc, setLoc] = useState({
+    languages: [],
+    linesOfCode: [],
+  });
+
+  useEffect(() => {
+    if (process.env.NODE_ENV !== 'production') {
+      return;
+    }
+    fetch('https://api.codetabs.com/v1/loc?github=arede22/theanikarede')
+      .then(response => response.json())
+      .then(json => {
+        for (var i in json) {
+          var { language, linesOfCode } = json[i];
+
+          if (language.toLowerCase() == "total") {
+            totalLoc = linesOfCode;
+          } else if (!avoidLanguages.includes(language)) {
+            setLoc({
+              languages: loc.languages.push(language),
+              linesOfCode: loc.linesOfCode.push(linesOfCode),
+            })
+          }
+        }
+      })
+      .catch(e => console.error(e));
+  }, []);
+
   return (
     <React.Fragment>
       <AnchorPoint name="Intro" id="intro-anchor"></AnchorPoint>
