@@ -94,7 +94,7 @@ export default function Footer() {
     if (process.env.NODE_ENV !== 'production') {
       return;
     }
-    fetch('https://api.github.com/repos/arede22/theanikarede')//https://api.github.com/repos/arede22/theanikarede
+    fetch('https://api.github.com/repos/arede22/theanikarede')
       .then(response => response.json())
       .then(json => {
         const { stargazers_count, forks_count } = json;
@@ -116,10 +116,10 @@ export default function Footer() {
             </LIWrapper>
           ))}
         </ULWrapper>
-        <GithubWrapper>
-          <GithubLink href="https://github.com/arede22/theanikarede" target="_blank" rel="nofollow noopener noreferrer">
-            <div> Bye! </div>
-            {/*{githubInfo.stars && githubInfo.forks && (*/}
+        {/*githubInfo.stars && githubInfo.forks && (
+          <GithubWrapper>
+            <GithubLink href={hrefs.webRepo} target="_blank" rel="nofollow noopener noreferrer">
+              <div> Bye! </div>
               <StyledGitHubInfo>
                 <span>
                   <Icon src={iconSrcs.star} alt="Stars: "/>
@@ -130,12 +130,12 @@ export default function Footer() {
                   <span>{githubInfo.forks.toLocaleString()}</span>
                 </span>
               </StyledGitHubInfo>
-            {/*)}*/}
-          </GithubLink>
-        </GithubWrapper>
+            </GithubLink>
+          </GithubWrapper>
+        )*/}
         <StyledWrapper>
           <PStyle>
-            Made by Anika Rede | <Link target="_blank" href={hrefs.webRepo}> GitHub </Link>
+            Made by Anika Rede | <Link target="_blank" href={hrefs.webRepo} rel="nofollow noopener noreferrer"> GitHub </Link>
           </PStyle>
         </StyledWrapper>
       </FooterStyle>

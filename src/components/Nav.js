@@ -61,7 +61,6 @@ const HomeLink = styled(Link)`
       border-width: 0 3px 3px 0;
       display: inline-block;
       padding: 3px;
-      padding-bottom: 6px; /* just added */
       transform: rotate(45deg);
       -webkit-transform: rotate(45deg);
     }

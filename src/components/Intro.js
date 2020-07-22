@@ -8,7 +8,6 @@ import Softwares from './softwares';
 const { colors, fontSizes } = theme;
 
 var repos = [];
-
 fetch('https://api.github.com/users/arede22/repos')
   .then(response => response.json())
   .then(json => {
@@ -19,7 +18,7 @@ fetch('https://api.github.com/users/arede22/repos')
   })
   .catch(e => console.error(e));
 
-const avoidLanguages = ["JSON", "Markdown"];
+const avoidLanguages = ["JSON", "Markdown", "Plain Text"];
 
 // styles and wrappers
 const AnchorPoint = styled.a`
@@ -68,7 +67,6 @@ const PStyle = styled.p`
 `;
 
 // Courses, languages, college info -- progress bars
-// languages, lines of code: https://codetabs.com/count-loc/count-loc-online.html
 
 // export main component
 export default function Intro() {
@@ -84,23 +82,30 @@ export default function Intro() {
     if (process.env.NODE_ENV !== 'production') {
       return;
     }
-    fetch('https://api.codetabs.com/v1/loc?github=arede22/theanikarede')
-      .then(response => response.json())
-      .then(json => {
-        for (var i in json) {
-          var { language, linesOfCode } = json[i];
+    // for (var proj in repos) {
+      fetch('https://api.codetabs.com/v1/loc?github=arede22/theanikarede')// + repos[proj] )
+        .then(response => response.json())
+        .then(json => {
+          for (var i in json) {
+            var { language, linesOfCode } = json[i];
 
-          if (language.toLowerCase() == "total") {
-            totalLoc = linesOfCode;
-          } else if (!avoidLanguages.includes(language)) {
-            setLoc({
-              languages: loc.languages.push(language),
-              linesOfCode: loc.linesOfCode.push(linesOfCode),
-            })
+            if (language.toLowerCase() == "total") {
+              totalLoc = linesOfCode;
+            } else if (loc.languages.includes(language)) { // if language already in list, add onto the lines of code
+              var pt = loc.languages.indexOf(language);
+              setLoc({
+                linesOfCode: loc.linesOfCode[pt] + linesOfCode,
+              })
+            } else if (!avoidLanguages.includes(language)) {
+              setLoc({
+                languages: loc.languages.push(language),
+                linesOfCode: loc.linesOfCode.push(linesOfCode),
+              })
+            }
           }
-        }
-      })
+        })
       .catch(e => console.error(e));
+    // }
   }, []);
 
   return (
@@ -152,6 +157,14 @@ export default function Intro() {
                 <LIWrapper> Photoshop, Illustrator </LIWrapper>
               </Cols>
             </Rows>
+            <div>
+              <h1> Lines of Code: </h1>
+                <h4> Languages: Thing 1, Thing 2 </h4>
+                <h4> Lines of code for each: 1, 2 </h4>
+                <h4> Total lines of code: 3 </h4>
+            </div>
+          </Box>
+          <Box>
             <H3Style> Skills </H3Style>
             <ULWrapper>
               <LIWrapper> Data visualization and simulation softwares used practically for research </LIWrapper>

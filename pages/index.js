@@ -17,20 +17,8 @@ const GlobalStyle = createGlobalStyle`
     @media (max-width: 600px) {
       background: ${colors.darkGray} url(${imgSrcs.backgroundImgSm}) repeat-y center;
     }
-
-    // @media ${media.laptop} {
-    //   max-width: 800px;
-    // }
-    //
-    // @media ${media.laptopL} {
-    //   max-width: 1000px;
-    // }
-    //
-    // @media ${media.desktop} {
-    //   max-width: 1200px;
-    // }
   }
-  h1, h2, h3, h4 {
+  h1, h2, h3, h4, h5 {
    font-family: ${fonts.Oswald};
    text-transform: uppercase;
    text-shadow: black 2px 2px;
@@ -100,8 +88,8 @@ const Button = styled.button`
 // Header/Navbar
 // Welcome
 // Intro (progress bars)
-// Work Experience (timeline)
 // Skills (wanted, needed)
+// Work Experience (timeline)
 // Projects&Portfolio Interactive Tree
 // ContactMe
 // Footer

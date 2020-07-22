@@ -14,27 +14,37 @@
   <li> material design, bootstrap, css tricks, mdn web docs </li>
 </ul>
 
+<b> Note for more personal information: </b>
+<ul>
+  <li> stackoverflow, hackerrank, spotify </li>
+  <li> CALHACKS </li>
+  <li> dailycal </li>
+  <li> more personal type things: instagram, facebook, profiles and hobbies and spotify -- can add api calls here </li>
+</ul>
+
 <b> Recently changed: </b>
 <ul>
-  <li> Not using modals any more, not pretty to look at (still have infrastructure) </li>
-  <li> Figured out navbar for mobile screens </li>
-  <li> Style components compartmentally </li>
+  <li> Dropdown menu for mobile screens </li>
+  <li> Sketch out a good scheme for design, now that abstractions are done everything should go smoother </li>
+  <li> Git and LOC calls </li>
 </ul>
 
 <b> Yet to-do: </b>
 <ul>
   <li> Anchorpoints also change url for #section </li>
-  <li> Dropdown menu for mobile screens </li>
-  <li> Sketch out a good scheme for design, now that abstractions are done everything should go smoother </li>
-
+  <li> Graphic design for background </li>
   <li> Get color palette and apply (plus graphic design background Illustrator) </li>
+  <li> Pre-loading for Git and LOC calls </li>
+
   <li> Finalize design ideas, modify @styles, nav, welcome, intro, contactme, and footer toward that end </li>
   <li> Think of portfolio and info layouts + act on it </li>
-  <li> Design for different media -- font-sizes, widths </li>
+  <li> Design for different media -- font-sizes, widths: for different types of media, use @media ${media.laptop} {...} </li>
 
   <li> Add in a sticky 'scroll to top' button (up arrow) </li>
-  <li> Graphic design for background </li>
+  <li> Light/dark themes </li>
+  <li> Accessibility </li>
   <li> Animation gif for loading screen </li>
+  <li> Lazy loading </li>
 </ul>
 
 <b> Main to-dos: </b>
@@ -43,11 +53,12 @@
   <li> See if necessary to incorporate react-dom, react-router, react bootstrap, etc. </li>
   <li> Javascript and Ajax scripts </li>
   <li> Add in Github, Spotify, Youtube, and Instagram API calls </li>
-  <li> Page loader </li>
-  <li> Opt blog section </li>
-  <li> Accessibility: aria </li>
-  <li> Other parts of portfolio </li>
   <li> Theming: Light/Dark/Invert </li>
+  <li> Page loader </li>
+  <li> Lazy loading </li>
+  <li> Accessibility </li>
+  <li> Blog section </li>
+  <li> Other parts of portfolio </li>
 </ul>
 
 <b> Updating project: </b>
