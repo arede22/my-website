@@ -2,6 +2,8 @@
 const theme = {
   // need contrasting colors
   // two theme settings: dark and light
+  // https://styled-components.com/docs/advanced
+  // https://medium.com/@NateBaldwin/theming-with-css-variables-d7acddd3a699
   colors: {
 
     // cerulean: #007ba7

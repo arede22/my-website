@@ -59,6 +59,9 @@ const SpaceBetween = styled.div`
   justify-content: space-between;
 `;
 
+// tree https://www.w3schools.com/html/html_images_imagemap.asp
+// tooltip for tree https://www.w3schools.com/howto/howto_css_tooltip.asp
+
 // export main component
 export default function Portfolio() {
   return (

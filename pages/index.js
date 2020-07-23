@@ -101,7 +101,12 @@ const Button = styled.button`
 // <WorkExperience />
 // <Project />
 
-// <Button id="scrolltop">Top</Button>
+// parallax scrolling https://www.w3schools.com/howto/howto_css_parallax.asp
+
+// blog https://nextjs.org/learn/basics/navigate-between-pages/pages-in-nextjs
+
+// <Button id="scrolltop">Top</Button> https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+// Toggle button for light/dark themes
 
 // more personal type things: instagram, facebook, profiles and hobbies and spotify -- can add api calls here
 

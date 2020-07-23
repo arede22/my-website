@@ -52,7 +52,7 @@
   <li> Make compatible with different media </li>
   <li> See if necessary to incorporate react-dom, react-router, react bootstrap, etc. </li>
   <li> Javascript and Ajax scripts </li>
-  <li> Add in Github, Spotify, Youtube, and Instagram API calls </li>
+  <li> Add in Github, Spotify, Youtube, and Instagram API calls (figure out how to let api call load before assigning text) </li>
   <li> Theming: Light/Dark/Invert </li>
   <li> Page loader </li>
   <li> Lazy loading </li>

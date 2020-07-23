@@ -83,6 +83,7 @@ export default function Intro() {
       return;
     }
     // for (var proj in repos) {
+    // (for private repos) https://stackoverflow.com/questions/26881441/can-you-get-the-number-of-lines-of-code-from-a-github-repository
       fetch('https://api.codetabs.com/v1/loc?github=arede22/theanikarede')// + repos[proj] )
         .then(response => response.json())
         .then(json => {
