@@ -1,11 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { theme } from '../styles';
-import WorkExperience from './workExperience';
-import Clubs from './clubs';
+const { colors, fontSizes } = theme;
 import Courses from './courses';
 import Softwares from './softwares';
-const { colors, fontSizes } = theme;
+import Skills from './skills';
+import Clubs from './clubs';
+import WorkExperience from './workExperience';
+// Coursework
+// Skills
+// Softwares and comfortability
+
+// <Courses />
+// <Softwares />
+// <Skills />
+// <Clubs />
+// <WorkExperience />
 
 var repos = [];
 fetch('https://api.github.com/users/arede22/repos')

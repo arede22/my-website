@@ -24,27 +24,25 @@
 
 <b> Recently changed: </b>
 <ul>
-  <li> Dropdown menu for mobile screens </li>
-  <li> Sketch out a good scheme for design, now that abstractions are done everything should go smoother </li>
   <li> Git and LOC calls </li>
+  <li> Add in a sticky 'scroll to top' button (up arrow) </li>
 </ul>
 
 <b> Yet to-do: </b>
 <ul>
   <li> Anchorpoints also change url for #section </li>
   <li> Graphic design for background </li>
+  <li> Light/dark themes </li>
   <li> Get color palette and apply (plus graphic design background Illustrator) </li>
   <li> Pre-loading for Git and LOC calls </li>
 
   <li> Finalize design ideas, modify @styles, nav, welcome, intro, contactme, and footer toward that end </li>
   <li> Think of portfolio and info layouts + act on it </li>
+  <li> Lazy loading </li>
   <li> Design for different media -- font-sizes, widths: for different types of media, use @media ${media.laptop} {...} </li>
 
-  <li> Add in a sticky 'scroll to top' button (up arrow) </li>
-  <li> Light/dark themes </li>
   <li> Accessibility </li>
   <li> Animation gif for loading screen </li>
-  <li> Lazy loading </li>
 </ul>
 
 <b> Main to-dos: </b>

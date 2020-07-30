@@ -3,10 +3,9 @@ import styled from 'styled-components';
 import Modal from './modal';
 import { theme, media } from '../styles';
 const { colors, fontSizes, hrefs, imgSrcs } = theme;
-// Coursework
-// Skills
-// Softwares and comfortability
 // Currently exploring pet projects
+
+// <Project />
 
 // styles and wrappers
 const AnchorPoint = styled.a`

@@ -1,0 +1,15 @@
+body {
+  margin-top: 100px;
+  background: gray url('static/genImages/new/small-02.png') repeat-y center;
+  background-size: 100%;
+  background-position-y: top;
+}
+header {
+  width: 100%;
+}
+h1 {
+  color: white;
+}
+div {
+  margin: 200px auto;
+}

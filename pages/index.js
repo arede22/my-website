@@ -1,71 +1,9 @@
 import React from 'react';
-import styled, { createGlobalStyle } from 'styled-components';
 import { Header, Nav, Welcome, Intro, Portfolio, ContactMe, Footer } from '../src/components'; // '@components'
 import { Courses, Softwares, Skills, Clubs, WorkExperience, Project } from '../src/components'; // '@components'
-import { theme, media } from '../src/styles'; // '@styles'
-const { colors, fonts, imgSrcs, fontSizes } = theme;
+import { GlobalStyle } from '../src/styles'; // '@styles'
 
 // styles and wrappers
-const GlobalStyle = createGlobalStyle`
-  body {
-    margin: 0;
-    font-size: ${fontSizes.sm3};
-    font-family: ${fonts.Lucida};
-    color: white;
-    background: ${colors.darkGray} url(${imgSrcs.backgroundImg}) repeat-y center;
-
-    @media (max-width: 600px) {
-      background: ${colors.darkGray} url(${imgSrcs.backgroundImgSm}) repeat-y center;
-    }
-  }
-  h1, h2, h3, h4, h5 {
-   font-family: ${fonts.Oswald};
-   text-transform: uppercase;
-   text-shadow: black 2px 2px;
-  }
-  h1 {
-    font-size: ${fontSizes.lg};
-
-    @media (max-width: 600px) {
-      font-size: ${fontSizes.med2};
-    }
-  }
-  h2 {
-    font-size: ${fontSizes.med2};
-
-    @media (max-width: 600px) {
-      font-size: ${fontSizes.med1};
-    }
-  }
-  h3 {
-    font-size: ${fontSizes.med1};
-
-    @media (max-width: 600px) {
-      font-size: ${fontSizes.sm3};
-    }
-  }
-  h4 {
-    font-size: ${fontSizes.sm3};
-
-    @media (max-width: 600px) {
-      font-size: ${fontSizes.sm2};
-    }
-  }
-  h5 {
-    font-size: ${fontSizes.sm2};
-
-    @media (max-width: 600px) {
-      font-size: ${fontSizes.sm1};
-    }
-  }
-  p {
-    font-size: ${fontSizes.sm1};
-
-    @media (max-width: 600px) {
-      font-size: ${fontSizes.sm0};
-    }
-  }
-`;
 const Button = styled.button`
   display: none;
   position: fixed;
@@ -94,13 +32,6 @@ const Button = styled.button`
 // ContactMe
 // Footer
 
-// <Courses />
-// <Softwares />
-// <Skills />
-// <Clubs />
-// <WorkExperience />
-// <Project />
-
 // parallax scrolling https://www.w3schools.com/howto/howto_css_parallax.asp
 
 // blog https://nextjs.org/learn/basics/navigate-between-pages/pages-in-nextjs
@@ -120,7 +51,6 @@ export default function Home() {
       <Nav />
 
       <Welcome />
-      {/*<Button id="scrolltop">Top</Button> -- assign script in header */}
       {/*Toggle button for light/dark themes */}
       <Intro /> {/* Courses, languages, college info -- progress bars */}
       {/* Skills acquired, desired */}
@@ -129,6 +59,8 @@ export default function Home() {
       <ContactMe />
 
       <Footer />
+
+      <Button id="scrolltop">Top</Button>
 
     </React.Fragment>
   )

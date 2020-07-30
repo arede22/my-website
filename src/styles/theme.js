@@ -104,8 +104,12 @@ const theme = {
 
   imgSrcs: {
 
-    backgroundImg: '../static/genImages/starting-background.png',
-    backgroundImgSm: '../static/genImages/starting-background.png',
+    backgroundImg: '../static/genImages/starting-background.png', // to be removed, original
+    backgroundImgSm: '../static/genImages/starting-background.png', // to be removed, original
+    backgroundLightSm: '../static/genImages/new/lightSm.png',
+    backgroundDarkSm: '../static/genImages/new/darkSm.png',
+    backgroundLight: '../static/genImages/new/light.png',
+    backgroundDark: '../static/genImages/new/dark.png',
     profile: '../static/genImages/profile.png',
     dropdown: '../../static/genImages/downarrow.svg',
     car: '../static/portfolio/car.png',
