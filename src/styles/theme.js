@@ -93,30 +93,30 @@ const theme = {
 
   iconSrcs: {
 
-    mail: '../static/footer/email',
-    ig: '../static/footer/insta',
-    linkedin: '../static/footer/linkedin',
-    github: '../static/footer/github',
-    star: '../static/footer/star.png',
-    fork: '../static/footer/fork.png',
+    mail: '/static/footer/email',
+    ig: '/static/footer/insta',
+    linkedin: '/static/footer/linkedin',
+    github: '/static/footer/github',
+    star: '/static/footer/star.png',
+    fork: '/static/footer/fork.png',
 
   },
 
   imgSrcs: {
 
-    backgroundImg: '../static/genImages/starting-background.png', // to be removed, original
-    backgroundImgSm: '../static/genImages/starting-background.png', // to be removed, original
-    backgroundLightSm: '../static/genImages/new/lightSm.png',
-    backgroundDarkSm: '../static/genImages/new/darkSm.png',
-    backgroundLight: '../static/genImages/new/light.png',
-    backgroundDark: '../static/genImages/new/dark.png',
-    profile: '../static/genImages/profile.png',
-    dropdown: '../../static/genImages/downarrow.svg',
-    car: '../static/portfolio/car.png',
-    map: '../static/portfolio/map.png',
-    randRooms: '../static/portfolio/random-room.png',
-    boss: '../static/portfolio/boss.png',
-    tree: '../static/portfolio/tree.svg'
+    backgroundImg: '/static/genImages/starting-background.png', // to be removed, original
+    backgroundImgSm: '/static/genImages/starting-background.png', // to be removed, original
+    backgroundLightSm: '/static/genImages/new/lightSm.png',
+    backgroundDarkSm: '/static/genImages/new/darkSm.png',
+    backgroundLight: '/static/genImages/new/light.png',
+    backgroundDark: '/static/genImages/new/dark.png',
+    profile: '/static/genImages/profile.png',
+    dropdown: '/static/genImages/downarrow.svg',
+    car: '/static/portfolio/car.png',
+    map: '/static/portfolio/map.png',
+    randRooms: '/static/portfolio/random-room.png',
+    boss: '/static/portfolio/boss.png',
+    tree: '/static/portfolio/tree.svg'
 
   }
 

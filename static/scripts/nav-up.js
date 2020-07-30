@@ -1,13 +1,16 @@
 // hides navbar when scrolling down, reveals when scrolling up -- taken from W3 Schools website
 $(document).ready(function () {
 
+  var nav = document.getElementById("navbar");
   var prevScrollPos = window.pageYOffset;
+
   window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollPos > currentScrollPos) {
-      document.getElementById("navbar").style.top = "0";
+      nav.style.top = "0";
     } else {
-      document.getElementById("navbar").style.top = "-140px";
+      nav.style.top = "-140px";
+      console.log('worked?')
     }
     prevScrollPos = currentScrollPos;
   }

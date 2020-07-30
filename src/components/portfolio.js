@@ -78,17 +78,17 @@ export default function Portfolio() {
             <H3Style> Extensions of Class Projects </H3Style>
             <ULWrapper>
               <LIWrapper> Voice-Activated Car -- Designing Information Devices/Systems Trained with PCA
-                <Modal trigger="car" img={imgSrcs.car} pop="popCar" content="img01" aria={imgSrcs.car.replace('../static/portfolio/', '').replace('.png', '')} />
+                <Modal trigger="car" img={imgSrcs.car} pop="popCar" content="img01" aria={imgSrcs.car.replace('/static/portfolio/', '').replace('.png', '')} />
               </LIWrapper>
 
               <LIWrapper> Mock GoogleMaps Berkeley-Localized -- Map Rastering, Autocomplete and Search, and Navigation
-                <Modal trigger="map" img={imgSrcs.map} pop="popMap" content="img02" aria={imgSrcs.map.replace('../static/portfolio/', '').replace('.png', '')} />
+                <Modal trigger="map" img={imgSrcs.map} pop="popMap" content="img02" aria={imgSrcs.map.replace('/static/portfolio/', '').replace('.png', '')} />
               </LIWrapper>
 
               <LIWrapper> Pixel Art Game -- Randomized Room Generation and Increasing Difficulty to Boss Level:
                 <SpaceBetween>
-                  <Modal trigger="randRooms" img={imgSrcs.randRooms} pop="popRandRooms" content="img03" aria={imgSrcs.randRooms.replace('../static/portfolio/', '').replace('.png', '')} />
-                  <Modal trigger="boss" img={imgSrcs.boss} pop="popBoss" content="img04" aria={imgSrcs.boss.replace('../static/portfolio/', '').replace('.png', '')} />
+                  <Modal trigger="randRooms" img={imgSrcs.randRooms} pop="popRandRooms" content="img03" aria={imgSrcs.randRooms.replace('/static/portfolio/', '').replace('.png', '')} />
+                  <Modal trigger="boss" img={imgSrcs.boss} pop="popBoss" content="img04" aria={imgSrcs.boss.replace('/static/portfolio/', '').replace('.png', '')} />
                 </SpaceBetween>
                 <PStyle>
                   <Link href={hrefs.gameVid} target="_blank" rel="nofollow noopener noreferrer"> Click here for DEMO </Link>

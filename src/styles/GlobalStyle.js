@@ -1,6 +1,6 @@
-import styled, { createGlobalStyle } from 'styled-components';
-import { theme } from './theme';
-import { media } from './media';
+import { createGlobalStyle } from 'styled-components';
+import theme from './theme';
+import media from './media';
 const { colors, fonts, imgSrcs, fontSizes } = theme;
 
 const GlobalStyle = createGlobalStyle`
