@@ -4,7 +4,7 @@ module.exports = {
     return {
       '/': { page: '/' },
       '/blog': { page: '/blog' },
-      // '/post/id1': { page: '/blog/post/id1' },
+      // '/blog/post/[id]': { page: '/blog/post/[id]' },
     };
   },
 };
