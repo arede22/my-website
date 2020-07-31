@@ -3,18 +3,19 @@ import theme from './theme';
 import media from './media';
 const { colors, fonts, imgSrcs, fontSizes } = theme;
 
+// theming of globalstyle?
 const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     font-size: ${fontSizes.sm3};
     font-family: ${fonts.Lucida};
     color: white;
-    background: ${colors.darkGray} url(${imgSrcs.backgroundImg}) repeat-y center;
+    background: ${colors.darkGray} url(${imgSrcs.backgroundDark}) repeat-y center;
     background-size: 100%;
     background-position-y: top;
 
     @media (max-width: 600px) {
-      background: ${colors.darkGray} url(${imgSrcs.backgroundImgSm}) repeat-y center;
+      background: ${colors.darkGray} url(${imgSrcs.backgroundDarkSm}) repeat-y center;
     }
 
     @media ${media.tablet} {
@@ -34,7 +35,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
   }
-  h1, h2, h3, h4, h5 {
+  h1, h2, h3 {
    font-family: ${fonts.Oswald};
    text-transform: uppercase;
    text-shadow: black 2px 2px;
@@ -58,10 +59,12 @@ const GlobalStyle = createGlobalStyle`
 
     @media (max-width: 600px) {
       font-size: ${fontSizes.sm3};
+      text-shadow: black 1px 1px;
     }
   }
   h4 {
     font-size: ${fontSizes.sm3};
+    text-shadow: black 1px 1px;
 
     @media (max-width: 600px) {
       font-size: ${fontSizes.sm2};
@@ -69,6 +72,7 @@ const GlobalStyle = createGlobalStyle`
   }
   h5 {
     font-size: ${fontSizes.sm2};
+    text-shadow: black 1px 1px;
 
     @media (max-width: 600px) {
       font-size: ${fontSizes.sm1};
@@ -76,10 +80,14 @@ const GlobalStyle = createGlobalStyle`
   }
   p {
     font-size: ${fontSizes.sm1};
+    text-shadow: black .5px .5px;
 
     @media (max-width: 600px) {
       font-size: ${fontSizes.sm0};
     }
+  }
+  li {
+    text-shadow: black .5px .5px;
   }
 `;
 

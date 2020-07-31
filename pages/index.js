@@ -1,8 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Header, Nav, Welcome, Intro, Portfolio, ContactMe, Footer } from '../src/components'; // '@components'
-import { Courses, Softwares, Skills, Clubs, WorkExperience, Project } from '../src/components'; // '@components'
-import { theme, GlobalStyle } from '../src/styles'; // '@styles'
+// components
+import { Header, Nav, Welcome, Intro, Portfolio, ContactMe, Footer } from '@components';
+// pages
+import Blog from './blog';
+// styles
+import { theme, GlobalStyle } from '@styles';
 const { colors, fontSizes } = theme;
 
 // styles and wrappers
@@ -14,14 +17,18 @@ const Button = styled.button`
   z-index: 99;
   border: none;
   outline: none;
-  background-color: red;
+  background-color: ${colors.cerulean};
   color: white;
-  padding: 10px 5px;
-  border-radius: 15px;
-  font-size: ${fontSizes.sm2};
+  padding: 15px;
+  border-radius: 30px;
+  font-size: ${fontSizes.sm1};
 
   &:hover {
-    background-color: #555;
+    background-color: ${colors.darkCerulean};
+  }
+
+  @media (max-width: 600px) {
+    font-size: ${fontSizes.sm0};
   }
 `;
 
@@ -49,7 +56,7 @@ export default function Home() {
 
       <Footer />
 
-      <Button id="scrolltop">Top</Button>
+      <Button id="scrolltop">Top <img height="14" width="16" src="static/genImages/scroll-up-arrow.svg" /></Button>
 
     </React.Fragment>
   )

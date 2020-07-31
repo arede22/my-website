@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { theme } from '../styles';
 import styled, { keyframes } from 'styled-components';
+// styles
+import { theme } from '@styles';
 const { colors, fontSizes } = theme;
 
 // styles and wrappers
@@ -35,7 +36,6 @@ const ModalStyle = styled.div`
   top: 0;
   width: 100%;
   height: 100%;
-  /* overflow: auto; */
   background-color: ${colors.transparentBlack};
 `;
 const ContentStyle = styled.img`

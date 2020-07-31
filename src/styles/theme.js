@@ -1,6 +1,7 @@
 // need proper theme colors:
 const theme = {
   // need contrasting colors
+
   // two theme settings: dark and light
   // https://styled-components.com/docs/advanced
   // https://medium.com/@NateBaldwin/theming-with-css-variables-d7acddd3a699
@@ -42,11 +43,18 @@ const theme = {
     // check color blindness simulator
 
     orange: "#f79555",
+    darkOrange: '#f4670c',
+
+    cerulean: "#007ba7",
+    darkCerulean: "#0d759a",
+
+    periwinkle: "#bbedff",
 
     transparentSeaBlue: "rgba(129, 207, 224, 0.4)",
     moreSeaBlue: "rgba(197, 239, 247, 0.7)",
     seaBlue: "rgba(129, 207, 224, 1)",
     skyBlue: "rgba(197, 239, 247, 1)",
+    darkSkyBlue: "rgba(169, 211, 219, 1)",
 
     transparentGray: "rgba(166, 166, 166, 0.3)",
     halfTransparentGray: "rgba(166, 166, 166, 0.5)",
@@ -64,7 +72,6 @@ const theme = {
 
     Lucida: "'Lucida Sans Unicode', 'Lucida Grande', sans-serif",
     Oswald: "'Oswald', sans-serif",
-    Cardo: "'Cardo', serif"
 
   },
 
@@ -86,37 +93,35 @@ const theme = {
     ig: 'https://www.instagram.com/berk_eng_doodler/',
     linkedin: 'https://www.linkedin.com/in/anikarede/',
     github: 'https://github.com/arede22',
-    webRepo: 'https://github.com/arede22/my-website',
+    webRepo: 'https://github.com/arede22/theanikarede',
     gameVid: 'https://www.youtube.com/watch?v=cdlxhQVUIro'
 
   },
 
   iconSrcs: {
 
-    mail: '/static/footer/email',
-    ig: '/static/footer/insta',
-    linkedin: '/static/footer/linkedin',
-    github: '/static/footer/github',
-    star: '/static/footer/star.png',
-    fork: '/static/footer/fork.png',
+    mail: 'static/footer/email',
+    ig: 'static/footer/insta',
+    linkedin: 'static/footer/linkedin',
+    github: 'static/footer/github',
+    star: 'static/footer/star.png',
+    fork: 'static/footer/fork.png',
 
   },
 
   imgSrcs: {
 
-    backgroundImg: '/static/genImages/starting-background.png', // to be removed, original
-    backgroundImgSm: '/static/genImages/starting-background.png', // to be removed, original
-    backgroundLightSm: '/static/genImages/new/lightSm.png',
-    backgroundDarkSm: '/static/genImages/new/darkSm.png',
-    backgroundLight: '/static/genImages/new/light.png',
-    backgroundDark: '/static/genImages/new/dark.png',
-    profile: '/static/genImages/profile.png',
-    dropdown: '/static/genImages/downarrow.svg',
-    car: '/static/portfolio/car.png',
-    map: '/static/portfolio/map.png',
-    randRooms: '/static/portfolio/random-room.png',
-    boss: '/static/portfolio/boss.png',
-    tree: '/static/portfolio/tree.svg'
+    backgroundLightSm: 'static/genImages/new/lightSm.png',
+    backgroundDarkSm: 'static/genImages/new/darkSm.png',
+    backgroundLight: 'static/genImages/new/light.png',
+    backgroundDark: 'static/genImages/new/dark.png',
+    profile: 'static/genImages/profile.png',
+    car: 'static/portfolio/car.png',
+    map: 'static/portfolio/map.png',
+    randRooms: 'static/portfolio/random-room.png',
+    boss: 'static/portfolio/boss.png',
+    tree: 'static/portfolio/tree.png',
+    treesvg: 'static/portfolio/tree.svg',
 
   }
 

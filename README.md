@@ -4,7 +4,7 @@
 2. Created using React.js application launched with Next for static website
 
 <p align="center">
-  <img src="./static/genImages/3-color-trace.png" aria-label="Profile Image" />
+  <img src="static/genImages/3-color-trace.png" aria-label="Profile Image" />
 </p>
 
 <b> Note for positioning: </b>

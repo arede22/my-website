@@ -4,15 +4,14 @@ $(document).ready(function () {
   var nav = document.getElementById("navbar");
   var prevScrollPos = window.pageYOffset;
 
-  window.onscroll = function() {
+  $(window).on('scroll', function() {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollPos > currentScrollPos) {
       nav.style.top = "0";
     } else {
       nav.style.top = "-140px";
-      console.log('worked?')
     }
     prevScrollPos = currentScrollPos;
-  }
+  });
 
 });

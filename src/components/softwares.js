@@ -1,8 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import { theme } from '../styles';
+// styles
+import { theme } from '@styles';
 const { colors, fontSizes } = theme;
 
+// styles and wrappers
 const StyledWrapper = styled.div`
   margin: 0;
 
@@ -12,8 +14,6 @@ const StyledWrapper = styled.div`
 `;
 const Box = styled.div`
   background-color: ${colors.halfTransparentGray};
-  /* border-radius: 5px; */
-  /* overflow-x: auto; */
   padding: 7.5px 20px 20px;
 `;
 const Rows = styled.ul`
@@ -35,7 +35,7 @@ const H3Style = styled.h3`
   font-size: ${fontSizes.lg};
 `;
 
-
+// export main component
 export default function Softwares() {
   return (
     <Box>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { theme } from '../styles';
 import styled from 'styled-components';
+// styles
+import { theme } from '@styles';
 const { colors, hrefs, fontSizes, iconSrcs } = theme;
 
 // stackoverflow, hackerrank, spotify
@@ -50,7 +51,7 @@ const Link = styled.a`
   color: ${colors.skyBlue};
 
   &:hover {
-    color: ${colors.transparentSeaBlue}
+    color: ${colors.darkSkyBlue};
   }
 `;
 const PStyle = styled.p`
@@ -112,7 +113,7 @@ export default function Footer() {
         <ULWrapper>
           {links.map(({ key, href, src }) => (
             <LIWrapper key={key}>
-              <a href={href} target="_blank" rel="nofollow noopener noreferrer"> <ImgStyle src={src + '.png'} aria-label={src.replace('/static/footer/', "Anika's ")} onMouseOver={e => {e.currentTarget.src = src + '-hover.png'}} onMouseOut={e => {e.currentTarget.src = src + '.png'}} /> </a>
+              <a href={href} target="_blank" rel="nofollow noopener noreferrer"> <ImgStyle src={src + '.png'} aria-label={src.replace('static/footer/', "Anika's ")} onMouseOver={e => {e.currentTarget.src = src + '-hover.png'}} onMouseOut={e => {e.currentTarget.src = src + '.png'}} /> </a>
             </LIWrapper>
           ))}
         </ULWrapper>

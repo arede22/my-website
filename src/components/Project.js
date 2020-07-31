@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { theme } from '../styles';
+// styles
+import { theme } from '@styles';
 const { colors } = theme;
 // flexbox: calhacks.org/flexbox
 // position: relative; --> to make B move relative to A and C divs
@@ -23,7 +24,7 @@ const SidePiece = styled.div`
   width: 100px;
 `;
 
-// main component
+// export main component
 export default function Project() {
   return (
 

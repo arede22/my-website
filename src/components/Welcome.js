@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { theme } from '../styles';
+// styles
+import { theme } from '@styles';
 const { colors, fontSizes, imgSrcs } = theme;
 
 // styles and wrappers
@@ -61,11 +62,12 @@ const ResumeButton = styled.a`
   padding: 7.5px;
   text-decoration: none;
   color: white;
-  background-color: ${colors.seaBlue};
+  background-color: ${colors.moreSeaBlue};
   font-size: ${fontSizes.sm2};
+  text-shadow: black .5px .5px;
 
   &:hover {
-    color: ${colors.moreSeaBlue};
+    color: ${colors.seaBlue};
   }
 `;
 const PStyle = styled.p`

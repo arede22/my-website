@@ -1,8 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import { theme } from '../styles';
+// styles
+import { theme } from '@styles';
 const { colors, fontSizes } = theme;
 
+// styles and wrappers
 const ULWrapper = styled.ul`
   color: ${colors.transparentSeaBlue};
   padding: 0 40px;
@@ -16,11 +18,10 @@ const H3Style = styled.h3`
 `;
 const Box = styled.div`
   background-color: ${colors.halfTransparentGray};
-  /* border-radius: 5px; */
-  /* overflow-x: auto; */
   padding: 7.5px 20px 20px;
 `;
 
+// export main component
 export default function Clubs() {
   return (
     <Box>

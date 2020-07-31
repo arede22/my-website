@@ -1,21 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import { theme } from '../styles';
-const { colors, fontSizes } = theme;
-import Courses from './courses';
-import Softwares from './softwares';
-import Skills from './skills';
-import Clubs from './clubs';
+// components
+// import Courses from './courses'; // coursework
+// import Softwares from './softwares'; // softwares and comfortability
+// import Skills from './skills';
+// import Clubs from './clubs';
 import WorkExperience from './workExperience';
-// Coursework
-// Skills
-// Softwares and comfortability
-
-// <Courses />
-// <Softwares />
-// <Skills />
-// <Clubs />
-// <WorkExperience />
+// styles
+import { theme } from '@styles';
+const { colors, fontSizes } = theme;
+// Courses, languages, college info -- progress bars
 
 var repos = [];
 fetch('https://api.github.com/users/arede22/repos')
@@ -76,8 +70,6 @@ const PStyle = styled.p`
   text-align: left;
 `;
 
-// Courses, languages, college info -- progress bars
-
 // export main component
 export default function Intro() {
   // taken from bchiang/v4
@@ -89,9 +81,9 @@ export default function Intro() {
   });
 
   useEffect(() => {
-    if (process.env.NODE_ENV !== 'production') {
-      return;
-    }
+    // if (process.env.NODE_ENV !== 'production') {
+    //   return;
+    // }
     // for (var proj in repos) {
     // (for private repos) https://stackoverflow.com/questions/26881441/can-you-get-the-number-of-lines-of-code-from-a-github-repository
       fetch('https://api.codetabs.com/v1/loc?github=arede22/theanikarede')// + repos[proj] )
@@ -123,7 +115,7 @@ export default function Intro() {
     <React.Fragment>
       <AnchorPoint name="Intro" id="intro-anchor"></AnchorPoint>
       <StyledWrapper>
-        <H2Style>About Me</H2Style>
+        <H2Style>Intro & About Me ❤</H2Style>
         <StyledWrapper>
           <Box>
             <H3Style> Major Coursework </H3Style>

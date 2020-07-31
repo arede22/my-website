@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { theme } from '../styles';
-const { colors, fontSizes } = theme;
+// styles
+import { theme } from '@styles';
+const { colors, fontSizes, fonts } = theme;
 
 // styles and wrappers
 const NavWrapper = styled.header`
@@ -52,9 +53,6 @@ const HomeLink = styled(Link)`
   color: ${colors.seaBlue};
 
   @media (max-width: 600px) {
-    &::before {
-      content: '  '; /* just added */
-    }
     &::after {
       content: '';
       border: solid ${colors.transparentSeaBlue};
@@ -76,7 +74,8 @@ const BannerName = styled.ul`
   display: flex;
   text-align: center;
   justify-content: space-around;
-  margin: 0;
+  margin: 0 auto;
+  width: 80%;
   padding: 0 40px;
 
   @media (max-width: 600px) {
@@ -85,6 +84,7 @@ const BannerName = styled.ul`
 `;
 const BannerPron = styled(BannerName)`
   padding: 0 60px;
+  width: 70%;
 
   @media (max-width: 330px) {
     display: none;
@@ -133,10 +133,11 @@ export default function Nav() {
       <StyledNav>
         <ULWrapper>
           <LIWrapper> <HomeLink href='/' id='home' onMouseOver={e => {prevColor = e.currentTarget.style.color; e.currentTarget.style.color = colors.moreSeaBlue;}} onMouseOut={e => {e.currentTarget.style.color = prevColor}}> Home </HomeLink> </LIWrapper>
-          <OptLIWrapper className="extra"> <Link href="#Intro" id='intro' onMouseOver={e => {prevColor = e.currentTarget.style.color; e.currentTarget.style.color = colors.moreSeaBlue;}} onMouseOut={e => {e.currentTarget.style.color = prevColor}}> About </Link> </OptLIWrapper>
+          <OptLIWrapper className="extra"> <Link href="#Intro" id='intro' onMouseOver={e => {prevColor = e.currentTarget.style.color; e.currentTarget.style.color = colors.moreSeaBlue;}} onMouseOut={e => {e.currentTarget.style.color = prevColor}}> Intro </Link> </OptLIWrapper>
           <OptLIWrapper className="extra"> <Link href="#Portfolio" id='portfolio' onMouseOver={e => {prevColor = e.currentTarget.style.color; e.currentTarget.style.color = colors.moreSeaBlue;}} onMouseOut={e => {e.currentTarget.style.color = prevColor}}> Portfolio </Link> </OptLIWrapper>
           <OptLIWrapper className="extra"> <Link href="#Contact-Me" id='contact-me' onMouseOver={e => {prevColor = e.currentTarget.style.color; e.currentTarget.style.color = colors.moreSeaBlue;}} onMouseOut={e => {e.currentTarget.style.color = prevColor}}> Contact Me </Link> </OptLIWrapper>
-          <OptLIWrapper className="extra"> <Link href="resume.pdf" target="_blank" onMouseOver={e => {e.currentTarget.style.color = colors.moreSeaBlue;}} onMouseOut={e => {e.currentTarget.style.color = 'white'}}> Resume </Link> </OptLIWrapper>
+          <OptLIWrapper className="extra"> <Link href="/blog" onMouseOver={e => {prevColor = e.currentTarget.style.color; e.currentTarget.style.color = colors.moreSeaBlue;}} onMouseOut={e => {e.currentTarget.style.color = prevColor}}> Blog </Link> </OptLIWrapper>
+          <OptLIWrapper className="extra"> <Link href="resume.pdf" target="_blank" rel="nofollow noopener noreferrer" onMouseOver={e => {e.currentTarget.style.color = colors.moreSeaBlue;}} onMouseOut={e => {e.currentTarget.style.color = 'white'}}> Resume </Link> </OptLIWrapper>
         </ULWrapper>
       </StyledNav>
     </NavWrapper>

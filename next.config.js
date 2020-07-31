@@ -1,25 +1,10 @@
-const path = require('path');
-
 module.exports = {
   exportTrailingSlash: true,
   exportPathMap: function() {
     return {
-      '/': { page: '/' }
+      '/': { page: '/' },
+      '/blog': { page: '/blog' },
+      // '/post/id1': { page: '/blog/post/id1' },
     };
   },
-  // resolve: {
-  //   alias: {
-  //     '@': path.resolve('src'),
-  //     '@components': path.resolve('../src/components'),
-  //     '@styles': path.resolve('../src/styles'),
-  //   }
-  // },
-  // webpack: function (config) {
-  //   config.resolve.alias = {
-  //     '@': path.resolve('src'),
-  //     '@components': path.resolve('src/components'),
-  //     '@styles': path.resolve('src/styles'),
-  //   };
-  //   return config
-  // }
 };
