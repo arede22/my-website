@@ -15,7 +15,6 @@ $(document).ready ( function() {
     var offset1 = getY(document.getElementById('intro-anchor'));
     var offset2 = getY(document.getElementById('portfolio-anchor'));
     var offset3 = getY(document.getElementById('contactme-anchor'));
-    console.log(offset1 + ', ' + offset2 + ', ' + offset3);
 
     $(window).on('scroll', function() {
       var scrollHeight = window.pageYOffset;

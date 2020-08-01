@@ -101,12 +101,12 @@ const BannerLi = styled.li`
   }
 `;
 const BannerLI = styled(BannerLi)`
-  font-size: ${fontSizes.sm1};
+  font-size: ${fontSizes.sm0};
   font-style: italic;
   padding: 0 8px 8px;
 
   @media (max-width: 600px) {
-    font-size: ${fontSizes.sm0};
+    font-size: ${fontSizes.sm00};
   }
 `;
 

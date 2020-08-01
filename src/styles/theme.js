@@ -42,6 +42,13 @@ const theme = {
 
     // check color blindness simulator
 
+    purple: "#9e005d",
+    darkPink: "#d4145a",
+    pink: "#ed1e79",
+    lightPink: "#d46c83",
+    palePink: "#dc8079",
+    darkPalePink: "#d46079",
+
     orange: "#f79555",
     darkOrange: '#f4670c',
 
@@ -80,6 +87,7 @@ const theme = {
 
   fontSizes: {
 // best sizes for mobile: sm0-3
+    sm00: '12px',
     sm0: '14px',
     sm1: '16px',
     sm2: '17px',
