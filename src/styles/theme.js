@@ -56,6 +56,9 @@ const theme = {
     skyBlue: "rgba(197, 239, 247, 1)",
     darkSkyBlue: "rgba(169, 211, 219, 1)",
 
+    deepSeaBlue: "#002431",
+    darkerDeepSeaBlue: "#00070a",
+
     transparentGray: "rgba(166, 166, 166, 0.3)",
     halfTransparentGray: "rgba(166, 166, 166, 0.5)",
     lightestGray: "#f1f1f1",

@@ -10,26 +10,43 @@ const { colors, fontSizes } = theme;
 
 // styles and wrappers
 const Button = styled.button`
-  display: none;
   position: fixed;
   bottom: 20px;
-  right: 30px;
   z-index: 99;
   border: none;
   outline: none;
-  background-color: ${colors.cerulean};
-  color: white;
   padding: 15px;
   border-radius: 30px;
   font-size: ${fontSizes.sm1};
 
-  &:hover {
-    background-color: ${colors.darkCerulean};
-  }
+  /* color: ${props => props.theme ? 'white' : 'black'}; */
+  color: white;
 
   @media (max-width: 600px) {
     font-size: ${fontSizes.sm0};
   }
+`;
+const TopButton = styled(Button)`
+  display: none;
+  right: 30px;
+  /* background-color: ${props => props.theme ? colors.cerulean : colors.orange}; */
+  background-color: ${colors.cerulean};
+
+  &:hover {
+    /* background-color: ${props => props.theme ? colors.darkCerulean : colors.darkOrange}; */
+    background-color: ${colors.darkCerulean};
+  }
+
+`;
+
+const ThemeButton = styled(Button)`
+  left: 30px;
+  background-color: ${colors.deepSeaBlue};
+
+  &:hover {
+    background-color: ${colors.darkerDeepSeaBlue};
+  }
+
 `;
 
 // parallax scrolling https://www.w3schools.com/howto/howto_css_parallax.asp
@@ -47,7 +64,6 @@ export default function Home() {
       <Nav />
 
       <Welcome />
-      {/*Toggle button for light/dark themes */}
       <Intro /> {/* Courses, languages, college info -- progress bars */}
       {/* Skills acquired, desired */}
       {/* WorkExperience -- timeline w/ work and class extension projects -- assign modal script in header */}
@@ -56,7 +72,9 @@ export default function Home() {
 
       <Footer />
 
-      <Button id="scrolltop">Top <img height="14" width="16" src="static/genImages/scroll-up-arrow.svg" /></Button>
+      <TopButton id="scrolltop" theme={false}>Top <img height="14" width="16" src="static/genImages/scroll-up-arrow.svg" /></TopButton>
+      {/*Toggle button for light/dark themes */}
+      <ThemeButton id="changeToLight">Theme</ThemeButton>
 
     </React.Fragment>
   )

@@ -69,7 +69,7 @@ const CloseHandler = styled.span`
 // W3 Modal
 // <ModalStyle id={props.pop} className="modal">
 //   <CloseHandler id="close">&times;</CloseHandler>
-//   <ContentStyle className="modal-content" aria-label={props.aria} id={props.content} />
+//   <ContentStyle className="modal-content" alt={props.alt} id={props.content} />
 // </ModalStyle>
 
 // popup elem
@@ -77,7 +77,7 @@ const CloseHandler = styled.span`
 // const [popUp, setPopUp] = useState(
 //   false
 // );
-// <a onClick={() => setPopUp(!popUp)}> <ImgStyle id={props.trigger} src={props.img} aria-label={props.aria} height="50%" width="50%" vspace="10" /> </a>*/}
+// <a onClick={() => setPopUp(!popUp)}> <ImgStyle id={props.trigger} src={props.img} alt={props.alt} height="50%" width="50%" vspace="10" /> </a>*/}
 // popUp &&
 //   <div style={{backgroundColor: 'pink', height: '30px', width: '30px'}}> </div>
 
@@ -85,7 +85,7 @@ const CloseHandler = styled.span`
 export default function Modal(props) {
   return (
     <StyledWrapper>
-      <ImgWrapper> <ImgStyle id={props.trigger} src={props.img} aria-label={props.aria}/> </ImgWrapper>
+      <ImgWrapper> <ImgStyle id={props.trigger} src={props.img} alt={props.alt}/> </ImgWrapper>
     </StyledWrapper>
   )
 };

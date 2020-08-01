@@ -5,8 +5,8 @@ import Head from 'next/head';
 export default function Header() {
   return (
     <Head>
-      <meta charset="UTF-8" />
-      <meta name="description" content="Personal website and playground for front-end and back-end coding (v2.0)" />
+      <meta charSet="UTF-8" />
+      <meta name="description" content="Personal website and playground for front-end and back-end coding using React and NextJS (v2.0)" />
       <meta name="keywords" content="HTML,CSS,JavaScript" />
       <meta name="author" content="Anika Rede" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -28,7 +28,7 @@ export default function Header() {
       <script src="static/scripts/anchor-assignment.js" type="text/javascript" />
       <script src="static/scripts/mobile-home-hover.js" type="text/javascript" />
       <script src="static/scripts/scroll-top.js" type="text/javascript" />
-      // <script src="static/scripts/modal-loader.js" type="text/javascript" />
+      {/* <script src="static/scripts/modal-loader.js" type="text/javascript" /> */}
     </Head>
   )
 };

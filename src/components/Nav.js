@@ -136,7 +136,7 @@ export default function Nav() {
           <OptLIWrapper className="extra"> <Link href="#Intro" id='intro' onMouseOver={e => {prevColor = e.currentTarget.style.color; e.currentTarget.style.color = colors.moreSeaBlue;}} onMouseOut={e => {e.currentTarget.style.color = prevColor}}> Intro </Link> </OptLIWrapper>
           <OptLIWrapper className="extra"> <Link href="#Portfolio" id='portfolio' onMouseOver={e => {prevColor = e.currentTarget.style.color; e.currentTarget.style.color = colors.moreSeaBlue;}} onMouseOut={e => {e.currentTarget.style.color = prevColor}}> Portfolio </Link> </OptLIWrapper>
           <OptLIWrapper className="extra"> <Link href="#Contact-Me" id='contact-me' onMouseOver={e => {prevColor = e.currentTarget.style.color; e.currentTarget.style.color = colors.moreSeaBlue;}} onMouseOut={e => {e.currentTarget.style.color = prevColor}}> Contact Me </Link> </OptLIWrapper>
-          <OptLIWrapper className="extra"> <Link href="/blog" onMouseOver={e => {prevColor = e.currentTarget.style.color; e.currentTarget.style.color = colors.moreSeaBlue;}} onMouseOut={e => {e.currentTarget.style.color = prevColor}}> Blog </Link> </OptLIWrapper>
+          {/*<OptLIWrapper className="extra"> <Link href="/blog" onMouseOver={e => {prevColor = e.currentTarget.style.color; e.currentTarget.style.color = colors.moreSeaBlue;}} onMouseOut={e => {e.currentTarget.style.color = prevColor}}> Blog </Link> </OptLIWrapper>*/}
           <OptLIWrapper className="extra"> <Link href="resume.pdf" target="_blank" rel="nofollow noopener noreferrer" onMouseOver={e => {e.currentTarget.style.color = colors.moreSeaBlue;}} onMouseOut={e => {e.currentTarget.style.color = 'white'}}> Resume </Link> </OptLIWrapper>
         </ULWrapper>
       </StyledNav>

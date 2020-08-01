@@ -1,7 +1,7 @@
 import React from 'react';
 import { useRouter } from 'next/router'
 import Link from 'next/link'
-import Header from '@components'
+import { Header } from '@components'
 
 // export main component
 export default function Post() {

@@ -17,17 +17,13 @@ export default function Blog() {
         <title> BLOG ❤ </title>
       </head>
 
-      <Link href="/post/id1" as={`post/id1`}>
-        <a>Post id1</a>
-      </Link>
-
-      {/* // not working yet
+      { // router not set up yet
         ids.map((id) => (
-          <Link href="post/[id]/index.js" as={`post/${id}`}>
+          <Link href="post/[id]" as={`post/${id}`}>
             <a>Post {id}</a>
           </Link>
         ))
-      */}
+      }
 
       <nav>
         <ul>

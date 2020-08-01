@@ -1,8 +1,21 @@
 // need a scroll-by change of url hashing function
 $(document).ready ( function() {
-    var offset1 = $("#intro-anchor").offset().top;
-    var offset2 = $("#portfolio-anchor").offset().top;
-    var offset3 = $("#contactme-anchor").offset().top;
+
+    function getY(element) {
+      var yPosition = 0;
+
+      while(element) {
+          yPosition += (element.offsetTop - element.scrollTop + element.clientTop);
+          element = element.offsetParent;
+      }
+
+      return yPosition;
+    }
+
+    var offset1 = getY(document.getElementById('intro-anchor'));
+    var offset2 = getY(document.getElementById('portfolio-anchor'));
+    var offset3 = getY(document.getElementById('contactme-anchor'));
+    console.log(offset1 + ', ' + offset2 + ', ' + offset3);
 
     $(window).on('scroll', function() {
       var scrollHeight = window.pageYOffset;
@@ -12,10 +25,10 @@ $(document).ready ( function() {
       if ( scrollHeight < offset1 ) {
         document.getElementById('home').style.color = blue;
         list.shift();
-      } else if ( scrollHeight <= offset2 ) {
+      } else if ( scrollHeight < offset2 ) {
         document.getElementById('intro').style.color = blue;
         list.splice(1, 1);
-      } else if ( scrollHeight <= offset3 ) {
+      } else if ( scrollHeight < offset3 ) {
         document.getElementById('portfolio').style.color = blue;
         list.splice(2, 1);
       } else {
