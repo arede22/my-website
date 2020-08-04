@@ -92,7 +92,7 @@ export default function Welcome() {
           <br /> Currently, I am looking for an internship that can give me some experience in SWE, NLP, or animation.
         </PStyle>
         <ResumeBox>
-          <PStyle> If you'd like, you can take a quick peek at my resumé! </PStyle>
+          <PStyle> Take a quick peek at my resumé! </PStyle>
           <ResumeButton href="resume.pdf" target="_blank"> Resumé </ResumeButton>
         </ResumeBox>
       </WelcomeStyle>

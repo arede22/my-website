@@ -3,7 +3,6 @@ import styled from 'styled-components';
 // styles
 import { theme } from '@styles';
 const { colors, hrefs, fontSizes, iconSrcs } = theme;
-
 // stackoverflow, hackerrank, spotify
 // CALHACKS
 // dailycal
@@ -72,14 +71,15 @@ const GithubWrapper = styled.div`
 const GithubLink = styled.a`
   text-decoration: none;
   font-size: ${fontSizes.sm1};
-  color: ${colors.orange};
+  color: ${colors.skyBlue};
 `;
 const StyledGitHubInfo = styled.div`
-  color: red;
+  color: white;
   text-align: center;
+  margin: auto;
 `;
 const Icon = styled.img`
-  height: 50%;
+  height: 24px;
   width: auto;
 `;
 
@@ -117,23 +117,21 @@ export default function Footer() {
             </LIWrapper>
           ))}
         </ULWrapper>
-        {/*githubInfo.stars && githubInfo.forks && (
-          <GithubWrapper>
-            <GithubLink href={hrefs.webRepo} target="_blank" rel="nofollow noopener noreferrer">
-              <div> Bye! </div>
-              <StyledGitHubInfo>
-                <span>
-                  <Icon src={iconSrcs.star} alt="Stars: "/>
-                  <span>{githubInfo.stars.toLocaleString()}</span>
-                </span>
-                <span>
-                  <Icon src={iconSrcs.fork} alt="Forks: " />
-                  <span>{githubInfo.forks.toLocaleString()}</span>
-                </span>
-              </StyledGitHubInfo>
-            </GithubLink>
-          </GithubWrapper>
-        )*/}
+        {/*<GithubWrapper>
+          <GithubLink href={hrefs.webRepo} target="_blank" rel="nofollow noopener noreferrer">
+            <div> Bye! </div>
+            <StyledGitHubInfo>
+              <span>
+                <Icon src={iconSrcs.star} alt="Stars: "/>
+                <span>{githubInfo.stars.toLocaleString()}</span>
+              </span>
+              <span>
+                <Icon src={iconSrcs.fork} alt="Forks: " />
+                <span>{githubInfo.forks.toLocaleString()}</span>
+              </span>
+            </StyledGitHubInfo>
+          </GithubLink>
+        </GithubWrapper>*/}
         <StyledWrapper>
           <PStyle>
             Made by Anika Rede | <Link target="_blank" href={hrefs.webRepo} rel="nofollow noopener noreferrer"> GitHub </Link>

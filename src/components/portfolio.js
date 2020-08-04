@@ -103,27 +103,27 @@ export default function Portfolio() {
               <LIWrapper> Current projects:
                 <ULWrapper>
                   <LIWrapper> Personal website built with React and Next.js, allows playing with graphic design </LIWrapper>
-                  <LIWrapper> Safety app around Berkeley for students built using Swift </LIWrapper>
                   <LIWrapper> Learning graphic design via Photoshop, Illustrator, and Maya </LIWrapper>
+                  <LIWrapper> Original pixel art Gameboy game built from scratch </LIWrapper>
+                  <LIWrapper> Image analysis to interpret and translate language with NLP using AI/ML </LIWrapper>
                 </ULWrapper>
               </LIWrapper>
               <LIWrapper> Projected projects:
                 <ULWrapper>
+                  <LIWrapper> Safety app around Berkeley for students built using Swift </LIWrapper>
                   <LIWrapper> Modifying voice-activated car built last semester to be hooked up to bluetooth and Wi-Fi </LIWrapper>
-                  <LIWrapper> Original pixel art Gameboy game built from scratch </LIWrapper>
-                  <LIWrapper> Image analysis to interpret and translate language with NLP using AI/ML </LIWrapper>
                 </ULWrapper>
               </LIWrapper>
             </ULWrapper>
           </Box>
           <Box>
-            <H3Style> Exploring pet projects (more below) </H3Style>
+            <H3Style> Exploring pet projects </H3Style>
             <ULWrapper>
+              <LIWrapper> Learning graphic design and animation software </LIWrapper>
+              <LIWrapper> Exploring beginner projects using NLP analysis with AI/ML </LIWrapper>
               <LIWrapper> Safety app around Berkeley for Cal students </LIWrapper>
               <LIWrapper> Improving on voice-activated car built last semester </LIWrapper>
-              <LIWrapper> Learning graphic design and animation software </LIWrapper>
               <LIWrapper> Contributing to friends' personal projects </LIWrapper>
-              <LIWrapper> Exploring beginner projects using NLP analysis with AI/ML </LIWrapper>
             </ULWrapper>
           </Box>
       </StyledWrapper>

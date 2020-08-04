@@ -48,7 +48,8 @@ export default function ContactMe() {
         <H2Style> Contact Me </H2Style>
         <ContactBox>
           <PStyle>
-            Thank you for browsing through my website! <br /> Please contact me by whatever method might be best though e-mail works best.
+            Thank you for browsing through my website! <br />
+            My contact info is below, e-mail works best for me!
           </PStyle>
         </ContactBox>
       </StyledWrapper>
