@@ -4,24 +4,32 @@ import styled from 'styled-components';
 // styles
 import { theme } from '@styles';
 const { colors, fontSizes } = theme;
+// https://css-tricks.com/a-dark-mode-toggle-with-react-and-themeprovider/
 
 // styles and wrappers
 const ToggleContainer = styled.button`
-  border-radius: 34px;
-  cursor: pointer;
-  padding: 0.5rem;
-  background: ${({ theme }) => theme.gradient};
-  border: 2px solid ${({ theme }) => theme.toggleBorder};
-  color: ${({ lightTheme }) => lightTheme ? 'black' : 'white'};
   position: fixed;
   display: inline-block;
-  width: 80px;
-  height: 40px;
   z-index: 99;
-  bottom: 30px;
+  bottom: 20px;
   left: 30px;
-  font-size: ${fontSizes.sm0};
+  border-radius: 34px;
+  cursor: pointer;
+  padding: 15px;
+  background: ${({ theme }) => theme.gradient};
+  border: none;
+  outline: none;
+  color: ${({ lightTheme }) => lightTheme ? 'black' : 'white'};
+  font-size: ${fontSizes.sm1};
   text-align: center;
+
+  &:hover {
+    background: ${({ theme }) => theme.hoverGradient};
+  }
+
+  @media (max-width: 600px) {
+    font-size: ${fontSizes.sm0};
+  }
 `;
 
 export default function Toggle({ theme, toggleTheme }) {

@@ -1,89 +1,15 @@
-// need proper theme colors:
 const theme = {
   // need contrasting colors
 
   // two theme settings: dark and light
   // https://styled-components.com/docs/advanced
   // https://medium.com/@NateBaldwin/theming-with-css-variables-d7acddd3a699
-  lightThemeColors: {
 
-  },
-  darkThemeColors: {
-    // cerulean: #007ba7
-    // seagreen: #00a780
-    // shades/tints of cerulean:
-    //    black: #00070a
-    //    #00161e
-    //    #002431
-    //    #003345
-    //    #004159
-    //    #00506c
-    //    #005e80
-    //    #006d93
-    //    #007ba7
-    //    #0089bb
-    //    #0098ce
-    //    #00a6e2
-    //    #00b5f5
-    //    periwinkle-dark,light: #a7e8ff, #bbedff
-
-    // tones of cerulean:
-    //    gray: #4d575a
-    //    #475a60
-    //    #405d67
-    //    #3a606d
-    //    #336374
-    //    #2d667a
-    //    #276980
-    //    #206c87
-    //    #1a6f8d
-    //    #137294
-    //    #0d759a
-    //    #0678a1
-    //    #007ba7
-
-    // check color blindness simulator
-
-    purple: "#9e005d",
-    darkPink: "#d4145a",
-    pink: "#ed1e79",
-    lightPink: "#d46c83",
-    palePink: "#dc8079",
-    darkPalePink: "#d46079",
-
-    orange: "#f79555",
-    darkOrange: '#f4670c',
-
-    cerulean: "#007ba7",
-    darkCerulean: "#0d759a",
-
-    periwinkle: "#bbedff",
-
-    transparentSeaBlue: "rgba(129, 207, 224, 0.4)",
-    moreSeaBlue: "rgba(197, 239, 247, 0.7)",
-    seaBlue: "rgba(129, 207, 224, 1)",
-    skyBlue: "rgba(197, 239, 247, 1)",
-    darkSkyBlue: "rgba(169, 211, 219, 1)",
-
-    deepSeaBlue: "#002431",
-    darkerDeepSeaBlue: "#00070a",
-
-    transparentGray: "rgba(166, 166, 166, 0.3)",
-    halfTransparentGray: "rgba(166, 166, 166, 0.5)",
-    lightestGray: "#f1f1f1",
-    lightGray: "#cfcfcf",
-    medGray: "#bbb",
-    darkGray: "rgba(74, 72, 71, 1)",
-
-    transparentBlack: "rgba(0,0,0,0.9)",
-    black: "#303030",
-
-  },
   lightTheme: {
     body: '#E2E2E2',
     textColor: '#363537',
-    toggleBorder: '#FFF',
     gradient: 'linear-gradient(#d46079, #ffb6c1)',
+    hoverGradient: 'linear-gradient(#d46079, #ffb6c1, #d46079)',
 
     background: 'static/genImages/new/light.png',
     backgroundSm: 'static/genImages/new/lightSm.png'
@@ -92,9 +18,9 @@ const theme = {
   darkTheme : {
     body: '#363537',
     textColor: '#FAFAFA',
-    toggleBorder: '#6B8096',
-
     gradient: 'linear-gradient(#091236, #00008B)',
+    hoverGradient: 'linear-gradient(#091236, #00008B, #091236)',
+
     background: 'static/genImages/new/dark.png',
     backgroundSm: 'static/genImages/new/darkSm.png',
   },
@@ -103,36 +29,16 @@ const theme = {
 
     // cerulean: #007ba7
     // seagreen: #00a780
+
     // shades/tints of cerulean:
     //    black: #00070a
-    //    #00161e
-    //    #002431
-    //    #003345
-    //    #004159
-    //    #00506c
-    //    #005e80
-    //    #006d93
-    //    #007ba7
-    //    #0089bb
-    //    #0098ce
-    //    #00a6e2
-    //    #00b5f5
+    //      #00161e, #002431, #003345, #004159, #00506c, #005e80, #006d93, #007ba7, #0089bb, #0098ce, #00a6e2, #00b5f5
     //    periwinkle-dark,light: #a7e8ff, #bbedff
 
     // tones of cerulean:
     //    gray: #4d575a
-    //    #475a60
-    //    #405d67
-    //    #3a606d
-    //    #336374
-    //    #2d667a
-    //    #276980
-    //    #206c87
-    //    #1a6f8d
-    //    #137294
-    //    #0d759a
-    //    #0678a1
-    //    #007ba7
+    //    #475a60, #405d67, #3a606d, #336374, #2d667a, #276980, #206c87, #1a6f8d, #137294, #0d759a, #0678a1
+    //    cerulean: #007ba7
 
     // check color blindness simulator
 

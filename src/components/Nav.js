@@ -3,6 +3,7 @@ import styled from 'styled-components';
 // styles
 import { theme } from '@styles';
 const { colors, fontSizes, fonts } = theme;
+// dropdown fix: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar
 
 // styles and wrappers
 const NavWrapper = styled.header`
@@ -53,9 +54,19 @@ const HomeLink = styled(Link)`
   color: ${colors.seaBlue};
 
   @media (max-width: 600px) {
-    &::after {
+    &:hover::after {
       content: '';
       border: solid ${colors.transparentSeaBlue};
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 3px;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+    }
+
+    &::after {
+      content: '';
+      border: solid white;
       border-width: 0 3px 3px 0;
       display: inline-block;
       padding: 3px;
