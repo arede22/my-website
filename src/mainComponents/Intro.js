@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 // components
-import WorkExperience from './workExperience';
+import WorkExperience from '@components';
 // styles
 import { theme } from '@styles';
 const { colors, fontSizes } = theme;

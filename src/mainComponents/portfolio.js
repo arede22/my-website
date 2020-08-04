@@ -1,8 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-// components
-// import Project from './project';
-import Modal from './modal';
 // styles
 import { theme, media } from '@styles';
 const { colors, fontSizes, hrefs, imgSrcs } = theme;

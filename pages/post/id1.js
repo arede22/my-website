@@ -1,6 +1,6 @@
 import React from 'react';
 // components
-import { Header } from '@components';
+import { Header } from '@mainComponents';
 // styles
 import { GlobalStyle } from '@styles';
 
