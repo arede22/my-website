@@ -6,7 +6,7 @@ import { Toggle, TopButton } from '@components';
 // pages
 // import Blog from './blog';
 // styles
-import { theme, GlobalStyle } from '@styles';
+import { theme, useDarkMode, GlobalStyle } from '@styles';
 const { colors, fontSizes, lightTheme, darkTheme } = theme;
 
 // parallax scrolling https://www.w3schools.com/howto/howto_css_parallax.asp
@@ -18,17 +18,11 @@ const { colors, fontSizes, lightTheme, darkTheme } = theme;
 
 // export main component
 export default function Home() {
-  const [theme, setTheme] = useState('light');
-  const toggleTheme = () => {
-    if (theme === 'light') {
-      setTheme('dark');
-    } else {
-      setTheme('light');
-    }
-  }
+  const [theme, setTheme] = useDarkMode();
+  const themeMode = theme === 'light' ? lightTheme: darkTheme;
 
   return (
-    <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
+    <ThemeProvider theme={themeMode}>
       <React.Fragment>
         <GlobalStyle />
         <Header />
