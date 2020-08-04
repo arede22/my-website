@@ -11,19 +11,6 @@ import { theme } from '@styles';
 const { colors, fontSizes } = theme;
 // Courses, languages, college info -- progress bars
 
-var repos = [];
-fetch('https://api.github.com/users/arede22/repos')
-  .then(response => response.json())
-  .then(json => {
-    for (var i in json) {
-      var { name } = json[i];
-      repos.push(name);
-    }
-  })
-  .catch(e => console.error(e));
-
-const avoidLanguages = ["JSON", "Markdown", "Plain Text"];
-
 // styles and wrappers
 const AnchorPoint = styled.a`
   margin: 0 auto;
@@ -86,28 +73,44 @@ export default function Intro() {
     // }
     // for (var proj in repos) {
     // (for private repos) https://stackoverflow.com/questions/26881441/can-you-get-the-number-of-lines-of-code-from-a-github-repository
-      fetch('https://api.codetabs.com/v1/loc?github=arede22/theanikarede')// + repos[proj] )
-        .then(response => response.json())
-        .then(json => {
-          for (var i in json) {
-            var { language, linesOfCode } = json[i];
+    var repos = [];
+    if (process.env.NODE_ENV !== 'production') {
+      return;
+    }
+    fetch('https://api.github.com/users/arede22/repos')
+    .then(response => response.json())
+    .then(json => {
+      for (var i in json) {
+        var { name } = json[i];
+        repos.push(name);
+      }
+    })
+    .catch(e => console.error(e));
 
-            if (language.toLowerCase() == "total") {
-              totalLoc = linesOfCode;
-            } else if (loc.languages.includes(language)) { // if language already in list, add onto the lines of code
-              var pt = loc.languages.indexOf(language);
-              setLoc({
-                linesOfCode: loc.linesOfCode[pt] + linesOfCode,
-              })
-            } else if (!avoidLanguages.includes(language)) {
-              setLoc({
-                languages: loc.languages.push(language),
-                linesOfCode: loc.linesOfCode.push(linesOfCode),
-              })
-            }
+    const avoidLanguages = ["JSON", "Markdown", "Plain Text"];
+
+    fetch('https://api.codetabs.com/v1/loc?github=arede22/theanikarede')// + repos[proj] )
+      .then(response => response.json())
+      .then(json => {
+        for (var i in json) {
+          var { language, linesOfCode } = json[i];
+
+          if (language.toLowerCase() == "total") {
+            totalLoc = linesOfCode;
+          } else if (loc.languages.includes(language)) { // if language already in list, add onto the lines of code
+            var pt = loc.languages.indexOf(language);
+            setLoc({
+              linesOfCode: loc.linesOfCode[pt] + linesOfCode,
+            })
+          } else if (!avoidLanguages.includes(language)) {
+            setLoc({
+              languages: loc.languages.push(language),
+              linesOfCode: loc.linesOfCode.push(linesOfCode),
+            })
           }
-        })
-      .catch(e => console.error(e));
+        }
+      })
+    .catch(e => console.error(e));
     // }
   }, []);
 

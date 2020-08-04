@@ -9,16 +9,19 @@ $(document).ready(function () {
   function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
       topbutton.style.display = "block";
+      console.log('block')
     } else {
       topbutton.style.display = "none";
+      console.log('none')
     }
 
-    var scroll_pos = $(window).scrollTop();
+    var scroll_pos = window.scrollTop();
     if (scroll_pos > 10) {
 
       $("#scrolltop").on("click", function() {
         $("html, body").stop().animate({ scrollTop: 0 }, "slow");
         topbutton.style.display = "none";
+        console.log('none')
       });
     }
   }

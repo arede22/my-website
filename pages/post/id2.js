@@ -5,7 +5,6 @@ import { GlobalStyle } from '@styles';
 export default function Id2() {
   return (
     <React.Fragment>
-      <GlobalStyle />
 
       <head>
         <title> BLOG Id2 ❤ </title>

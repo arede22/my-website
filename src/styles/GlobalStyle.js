@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
-import theme from './theme';
 import media from './media';
+// styles
+import theme from './theme';
 const { colors, fonts, imgSrcs, fontSizes } = theme;
 
 // theming of globalstyle?
@@ -9,13 +10,16 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     font-size: ${fontSizes.sm3};
     font-family: ${fonts.Lucida};
-    color: white;
-    background: ${colors.darkGray} url(${imgSrcs.backgroundDark}) repeat-y center;
     background-size: 100%;
     background-position-y: top;
+    // background: ${colors.darkGray} url(${imgSrcs.backgroundDark}) repeat-y center;
+    // color: white;
+    background: ${({ theme }) => theme.body} url(${({ theme }) => theme.background}) repeat-y center;
+    color: ${({ theme }) => theme.textColor};
 
     @media (max-width: 600px) {
-      background: ${colors.darkGray} url(${imgSrcs.backgroundDarkSm}) repeat-y center;
+      // background: ${colors.darkGray} url(${imgSrcs.backgroundDarkSm}) repeat-y center;
+      background: ${({ theme }) => theme.body} url(${({ theme }) => theme.backgroundSm}) repeat-y center;
     }
 
     @media ${media.tablet} {

@@ -26,12 +26,12 @@
 <ul>
   <li> Git and LOC calls </li>
   <li> Add in a sticky 'scroll to top' button (up arrow) </li>
+  <li> Graphic design for background </li>
 </ul>
 
 <b> Yet to-do: </b>
 <ul>
   <li> Anchorpoints also change url for #section </li>
-  <li> Graphic design for background </li>
   <li> Light/dark themes </li>
   <li> Get color palette and apply (plus graphic design background Illustrator) </li>
   <li> Pre-loading for Git and LOC calls </li>

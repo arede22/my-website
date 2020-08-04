@@ -9,6 +9,8 @@ export { default as Footer } from './footer';
 
 // sub-components used in the above ones
 export { default as Modal } from './modal';
+export { default as Toggle } from './toggle';
+export { default as TopButton } from './topbutton';
 
 export { default as Courses } from './courses';
 export { default as Softwares } from './softwares';

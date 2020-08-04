@@ -11,12 +11,13 @@ export default function Blog() {
 
   return (
     <React.Fragment>
-      <GlobalStyle />
 
       <head>
         <title> BLOG ❤ </title>
       </head>
 
+      <body>
+      <header>
       { // router not set up yet
         ids.map((id) => (
           <Link href="post/[id]" as={`post/${id}`}>
@@ -24,6 +25,7 @@ export default function Blog() {
           </Link>
         ))
       }
+      </header>
 
       <nav>
         <ul>
@@ -38,6 +40,7 @@ export default function Blog() {
       <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/mocking-spongebob-1556133078.jpg?crop=0.513xw:1.00xh;0.258xw,0&resize=640:*" />
 
       <p> OG </p>
+      </body>
 
     </React.Fragment>
   )
