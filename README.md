@@ -32,9 +32,9 @@
 <b> Yet to-do: </b>
 <ul>
   <li> Anchorpoints also change url for #section </li>
-  <li> Light/dark themes </li>
-  <li> Get color palette and apply (plus graphic design background Illustrator) </li>
-  <li> Pre-loading for Git and LOC calls </li>
+  <li> Light/dark themes https://css-tricks.com/a-dark-mode-toggle-with-react-and-themeprovider/ </li>
+  <li> Get color palette and apply </li>
+  <li> Pre-loading for Git and LOC calls: https://nextjs.org/docs/api-reference/data-fetching/getInitialProps, https://nextjs.org/docs/basic-features/data-fetching#getstaticprops-static-generation, https://nextjs.org/docs/basic-features/data-fetching#getserversideprops-server-side-rendering </li>
 
   <li> Finalize design ideas, modify @styles, nav, welcome, intro, contactme, and footer toward that end </li>
   <li> Think of portfolio and info layouts + act on it </li>

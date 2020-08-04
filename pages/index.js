@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 // components
-import { Header, Nav, Welcome, Intro, Portfolio, ContactMe, Footer } from '@components';
+import { Header, Nav, Welcome, Intro, Portfolio, ContactMe, Footer } from '@mainComponents';
 import { Toggle, TopButton } from '@components';
 // pages
-// import Blog from './blog';
+import Blog from './blog';
 // styles
 import { theme, useDarkMode, GlobalStyle } from '@styles';
 const { colors, fontSizes, lightTheme, darkTheme } = theme;
@@ -18,8 +18,12 @@ const { colors, fontSizes, lightTheme, darkTheme } = theme;
 
 // export main component
 export default function Home() {
-  const [theme, setTheme] = useDarkMode();
+  const [theme, toggleTheme, componentMounted] = useDarkMode();
   const themeMode = theme === 'light' ? lightTheme: darkTheme;
+
+  if (!componentMounted) {
+    return <div />
+  };
 
   return (
     <ThemeProvider theme={themeMode}>
@@ -29,7 +33,7 @@ export default function Home() {
 
         <Nav />
 
-        <h1 style={{marginTop: '200px'}}>It's a {theme === 'light' ? 'light' : 'dark'} theme!</h1>
+        <h1 style={{marginTop: '200px', textAlign: 'center'}}>It's a {theme === 'light' ? 'light' : 'dark'} theme!</h1>
 
         <Welcome />
         <Intro /> {/* Courses, languages, college info -- progress bars */}

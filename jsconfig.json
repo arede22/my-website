@@ -2,6 +2,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
+      "@mainComponents": ["src/mainComponents"],
       "@components": ["src/components"],
       "@styles": ["src/styles"],
     }
