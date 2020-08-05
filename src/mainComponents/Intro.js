@@ -229,6 +229,18 @@ export default function Intro({ theme }) {
   )
 };
 
+// export async function getStaticProps() {
+//   // Get external data from the file system, API, DB, etc.
+//   const res = await fetch('https://api.github.com/repos/arede22/theanikarede');
+//   const json = await res.json();
+//
+//   return {
+//     props: {
+//       json,
+//     }
+//   }
+// }
+
 // Intro.getInitialProps = async (ctx) => {
   // const res = await fetch('https://api.github.com/repos/arede22/theanikarede')
   // const json = await res.json()

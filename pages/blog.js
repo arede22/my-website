@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 import styled from 'styled-components';
-import { getSortedPostsData } from 'lib/posts';
 // components
 import { Header } from '@mainComponents';
 
@@ -34,11 +33,7 @@ export async function getStaticProps() {
   // Get external data from the file system, API, DB, etc.
   const res = await fetch('https://api.github.com/repos/arede22/theanikarede');
   const json = await res.json();
-  // var allPostsData = getSortedPostsData();
-  // console.log(allPostsData);
 
-  // The value of the `props` key will be
-  //  passed to the `Home` component
   return {
     props: {
       json,
