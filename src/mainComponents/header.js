@@ -22,11 +22,11 @@ export default function Header() {
 
       <title>Anika Rede: Software Engineer</title>
 
-      <script async src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript" />
-      <script async src="static/scripts/nav-up.js" type="text/javascript" />
-      <script async src="static/scripts/anchor-assignment.js" type="text/javascript" />
-      <script async src="static/scripts/mobile-home-hover.js" type="text/javascript" />
-      <script async src="static/scripts/scroll-top.js" type="text/javascript" />
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript" />
+      <script src="static/scripts/nav-up.js" type="text/javascript" />
+      <script src="static/scripts/anchor-assignment.js" type="text/javascript" />
+      <script src="static/scripts/mobile-home-hover.js" type="text/javascript" />
+      <script src="static/scripts/scroll-top.js" type="text/javascript" />
     </Head>
   )
 };
