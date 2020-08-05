@@ -7,63 +7,63 @@
   <img src="static/genImages/3-color-trace.png" alt="Profile Image" />
 </p>
 
-<b> Note for positioning: </b>
-<ul>
-  <li> flexbox: calhacks.org/flexbox </li>
-  <li> position: relative; --> to make B move relative to A and C divs </li>
-  <li> material design, bootstrap, css tricks, mdn web docs </li>
-</ul>
+# Note for positioning:
+- flexbox: calhacks.org/flexbox
+- position: relative; --> to make B move relative to A and C divs
+- material design, bootstrap, css tricks, mdn web docs
 
-<b> Note for more personal information: </b>
-<ul>
-  <li> stackoverflow, hackerrank, spotify </li>
-  <li> CALHACKS </li>
-  <li> dailycal </li>
-  <li> more personal type things: instagram, facebook, profiles and hobbies and spotify -- can add api calls here </li>
-</ul>
+# Note for more personal information:
+  - stackoverflow, hackerrank, spotify
+  - CALHACKS
+  - dailycal
+  - more personal type things: instagram, facebook, profiles and hobbies and spotify -- can add api calls here
 
-<b> Recently changed: </b>
-<ul>
-  <li> Git and LOC calls </li>
-  <li> Add in a sticky 'scroll to top' button (up arrow) </li>
-  <li> Graphic design for background </li>
-  <li> Design for different media -- font-sizes, widths: for different types of media, use @media ${media.laptop} {...} </li>
-  <li> Light/dark themes https://css-tricks.com/a-dark-mode-toggle-with-react-and-themeprovider/ </li>
-</ul>
+# Recently changed:
+  - Git and LOC calls
+  - Add in a sticky 'scroll to top' button (up arrow)
+  - Graphic design for background
+  - Design for different media -- font-sizes, widths: for different types of media, use @media ${media.laptop} {...}
+  - Light/dark themes https://css-tricks.com/a-dark-mode-toggle-with-react-and-themeprovider/
 
-<b> Yet to-do: </b>
-<ul>
-  <li> Fixup content </li>
-  <li> Finalize design ideas, modify @styles, nav, welcome, intro, contactme, and footer toward that end </li>
-  <li> Think of portfolio and info layouts + act on it </li>
+# Yet to-do:
+  - Fixup content
+  - Finalize design ideas, modify @styles, nav, welcome, intro, contactme, and footer toward that end
+  - Think of portfolio and info layouts + act on it
 
-  <li> Anchorpoints also change url for #section </li>
-  <li> Get color palette and apply </li>
-  <li> Pre-loading for Git and LOC calls: https://nextjs.org/docs/api-reference/data-fetching/getInitialProps, https://nextjs.org/docs/basic-features/data-fetching#getstaticprops-static-generation, https://nextjs.org/docs/basic-features/data-fetching#getserversideprops-server-side-rendering </li>
+  - Anchorpoints also change url for #section
+  - Get color palette and apply
+  - Pre-loading for Git and LOC calls: https://nextjs.org/docs/api-reference/data-fetching/getInitialProps, https://nextjs.org/docs/basic-features/data-fetching#getstaticprops-static-generation, https://nextjs.org/docs/basic-features/data-fetching#getserversideprops-server-side-rendering
 
-  <li> Lazy loading: https://css-tricks.com/the-complete-guide-to-lazy-loading-images/, https://css-tricks.com/snippets/javascript/lazy-loading-images/, https://css-tricks.com/tips-for-rolling-your-own-lazy-loading/ </li>
+  - Lazy loading: https://css-tricks.com/the-complete-guide-to-lazy-loading-images/, https://css-tricks.com/snippets/javascript/lazy-loading-images/, https://css-tricks.com/tips-for-rolling-your-own-lazy-loading/
 
-  <li> Animation gif for loading screen </li>
-  <li> Accessibility </li>
-</ul>
+  - Animation gif for loading screen
+  - Accessibility
 
-<b> Main to-dos: </b>
-<ul>
-  <li> Make compatible with different media </li>
-  <li> See if necessary to incorporate react-dom, react-router, react bootstrap, etc. </li>
-  <li> Javascript and Ajax scripts </li>
-  <li> Add in Github, Spotify, Youtube, and Instagram API calls (figure out how to let api call load before assigning text) </li>
-  <li> Theming: Light/Dark/Invert </li>
-  <li> Page loader </li>
-  <li> Lazy loading </li>
-  <li> Accessibility </li>
-  <li> Blog section </li>
-  <li> Other parts of portfolio </li>
-  <li> Parallax -- https://www.w3schools.com/howto/howto_css_parallax.asp </li>
-</ul>
+# Main to-dos:
+  - Make compatible with different media
+  - See if necessary to incorporate react-dom, react-router, react bootstrap, etc.
+  - Javascript and Ajax scripts
+  - Add in Github, Spotify, Youtube, and Instagram API calls (figure out how to let api call load before assigning text)
+  - Theming: Light/Dark/Invert
+  - Page loader
+  - Lazy loading
+  - Accessibility
+  - Blog section
+  - Other parts of portfolio
+  - Parallax -- https://www.w3schools.com/howto/howto_css_parallax.asp
 
-<b> Updating project: </b>
-  1. Launch via CLI (build/ship): npm run build, npm run export, cd out, serve -p 8080
+# Updating project:
+  1. Launch via CLI (build/ship):
+    - npm run build
+    - npm run export
+    - cd out
+    - serve -p 8080
   2. Launch dev:
-     npm run dev
-  3. Running into node module issues on build, if solving takes too long do: npm uninstall, delete .next, delete node_modules, delete package_lock.json, npm install, launch the application
+     - npm run dev
+  3. Running into node module issues on build -- if solving takes too long do:
+    - npm uninstall
+    - delete .next
+    - delete node_modules
+    - delete package_lock.json
+    - npm install
+    - launch the application
