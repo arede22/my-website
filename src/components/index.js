@@ -1,6 +1,8 @@
 export { default as Modal } from './modal';
 export { default as Toggle } from './toggle';
 export { default as TopButton } from './topbutton';
+export { default as Banner } from './banner';
+export { default as StyledNav } from './StyledNav';
 
 export { default as Courses } from './courses';
 export { default as Softwares } from './softwares';

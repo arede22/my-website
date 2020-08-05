@@ -1,47 +1,47 @@
 import React from 'react';
 import Link from 'next/link';
 import styled from 'styled-components';
+import { getSortedPostsData } from 'lib/posts';
 // components
 import { Header } from '@mainComponents';
-// styles
-import { GlobalStyle } from '@styles';
 
-export default function Blog() {
-  const ids = ['id1', 'id2', 'id3'];
+// blog https://nextjs.org/learn/basics/navigate-between-pages/pages-in-nextjs
+
+export default function Blog({ json }) {
+  const [stars, forks] = [json.stargazers_count, json.forks_count];
 
   return (
     <React.Fragment>
-
-      <head>
-        <title> BLOG ❤ </title>
-      </head>
-
-      <body>
-      <header>
-      { // router not set up yet
-        ids.map((id) => (
-          <Link href="post/[id]" as={`post/${id}`}>
-            <a>Post {id}</a>
-          </Link>
-        ))
-      }
-      </header>
-
-      <nav>
-        <ul>
-          <li> A </li>
-          <li> N </li>
-          <li> A </li>
-        </ul>
-      </nav>
+      <Header title="BLOG ❤" />
 
       <h1> BLOG ❤ </h1>
+      {!!stars && !!forks &&
+        <ul>
+          <li>{stars}</li>
+          <li>{forks}</li>
+        </ul>
+      }
 
-      <img loading="lazy" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/mocking-spongebob-1556133078.jpg?crop=0.513xw:1.00xh;0.258xw,0&resize=640:*" />
+      <img loading="lazy" height='60' width='60' src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/mocking-spongebob-1556133078.jpg?crop=0.513xw:1.00xh;0.258xw,0&resize=640:*" />
 
       <p> OG </p>
-      </body>
 
     </React.Fragment>
   )
 };
+
+export async function getStaticProps() {
+  // Get external data from the file system, API, DB, etc.
+  const res = await fetch('https://api.github.com/repos/arede22/theanikarede');
+  const json = await res.json();
+  // var allPostsData = getSortedPostsData();
+  // console.log(allPostsData);
+
+  // The value of the `props` key will be
+  //  passed to the `Home` component
+  return {
+    props: {
+      json,
+    }
+  }
+}

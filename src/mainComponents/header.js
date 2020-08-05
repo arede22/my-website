@@ -1,7 +1,7 @@
 import Head from 'next/head';
 
 // export main component
-export default function Header() {
+export default function Header({ title }) {
   return (
     <Head>
       <meta charSet="UTF-8" />
@@ -20,7 +20,7 @@ export default function Header() {
 
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald" />
 
-      <title>Anika Rede: Software Engineer</title>
+      <title>{title}</title>
 
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript" />
       <script src="static/scripts/nav-up.js" type="text/javascript" />

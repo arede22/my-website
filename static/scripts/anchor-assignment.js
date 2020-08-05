@@ -1,6 +1,7 @@
 // need a scroll-by change of url hashing function
 $(document).ready ( function() {
 
+  if (document.getElementById('intro-anchor')) {
     function getY(element) {
       var yPosition = 0;
 
@@ -20,7 +21,7 @@ $(document).ready ( function() {
       var scrollHeight = window.pageYOffset;
 
       var list = ['home', 'intro', 'portfolio', 'contact-me'];
-      const blue = "rgba(129, 207, 224, 1)";
+      const blue = "#81cfe0";
       if ( scrollHeight < offset1 ) {
         document.getElementById('home').style.color = blue;
         list.shift();
@@ -40,4 +41,4 @@ $(document).ready ( function() {
       }
     })
   }
-)
+})

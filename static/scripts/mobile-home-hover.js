@@ -1,6 +1,6 @@
 $(document).ready( function() {
-  if (window.matchMedia('(max-width: 600px)').matches) {
-    const home = document.getElementById("home");
+  const home = document.getElementById("home");
+  if (home && window.matchMedia('(max-width: 600px)').matches) {
     var extra_list = document.getElementsByClassName("extra");
     home.onmouseover = function() {
       for (var i = 0; i < extra_list.length; i++) {

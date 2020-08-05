@@ -74,7 +74,7 @@ const GithubLink = styled.a`
   color: ${colors.skyBlue};
 `;
 const StyledGitHubInfo = styled.div`
-  color: white;
+  color: black;
   text-align: center;
   margin: auto;
 `;
@@ -85,7 +85,7 @@ const Icon = styled.img`
 
 // export main component
 export default function Footer({ theme }) {
-  // taken from bchiang/v4
+  // taken from bchiang7/v4
   const [githubInfo, setGitHubInfo] = useState({
     stars: 0,
     forks: 0,
@@ -117,21 +117,23 @@ export default function Footer({ theme }) {
             </LIWrapper>
           ))}
         </ULWrapper>
-        {/*<GithubWrapper>
-          <GithubLink href={hrefs.webRepo} target="_blank" rel="nofollow noopener noreferrer">
-            <div> Bye! </div>
-            <StyledGitHubInfo>
-              <span>
-                <Icon src={iconSrcs.star} alt="Stars: "/>
-                <span>{githubInfo.stars.toLocaleString()}</span>
-              </span>
-              <span>
-                <Icon src={iconSrcs.fork} alt="Forks: " />
-                <span>{githubInfo.forks.toLocaleString()}</span>
-              </span>
-            </StyledGitHubInfo>
-          </GithubLink>
-        </GithubWrapper>*/}
+        {!!githubInfo.stars && !!githubInfo.forks &&
+          <GithubWrapper>
+            <GithubLink href={hrefs.webRepo} target="_blank" rel="nofollow noopener noreferrer">
+              <div> Bye! </div>
+              <StyledGitHubInfo>
+                <span>
+                  <Icon src={iconSrcs.star} alt="Stars: "/>
+                  <span>{githubInfo.stars.toLocaleString()}</span>
+                </span>
+                <span>
+                  <Icon src={iconSrcs.fork} alt="Forks: " />
+                  <span>{githubInfo.forks.toLocaleString()}</span>
+                </span>
+              </StyledGitHubInfo>
+            </GithubLink>
+          </GithubWrapper>
+        }
         <StyledWrapper>
           <PStyle>
             Made by Anika Rede | <Link target="_blank" href={hrefs.webRepo} rel="nofollow noopener noreferrer"> GitHub </Link>

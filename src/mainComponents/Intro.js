@@ -210,6 +210,19 @@ export default function Intro({ theme }) {
           <Box>
             <WorkExperience />
           </Box>
+          <Box>
+            <H4Style> Passions </H4Style>
+            <ULWrapper>
+              <LIWrapper> Creating worlds </LIWrapper>
+              <LIWrapper> Reading </LIWrapper>
+              <LIWrapper> Drinking coffee </LIWrapper>
+              <LIWrapper> Music </LIWrapper>
+              <LIWrapper> Languages </LIWrapper>
+              <LIWrapper> Learning </LIWrapper>
+              <LIWrapper> Animations/cartoons/games </LIWrapper>
+              <LIWrapper> Abstract math (linear algebra) </LIWrapper>
+            </ULWrapper>
+          </Box>
         </StyledWrapper>
       </StyledWrapper>
     </React.Fragment>
