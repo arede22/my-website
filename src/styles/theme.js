@@ -126,6 +126,7 @@ const theme = {
     backgroundLight: 'static/genImages/new/light.png',
     backgroundDark: 'static/genImages/new/dark.png',
     profile: 'static/genImages/profile.png',
+    rainbow: 'static/genImages/rainbow.jpg',
     up: 'static/genImages/scroll-up-arrow.svg',
     car: 'static/portfolio/car.png',
     map: 'static/portfolio/map.png',

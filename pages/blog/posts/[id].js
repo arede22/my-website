@@ -6,7 +6,7 @@ import { Header } from '@mainComponents';
 export default function Post({ postData }) {
   return (
     <React.Fragment>
-      <Header title="BLOG ❤" />
+      <Header title={postData.title} />
 
       <h1> BLOG ❤ </h1>
 

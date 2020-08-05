@@ -3,6 +3,8 @@ import Link from 'next/link';
 import styled from 'styled-components';
 // components
 import { Header } from '@mainComponents';
+import { theme } from '@styles';
+const { imgSrcs } = theme;
 
 // blog https://nextjs.org/learn/basics/navigate-between-pages/pages-in-nextjs
 
@@ -21,7 +23,7 @@ export default function Blog({ json }) {
         </ul>
       }
 
-      <img loading="lazy" height='60' width='60' src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/mocking-spongebob-1556133078.jpg?crop=0.513xw:1.00xh;0.258xw,0&resize=640:*" />
+      <img loading="lazy" height='60' width='60' src={imgSrcs.rainbow} />
 
       <p> OG </p>
 
