@@ -35,7 +35,7 @@ export default function Welcome({ theme }) {
   return (
     <StyledWrapper>
       <H1Style>Hi, I'm Anika Rede.</H1Style>
-      <ImgStyle src={theme.profilePic} alt="This is me!" />
+      <ImgStyle loading="lazy" src={theme.profilePic} alt="This is me!" />
 
       <WelcomeStyle>
         <PStyle>

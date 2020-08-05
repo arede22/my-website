@@ -28,14 +28,14 @@ export default function Home() {
       <GlobalStyle />
       <Header />
 
-      <Nav theme={theme}/>
+      <Nav theme={themeMode}/>
 
-      <Welcome theme={theme} />
-      <Intro theme={theme} />
-      <Portfolio theme={theme} />
-      <ContactMe theme={theme} />
+      <Welcome theme={themeMode} />
+      <Intro theme={themeMode} />
+      <Portfolio theme={themeMode} />
+      <ContactMe theme={themeMode} />
 
-      <Footer theme={theme} />
+      <Footer theme={themeMode} />
 
       <TopButton theme={theme} />
       <Toggle theme={theme} toggleTheme={toggleTheme} />

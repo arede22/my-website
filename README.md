@@ -27,22 +27,24 @@
   <li> Git and LOC calls </li>
   <li> Add in a sticky 'scroll to top' button (up arrow) </li>
   <li> Graphic design for background </li>
+  <li> Design for different media -- font-sizes, widths: for different types of media, use @media ${media.laptop} {...} </li>
+  <li> Light/dark themes https://css-tricks.com/a-dark-mode-toggle-with-react-and-themeprovider/ </li>
 </ul>
 
 <b> Yet to-do: </b>
 <ul>
+  <li> Fixup content </li>
+  <li> Finalize design ideas, modify @styles, nav, welcome, intro, contactme, and footer toward that end </li>
+  <li> Think of portfolio and info layouts + act on it </li>
+
   <li> Anchorpoints also change url for #section </li>
-  <li> Light/dark themes https://css-tricks.com/a-dark-mode-toggle-with-react-and-themeprovider/ </li>
   <li> Get color palette and apply </li>
   <li> Pre-loading for Git and LOC calls: https://nextjs.org/docs/api-reference/data-fetching/getInitialProps, https://nextjs.org/docs/basic-features/data-fetching#getstaticprops-static-generation, https://nextjs.org/docs/basic-features/data-fetching#getserversideprops-server-side-rendering </li>
 
-  <li> Finalize design ideas, modify @styles, nav, welcome, intro, contactme, and footer toward that end </li>
-  <li> Think of portfolio and info layouts + act on it </li>
-  <li> Lazy loading </li>
-  <li> Design for different media -- font-sizes, widths: for different types of media, use @media ${media.laptop} {...} </li>
+  <li> Lazy loading: https://css-tricks.com/the-complete-guide-to-lazy-loading-images/, https://css-tricks.com/snippets/javascript/lazy-loading-images/, https://css-tricks.com/tips-for-rolling-your-own-lazy-loading/ </li>
 
-  <li> Accessibility </li>
   <li> Animation gif for loading screen </li>
+  <li> Accessibility </li>
 </ul>
 
 <b> Main to-dos: </b>

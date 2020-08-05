@@ -71,7 +71,7 @@ export default function Portfolio({ theme }) {
       <AnchorPoint name="Portfolio" id="portfolio-anchor"></AnchorPoint>
       <StyledWrapper>
         <H2Style> Portfolio </H2Style>
-          {/*<ImgStyle src={imgSrcs.tree} alt="interactive tree" width="50%" height="50%" usemap='#projmap' />
+          {/*<ImgStyle loading="lazy" src={imgSrcs.tree} alt="interactive tree" width="50%" height="50%" usemap='#projmap' />
           <map className="projmap" id="projmap">
             <area shape="circle" coords="98,31,30" alt="Car" href="https://www.google.com/" onClick={console.log('hi')}/>
             <area shape="circle" coords="290,172,333" alt="Maps" href="https://www.youtube.com/" />

@@ -37,7 +37,7 @@ export default function Blog() {
 
       <h1> BLOG ❤ </h1>
 
-      <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/mocking-spongebob-1556133078.jpg?crop=0.513xw:1.00xh;0.258xw,0&resize=640:*" />
+      <img loading="lazy" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/mocking-spongebob-1556133078.jpg?crop=0.513xw:1.00xh;0.258xw,0&resize=640:*" />
 
       <p> OG </p>
       </body>

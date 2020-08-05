@@ -17,7 +17,7 @@ const ImgStyle = styled.img`
 export default function Modal({ trigger, img, alt }) {
   return (
     <ImgWrapper>
-      <ImgStyle id={trigger} src={img} alt={alt}/>
+      <ImgStyle loading="lazy" id={trigger} src={img} alt={alt}/>
     </ImgWrapper>
   )
 };
