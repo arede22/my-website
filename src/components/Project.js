@@ -8,9 +8,6 @@ const { colors } = theme;
 // material design, bootstrap, css tricks, mdn web docs
 
 // styles and wrappers
-const StyledWrapper = styled.div`
-  margin: 0;
-`;
 const CenterPiece = styled.div`
   position: absolute;
   background-color: pink;
@@ -27,11 +24,9 @@ const SidePiece = styled.div`
 // export main component
 export default function Project() {
   return (
-
-    <StyledWrapper>
+    <React.Fragment>
       <CenterPiece />
       <SidePiece />
-    </StyledWrapper>
-
+    </React.Fragment>
   )
 };

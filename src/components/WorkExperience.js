@@ -2,12 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 // styles
 import { theme } from '@styles';
-const { colors, fonts, fontSizes } = theme;
+const { colors, fontSizes } = theme;
 
 // styles and wrappers
-const StyledWrapper = styled.div`
-  margin: 0;
-`;
 const ULWrapper = styled.ul`
   color: white;
   padding: 0 40px;
@@ -29,7 +26,7 @@ const H3Style = styled.h3`
 // export main component
 export default function WorkExperience() {
   return (
-    <StyledWrapper>
+    <React.Fragment>
       <H3Style> Work experience </H3Style>
       <ULWrapper>
         <LIWrapper> (Computational Linguistics) Research Intern @ICSI (International Computer Science Institute) -- UC-Berkeley, Jan 2020 -- Current
@@ -59,6 +56,6 @@ export default function WorkExperience() {
           </ULWrapper>
         </LIWrapper>
       </ULWrapper>
-    </StyledWrapper>
+    </React.Fragment>
   )
 };

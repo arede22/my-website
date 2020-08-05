@@ -1,8 +1,7 @@
-import React from 'react';
 import styled from 'styled-components';
 // styles
 import { theme } from '@styles';
-const { colors, fontSizes, fonts } = theme;
+const { colors, fontSizes } = theme;
 // dropdown fix: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar
 
 // styles and wrappers
@@ -122,7 +121,7 @@ const BannerLI = styled(BannerLi)`
 `;
 
 // export main component
-export default function Nav() {
+export default function Nav({ theme }) {
   var prevColor;
 
   return (

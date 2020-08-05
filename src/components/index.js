@@ -6,5 +6,5 @@ export { default as Courses } from './courses';
 export { default as Softwares } from './softwares';
 export { default as Skills } from './skills';
 export { default as Clubs } from './clubs';
-export { default as WorkExperience } from './workExperience';
+export { default as WorkExperience } from './WorkExperience';
 export { default as Project } from './project';

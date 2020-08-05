@@ -1,4 +1,3 @@
-import React from 'react';
 import { string } from 'prop-types';
 import styled from 'styled-components';
 // styles
@@ -18,7 +17,7 @@ const Button = styled.button`
   padding: 15px;
   border-radius: 30px;
   font-size: ${fontSizes.sm1};
-  color: white;
+  color: ${({ theme }) => theme.textColor};
 
   &:hover {
     background-color: ${({ lightTheme }) => lightTheme ? colors.darkPalePink : colors.darkCerulean };

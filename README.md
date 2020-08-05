@@ -57,6 +57,7 @@
   <li> Accessibility </li>
   <li> Blog section </li>
   <li> Other parts of portfolio </li>
+  <li> Parallax -- https://www.w3schools.com/howto/howto_css_parallax.asp </li>
 </ul>
 
 <b> Updating project: </b>

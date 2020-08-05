@@ -9,8 +9,6 @@ import Blog from './blog';
 import { theme, useDarkMode, GlobalStyle } from '@styles';
 const { colors, fontSizes, lightTheme, darkTheme } = theme;
 
-// parallax scrolling https://www.w3schools.com/howto/howto_css_parallax.asp
-
 // blog https://nextjs.org/learn/basics/navigate-between-pages/pages-in-nextjs
 // more personal type things: instagram, facebook, profiles and hobbies and spotify -- can add api calls here
 
@@ -27,27 +25,21 @@ export default function Home() {
 
   return (
     <ThemeProvider theme={themeMode}>
-      <React.Fragment>
-        <GlobalStyle />
-        <Header />
+      <GlobalStyle />
+      <Header />
 
-        <Nav />
+      <Nav theme={theme}/>
 
-        <h1 style={{marginTop: '200px', textAlign: 'center'}}>It's a {theme === 'light' ? 'light' : 'dark'} theme!</h1>
+      <Welcome theme={theme} />
+      <Intro theme={theme} />
+      <Portfolio theme={theme} />
+      <ContactMe theme={theme} />
 
-        <Welcome />
-        <Intro /> {/* Courses, languages, college info -- progress bars */}
-        {/* Skills acquired, desired */}
-        {/* WorkExperience -- timeline w/ work and class extension projects -- assign modal script in header */}
-        <Portfolio /> {/* Projects&Portfolio Interactive Tree */}
-        <ContactMe />
+      <Footer theme={theme} />
 
-        <Footer />
+      <TopButton theme={theme} />
+      <Toggle theme={theme} toggleTheme={toggleTheme} />
 
-        <TopButton theme={theme} />
-        <Toggle theme={theme} toggleTheme={toggleTheme} />
-
-      </React.Fragment>
     </ThemeProvider>
   )
 };

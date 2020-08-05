@@ -40,7 +40,7 @@ const PStyle = styled.p`
 `;
 
 // export main component
-export default function ContactMe() {
+export default function ContactMe({ theme }) {
   return (
     <React.Fragment>
       <AnchorPoint name="Contact-Me" id="contactme-anchor"></AnchorPoint>

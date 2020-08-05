@@ -1,28 +1,28 @@
 const theme = {
-  // need contrasting colors
 
-  // two theme settings: dark and light
   // https://styled-components.com/docs/advanced
   // https://medium.com/@NateBaldwin/theming-with-css-variables-d7acddd3a699
 
   lightTheme: {
-    body: '#E2E2E2',
-    textColor: '#363537',
+    body: '#ffffff',
+    textColor: '#4a4847',
     gradient: 'linear-gradient(#d46079, #ffb6c1)',
     hoverGradient: 'linear-gradient(#d46079, #ffb6c1, #d46079)',
 
     background: 'static/genImages/new/light.png',
-    backgroundSm: 'static/genImages/new/lightSm.png'
+    backgroundSm: 'static/genImages/new/lightSm.png',
+    profilePic: 'static/genImages/new/lightProfPic.png',
   },
 
   darkTheme : {
-    body: '#363537',
-    textColor: '#FAFAFA',
+    body: '#4a4847',
+    textColor: '#ffffff',
     gradient: 'linear-gradient(#091236, #00008B)',
     hoverGradient: 'linear-gradient(#091236, #00008B, #091236)',
 
     background: 'static/genImages/new/dark.png',
     backgroundSm: 'static/genImages/new/darkSm.png',
+    profilePic: 'static/genImages/new/darkProfPic.png',
   },
 
   colors: {
@@ -86,7 +86,6 @@ const theme = {
   },
 
   fontSizes: {
-// best sizes for mobile: sm0-3
     sm00: '12px',
     sm0: '14px',
     sm1: '16px',

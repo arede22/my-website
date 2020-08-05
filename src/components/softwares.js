@@ -1,13 +1,10 @@
-import React from 'react';
 import styled from 'styled-components';
 // styles
 import { theme } from '@styles';
-const { colors, fontSizes } = theme;
+const { colors } = theme;
 
 // styles and wrappers
 const StyledWrapper = styled.div`
-  margin: 0;
-
   @media (max-width: 600px) {
     display: inline-block;
   }
@@ -22,17 +19,6 @@ const Rows = styled.ul`
 `;
 const Cols = styled(StyledWrapper)`
   flex: 50%;
-`;
-const ULWrapper = styled.ul`
-  color: ${colors.transparentSeaBlue};
-  padding: 0 40px;
-`;
-const LIWrapper = styled.li`
-  color: ${colors.lightGray};
-  line-height: 1.5;
-`;
-const H3Style = styled.h3`
-  font-size: ${fontSizes.lg};
 `;
 
 // export main component

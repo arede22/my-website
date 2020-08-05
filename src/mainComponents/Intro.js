@@ -1,11 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 // components
-import WorkExperience from '@components';
+import { WorkExperience } from '@components';
 // styles
 import { theme } from '@styles';
 const { colors, fontSizes } = theme;
-// College info, courses, languages (progress bars), softwares, skills, clubs
+
+// College info, courses, languages (progress bars), softwares
+// Skills acquired, desired
+// WorkExperience -- timeline w/ work and class extension projects
+  // clubs, work --> next is portfolio tree
 
 // styles and wrappers
 const AnchorPoint = styled.a`
@@ -23,8 +27,8 @@ const H2Style = styled.h2`
   justify-content: center;
   margin: 75px 0px;
 `;
-const H3Style = styled.h3`
-  font-size: ${fontSizes.sm3};
+const H4Style = styled.h4`
+  /* font-size: ${fontSizes.sm3}; */
 `;
 const Box = styled.div`
   background-color: ${colors.halfTransparentGray};
@@ -54,7 +58,7 @@ const PStyle = styled.p`
 `;
 
 // export main component
-export default function Intro() {
+export default function Intro({ theme }) {
   // taken from bchiang/v4
   var totalLoc = 0;
 
@@ -114,14 +118,14 @@ export default function Intro() {
         <H2Style>Intro & About Me ❤</H2Style>
         <StyledWrapper>
           <Box>
-            <H3Style> Current Coursework </H3Style>
+            <H4Style> Current Coursework </H4Style>
             <ULWrapper>
               <LIWrapper> Intro to ML (Python, Jupyter Notebook) </LIWrapper>
               <LIWrapper> Deep Learning (Jupyter Notebook) </LIWrapper>
               <LIWrapper> (Auditing) Natural Language Processing </LIWrapper>
               <LIWrapper> (Auditing) Computer Architecture (C) </LIWrapper>
             </ULWrapper>
-            <H3Style> Electrical Engineering and Computer Science Major </H3Style>
+            <H4Style> Electrical Engineering and Computer Science Major </H4Style>
             <ULWrapper>
               <LIWrapper> Intro to CS (Python, Scheme, SQL) </LIWrapper>
               <LIWrapper> Data Structures & Algorithms (Java) </LIWrapper>
@@ -130,14 +134,14 @@ export default function Intro() {
               <LIWrapper> Optimization Models in Engineering (Jupyter Notebook) </LIWrapper>
               <LIWrapper> Designing Information Devices and Systems (Python) </LIWrapper>
             </ULWrapper>
-            <H3Style> Linguistics Minor </H3Style>
+            <H4Style> Linguistics Minor </H4Style>
             <ULWrapper>
               <LIWrapper> Intro to Linguistics </LIWrapper>
               <LIWrapper> Intro to Syntax </LIWrapper>
             </ULWrapper>
           </Box>
           <Box>
-            <H3Style> Languages/Software Skills </H3Style>
+            <H4Style> Languages/Software Skills </H4Style>
             <Rows>
               <Cols>
               <h4> Languages </h4>
@@ -170,7 +174,7 @@ export default function Intro() {
             </div>*/}
           </Box>
           <Box>
-            <H3Style> Skills </H3Style>
+            <H4Style> Skills </H4Style>
             <ULWrapper>
               <LIWrapper> Data visualization and simulation softwares for research </LIWrapper>
               <LIWrapper> Building software tools for use around offices and within academia </LIWrapper>
@@ -180,7 +184,7 @@ export default function Intro() {
             </ULWrapper>
           </Box>
           <Box>
-            <H3Style> Clubs </H3Style>
+            <H4Style> Clubs </H4Style>
             <ULWrapper>
               <LIWrapper> Engineers Without Borders
                 <PStyle>
@@ -212,9 +216,9 @@ export default function Intro() {
   )
 };
 
-Intro.getInitialProps = async (ctx) => {
+// Intro.getInitialProps = async (ctx) => {
   // const res = await fetch('https://api.github.com/repos/arede22/theanikarede')
   // const json = await res.json()
   // console.log(json.stargazers_count + ', ' + json.forks_count)
   // return { starCount: json.stargazers_count,  forkCount: json.forks_count }
-}
+// }

@@ -84,7 +84,7 @@ const Icon = styled.img`
 `;
 
 // export main component
-export default function Footer({ starCount, forkCount }) {
+export default function Footer({ theme }) {
   // taken from bchiang/v4
   const [githubInfo, setGitHubInfo] = useState({
     stars: 0,
@@ -117,10 +117,6 @@ export default function Footer({ starCount, forkCount }) {
             </LIWrapper>
           ))}
         </ULWrapper>
-        <div>
-          <h3> Stars: {starCount} </h3>
-          <h3> Forks: {forkCount} </h3>
-        </div>
         {/*<GithubWrapper>
           <GithubLink href={hrefs.webRepo} target="_blank" rel="nofollow noopener noreferrer">
             <div> Bye! </div>
@@ -146,9 +142,9 @@ export default function Footer({ starCount, forkCount }) {
   )
 };
 
-Footer.getInitialProps = async (ctx) => {
-  const res = await fetch('https://api.github.com/repos/arede22/theanikarede')
-  const json = await res.json()
-  console.log(json.stargazers_count + ', ' + json.forks_count)
-  return { starCount: json.stargazers_count,  forkCount: json.forks_count }
-}
+// Footer.getInitialProps = async (ctx) => {
+//   const res = await fetch('https://api.github.com/repos/arede22/theanikarede')
+//   const json = await res.json()
+//   console.log(json.stargazers_count + ', ' + json.forks_count)
+//   return { starCount: json.stargazers_count,  forkCount: json.forks_count }
+// }

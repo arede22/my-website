@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+// components
+import { Modal } from '@components';
 // styles
 import { theme, media } from '@styles';
 const { colors, fontSizes, hrefs, imgSrcs } = theme;
@@ -59,8 +61,11 @@ const SpaceBetween = styled.div`
 // tree https://www.w3schools.com/html/html_images_imagemap.asp
 // tooltip for tree https://www.w3schools.com/howto/howto_css_tooltip.asp
 
+// Projects&Portfolio Interactive Tree -- class extensions, work, club --> see more pages somehow
+// next is blogscape
+
 // export main component
-export default function Portfolio() {
+export default function Portfolio({ theme }) {
   return (
     <React.Fragment>
       <AnchorPoint name="Portfolio" id="portfolio-anchor"></AnchorPoint>

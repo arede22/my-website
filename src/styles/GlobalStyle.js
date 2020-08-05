@@ -13,6 +13,7 @@ const GlobalStyle = createGlobalStyle`
     background-position-y: top;
     background: ${({ theme }) => theme.body} url(${({ theme }) => theme.background}) repeat-y center;
     color: ${({ theme }) => theme.textColor};
+    text: ${({ theme }) => theme.textColor};
 
     @media (max-width: 600px) {
       background: ${({ theme }) => theme.body} url(${({ theme }) => theme.backgroundSm}) repeat-y center;
@@ -35,7 +36,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
   }
-  h1, h2, h3 {
+  h1, h2, h3, h4 {
    font-family: ${fonts.Oswald};
    text-transform: uppercase;
    text-shadow: black 2px 2px;
@@ -81,13 +82,18 @@ const GlobalStyle = createGlobalStyle`
   p {
     font-size: ${fontSizes.sm1};
     text-shadow: black .5px .5px;
+    color: ${({ theme }) => theme.textColor};
 
     @media (max-width: 600px) {
       font-size: ${fontSizes.sm0};
     }
   }
+  ul {
+    color: ${({ theme }) => theme.textColor};
+  }
   li {
     text-shadow: black .5px .5px;
+    color: ${({ theme }) => theme.textColor};
   }
 `;
 
