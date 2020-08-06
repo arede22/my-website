@@ -9,14 +9,6 @@ import Blog from './blog';
 import { theme, useDarkMode, GlobalStyle } from '@styles';
 const { colors, fontSizes, lightTheme, darkTheme } = theme;
 
-const PersonalInfo = styled.div`
-  display: none;
-
-  @media (max-width: 600px) {
-    display: none;
-  }
-`;
-
 // blog https://nextjs.org/learn/basics/navigate-between-pages/pages-in-nextjs
 // more personal type things: instagram, facebook, profiles and hobbies and spotify -- can add api calls here
 
@@ -47,8 +39,6 @@ export default function Home() {
 
       <TopButton theme={theme} />
       <Toggle theme={theme} toggleTheme={toggleTheme} />
-
-      <PersonalInfo />
 
     </ThemeProvider>
   )

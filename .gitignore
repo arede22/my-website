@@ -18,6 +18,8 @@
 # misc
 .DS_Store
 .env*
+*.ai
+!spec/*.ai
 
 # debug
 npm-debug.log*

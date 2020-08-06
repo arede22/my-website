@@ -17,6 +17,7 @@ const GlobalStyle = createGlobalStyle`
 
     @media (max-width: 600px) {
       background: ${({ theme }) => theme.body} url(${({ theme }) => theme.backgroundSm}) repeat-y center;
+      max-width: 600px;
     }
 
     @media ${media.tablet} {

@@ -29,6 +29,7 @@ const theme = {
 
     // cerulean: #007ba7
     // seagreen: #00a780
+    // gray-green contrast: #20b286
 
     // shades/tints of cerulean:
     //    black: #00070a
