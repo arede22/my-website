@@ -59,7 +59,7 @@
     - cd out
     - serve -p 8080
   2. Launch dev:
-     - npm run dev
+    - npm run dev
   3. Running into node module issues on build -- if solving takes too long do:
     - npm uninstall
     - delete .next
