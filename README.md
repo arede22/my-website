@@ -25,11 +25,12 @@
 ## Yet to-do:
   - Fixup content
   - Finalize design ideas, modify @styles, nav, welcome, intro, contactme, and footer toward that end
+  - LOC, progress bars, trees, timeline, social media display
   - Think of portfolio and info layouts + act on it
 
   - Anchorpoints also change url for ##section
   - Get color palette and apply
-  - Pre-loading for Git and LOC calls: https://nextjs.org/docs/api-reference/data-fetching/getInitialProps, https://nextjs.org/docs/basic-features/data-fetching##getstaticprops-static-generation, https://nextjs.org/docs/basic-features/data-fetching##getserversideprops-server-side-rendering
+  - Pre-loading for Git and LOC calls: https://nextjs.org/docs/basic-features/data-fetching##getstaticprops-static-generation, https://nextjs.org/docs/basic-features/data-fetching##getserversideprops-server-side-rendering
 
   - Lazy loading: https://css-tricks.com/the-complete-guide-to-lazy-loading-images/, https://css-tricks.com/snippets/javascript/lazy-loading-images/, https://css-tricks.com/tips-for-rolling-your-own-lazy-loading/
 

@@ -1,5 +1,7 @@
 import Head from 'next/head';
 
+// check theme of browser and see dark/light then change favicon
+
 // export main component
 export default function Header({ title }) {
   return (

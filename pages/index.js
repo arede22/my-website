@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import styled, { ThemeProvider } from 'styled-components';
+import React from 'react';
+import { ThemeProvider } from 'styled-components';
 // components
 import { Header, Nav, Welcome, Intro, Portfolio, ContactMe, Footer } from '@mainComponents';
 import { Toggle, TopButton } from '@components';
@@ -8,11 +8,7 @@ import Blog from './blog';
 // styles
 import { theme, useDarkMode, GlobalStyle } from '@styles';
 const { colors, fontSizes, lightTheme, darkTheme } = theme;
-
-// blog https://nextjs.org/learn/basics/navigate-between-pages/pages-in-nextjs
 // more personal type things: instagram, facebook, profiles and hobbies and spotify -- can add api calls here
-
-// https://css-tricks.com/a-dark-mode-toggle-with-react-and-themeprovider/
 
 // export main component
 export default function Home() {

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 // styles
 import { theme, ResumeBox, WelcomeStyle, H1Style } from '@styles';
-const { colors, fontSizes, imgSrcs } = theme;
+const { fontSizes } = theme;
 
 // styles and wrappers
 const StyledWrapper = styled.div`
@@ -49,3 +49,16 @@ export default function Welcome({ theme }) {
     </StyledWrapper>
   )
 };
+
+export async function getStaticProps() {
+  // Get external data from the file system, API, DB, etc.
+  const res = await fetch('https://api.github.com/repos/arede22/theanikarede');
+  const json = await res.json();
+
+  return {
+    props: {
+      json,
+    },
+    // revalidate: 1
+  }
+}

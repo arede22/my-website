@@ -102,6 +102,8 @@ const theme = {
     linkedin: 'https://www.linkedin.com/in/anikarede/',
     github: 'https://github.com/arede22',
     webRepo: 'https://github.com/arede22/theanikarede',
+    carRepo: 'https://github.com/arede22/voice-activated-car',
+    mlDecalRepo: 'https://github.com/arede22/MLDecal_projects',
     gameVid: 'https://www.youtube.com/watch?v=cdlxhQVUIro'
 
   },

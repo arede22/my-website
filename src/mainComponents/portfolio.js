@@ -74,11 +74,11 @@ export default function Portfolio({ theme }) {
         <H2Style> Portfolio </H2Style>
           {/*<ImgStyle src={imgSrcs.tree} alt="interactive tree" usemap='#projmap' />
           <map name="projmap">
-            <area shape="circle" coords="213.6,75,122" alt="Car" href="https://github.com/arede22/voice-activated-car" />
+            <area shape="circle" coords="213.6,75,122" alt="Car" href={hrefs.carRepo} />
             <area shape="circle" coords="300,189,119" alt="Maps" />
-            <area shape="circle" coords="182,193.7,102" alt="GameDev" />
-            <area shape="circle" coords="138.5,298.5,118.6" alt="Website" href="https://github.com/arede22/theanikarede" />
-            <area shape="circle" coords="413,158,92" alt="ML Decal" href="https://github.com/arede22/MLDecal_projects" />
+            <area shape="circle" coords="182,193.7,102" alt="GameDev" href={hrefs.gameVid} />
+            <area shape="circle" coords="138.5,298.5,118.6" alt="Website" href={hrefs.webRepo} />
+            <area shape="circle" coords="413,158,92" alt="ML Decal" href={hrefs.mlDecalRepo} />
             <area shape="circle" coords="397,257.8,93.8" alt="NLP" />
             <area shape="circle" coords="330,80,98.6" alt="Etc" />
           </map>*/}

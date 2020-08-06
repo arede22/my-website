@@ -3,7 +3,6 @@ import styled from 'styled-components';
 // styles
 import { theme } from '@styles';
 const { colors, fontSizes } = theme;
-// https://css-tricks.com/a-dark-mode-toggle-with-react-and-themeprovider/
 
 // styles and wrappers
 const ToggleContainer = styled.button`

@@ -1,5 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import styled from 'styled-components';
+// components
+import { GithubInfo } from '@components';
 // styles
 import { theme } from '@styles';
 const { colors, hrefs, fontSizes, iconSrcs } = theme;
@@ -64,47 +66,26 @@ const ImgStyle = styled.img`
     width: 16px;
   }
 `;
-const GithubWrapper = styled.div`
-  width: 70%;
-  margin: 0 auto;
-`;
-const GithubLink = styled.a`
-  text-decoration: none;
-  font-size: ${fontSizes.sm1};
-  color: ${colors.skyBlue};
-`;
-const StyledGitHubInfo = styled.div`
-  color: black;
-  text-align: center;
-  margin: auto;
-`;
-const Icon = styled.img`
-  height: 24px;
-  width: auto;
-`;
 
 // export main component
 export default function Footer({ theme }) {
   // taken from bchiang7/v4
-  const [githubInfo, setGitHubInfo] = useState({
+  var [githubInfo, setGithubInfo] = useState({
     stars: 0,
-    forks: 0,
+    forks: 0
   });
 
   useEffect(() => {
     if (process.env.NODE_ENV !== 'production') {
       return;
     }
-    fetch('https://api.github.com/repos/arede22/theanikarede')
-      .then(response => response.json())
-      .then(json => {
-        const { stargazers_count, forks_count } = json;
-        setGitHubInfo({
-          stars: stargazers_count,
-          forks: forks_count,
-        });
-      })
-      .catch(e => console.error(e));
+    fetch('https://api.github.com/users/arede22/repos/theanikarede')
+    .then(response => response.json())
+    .then(json => {
+      const { stargazers_count, forks_count } = json;
+      setGithubInfo({stargazers_count, forks_count});
+    })
+    .catch(e => console.error(e));
   }, []);
 
   return (
@@ -117,22 +98,10 @@ export default function Footer({ theme }) {
             </LIWrapper>
           ))}
         </ULWrapper>
-        {!!githubInfo.stars && !!githubInfo.forks &&
-          <GithubWrapper>
-            <GithubLink href={hrefs.webRepo} target="_blank" rel="nofollow noopener noreferrer">
-              <div> Bye! </div>
-              <StyledGitHubInfo>
-                <span>
-                  <Icon src={iconSrcs.star} alt="Stars: "/>
-                  <span>{githubInfo.stars.toLocaleString()}</span>
-                </span>
-                <span>
-                  <Icon src={iconSrcs.fork} alt="Forks: " />
-                  <span>{githubInfo.forks.toLocaleString()}</span>
-                </span>
-              </StyledGitHubInfo>
-            </GithubLink>
-          </GithubWrapper>
+        {
+          !!githubInfo.stars &&
+          !!githubInfo.forks &&
+          <GithubInfo stars={githubInfo.stars} forks={githubInfo.forks} />
         }
         <StyledWrapper>
           <PStyle>
@@ -143,10 +112,3 @@ export default function Footer({ theme }) {
     </StyledWrapper>
   )
 };
-
-// Footer.getInitialProps = async (ctx) => {
-//   const res = await fetch('https://api.github.com/repos/arede22/theanikarede')
-//   const json = await res.json()
-//   console.log(json.stargazers_count + ', ' + json.forks_count)
-//   return { starCount: json.stargazers_count,  forkCount: json.forks_count }
-// }

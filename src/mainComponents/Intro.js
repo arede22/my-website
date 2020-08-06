@@ -5,7 +5,6 @@ import { WorkExperience } from '@components';
 // styles
 import { theme } from '@styles';
 const { colors, fontSizes } = theme;
-
 // College info, courses, languages (progress bars), softwares
 // Skills acquired, desired
 // WorkExperience -- timeline w/ work and class extension projects
@@ -239,11 +238,4 @@ export default function Intro({ theme }) {
 //       json,
 //     }
 //   }
-// }
-
-// Intro.getInitialProps = async (ctx) => {
-  // const res = await fetch('https://api.github.com/repos/arede22/theanikarede')
-  // const json = await res.json()
-  // console.log(json.stargazers_count + ', ' + json.forks_count)
-  // return { starCount: json.stargazers_count,  forkCount: json.forks_count }
 // }
