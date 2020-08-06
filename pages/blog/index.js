@@ -23,7 +23,7 @@ export default function Blog({ json }) {
         </ul>
       }
 
-      <img loading="lazy" height='60' width='60' src={imgSrcs.rainbow} alt="spongebob rainbow" />
+      <img height='60' width='60' src={imgSrcs.rainbow} alt="spongebob rainbow" />
 
       <p> OG </p>
 

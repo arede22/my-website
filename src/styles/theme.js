@@ -1,8 +1,5 @@
 const theme = {
 
-  // https://styled-components.com/docs/advanced
-  // https://medium.com/@NateBaldwin/theming-with-css-variables-d7acddd3a699
-
   lightTheme: {
     body: '#ffffff',
     textColor: '#4a4847',

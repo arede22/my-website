@@ -59,6 +59,7 @@ const SpaceBetween = styled.div`
 `;
 
 // tree https://www.w3schools.com/html/html_images_imagemap.asp
+//    proj: x 214.78
 // tooltip for tree https://www.w3schools.com/howto/howto_css_tooltip.asp
 
 // Projects&Portfolio Interactive Tree -- class extensions, work, club --> see more pages somehow
@@ -71,11 +72,15 @@ export default function Portfolio({ theme }) {
       <AnchorPoint name="Portfolio" id="portfolio-anchor"></AnchorPoint>
       <StyledWrapper>
         <H2Style> Portfolio </H2Style>
-          {/*<ImgStyle loading="lazy" src={imgSrcs.tree} alt="interactive tree" width="50%" height="50%" usemap='#projmap' />
-          <map className="projmap" id="projmap">
-            <area shape="circle" coords="98,31,30" alt="Car" href="https://www.google.com/" onClick={console.log('hi')}/>
-            <area shape="circle" coords="290,172,333" alt="Maps" href="https://www.youtube.com/" />
-            <area shape="circle" coords="337,300,44" alt="Game" href="https://www.duckduckgo.com/" />
+          {/*<ImgStyle src={imgSrcs.tree} alt="interactive tree" usemap='#projmap' />
+          <map name="projmap">
+            <area shape="circle" coords="213.6,75,122" alt="Car" href="https://github.com/arede22/voice-activated-car" />
+            <area shape="circle" coords="300,189,119" alt="Maps" />
+            <area shape="circle" coords="182,193.7,102" alt="GameDev" />
+            <area shape="circle" coords="138.5,298.5,118.6" alt="Website" href="https://github.com/arede22/theanikarede" />
+            <area shape="circle" coords="413,158,92" alt="ML Decal" href="https://github.com/arede22/MLDecal_projects" />
+            <area shape="circle" coords="397,257.8,93.8" alt="NLP" />
+            <area shape="circle" coords="330,80,98.6" alt="Etc" />
           </map>*/}
           <Box>
             <H3Style> Extensions of Class Projects </H3Style>
