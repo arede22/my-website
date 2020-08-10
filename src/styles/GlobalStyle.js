@@ -21,6 +21,7 @@ const GlobalStyle = createGlobalStyle`
      animation: ${fadeInImg} cubic-bezier(0.23, 1, 0.32, 1) 1;
      position: relative;
      opacity: 0;
+     z-index: -1;
      animation-fill-mode: forwards;
      animation-duration: 0.7s;
      animation-delay: 0.1s;
@@ -45,7 +46,7 @@ const GlobalStyle = createGlobalStyle`
 
     @media (max-width: 600px) {
       background: ${({ theme }) => theme.body} url(${({ theme }) => theme.backgroundSm}) repeat-y center;
-      max-width: 600px;
+      min-width: 600px;
     }
 
     @media ${media.tablet} {

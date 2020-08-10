@@ -8,3 +8,5 @@ export { default as ResumeBox } from './ResumeBox';
 export { default as StyledWrapper } from './StyledWrapper';
 export { default as H1Style } from './H1Style';
 export { default as Box } from './box';
+export { default as Link } from './Link';
+export { default as Anchor } from './Anchor';

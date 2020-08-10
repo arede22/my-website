@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 import media from './media';
 // styles
 import theme from './theme';
-const { colors, fonts, imgSrcs, fontSizes } = theme;
+const { fonts, fontSizes } = theme;
 
 const ErrorGlobal = createGlobalStyle`
   html, body {

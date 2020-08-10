@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import styled from 'styled-components';
 // styles
-import { theme } from '@styles';
+import { theme, Link } from '@styles';
 const { colors, fontSizes } = theme;
 // dropdown fix: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar
 
@@ -34,8 +34,7 @@ const OptLIWrapper = styled(LIWrapper)`
     display: none;
   }
 `;
-const Link = styled.a`
-  text-decoration: none;
+const NavLink = styled(Link)`
   font-size: ${fontSizes.sm3};
   color: white;
 
@@ -43,7 +42,7 @@ const Link = styled.a`
     color: ${colors.skyBlue};
   }
 `;
-const HomeLink = styled(Link)`
+const HomeNavLink = styled(NavLink)`
   color: ${colors.seaBlue};
 
   @media (max-width: 600px) {
@@ -93,22 +92,22 @@ export default function StyledNav({ theme }) {
     <NavWrapper>
       <ULWrapper>
         <LIWrapper>
-          <HomeLink href='/' id='home' onMouseOver={onHoverIn} onMouseOut={onHoverOut}> Home </HomeLink>
+          <HomeNavLink href='/' id='home' onMouseOver={onHoverIn} onMouseOut={onHoverOut}> Home </HomeNavLink>
         </LIWrapper>
         <OptLIWrapper className="extra">
-          <Link href="#Intro" id='intro' onMouseOver={onHoverIn} onMouseOut={onHoverOut}> Intro </Link>
+          <NavLink href="#Intro" id='intro' onMouseOver={onHoverIn} onMouseOut={onHoverOut}> Intro </NavLink>
         </OptLIWrapper>
         <OptLIWrapper className="extra">
-          <Link href="#Portfolio" id='portfolio' onMouseOver={onHoverIn} onMouseOut={onHoverOut}> Portfolio </Link>
+          <NavLink href="#Portfolio" id='portfolio' onMouseOver={onHoverIn} onMouseOut={onHoverOut}> Portfolio </NavLink>
         </OptLIWrapper>
         <OptLIWrapper className="extra">
-          <Link href="#Contact-Me" id='contact-me' onMouseOver={onHoverIn} onMouseOut={onHoverOut}> Contact Me </Link>
+          <NavLink href="#Contact-Me" id='contact-me' onMouseOver={onHoverIn} onMouseOut={onHoverOut}> Contact Me </NavLink>
         </OptLIWrapper>
         {/*<OptLIWrapper className="extra">
-          <Link href="/blog" onMouseOver={onHoverIn} onMouseOut={onHoverOut}> Blog </Link>
+          <NavLink href="/blog" onMouseOver={onHoverIn} onMouseOut={onHoverOut}> Blog </NavLink>
         </OptLIWrapper>*/}
         <OptLIWrapper className="extra">
-          <Link href="resume.pdf" target="_blank" rel="nofollow noopener noreferrer" onMouseOver={e => {e.currentTarget.style.color = colors.moreSeaBlue;}} onMouseOut={e => {e.currentTarget.style.color = 'white'}}> Resume </Link>
+          <NavLink href="resume.pdf" target="_blank" rel="nofollow noopener noreferrer" onMouseOver={e => {e.currentTarget.style.color = colors.moreSeaBlue;}} onMouseOut={e => {e.currentTarget.style.color = 'white'}}> Resume </NavLink>
         </OptLIWrapper>
       </ULWrapper>
     </NavWrapper>

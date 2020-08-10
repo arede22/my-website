@@ -3,7 +3,7 @@ import styled from 'styled-components';
 // components
 import { WorkExperience } from '@components';
 // styles
-import { theme } from '@styles';
+import { theme, Anchor } from '@styles';
 const { colors, fontSizes } = theme;
 // College info, courses, languages (progress bars), softwares
 // Skills acquired, desired
@@ -11,9 +11,6 @@ const { colors, fontSizes } = theme;
   // clubs, work --> next is portfolio tree
 
 // styles and wrappers
-const AnchorPoint = styled.a`
-  margin: 0 auto;
-`;
 const StyledWrapper = styled.div`
   margin: 10px 0;
 
@@ -27,7 +24,6 @@ const H2Style = styled.h2`
   margin: 75px 0px;
 `;
 const H4Style = styled.h4`
-  /* font-size: ${fontSizes.sm3}; */
 `;
 const Box = styled.div`
   background-color: ${colors.halfTransparentGray};
@@ -112,8 +108,8 @@ export default function Intro({ theme }) {
 
   return (
     <React.Fragment>
-      <AnchorPoint name="Intro" id="intro-anchor"></AnchorPoint>
       <StyledWrapper>
+      <Anchor name="Intro" id="intro-anchor"></Anchor>
         <H2Style>Intro & About Me ❤</H2Style>
         <StyledWrapper>
           <Box>

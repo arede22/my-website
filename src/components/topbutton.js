@@ -2,7 +2,7 @@ import { string } from 'prop-types';
 import styled from 'styled-components';
 // styles
 import { theme } from '@styles';
-const { colors, fontSizes, imgSrcs } = theme;
+const { colors, fontSizes } = theme;
 
 // styles and wrappers
 const Button = styled.button`
@@ -33,11 +33,10 @@ const ImgStyle = styled.img`
   width: 16px;
 `;
 
-export default function TopButton({ theme }) {
-  const isLight = theme === 'light';
+export default function TopButton({ theme, isLight }) {
 
   return (
-    <Button id="scrolltop" lightTheme={isLight}>Top <ImgStyle src={imgSrcs.up} /></Button>
+    <Button id="scrolltop" lightTheme={isLight}>Top <ImgStyle src={theme.up} /></Button>
   )
 };
 

@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
 import styled from 'styled-components';
+import LazyLoad from 'react-lazy-load';
 // components
-import { GithubInfo } from '@components';
+import { ImageLoader, GithubInfo } from '@components';
 // styles
-import { theme } from '@styles';
+import { theme, Link } from '@styles';
 const { colors, hrefs, fontSizes, iconSrcs } = theme;
 // stackoverflow, hackerrank, spotify
 // CALHACKS
@@ -47,18 +48,10 @@ const LIWrapper = styled.li`
   display: flex;
   padding: 10px 15px;
 `;
-const Link = styled.a`
-  text-decoration: none;
-  color: ${colors.skyBlue};
-
-  &:hover {
-    color: ${colors.darkSkyBlue};
-  }
-`;
 const PStyle = styled.p`
   text-align: center;
 `;
-const ImgStyle = styled.img`
+const ImgStyle = styled(ImageLoader)`
   margin: 0 auto;
 
   @media (max-width: 600px) {
@@ -94,7 +87,13 @@ export default function Footer({ theme }) {
         <ULWrapper>
           {links.map(({ key, href, src }) => (
             <LIWrapper key={key}>
-              <a href={href} target="_blank" rel="nofollow noopener noreferrer"> <ImgStyle src={src + '.png'} alt={src.replace('static/footer/', "Anika's ")} onMouseOver={e => {e.currentTarget.src = src + '-hover.png'}} onMouseOut={e => {e.currentTarget.src = src + '.png'}} /> </a>
+              <LazyLoad
+              debounce={false}
+              offsetVertical={125}>
+                <a href={href} target="_blank" rel="nofollow noopener noreferrer">
+                  <ImgStyle src={src + '.png'} alt={src.replace('static/footer/', "Anika's ")} onMouseOver={e => {e.currentTarget.src = src + '-hover.png'}} onMouseOut={e => {e.currentTarget.src = src + '.png'}} />
+                </a>
+              </LazyLoad>
             </LIWrapper>
           ))}
         </ULWrapper>

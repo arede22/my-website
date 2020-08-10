@@ -2,7 +2,7 @@ const theme = {
 
   lightTheme: {
     body: '#ffffff',
-    textColor: '#4a4847',
+    textColor: '#303030',
     gradient: 'linear-gradient(#d46079, #ffb6c1)',
     hoverGradient: 'linear-gradient(#d46079, #ffb6c1, #d46079)',
 
@@ -15,6 +15,7 @@ const theme = {
     large: 'static/favicon/light/favicon-32x32.png',
     small: 'static/favicon/light/favicon-16x16.png',
     reg: 'static/favicon/light/favicon.ico',
+    up: 'static/genImages/scroll-up-arrow-light.svg',
   },
 
   darkTheme : {
@@ -32,6 +33,7 @@ const theme = {
     large: 'static/favicon/dark/favicon-32x32.png',
     small: 'static/favicon/dark/favicon-16x16.png',
     reg: 'static/favicon/dark/favicon.ico',
+    up: 'static/genImages/scroll-up-arrow-dark.svg',
   },
 
   colors: {
@@ -52,20 +54,20 @@ const theme = {
 
     // check color blindness simulator
 
-    purple: "#9e005d",
-    darkPink: "#d4145a",
-    pink: "#ed1e79",
-    lightPink: "#d46c83",
+    purple: "#9e005d", // unused
+    darkPink: "#d4145a", // unused
+    pink: "#ed1e79", // unused
+    lightPink: "#d46c83", // unused
     palePink: "#dc8079",
     darkPalePink: "#d46079",
 
     orange: "#f79555",
-    darkOrange: '#f4670c',
+    darkOrange: '#f4670c', // unused
 
     cerulean: "#007ba7",
     darkCerulean: "#0d759a",
 
-    periwinkle: "#bbedff",
+    periwinkle: "#bbedff", // unused
 
     transparentSeaBlue: "rgba(129, 207, 224, 0.4)",
     moreSeaBlue: "rgba(197, 239, 247, 0.7)",
@@ -73,17 +75,17 @@ const theme = {
     skyBlue: "rgba(197, 239, 247, 1)",
     darkSkyBlue: "rgba(169, 211, 219, 1)",
 
-    deepSeaBlue: "#002431",
-    darkerDeepSeaBlue: "#00070a",
+    deepSeaBlue: "#002431", // unused
+    darkerDeepSeaBlue: "#00070a", // unused
 
     transparentGray: "rgba(166, 166, 166, 0.3)",
     halfTransparentGray: "rgba(166, 166, 166, 0.5)",
-    lightestGray: "#f1f1f1",
+    lightestGray: "#f1f1f1", // unused
     lightGray: "#cfcfcf",
-    medGray: "#bbb",
+    medGray: "#bbb", // unused
     darkGray: "rgba(74, 72, 71, 1)",
 
-    transparentBlack: "rgba(0,0,0,0.9)",
+    transparentBlack: "rgba(0,0,0,0.9)", // unused
     black: "#303030",
 
   },
@@ -96,6 +98,7 @@ const theme = {
   },
 
   fontSizes: {
+
     sm00: '12px',
     sm0: '14px',
     sm1: '16px',

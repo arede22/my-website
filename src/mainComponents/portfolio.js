@@ -1,20 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
+import LazyLoad from 'react-lazy-load';
 // components
-import { Modal } from '@components';
+import { ImageLoader, Modal } from '@components';
 // styles
-import { theme, media } from '@styles';
+import { theme, media, Anchor, Link } from '@styles';
 const { colors, fontSizes, hrefs, imgSrcs } = theme;
 // Currently exploring pet projects
 
 // styles and wrappers
-const AnchorPoint = styled.a`
-  margin: 0 auto;
-`;
 const StyledWrapper = styled.div`
   margin: 0;
 `;
-const ImgStyle = styled.img`
+const ImgStyle = styled(ImageLoader)`
   margin: auto;
 `;
 const H2Style = styled.h2`
@@ -44,22 +42,14 @@ const PStyle = styled.p`
   text-align: center;
   margin: 0 auto;
 `;
-const Link = styled.a`
-  text-decoration: none;
-  color: white;
+const StyledLink = styled(Link)`
   text-align: center;
-
-  &:hover {
-    color: ${colors.skyBlue};
-  }
 `;
 const SpaceBetween = styled.div`
   display: flex;
   justify-content: space-between;
 `;
-
 // tree https://www.w3schools.com/html/html_images_imagemap.asp
-//    proj: x 214.78
 // tooltip for tree https://www.w3schools.com/howto/howto_css_tooltip.asp
 
 // Projects&Portfolio Interactive Tree -- class extensions, work, club --> see more pages somehow
@@ -69,11 +59,12 @@ const SpaceBetween = styled.div`
 export default function Portfolio({ theme }) {
   return (
     <React.Fragment>
-      <AnchorPoint name="Portfolio" id="portfolio-anchor"></AnchorPoint>
+      <Anchor name="Portfolio" id="portfolio-anchor"></Anchor>
       <StyledWrapper>
         <H2Style> Portfolio </H2Style>
-          {/*<ImgStyle src={imgSrcs.tree} alt="interactive tree" usemap='#projmap' />
-          <map name="projmap">
+          {/*<LazyLoad debounce={false}
+          offsetVertical={125}><ImgStyle src={imgSrcs.tree} alt="interactive tree" usemap='#imagemap' />
+          <map name="imagemap">
             <area shape="circle" coords="213.6,75,122" alt="Car" href={hrefs.carRepo} />
             <area shape="circle" coords="300,189,119" alt="Maps" />
             <area shape="circle" coords="182,193.7,102" alt="GameDev" href={hrefs.gameVid} />
@@ -81,7 +72,8 @@ export default function Portfolio({ theme }) {
             <area shape="circle" coords="413,158,92" alt="ML Decal" href={hrefs.mlDecalRepo} />
             <area shape="circle" coords="397,257.8,93.8" alt="NLP" />
             <area shape="circle" coords="330,80,98.6" alt="Etc" />
-          </map>*/}
+          </map>
+          </LazyLoad>*/}
           <Box>
             <H3Style> Extensions of Class Projects </H3Style>
             <ULWrapper>
@@ -99,7 +91,7 @@ export default function Portfolio({ theme }) {
                   <Modal trigger="boss" img={imgSrcs.boss} pop="popBoss" content="img04" alt={imgSrcs.boss.replace('static/portfolio/', '').replace('.png', '')} />
                 </SpaceBetween>
                 <PStyle>
-                  <Link href={hrefs.gameVid} target="_blank" rel="nofollow noopener noreferrer"> Click here for DEMO </Link>
+                  <StyledLink href={hrefs.gameVid} target="_blank" rel="nofollow noopener noreferrer"> Click here for DEMO </StyledLink>
                 </PStyle>
               </LIWrapper>
             </ULWrapper>

@@ -25,16 +25,18 @@ const PStyle = styled.p`
 
 // export main component
 export default function Welcome({ theme }) {
+  const prod = process.env.NODE_ENV === 'production';
+
   return (
     <StyledWrapper>
       <H1Style>Hi, I'm Anika Rede.</H1Style>
-      <PStyle>My website looks a lil jank but I'm always tinkering with new things!</PStyle>
+      {!!prod &&
+        <PStyle>My website looks a lil jank but I'm always tinkering with new things!</PStyle>
+      }
       <LazyLoad
       debounce={false}
-      offsetVertical={125}
-      onContentVisible
-      onContentVisible={() => console.log('what do you want to do here?')}>
-      <ImageLoader src={theme.profilePic} alt="This is me!" />
+      offsetVertical={125}>
+        <ImageLoader src={theme.profilePic} alt="This is me!" />
       </LazyLoad>
 
       <WelcomeStyle>

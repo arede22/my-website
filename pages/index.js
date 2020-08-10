@@ -14,6 +14,7 @@ const { lightTheme, darkTheme } = theme;
 export default function Home() {
   const [theme, toggleTheme, componentMounted] = useDarkMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
+  const isLight = theme === 'light';
 
   if (!componentMounted) {
     return <div />
@@ -33,7 +34,7 @@ export default function Home() {
 
       <Footer theme={themeMode} />
 
-      <TopButton theme={theme} />
+      <TopButton theme={themeMode} isLight={isLight} />
       <Toggle theme={theme} toggleTheme={toggleTheme} />
 
     </ThemeProvider>

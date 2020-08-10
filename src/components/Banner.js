@@ -33,6 +33,7 @@ const Phonology = styled(Name)`
 const NameLi = styled.li`
   display: flex;
   padding: 4px 8px;
+  /* color: ${({ theme }) => theme.banner }; */
   color: ${colors.orange};
   text-shadow: black 1px 1px;
 

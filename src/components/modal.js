@@ -1,4 +1,7 @@
 import styled from 'styled-components';
+import LazyLoad from 'react-lazy-load';
+// components
+import { ImageLoader } from '@components';
 
 // styles and wrappers
 const ImgWrapper = styled.a`
@@ -17,7 +20,11 @@ const ImgStyle = styled.img`
 export default function Modal({ trigger, img, alt }) {
   return (
     <ImgWrapper>
-      <ImgStyle id={trigger} src={img} alt={alt}/>
+      <LazyLoad
+      debounce={false}
+      offsetVertical={125}>
+        <ImgStyle id={trigger} src={img} alt={alt}/>
+      </LazyLoad>
     </ImgWrapper>
   )
 };

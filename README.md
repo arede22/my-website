@@ -7,12 +7,9 @@
   <img src="static/genImages/3-color-trace.png" alt="Profile Image" />
 </p>
 
-## Note for positioning:
+## Notes:
 - flexbox: calhacks.org/flexbox
-- position: relative; --> to make B move relative to A and C divs
 - material design, bootstrap, css tricks, mdn web docs
-
-## Note for more personal information:
   - stackoverflow, hackerrank, spotify
   - CALHACKS
   - dailycal
@@ -21,18 +18,17 @@
 ## Recently changed:
   - Git and LOC calls
   - Light/dark themes https://css-tricks.com/a-dark-mode-toggle-with-react-and-themeprovider/, https://medium.com/@NateBaldwin/theming-with-css-variables-d7acddd3a699
+  - Finalize design ideas, modify @styles, nav, welcome, intro, contactme, and footer toward that end
 
 ## Yet to-do:
   - Fixup content
-  - Finalize design ideas, modify @styles, nav, welcome, intro, contactme, and footer toward that end
   - LOC, progress bars, trees, timeline, social media display
   - Think of portfolio and info layouts + act on it
+  - Lazy loading: https://css-tricks.com/the-complete-guide-to-lazy-loading-images/, https://css-tricks.com/snippets/javascript/lazy-loading-images/, https://css-tricks.com/tips-for-rolling-your-own-lazy-loading/
 
   - Anchorpoints also change url for ##section
   - Get color palette and apply
   - Pre-loading for Git and LOC calls: https://nextjs.org/docs/basic-features/data-fetching##getstaticprops-static-generation, https://nextjs.org/docs/basic-features/data-fetching##getserversideprops-server-side-rendering
-
-  - Lazy loading: https://css-tricks.com/the-complete-guide-to-lazy-loading-images/, https://css-tricks.com/snippets/javascript/lazy-loading-images/, https://css-tricks.com/tips-for-rolling-your-own-lazy-loading/
 
   - Animation gif for loading screen
   - Accessibility
@@ -42,7 +38,7 @@
   - See if necessary to incorporate react-dom, react-router, react bootstrap, etc.
   - Javascript and Ajax scripts
   - Add in Github, Spotify, Youtube, and Instagram API calls (figure out how to let api call load before assigning text)
-  - Theming: Light/Dark/Invert
+  - Theming: Light/Dark
   - Page loader
   - Lazy loading
   - Accessibility
