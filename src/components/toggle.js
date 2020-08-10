@@ -30,8 +30,7 @@ const ToggleContainer = styled.button`
   }
 `;
 
-export default function Toggle({ theme, toggleTheme }) {
-  const isLight = theme === 'light';
+export default function Toggle({ theme, toggleTheme, isLight }) {
   return (
     <ToggleContainer onClick={toggleTheme} lightTheme={isLight}>Theme</ToggleContainer>
   )

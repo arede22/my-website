@@ -54,7 +54,6 @@ const PStyle = styled.p`
 
 // export main component
 export default function Intro({ theme }) {
-  // taken from bchiang/v4
   var totalLoc = 0;
 
   var [loc, setLoc] = useState({
