@@ -1,10 +1,38 @@
 import { createGlobalStyle } from 'styled-components';
 import media from './media';
+import fadeInImg from './fadeInImg';
 // styles
 import theme from './theme';
 const { colors, fonts, imgSrcs, fontSizes } = theme;
 
 const GlobalStyle = createGlobalStyle`
+  .img-loading {
+     opacity: 0;
+     width: 100%;
+     height: auto;
+     margin: 0 auto;
+
+     @media (max-width: 600px) {
+       margin: 0 30px;
+       max-width: 360px;
+     }
+   }
+  .img-loaded {
+     animation: ${fadeInImg} cubic-bezier(0.23, 1, 0.32, 1) 1;
+     position: relative;
+     opacity: 0;
+     animation-fill-mode: forwards;
+     animation-duration: 0.7s;
+     animation-delay: 0.1s;
+     margin: 0 auto;
+
+     @media (max-width: 600px) {
+       margin: 0 30px;
+       max-width: 360px;
+       height: auto;
+     }
+
+   }
   body {
     margin: 0;
     font-size: ${fontSizes.sm3};

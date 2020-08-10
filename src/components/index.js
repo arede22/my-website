@@ -4,6 +4,7 @@ export { default as TopButton } from './topbutton';
 export { default as Banner } from './banner';
 export { default as StyledNav } from './StyledNav';
 export { default as GithubInfo } from './GithubInfo';
+export { default as ImageLoader } from './ImageLoader';
 
 export { default as Courses } from './courses';
 export { default as Softwares } from './softwares';

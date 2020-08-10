@@ -1,4 +1,7 @@
 import styled from 'styled-components';
+import LazyLoad from 'react-lazy-load';
+// components
+import { ImageLoader } from '@components';
 // styles
 import { theme, ResumeBox, WelcomeStyle, H1Style } from '@styles';
 const { fontSizes } = theme;
@@ -7,16 +10,6 @@ const { fontSizes } = theme;
 const StyledWrapper = styled.div`
   margin: 160px auto;
   text-align: center;
-`;
-const ImgStyle = styled.img`
-  font-size: ${fontSizes.med1};
-  margin: 0 auto;
-
-  @media (max-width: 600px) {
-    margin: 0 30px;
-    max-width: 360px;
-    height: auto;
-  }
 `;
 const PStyle = styled.p`
   color: white;
@@ -36,7 +29,13 @@ export default function Welcome({ theme }) {
     <StyledWrapper>
       <H1Style>Hi, I'm Anika Rede.</H1Style>
       <PStyle>My website looks a lil jank but I'm always tinkering with new things!</PStyle>
-      <ImgStyle src={theme.profilePic} alt="This is me!" />
+      <LazyLoad
+      debounce={false}
+      offsetVertical={125}
+      onContentVisible
+      onContentVisible={() => console.log('what do you want to do here?')}>
+      <ImageLoader src={theme.profilePic} alt="This is me!" />
+      </LazyLoad>
 
       <WelcomeStyle>
         <PStyle>
