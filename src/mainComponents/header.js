@@ -3,7 +3,7 @@ import Head from 'next/head';
 // check theme of browser and see dark/light then change favicon
 
 // export main component
-export default function Header({ title }) {
+export default function Header({ title, theme }) {
   return (
     <Head>
       <meta charSet="UTF-8" />
@@ -12,12 +12,12 @@ export default function Header({ title }) {
       <meta name="author" content="Anika Rede" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      <link rel="icon" type="image/png" sizes="512x512" href="static/favicon/android-chrome-512x512.png"/>
-      <link rel="icon" type="image/png" sizes="192x192" href="static/favicon/android-chrome-192x192.png"/>
-      <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-touch-icon.png"/>
-      <link rel="icon" type="image/png" sizes="32x32" href="static/favicon/favicon-32x32.png"/>
-      <link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png"/>
-      <link rel="icon" type="image/x-icon" href="static/favicon/favicon.ico"/>
+      <link rel="icon" type="image/png" sizes="512x512" href={theme.android1}/>
+      <link rel="icon" type="image/png" sizes="192x192" href={theme.android2}/>
+      <link rel="apple-touch-icon" sizes="180x180" href={theme.apple}/>
+      <link rel="icon" type="image/png" sizes="32x32" href={theme.large}/>
+      <link rel="icon" type="image/png" sizes="16x16" href={theme.small}/>
+      <link rel="icon" type="image/x-icon" href={theme.reg}/>
       <link rel="manifest" href="static/favicon/site.webmanifest"/>
 
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald" />

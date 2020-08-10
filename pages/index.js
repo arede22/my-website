@@ -7,13 +7,13 @@ import { Toggle, TopButton } from '@components';
 import Blog from './blog';
 // styles
 import { theme, useDarkMode, GlobalStyle } from '@styles';
-const { colors, fontSizes, lightTheme, darkTheme } = theme;
+const { lightTheme, darkTheme } = theme;
 // more personal type things: instagram, facebook, profiles and hobbies and spotify -- can add api calls here
 
 // export main component
 export default function Home() {
   const [theme, toggleTheme, componentMounted] = useDarkMode();
-  const themeMode = theme === 'light' ? lightTheme: darkTheme;
+  const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
   if (!componentMounted) {
     return <div />
@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <ThemeProvider theme={themeMode}>
       <GlobalStyle />
-      <Header title="Anika Rede: Software Engineer" />
+      <Header title="Anika Rede: Software Engineer" theme={themeMode} />
 
       <Nav theme={themeMode}/>
 

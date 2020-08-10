@@ -5,9 +5,8 @@ import styled, { ThemeProvider } from 'styled-components';
 import { Header } from '@mainComponents';
 import { theme, useDarkMode, GlobalStyle } from '@styles';
 const { lightTheme, darkTheme, imgSrcs } = theme;
-// blog https://nextjs.org/learn/basics/navigate-between-pages/pages-in-nextjs
 
-export default function Blog() {
+export default function Projects() {
   const [theme, toggleTheme, componentMounted] = useDarkMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
@@ -18,13 +17,14 @@ export default function Blog() {
   return (
     <ThemeProvider theme={themeMode}>
       <GlobalStyle />
-      <Header title="BLOG ❤" theme={themeMode} />
+      <Header title="Details on Projects" theme={themeMode} />
 
-      <h1> BLOG ❤ </h1>
+      <h1> Projects </h1>
 
       <img height='60' width='60' src={imgSrcs.rainbow} alt="spongebob rainbow" />
 
       <p> OG </p>
+
     </ThemeProvider>
   )
 };

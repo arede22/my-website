@@ -1,7 +1,7 @@
 # Personal Website/Portfolio
 
 1. Demonstrating HTML/CSS and JavaScript skills
-2. Created using React.js application launched with Next for static website
+2. Created using React.js application launched with NextJS for static website
 
 <p align="center">
   <img src="static/genImages/3-color-trace.png" alt="Profile Image" />

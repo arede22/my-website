@@ -9,6 +9,12 @@ const theme = {
     background: 'static/genImages/new/light.png',
     backgroundSm: 'static/genImages/new/lightSm.png',
     profilePic: 'static/genImages/new/lightProfPic.png',
+    android1: 'static/favicon/light/android-chrome-512x512.png',
+    android2: 'static/favicon/light/android-chrome-192x192.png',
+    apple: 'static/favicon/light/apple-touch-icon.png',
+    large: 'static/favicon/light/favicon-32x32.png',
+    small: 'static/favicon/light/favicon-16x16.png',
+    reg: 'static/favicon/light/favicon.ico',
   },
 
   darkTheme : {
@@ -20,6 +26,12 @@ const theme = {
     background: 'static/genImages/new/dark.png',
     backgroundSm: 'static/genImages/new/darkSm.png',
     profilePic: 'static/genImages/new/darkProfPic.png',
+    android1: 'static/favicon/dark/android-chrome-512x512.png',
+    android2: 'static/favicon/dark/android-chrome-192x192.png',
+    apple: 'static/favicon/dark/apple-touch-icon.png',
+    large: 'static/favicon/dark/favicon-32x32.png',
+    small: 'static/favicon/dark/favicon-16x16.png',
+    reg: 'static/favicon/dark/favicon.ico',
   },
 
   colors: {
