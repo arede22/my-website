@@ -16,7 +16,7 @@ export default function Post({ postData }) {
 
   return (
     <ThemeProvider theme={themeMode}>
-      <Header title={postData.title} theme={themeMode} />
+      <Header title={postData.title} />
 
       <h1> BLOG ❤ </h1>
 

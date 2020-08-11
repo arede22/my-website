@@ -15,7 +15,7 @@ function Error({ statusCode }) {
   return (
     <ThemeProvider theme={themeMode}>
       <ErrorGlobal />
-      <Header title={"Anika Rede: Software Engineer"} theme={themeMode} />
+      <Header title={"Anika Rede: Software Engineer"} />
       <h1>Error!</h1>
       <p>
         {statusCode

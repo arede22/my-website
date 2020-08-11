@@ -17,7 +17,7 @@ export default function Projects() {
   return (
     <ThemeProvider theme={themeMode}>
       <GlobalStyle />
-      <Header title="Details on Projects" theme={themeMode} />
+      <Header title="Details on Projects" />
 
       <h1> Projects </h1>
 

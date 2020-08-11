@@ -24,7 +24,7 @@ export default function Home() {
   return (
     <ThemeProvider theme={themeMode}>
       <GlobalStyle />
-      <Header title="Anika Rede: Software Engineer" theme={themeMode} />
+      <Header title="Anika Rede: Software Engineer" />
 
       <Nav theme={themeMode}/>
 

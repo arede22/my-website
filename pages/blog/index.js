@@ -18,7 +18,7 @@ export default function Blog() {
   return (
     <ThemeProvider theme={themeMode}>
       <GlobalStyle />
-      <Header title="BLOG ❤" theme={themeMode} />
+      <Header title="BLOG ❤" />
 
       <h1> BLOG ❤ </h1>
 

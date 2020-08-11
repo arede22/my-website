@@ -16,7 +16,7 @@ export default function Project({ projectData }) {
 
   return (
     <ThemeProvider theme={themeMode}>
-      <Header title={projectData.title} theme={themeMode} />
+      <Header title={projectData.title} />
 
       <h1> Projects ❤ </h1>
 
