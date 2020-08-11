@@ -29,3 +29,12 @@ div {
   height: 100px;
   text-align: center;
 }
+.foot {
+  background-color: blue;
+  margin: 30px auto;
+}
+footer {
+  background-color: green;
+  margin: 70px auto;
+  padding: 40px 0;
+}
