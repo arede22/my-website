@@ -1,6 +1,4 @@
-import React from 'react';
-import Link from 'next/link';
-import styled, { ThemeProvider } from 'styled-components';
+import { ThemeProvider } from 'styled-components';
 // components
 import { Header } from '@mainComponents';
 import { theme, useDarkMode, GlobalStyle } from '@styles';

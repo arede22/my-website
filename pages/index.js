@@ -1,4 +1,3 @@
-import React from 'react';
 import { ThemeProvider } from 'styled-components';
 // components
 import { Header, Nav, Welcome, Intro, Portfolio, ContactMe, Footer } from '@mainComponents';

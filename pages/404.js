@@ -4,7 +4,7 @@ import { Header } from '@mainComponents';
 import { theme, useDarkMode, ErrorGlobal } from '@styles';
 const { lightTheme, darkTheme } = theme;
 
-function Error({ statusCode }) {
+export default function Custom404() {
   const [theme, toggleTheme, componentMounted] = useDarkMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
@@ -16,19 +16,7 @@ function Error({ statusCode }) {
     <ThemeProvider theme={themeMode}>
       <ErrorGlobal />
       <Header title={"Anika Rede: Software Engineer"} />
-      <h1>Error!</h1>
-      <p>
-        {statusCode
-          ? `A ${statusCode} error occurred on server. Please try again later!`
-          : 'An error occurred on client'}
-      </p>
+      <h1>404 - Page Not Found</h1>
     </ThemeProvider>
   )
 }
-
-Error.getInitialProps = ({ res, err }) => {
-  const statusCode = res ? res.statusCode : err ? err.statusCode : 404
-  return { statusCode }
-}
-
-export default Error;

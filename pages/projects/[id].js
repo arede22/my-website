@@ -1,4 +1,4 @@
-import styled, { ThemeProvider } from 'styled-components';
+import { ThemeProvider } from 'styled-components';
 import { getAllProjectIds, getProjectData } from 'lib/projects'
 // components
 import { Header } from '@mainComponents';
