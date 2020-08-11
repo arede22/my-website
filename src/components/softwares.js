@@ -1,19 +1,10 @@
 // general imports
 import styled from 'styled-components';
 // styles
-import { theme } from '@styles';
+import { theme, Box } from '@styles';
 const { colors } = theme;
 
 // styles and wrappers
-const StyledWrapper = styled.div`
-  @media (max-width: 600px) {
-    display: inline-block;
-  }
-`;
-const Box = styled.div`
-  background-color: ${colors.halfTransparentGray};
-  padding: 7.5px 20px 20px;
-`;
 const Rows = styled.ul`
   display: flex;
   padding: 0 15px;

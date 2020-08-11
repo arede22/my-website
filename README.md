@@ -9,8 +9,8 @@
 </p>
 
 ## Notes:
-- flexbox: calhacks.org/flexbox
-- material design, bootstrap, css tricks, mdn web docs
+  - flexbox: calhacks.org/flexbox
+  - material design, bootstrap, css tricks, mdn web docs
   - stackoverflow, hackerrank, spotify
   - CALHACKS
   - dailycal
@@ -64,8 +64,8 @@
     * launch the application
 
 ## Specifications:
-- paths created in next.config.js
-- @folder paths created in jsconfig
-- ignoring ai files for conciseness
-- api calls and passing data from parent/child through various methods like usestate/useeffect or getstaticprops or initialprops
-- avoided annoying jsx with styled-components instead, easier to abstract
+  - paths created in next.config.js
+  - @folder paths created in jsconfig
+  - ignoring ai files for conciseness
+  - api calls and passing data from parent/child through various methods like usestate/useeffect or getstaticprops or initialprops
+  - avoided annoying jsx with styled-components instead, easier to abstract

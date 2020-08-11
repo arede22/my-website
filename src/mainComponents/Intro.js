@@ -4,7 +4,7 @@ import styled from 'styled-components';
 // components
 import { WorkExperience } from '@components';
 // styles
-import { theme, Anchor } from '@styles';
+import { theme, Anchor, Box } from '@styles';
 const { colors, fontSizes } = theme;
 // College info, courses, languages (progress bars), softwares
 // Skills acquired, desired
@@ -25,14 +25,6 @@ const H2Style = styled.h2`
   margin: 75px 0px;
 `;
 const H4Style = styled.h4`
-`;
-const Box = styled.div`
-  background-color: ${colors.halfTransparentGray};
-  overflow-x: auto;
-  padding: 7.5px 20px 20px;
-  width: 70%;
-  margin: auto;
-  margin-bottom: 30px;
 `;
 const Rows = styled.ul`
   display: flex;

@@ -1,25 +1,16 @@
 // general imports
 import styled from 'styled-components';
 // styles
-import { theme } from '@styles';
+import { theme, Box } from '@styles';
 const { colors, fontSizes } = theme;
 // bootstrap and js progress bars
 
 // styles and wrappers
 const ULWrapper = styled.ul`
-  color: ${colors.transparentSeaBlue};
-  padding: 0 40px;
 `;
 const LIWrapper = styled.li`
-  color: ${colors.lightGray};
-  line-height: 1.5;
 `;
 const H3Style = styled.h3`
-  font-size: ${fontSizes.lg};
-`;
-const Box = styled.div`
-  background-color: ${colors.halfTransparentGray};
-  padding: 7.5px 20px 20px;
 `;
 
 // export main component
