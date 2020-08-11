@@ -1,3 +1,4 @@
+// general imports
 import { keyframes } from 'styled-components';
 
 const fadeInImg = keyframes`

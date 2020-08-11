@@ -1,5 +1,6 @@
 // taken from theme, may use this instead for imports, info from Medium, Stackoverflow (past styled-components docs)
 // customize for different screens, portrait and landscape
+// general imports
 import { css } from 'styled-components';
 
 const sizes = {

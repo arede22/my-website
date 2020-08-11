@@ -1,3 +1,4 @@
+// general imports
 import styled from 'styled-components';
 // components
 import { Banner, StyledNav } from '@components';

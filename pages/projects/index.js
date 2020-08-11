@@ -1,3 +1,4 @@
+// general imports
 import { ThemeProvider } from 'styled-components';
 // components
 import { Header } from '@mainComponents';

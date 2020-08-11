@@ -1,3 +1,4 @@
+// general imports
 import { ThemeProvider } from 'styled-components';
 import { getAllPostIds, getPostData } from 'lib/posts'
 // components

@@ -1,3 +1,4 @@
+// general imports
 import { createGlobalStyle } from 'styled-components';
 import media from './media';
 import fadeInImg from './fadeInImg';

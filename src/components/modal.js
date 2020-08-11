@@ -1,3 +1,4 @@
+// general imports
 import styled from 'styled-components';
 import LazyLoad from 'react-lazy-load';
 // components
