@@ -1,12 +1,22 @@
-import React from 'react';
+import styled, { ThemeProvider } from 'styled-components';
 import { getAllPostIds, getPostData } from 'lib/posts'
 // components
 import { Header } from '@mainComponents';
+// styles
+import { theme, useDarkMode, ErrorGlobal } from '@styles';
+const { lightTheme, darkTheme } = theme;
 
 export default function Post({ postData }) {
+  const [theme, toggleTheme, componentMounted] = useDarkMode();
+  const themeMode = theme === 'light' ? lightTheme : darkTheme;
+
+  if (!componentMounted) {
+    return <div />
+  };
+
   return (
-    <React.Fragment>
-      <Header title={postData.title} />
+    <ThemeProvider theme={themeMode}>
+      <Header title={postData.title} theme={themeMode} />
 
       <h1> BLOG ❤ </h1>
 
@@ -18,7 +28,7 @@ export default function Post({ postData }) {
       {postData.date}
       </div>
 
-    </React.Fragment>
+    </ThemeProvider>
   )
 };
 

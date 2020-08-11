@@ -11,12 +11,12 @@ export default function Header({ title, theme }) {
       <meta name="author" content="Anika Rede" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      <link rel="icon" type="image/png" sizes="512x512" href={theme.android1} className="favicon" />
-      <link rel="icon" type="image/png" sizes="192x192" href={theme.android2} className="favicon" />
-      <link rel="apple-touch-icon" sizes="180x180" href={theme.apple} className="favicon" />
-      <link rel="icon" type="image/png" sizes="32x32" href={theme.large} className="favicon" />
-      <link rel="icon" type="image/png" sizes="16x16" href={theme.small} className="favicon" />
-      <link rel="icon" type="image/x-icon" href={theme.reg} className="favicon" />
+      <link rel="icon" type="image/png" sizes="512x512" href='static/favicon/dark/android-chrome-512x512.png' />
+      <link rel="icon" type="image/png" sizes="192x192" href='static/favicon/dark/android-chrome-192x192.png' />
+      <link rel="apple-touch-icon" sizes="180x180" href='static/favicon/dark/apple-touch-icon.png' />
+      <link rel="icon" type="image/png" sizes="32x32" href='static/favicon/dark/favicon-32x32.png' />
+      <link rel="icon" type="image/png" sizes="16x16" href='static/favicon/dark/favicon-16x16.png' />
+      <link rel="icon" type="image/x-icon" href='static/favicon/dark/favicon.ico' />
       <link rel="manifest" href="static/favicon/site.webmanifest"/>
 
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald" />

@@ -223,14 +223,16 @@ export default function Intro({ theme }) {
   )
 };
 
-// export async function getStaticProps() {
+// export async function getStaticProps({ theme }) {
 //   // Get external data from the file system, API, DB, etc.
 //   const res = await fetch('https://api.github.com/repos/arede22/theanikarede');
 //   const json = await res.json();
+//   console.log(json);
 //
 //   return {
 //     props: {
 //       json,
+//       theme
 //     }
 //   }
 // }

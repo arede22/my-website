@@ -1,7 +1,8 @@
 # Personal Website/Portfolio
 
-1. Demonstrating HTML/CSS and JavaScript skills
-2. Created using React.js application launched with NextJS for static website
+1. Created using React.js application launched with NextJS for static website
+2. Demonstrating HTML/CSS and JavaScript skills
+3. Experimenting with front-end SWE and UI/UX considerations, along with accessibility issues
 
 <p align="center">
   <img src="static/genImages/3-color-trace.png" alt="Profile Image" />
@@ -61,3 +62,10 @@
     * delete package_lock.json
     * npm install
     * launch the application
+
+## Specifications:
+- paths created in next.config.js
+- @folder paths created in jsconfig
+- ignoring ai files for conciseness
+- api calls and passing data from parent/child through various methods like usestate/useeffect or getstaticprops or initialprops
+- avoided annoying jsx with styled-components instead, easier to abstract

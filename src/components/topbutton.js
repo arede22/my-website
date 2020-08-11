@@ -1,4 +1,4 @@
-import { string } from 'prop-types';
+// import { string } from 'prop-types';
 import styled from 'styled-components';
 // styles
 import { theme } from '@styles';
@@ -40,6 +40,6 @@ export default function TopButton({ theme, isLight }) {
   )
 };
 
-TopButton.propTypes = {
-  theme: string.isRequired
-}
+// TopButton.propTypes = {
+//   theme: string.isRequired
+// }

@@ -1,4 +1,4 @@
-import { func, string } from 'prop-types';
+// import { func, string } from 'prop-types';
 import styled from 'styled-components';
 // styles
 import { theme } from '@styles';
@@ -36,7 +36,7 @@ export default function Toggle({ theme, toggleTheme, isLight }) {
   )
 };
 
-Toggle.propTypes = {
-  theme: string.isRequired,
-  toggleTheme: func.isRequired,
-}
+// Toggle.propTypes = {
+//   theme: string.isRequired,
+//   toggleTheme: func.isRequired,
+// }

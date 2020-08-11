@@ -5,6 +5,7 @@ import { Header, Nav, Welcome, Intro, Portfolio, ContactMe, Footer } from '@main
 import { Toggle, TopButton } from '@components';
 // pages
 import Blog from './blog';
+import Projects from './projects';
 // styles
 import { theme, useDarkMode, GlobalStyle } from '@styles';
 const { lightTheme, darkTheme } = theme;

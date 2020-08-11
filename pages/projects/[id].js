@@ -1,12 +1,22 @@
-import React from 'react';
+import styled, { ThemeProvider } from 'styled-components';
 import { getAllProjectIds, getProjectData } from 'lib/projects'
 // components
 import { Header } from '@mainComponents';
+// styles
+import { theme, useDarkMode, ErrorGlobal } from '@styles';
+const { lightTheme, darkTheme } = theme;
 
 export default function Project({ projectData }) {
+  const [theme, toggleTheme, componentMounted] = useDarkMode();
+  const themeMode = theme === 'light' ? lightTheme : darkTheme;
+
+  if (!componentMounted) {
+    return <div />
+  };
+
   return (
-    <React.Fragment>
-      <Header title={projectData.title} />
+    <ThemeProvider theme={themeMode}>
+      <Header title={projectData.title} theme={themeMode} />
 
       <h1> Projects ❤ </h1>
 
@@ -18,7 +28,7 @@ export default function Project({ projectData }) {
       {projectData.date}
       </div>
 
-    </React.Fragment>
+    </ThemeProvider>
   )
 };
 
