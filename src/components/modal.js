@@ -23,7 +23,7 @@ export default function Modal({ trigger, img, alt }) {
     <ImgWrapper>
       <LazyLoad
       debounce={false}
-      offsetVertical={125}>
+      offsetVertical={500}>
         <ImgStyle id={trigger} src={img} alt={alt}/>
       </LazyLoad>
     </ImgWrapper>

@@ -36,7 +36,7 @@ export default function Welcome({ theme }) {
       }
       <LazyLoad
       debounce={false}
-      offsetVertical={125}>
+      offsetVertical={500}>
         <ImageLoader src={theme.profilePic} alt="This is me!" />
       </LazyLoad>
 

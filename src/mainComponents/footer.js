@@ -90,7 +90,7 @@ export default function Footer({ theme }) {
             <LIWrapper key={key}>
               <LazyLoad
               debounce={false}
-              offsetVertical={125}>
+              offsetVertical={500}>
                 <a href={href} target="_blank" rel="nofollow noopener noreferrer">
                   <ImgStyle src={src + '.png'} alt={src.replace('/static/footer/', "Anika's ")} onMouseOver={e => {e.currentTarget.src = src + '-hover.png'}} onMouseOut={e => {e.currentTarget.src = src + '.png'}} />
                 </a>

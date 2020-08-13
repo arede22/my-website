@@ -46,7 +46,7 @@ const SpaceBetween = styled.div`
 // next is blogscape
 
 // <LazyLoad debounce={false}
-// offsetVertical={125}><ImgStyle src={imgSrcs.tree} alt="interactive tree" usemap='#imagemap' />
+// offsetVertical={500}><ImgStyle src={imgSrcs.tree} alt="interactive tree" usemap='#imagemap' />
 // <map name="imagemap">
 //   <area shape="circle" coords="213.6,75,122" alt="Car" href={hrefs.carRepo} />
 //   <area shape="circle" coords="300,189,119" alt="Maps" />

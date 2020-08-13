@@ -24,6 +24,7 @@ export default function Header({ title }) {
       <title>{title}</title>
 
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+      {/*<script src="/static/scripts/jquery-3.5.1.min.js" type="text/javascript"></script>*/}
 
       <script src="/static/scripts/nav-up.js" type="text/javascript"></script>
       <script src="/static/scripts/anchor-assignment.js" type="text/javascript"></script>
