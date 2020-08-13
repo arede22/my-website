@@ -5,7 +5,7 @@
 3. Experimenting with front-end SWE and UI/UX considerations, along with accessibility issues
 
 <p align="center">
-  <img src="/static/genImages/3-color-trace.png" alt="Profile Image" />
+  <img src="public/static/genImages/3-color-trace.png" alt="Profile Image" />
 </p>
 
 ## Notes:
