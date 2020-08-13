@@ -1,9 +1,6 @@
 // general imports
 import { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import LazyLoad from 'react-lazy-load';
-// components
-import { ImageLoader, GithubInfo } from '@components';
 // styles
 import { theme, Link } from '@styles';
 const { colors, hrefs, fontSizes, iconSrcs } = theme;
@@ -14,9 +11,9 @@ const { colors, hrefs, fontSizes, iconSrcs } = theme;
 // constants
 const ref = [
   { href: hrefs.mail, src: iconSrcs.mail },
+  { href: hrefs.github, src: iconSrcs.github },
   { href: hrefs.ig, src: iconSrcs.ig },
-  { href: hrefs.linkedin, src: iconSrcs.linkedin },
-  { href: hrefs.github, src: iconSrcs.github }
+  { href: hrefs.linkedin, src: iconSrcs.linkedin }
 ];
 const links = ref.map(link => {
   link.key = `nav-link-${link.href}-${link.src}`.replace(/[^a-zA-Z0-9]/g, '')
@@ -52,7 +49,7 @@ const LIWrapper = styled.li`
 const PStyle = styled.p`
   text-align: center;
 `;
-const ImgStyle = styled(ImageLoader)`
+const ImgStyle = styled.img`
   margin: 0 auto;
 
   @media (max-width: 600px) {
@@ -88,17 +85,13 @@ export default function Footer({ theme }) {
         <ULWrapper>
           {links.map(({ key, href, src }) => (
             <LIWrapper key={key}>
-              <LazyLoad
-              debounce={false}
-              offsetVertical={500}>
-                <a href={href} target="_blank" rel="nofollow noopener noreferrer">
-                  <ImgStyle src={src + '.png'} alt={src.replace('/static/footer/', "Anika's ")} onMouseOver={e => {e.currentTarget.src = src + '-hover.png'}} onMouseOut={e => {e.currentTarget.src = src + '.png'}} />
-                </a>
-              </LazyLoad>
+              <a href={href} target="_blank" rel="nofollow noopener noreferrer">
+                <ImgStyle src={src + '.png'} alt={src.replace('/static/footer/', "Anika's ")} onMouseOver={e => {e.currentTarget.src = src + '-hover.png'}} onMouseOut={e => {e.currentTarget.src = src + '.png'}} />
+              </a>
             </LIWrapper>
           ))}
         </ULWrapper>
-        {
+        { !!0 &&
           !!githubInfo.stars &&
           !!githubInfo.forks &&
           <GithubInfo stars={githubInfo.stars} forks={githubInfo.forks} />
