@@ -9,7 +9,7 @@ const Rows = styled.ul`
   display: flex;
   padding: 0 15px;
 `;
-const Cols = styled(StyledWrapper)`
+const Cols = styled.div`
   flex: 50%;
 `;
 

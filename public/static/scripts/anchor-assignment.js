@@ -1,7 +1,6 @@
 // need a scroll-by change of url hashing function
-$(document).ready ( function() {
-
-  if (document.getElementById('intro-anchor')) {
+window.onload = function() {
+  if (window.jQuery && document.getElementById('intro-anchor')) {
     function getY(element) {
       var yPosition = 0;
 
@@ -41,4 +40,4 @@ $(document).ready ( function() {
       }
     })
   }
-})
+}

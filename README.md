@@ -18,8 +18,8 @@
 
 ## Recently changed:
   - Git and LOC calls
-  - Light/dark themes https://css-tricks.com/a-dark-mode-toggle-with-react-and-themeprovider/, https://medium.com/@NateBaldwin/theming-with-css-variables-d7acddd3a699
   - Finalize design ideas, modify @styles, nav, welcome, intro, contactme, and footer toward that end
+  - blogs/projects pages created for in-depth details
 
 ## Yet to-do:
   - Fixup content, pics, project boxes, standardize styles and projects/blogs global styles
@@ -69,3 +69,9 @@
   - ignoring ai files for conciseness
   - api calls and passing data from parent/child through various methods like usestate/useeffect or getstaticprops or initialprops
   - avoided annoying jsx with styled-components instead, easier to abstract
+
+## Resources:
+  - bchiang7/v4
+  - w3schools
+  - css-tricks
+  - nextjs and react docs

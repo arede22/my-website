@@ -14,9 +14,9 @@ export default function Header({ title }) {
       <link rel="icon" type="image/png" sizes="512x512" href='/static/favicon/dark/android-chrome-512x512.png' />
       <link rel="icon" type="image/png" sizes="192x192" href='/static/favicon/dark/android-chrome-192x192.png' />
       <link rel="apple-touch-icon" sizes="180x180" href='/static/favicon/dark/apple-touch-icon.png' />
-      <link rel="icon" type="image/png" sizes="32x32" href='/static/favicon/dark/static/favicon-32x32.png' />
-      <link rel="icon" type="image/png" sizes="16x16" href='/static/favicon/dark/static/favicon-16x16.png' />
-      <link rel="icon" type="image/x-icon" href='/static/favicon/dark/static/favicon.ico' />
+      <link rel="icon" type="image/png" sizes="32x32" href='/static/favicon/dark/favicon-32x32.png' />
+      <link rel="icon" type="image/png" sizes="16x16" href='/static/favicon/dark/favicon-16x16.png' />
+      <link rel="icon" type="image/x-icon" href='/static/favicon/dark/favicon.ico' />
       <link rel="manifest" href="/static/favicon/site.webmanifest"/>
 
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald" />
@@ -24,6 +24,7 @@ export default function Header({ title }) {
       <title>{title}</title>
 
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
       <script src="/static/scripts/nav-up.js" type="text/javascript"></script>
       <script src="/static/scripts/anchor-assignment.js" type="text/javascript"></script>
       <script src="/static/scripts/mobile-home-hover.js" type="text/javascript"></script>
