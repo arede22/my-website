@@ -7,26 +7,30 @@ import theme from '../theme';
 import colors from '../colors';
 const { fonts, imgSrcs, fontSizes } = theme;
 
+// .img-loading and .img-loaded don't mess with semicolons
 const GlobalStyle = createGlobalStyle`
   .img-loading {
-     opacity: 0;
-     width: 100%;
-     height: auto;
-     margin: 0 auto;
+     opacity: 0
+     width: 100%
+     height: auto
+     margin: 0 auto
 
      @media (max-width: 600px) {
        margin: 0 30px;
        max-width: 360px;
      }
-   }
-  .img-loaded {
-     animation: ${fadeInImg} cubic-bezier(0.23, 1, 0.32, 1) 1;
-     position: relative;
-     opacity: 0;
+  } .img-loaded {
+    animation: ${fadeInImg} ease 10s;
+    -webkit-animation: ${fadeInImg} ease 10s;
+    -moz-animation: ${fadeInImg} ease 10s;
+    -o-animation: ${fadeInImg} ease 10s;
+    -ms-animation: ${fadeInImg} ease 10s;
+     position: relative
+     opacity: 0
      z-index: -1;
-     animation-fill-mode: forwards;
-     animation-duration: 0.7s;
-     animation-delay: 0.1s;
+     animation-fill-mode: forwards
+     animation-duration: 0.7s
+     animation-delay: 0.1s
      margin: 0 auto;
 
      @media (max-width: 600px) {
@@ -34,9 +38,8 @@ const GlobalStyle = createGlobalStyle`
        max-width: 360px;
        height: auto;
      }
-
    }
-  html, body {
+   html, body {
     margin: 0;
     font-size: ${fontSizes.sm3};
     font-family: ${fonts.Lucida};
