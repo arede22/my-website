@@ -49,6 +49,41 @@ const Language = styled.p`
   text-align: left;
   margin-left: 40px;
 `;
+const PieChart = styled.div`
+  margin: 20px auto;
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-image: conic-gradient(
+      #5cb85c 270deg,
+      #5bc0de 0 330deg,
+      #d9534f 0);
+`;
+const Legend = styled.ul`
+  list-style: none;
+`;
+const Key1 = styled.li`
+  border: 3px solid lightgray;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #5cb85c;
+`;
+const Key2 = styled.li`
+  border: 3px solid lightgray;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #5bc0de;
+`;
+const Key3 = styled.li`
+  border: 3px solid lightgray;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #d9534f;
+`;
 
 // export main component
 export default function Intro({ theme }) {
@@ -57,6 +92,12 @@ export default function Intro({ theme }) {
       <StyledWrapper>
       <a name="Intro" id="intro-anchor"></a>
         <H2Style>Intro & About Me ❤</H2Style>
+        <PieChart></PieChart>
+        <Legend>
+          <Key1>Green</Key1>
+          <Key2>Blue</Key2>
+          <Key3>Red</Key3>
+        </Legend>
         <StyledWrapper>
           <Box>
             <h4> Current Coursework </h4>
@@ -121,6 +162,7 @@ export default function Intro({ theme }) {
               <Language>Java</Language>
                 <ProgressBar className="progress-bar progress-bar-danger" value="10" />
             </UsedLanguages>
+            <PieChart class="piechart"></PieChart>
           </Box>
           <Box>
             <h4> Skills </h4>

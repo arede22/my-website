@@ -5,6 +5,7 @@ import styled from 'styled-components';
 const MainBar = styled.div`
   width: 50%;
   margin: 0 auto;
+  border-radius: 30px;
 `;
 
 // export main component
@@ -13,7 +14,7 @@ export default function ProgressBar({ className, value }) {
 
   return (
     <MainBar className="progress">
-      <div className={className} role="progressbar" aria-valuenow={value} aria-valuemin="0" aria-valuemax="100" style={{width: valPercent}}>
+      <div className={className} role="progressbar" aria-valuenow={value} aria-valuemin="0" aria-valuemax="100" style={{width: valPercent, borderRadius: '30px'}}>
         {valPercent}
       </div>
     </MainBar>
