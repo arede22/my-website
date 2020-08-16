@@ -47,9 +47,6 @@ const LIWrapper = styled.li`
   display: flex;
   padding: 10px 15px;
 `;
-const PStyle = styled.p`
-  text-align: center;
-`;
 const ImgStyle = styled.img`
   margin: 0 auto;
 
@@ -98,9 +95,9 @@ export default function Footer({ theme }) {
           <GithubInfo stars={githubInfo.stars} forks={githubInfo.forks} />
         }
         <StyledWrapper>
-          <PStyle>
+          <p>
             Made by Anika Rede | <a target="_blank" href={hrefs.webRepo} rel="nofollow noopener noreferrer"> GitHub </a>
-          </PStyle>
+          </p>
         </StyledWrapper>
       </FooterStyle>
     </StyledWrapper>

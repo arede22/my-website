@@ -77,7 +77,7 @@ const GlobalStyle = createGlobalStyle`
     width: 50%;
     border-radius: 12px;
     text-align: center;
-    font-size: ${fontSizes.med2};
+    font-size: ${fontSizes.lg};
     padding: 20px 10px;
     margin: 30px auto;
 
@@ -116,7 +116,6 @@ const GlobalStyle = createGlobalStyle`
   h5 {
     font-size: ${fontSizes.sm2};
     text-shadow: black 1px 1px;
-    margin: 0 auto;
 
     @media (max-width: 600px) {
       font-size: ${fontSizes.sm1};
@@ -126,6 +125,8 @@ const GlobalStyle = createGlobalStyle`
     font-size: ${fontSizes.sm1};
     text-shadow: black .5px .5px;
     color: ${({ theme }) => theme.textColor};
+    text-align: center;
+    line-height: 1.5;
 
     @media (max-width: 600px) {
       font-size: ${fontSizes.sm0};

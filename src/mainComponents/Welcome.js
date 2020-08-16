@@ -1,6 +1,9 @@
 // general imports
 import { object } from 'prop-types';
 import styled from 'styled-components';
+import LazyLoad from 'react-lazy-load';
+// components
+import { ImageLoader } from '@components';
 // styles
 import { theme, ResumeBox, WelcomeStyle } from '@styles';
 const { fontSizes } = theme;
@@ -18,14 +21,7 @@ const ImgStyle = styled.img`
   border-radius: 30px;
 `;
 const PStyle = styled.p`
-  line-height: 1.5;
-  font-size: ${fontSizes.sm1};
   text-shadow: black 1px 1px;
-  text-align: center;
-
-  @media (max-width: 600px) {
-    font-size: ${fontSizes.sm0};
-  }
 `;
 
 // export main component
@@ -38,7 +34,11 @@ export default function Welcome({ theme }) {
       {!!notProd &&
         <PStyle>My website looks a lil jank but I'm always tinkering with new things!</PStyle>
       }
-      <ImgStyle src={theme.profilePic} alt="This is me!" />
+      <LazyLoad
+      debounce={false}
+      offsetVertical={100}>
+        <ImageLoader src={theme.profilePic} alt="This is me!" />
+      </LazyLoad>
 
       <WelcomeStyle>
         <h5>Allow me to introduce myself!</h5>

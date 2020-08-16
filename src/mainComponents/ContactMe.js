@@ -28,8 +28,6 @@ const ContactBox = styled.div`
   }
 `;
 const PStyle = styled.p`
-  line-height: 1.5;
-  text-align: center;
   font-size: ${fontSizes.sm3};
   text-shadow: black 1px 1px;
 
@@ -47,8 +45,8 @@ export default function ContactMe({ theme }) {
         <H2Style> Contact Me </H2Style>
         <ContactBox>
           <PStyle>
-            Thank you for browsing through my website! <br />
-            My contact info is below, e-mail works best for me!
+            Thank you for browsing through my website!
+            <br /> My contact info is below, e-mail works best for me!
           </PStyle>
         </ContactBox>
       </StyledWrapper>

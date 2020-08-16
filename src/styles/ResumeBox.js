@@ -31,8 +31,6 @@ const ResumeButton = styled.a`
   }
 `;
 const PStyle = styled.p`
-  line-height: 1.5;
-  font-size: ${fontSizes.sm1};
   text-shadow: black 1px 1px;
 `;
 

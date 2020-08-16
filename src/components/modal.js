@@ -11,7 +11,7 @@ const ImgWrapper = styled.a`
   margin: 0 auto;
   width: 90%;
 `;
-const ImgStyle = styled.img`
+const ImgStyle = styled.div`
   height: 70%;
   width: 70%;
   max-width: 300px;
@@ -25,7 +25,9 @@ export default function Modal({ trigger, img, alt }) {
       <LazyLoad
       debounce={false}
       offsetVertical={500}>
-        <ImgStyle id={trigger} src={img} alt={alt}/>
+        <ImgStyle>
+          <ImageLoader id={trigger} src={img} alt={alt} />
+        </ImgStyle>
       </LazyLoad>
     </ImgWrapper>
   )

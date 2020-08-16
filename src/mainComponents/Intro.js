@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { object } from 'prop-types';
 import styled from 'styled-components';
 // components
-import { WorkExperience } from '@components';
+import { WorkExperience, ProgressBar } from '@components';
 // styles
 import { theme, Box } from '@styles';
 const { fontSizes } = theme;
@@ -41,6 +41,14 @@ const LIWrapper = styled.li`
 const PStyle = styled.p`
   text-align: left;
 `;
+const UsedLanguages = styled.div`
+  margin-left: 20px;
+  marginTop: 20px;
+`;
+const Language = styled.p`
+  text-align: left;
+  margin-left: 40px;
+`;
 
 // export main component
 export default function Intro({ theme }) {
@@ -74,7 +82,7 @@ export default function Intro({ theme }) {
             </ULWrapper>
           </Box>
           <Box>
-            <h4> Languages/Software Skills </h4>
+            <h4> Languages/Software Skills </h4> {/*Pie chart of use of languages*/}
             <Rows>
               <Cols>
               <h4> Languages </h4>
@@ -99,6 +107,20 @@ export default function Intro({ theme }) {
                 <LIWrapper> Photoshop, Illustrator </LIWrapper>
               </Cols>
             </Rows>
+            <h4>% of repo code in language:</h4>
+            <UsedLanguages>
+              <ProgressBar className="progress-bar progress-bar-warning" value="99" />
+              <p>Jupyter Notebook</p>
+            </UsedLanguages>
+            <h4>Most recent languages:</h4>
+            <UsedLanguages>
+              <Language>Javascript</Language>
+                <ProgressBar className="progress-bar progress-bar-success" value="75" />
+              <Language>Swift/Kotlin</Language>
+                <ProgressBar className="progress-bar progress-bar-info" value="15" />
+              <Language>Java</Language>
+                <ProgressBar className="progress-bar progress-bar-danger" value="10" />
+            </UsedLanguages>
           </Box>
           <Box>
             <h4> Skills </h4>

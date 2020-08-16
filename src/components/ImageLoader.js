@@ -1,24 +1,5 @@
 // general imports
-import React, { useState, useEffect } from "react";
-
-// const _loaded = {};
-//
-// export default function ImageLoader() {
-//   var [loaded, setLoaded] = useState(_loaded[this.props.src]);
-//
-//   useEffect(() => {
-//     _loaded[this.props.src] = true;
-//     setLoaded(true);
-//   }, []);
-//
-//   return (
-//     <img
-//        src={this.props.src}
-//        onClick={this.props.onClick}
-//        className={className}
-//        onLoad={this.onLoad} />
-//   )
-// }
+import React from "react";
 
 const _loaded = {};
 

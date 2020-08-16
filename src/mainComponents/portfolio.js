@@ -28,10 +28,6 @@ const ULWrapper = styled.ul`
 const LIWrapper = styled.li`
   margin: 5px 0px;
 `;
-const PStyle = styled.p`
-  text-align: center;
-  margin: 0 auto;
-`;
 const StyledLink = styled.a`
   text-align: center;
 `;
@@ -73,9 +69,9 @@ export default function Portfolio({ theme }) {
                   <Modal trigger="randRooms" img={imgSrcs.randRooms} alt={altText(imgSrcs.randRooms)} />
                   <Modal trigger="boss" img={imgSrcs.boss} alt={altText(imgSrcs.boss)} />
                 </SpaceBetween>
-                <PStyle>
+                <p>
                   <StyledLink href={hrefs.gameVid} target="_blank" rel="nofollow noopener noreferrer"> Click here for DEMO </StyledLink>
-                </PStyle>
+                </p>
               </LIWrapper>
             </ULWrapper>
           </Box>

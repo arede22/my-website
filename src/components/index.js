@@ -6,6 +6,7 @@ export { default as Modal } from './modal';
 export { default as ImageLoader } from './ImageLoader';
 export { default as WorkExperience } from './WorkExperience';
 export { default as GithubInfo } from './GithubInfo';
+export { default as ProgressBar } from './ProgressBar';
 
 export { default as Courses } from './unused/courses';
 export { default as Softwares } from './unused/softwares';
