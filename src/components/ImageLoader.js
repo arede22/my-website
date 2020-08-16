@@ -1,9 +1,28 @@
 // general imports
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from 'styled-components';
 // styles
 import { theme } from '@styles';
 const { colors, fontSizes } = theme;
+
+// const _loaded = {};
+//
+// export default function ImageLoader() {
+//   var [loaded, setLoaded] = useState(_loaded[this.props.src]);
+//
+//   useEffect(() => {
+//     _loaded[this.props.src] = true;
+//     setLoaded(true);
+//   }, []);
+//
+//   return (
+//     <img
+//        src={this.props.src}
+//        onClick={this.props.onClick}
+//        className={className}
+//        onLoad={this.onLoad} />
+//   )
+// }
 
 const _loaded = {};
 

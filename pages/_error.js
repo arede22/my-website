@@ -5,7 +5,7 @@ import { Header } from '@mainComponents';
 import { theme, useDarkMode, ErrorGlobal } from '@styles';
 const { lightTheme, darkTheme } = theme;
 
-function Error({ statusCode }) {
+export default function Error({ statusCode }) {
   const [theme, toggleTheme, componentMounted] = useDarkMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
@@ -27,9 +27,19 @@ function Error({ statusCode }) {
   )
 }
 
-Error.getInitialProps = ({ res, err }) => {
+export async function getStaticProps({ res, err }) {
+  // fetch necessary data for blog post using params.id
   const statusCode = res ? res.statusCode : err ? err.statusCode : 404
-  return { statusCode }
+  return {
+    props: {
+      statusCode
+    }
+  }
 }
 
-export default Error;
+// Error.getInitialProps = ({ res, err }) => {
+//   const statusCode = res ? res.statusCode : err ? err.statusCode : 404
+//   return { statusCode }
+// }
+
+// export default Error;

@@ -33,12 +33,13 @@
 
   - Animation gif for loading screen
   - Accessibility
+  - Dockerize? https://medium.com/swlh/dockerize-your-next-js-application-91ade32baa6
 
 ## Main to-dos:
   - Make compatible with different media
   - See if necessary to incorporate react-dom, react-router, react bootstrap, etc.
   - Javascript and Ajax scripts
-  - Add in Github, Spotify, Youtube, and Instagram API calls (figure out how to let api call load before assigning text)
+  - Add in Github, Spotify, Youtube, and Instagram API calls (figure out how to let api call load before assigning text) https://developer.spotify.com/documentation/widgets/guides/adding-a-spotify-play-button/, spotify widgets or web playback sdk
   - Theming: Light/Dark
   - Page loader
   - Lazy loading

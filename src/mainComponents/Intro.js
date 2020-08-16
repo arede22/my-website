@@ -24,8 +24,6 @@ const H2Style = styled.h2`
   justify-content: center;
   margin: 75px 0px;
 `;
-const H4Style = styled.h4`
-`;
 const Rows = styled.ul`
   display: flex;
 `;
@@ -47,57 +45,6 @@ const PStyle = styled.p`
 
 // export main component
 export default function Intro({ theme }) {
-  var totalLoc = 0;
-
-  var [loc, setLoc] = useState({
-    languages: [],
-    linesOfCode: [],
-  });
-
-  useEffect(() => {
-    // for (var proj in repos) {
-    // (for private repos) https://stackoverflow.com/questions/26881441/can-you-get-the-number-of-lines-of-code-from-a-github-repository
-    var repos = [];
-    if (process.env.NODE_ENV !== 'production') {
-      return;
-    }
-    fetch('https://api.github.com/users/arede22/repos')
-    .then(response => response.json())
-    .then(json => {
-      for (var i in json) {
-        var { name } = json[i];
-        repos.push(name);
-      }
-    })
-    .catch(e => console.error(e));
-
-    const avoidLanguages = ["JSON", "Markdown", "Plain Text"];
-
-    fetch('https://api.codetabs.com/v1/loc?github=arede22/theanikarede')// + repos[proj] )
-      .then(response => response.json())
-      .then(json => {
-        for (var i in json) {
-          var { language, linesOfCode } = json[i];
-
-          if (language.toLowerCase() == "total") {
-            totalLoc = linesOfCode;
-          } else if (loc.languages.includes(language)) { // if language already in list, add onto the lines of code
-            var pt = loc.languages.indexOf(language);
-            setLoc({
-              linesOfCode: loc.linesOfCode[pt] + linesOfCode,
-            })
-          } else if (!avoidLanguages.includes(language)) {
-            setLoc({
-              languages: loc.languages.push(language),
-              linesOfCode: loc.linesOfCode.push(linesOfCode),
-            })
-          }
-        }
-      })
-    .catch(e => console.error(e));
-    // }
-  }, []);
-
   return (
     <React.Fragment>
       <StyledWrapper>
@@ -105,14 +52,14 @@ export default function Intro({ theme }) {
         <H2Style>Intro & About Me ❤</H2Style>
         <StyledWrapper>
           <Box>
-            <H4Style> Current Coursework </H4Style>
+            <h4> Current Coursework </h4>
             <ULWrapper>
               <LIWrapper> Intro to ML (Python, Jupyter Notebook) </LIWrapper>
               <LIWrapper> Deep Learning (Jupyter Notebook) </LIWrapper>
               <LIWrapper> (Auditing) Natural Language Processing </LIWrapper>
               <LIWrapper> (Auditing) Computer Architecture (C) </LIWrapper>
             </ULWrapper>
-            <H4Style> Electrical Engineering and Computer Science Major </H4Style>
+            <h4> Electrical Engineering and Computer Science Major </h4>
             <ULWrapper>
               <LIWrapper> Intro to CS (Python, Scheme, SQL) </LIWrapper>
               <LIWrapper> Data Structures & Algorithms (Java) </LIWrapper>
@@ -121,14 +68,14 @@ export default function Intro({ theme }) {
               <LIWrapper> Optimization Models in Engineering (Jupyter Notebook) </LIWrapper>
               <LIWrapper> Designing Information Devices and Systems (Python) </LIWrapper>
             </ULWrapper>
-            <H4Style> Linguistics Minor </H4Style>
+            <h4> Linguistics Minor </h4>
             <ULWrapper>
               <LIWrapper> Intro to Linguistics </LIWrapper>
               <LIWrapper> Intro to Syntax </LIWrapper>
             </ULWrapper>
           </Box>
           <Box>
-            <H4Style> Languages/Software Skills </H4Style>
+            <h4> Languages/Software Skills </h4>
             <Rows>
               <Cols>
               <h4> Languages </h4>
@@ -153,15 +100,9 @@ export default function Intro({ theme }) {
                 <LIWrapper> Photoshop, Illustrator </LIWrapper>
               </Cols>
             </Rows>
-            {/*<div>
-              <h1> Lines of Code: </h1>
-                <h4> Languages: Thing 1, Thing 2 </h4>
-                <h4> Lines of code for each: 1, 2 </h4>
-                <h4> Total lines of code: 3 </h4>
-            </div>*/}
           </Box>
           <Box>
-            <H4Style> Skills </H4Style>
+            <h4> Skills </h4>
             <ULWrapper>
               <LIWrapper> Data visualization and simulation softwares for research </LIWrapper>
               <LIWrapper> Building software tools for use around offices and within academia </LIWrapper>
@@ -171,7 +112,7 @@ export default function Intro({ theme }) {
             </ULWrapper>
           </Box>
           <Box>
-            <H4Style> Clubs </H4Style>
+            <h4> Clubs </h4>
             <ULWrapper>
               <LIWrapper> Engineers Without Borders
                 <PStyle>
@@ -198,7 +139,7 @@ export default function Intro({ theme }) {
             <WorkExperience />
           </Box>
           <Box>
-            <H4Style> Passions </H4Style>
+            <h4> Passions </h4>
             <ULWrapper>
               <LIWrapper> Creating worlds </LIWrapper>
               <LIWrapper> Reading </LIWrapper>
@@ -215,17 +156,3 @@ export default function Intro({ theme }) {
     </React.Fragment>
   )
 };
-
-// export async function getStaticProps({ theme }) {
-//   // Get external data from the file system, API, DB, etc.
-//   const res = await fetch('https://api.github.com/repos/arede22/theanikarede');
-//   const json = await res.json();
-//   console.log(json);
-//
-//   return {
-//     props: {
-//       json,
-//       theme
-//     }
-//   }
-// }
