@@ -116,6 +116,7 @@ const GlobalStyle = createGlobalStyle`
   h5 {
     font-size: ${fontSizes.sm2};
     text-shadow: black 1px 1px;
+    margin: 0 auto;
 
     @media (max-width: 600px) {
       font-size: ${fontSizes.sm1};

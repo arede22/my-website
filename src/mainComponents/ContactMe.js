@@ -1,6 +1,6 @@
 // general imports
 import React from 'react';
-import { string } from 'prop-types';
+import { object } from 'prop-types';
 import styled from 'styled-components';
 // styles
 import { theme } from '@styles';
@@ -57,5 +57,5 @@ export default function ContactMe({ theme }) {
 };
 
 ContactMe.propTypes = {
-  theme: string.isRequired
+  theme: object.isRequired
 }

@@ -20,9 +20,10 @@
   - Git and LOC calls
   - Finalize design ideas, modify @styles, nav, welcome, intro, contactme, and footer toward that end
   - blogs/projects pages created for in-depth details
+  - standardized (global) styles
 
 ## Yet to-do:
-  - Fixup content, pics, project boxes, standardize styles and projects/blogs global styles
+  - Fixup content and project boxes
   - progress bars, trees, timeline, social media display
   - Think of portfolio and info layouts + act on it
   - Lazy loading: https://css-tricks.com/the-complete-guide-to-lazy-loading-images/, https://css-tricks.com/snippets/javascript/lazy-loading-images/, https://css-tricks.com/tips-for-rolling-your-own-lazy-loading/, https://medium.com/@rossbulat/lazy-image-loading-in-react-the-full-breakdown-4026619de2df

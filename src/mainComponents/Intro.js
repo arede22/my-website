@@ -1,6 +1,6 @@
 // general imports
 import React, { useState, useEffect } from 'react';
-import { string } from 'prop-types';
+import { object } from 'prop-types';
 import styled from 'styled-components';
 // components
 import { WorkExperience } from '@components';
@@ -157,5 +157,5 @@ export default function Intro({ theme }) {
 };
 
 Intro.propTypes = {
-  theme: string.isRequired
+  theme: object.isRequired
 }

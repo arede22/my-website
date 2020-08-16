@@ -1,6 +1,6 @@
 // general imports
 import { useState, useEffect } from 'react';
-import { string } from 'prop-types';
+import { object } from 'prop-types';
 import styled from 'styled-components';
 // styles
 import { theme } from '@styles';
@@ -108,5 +108,5 @@ export default function Footer({ theme }) {
 };
 
 Footer.propTypes = {
-  theme: string.isRequired
+  theme: object.isRequired
 }

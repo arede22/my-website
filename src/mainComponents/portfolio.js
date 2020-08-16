@@ -1,6 +1,6 @@
 // general imports
 import React from 'react';
-import { string } from 'prop-types';
+import { object } from 'prop-types';
 import styled from 'styled-components';
 import LazyLoad from 'react-lazy-load';
 // components
@@ -114,5 +114,5 @@ export default function Portfolio({ theme }) {
 };
 
 Portfolio.propTypes = {
-  theme: string.isRequired
+  theme: object.isRequired
 }

@@ -1,5 +1,5 @@
 // general imports
-import { string } from 'prop-types';
+import { object } from 'prop-types';
 import styled from 'styled-components';
 // styles
 import { theme } from '@styles';
@@ -42,5 +42,5 @@ export default function TopButton({ theme }) {
 };
 
 TopButton.propTypes = {
-  theme: string.isRequired
+  theme: object.isRequired
 }
