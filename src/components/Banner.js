@@ -6,7 +6,6 @@ const { colors, fontSizes } = theme;
 
 // styles and wrappers
 const BannerWrapper = styled.div`
-  /* background-color: white; */
   background-color: ${({ theme }) => theme.bannerBg};
   margin: 0 auto;
   width: 100%;
@@ -36,7 +35,6 @@ const NameLi = styled.li`
   display: flex;
   padding: 4px 8px;
   color: ${({ theme }) => theme.bannerFg };
-  /* color: ${colors.orange}; */
   text-shadow: black 1px 1px;
 
   @media (max-width: 600px) {

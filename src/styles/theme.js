@@ -15,6 +15,8 @@ const theme = {
     navHomeFg: 'rgba(129, 207, 224, 1)',
     navHomeHg: 'rgba(129, 207, 224, 0.4)',
 
+    boxColor: '#dc8079',
+
     background: '/static/genImages/new/light.png',
     backgroundSm: '/static/genImages/new/lightSm.png',
     profilePic: '/static/genImages/new/lightProfPic.png',
@@ -35,6 +37,8 @@ const theme = {
     navHg: 'rgba(197, 239, 247, 1)',
     navHomeFg: 'rgba(129, 207, 224, 1)',
     navHomeHg: 'rgba(129, 207, 224, 0.4)',
+
+    boxColor: 'rgba(166, 166, 166, 0.5)',
 
     background: '/static/genImages/new/dark.png',
     backgroundSm: '/static/genImages/new/darkSm.png',
@@ -110,8 +114,10 @@ const theme = {
     sm1: '16px',
     sm2: '17px',
     sm3: '18px',
+
     med1: '36px',
     med2: '40px',
+    
     lg: '48px'
 
   },
@@ -122,9 +128,11 @@ const theme = {
     ig: 'https://www.instagram.com/berk_eng_doodler/',
     linkedin: 'https://www.linkedin.com/in/anikarede/',
     github: 'https://github.com/arede22',
+
     webRepo: 'https://github.com/arede22/theanikarede',
     carRepo: 'https://github.com/arede22/voice-activated-car',
     mlDecalRepo: 'https://github.com/arede22/MLDecal_projects',
+
     gameVid: 'https://www.youtube.com/watch?v=cdlxhQVUIro'
 
   },
@@ -142,19 +150,12 @@ const theme = {
 
   imgSrcs: {
 
-    backgroundLightSm: '/static/genImages/new/lightSm.png',
-    backgroundDarkSm: '/static/genImages/new/darkSm.png',
-    backgroundLight: '/static/genImages/new/light.png',
-    backgroundDark: '/static/genImages/new/dark.png',
-    profile: '/static/genImages/profile.png',
     rainbow: '/static/genImages/rainbow.jpg',
-    up: '/static/genImages/scroll-up-arrow.svg',
     car: '/static/portfolio/car.png',
     map: '/static/portfolio/map.png',
     randRooms: '/static/portfolio/random-room.png',
     boss: '/static/portfolio/boss.png',
     tree: '/static/portfolio/tree.png',
-    treesvg: '/static/portfolio/tree.svg',
 
   }
 

@@ -5,7 +5,7 @@ import { theme } from '@styles';
 const { colors } = theme;
 
 const Box = styled.div`
-  background-color: ${colors.halfTransparentGray};
+  background-color: ${({ theme }) => theme.boxColor };
   overflow-x: auto;
   padding: 7.5px 20px 20px;
   width: 70%;

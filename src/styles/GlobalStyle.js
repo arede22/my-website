@@ -73,8 +73,6 @@ const GlobalStyle = createGlobalStyle`
    text-shadow: black 2px 2px;
   }
   h1 {
-    // font-size: ${fontSizes.lg};
-    // from H1Style
     background-color: ${colors.transparentSeaBlue};
     width: 50%;
     border-radius: 12px;

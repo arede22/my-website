@@ -10,7 +10,6 @@ const { colors, fontSizes } = theme;
 const NavWrapper = styled.nav`
   text-align: center;
   padding: 10px 0px;
-  /* background-color: ${colors.black}; */
   background-color: ${({ theme }) => theme.navBg };
   width: 100%;
   margin: 0 auto;
@@ -38,22 +37,18 @@ const OptLIWrapper = styled(LIWrapper)`
 `;
 const NavLink = styled.a`
   font-size: ${fontSizes.sm3};
-  /* color: white; */
   color: ${({ theme }) => theme.navFg };
 
   &:hover {
-    /* color: ${colors.skyBlue}; */
     color: ${({ theme }) => theme.navHg };
   }
 `;
 const HomeNavLink = styled(NavLink)`
-  /* color: ${colors.seaBlue}; */
   color: ${({ theme }) => theme.navHomeFg };
 
   @media (max-width: 600px) {
     &:hover::after {
       content: '';
-      /* border: solid ${colors.transparentSeaBlue}; */
       border: solid ${({ theme }) => theme.navHomeHg };
       border-width: 0 3px 3px 0;
       display: inline-block;
