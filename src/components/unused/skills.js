@@ -5,14 +5,6 @@ import { theme, Box } from '@styles';
 const { colors, fontSizes } = theme;
 // bootstrap and js progress bars
 
-// styles and wrappers
-const ULWrapper = styled.ul`
-`;
-const LIWrapper = styled.li`
-`;
-const H3Style = styled.h3`
-`;
-
 // export main component
 export default function Skills() {
   return (
