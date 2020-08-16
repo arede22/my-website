@@ -9,8 +9,3 @@ export { default as ErrorGlobal } from './ErrorGlobal';
 export { default as WelcomeStyle } from './WelcomeStyle';
 export { default as ResumeBox } from './ResumeBox';
 export { default as Box } from './box';
-
-export { default as StyledWrapper } from './StyledWrapper';
-export { default as Button } from './Button';
-export { default as LIWrapper } from './LIWrapper';
-export { default as ULWrapper } from './ULWrapper';
