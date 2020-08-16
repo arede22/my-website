@@ -6,7 +6,8 @@ const { colors, fontSizes } = theme;
 
 // styles and wrappers
 const BannerWrapper = styled.div`
-  background-color: white;
+  /* background-color: white; */
+  background-color: ${({ theme }) => theme.bannerBg};
   margin: 0 auto;
   width: 100%;
   display: inline-block;
@@ -34,8 +35,8 @@ const Phonology = styled(Name)`
 const NameLi = styled.li`
   display: flex;
   padding: 4px 8px;
-  /* color: ${({ theme }) => theme.banner }; */
-  color: ${colors.orange};
+  color: ${({ theme }) => theme.bannerFg };
+  /* color: ${colors.orange}; */
   text-shadow: black 1px 1px;
 
   @media (max-width: 600px) {
@@ -53,7 +54,7 @@ const PhonLi = styled(NameLi)`
 `;
 
 // export main component
-export default function Banner({ theme }) {
+export default function Banner() {
   return (
     <BannerWrapper>
       <Name>

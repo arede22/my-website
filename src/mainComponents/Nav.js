@@ -17,7 +17,7 @@ const HeaderWrap = styled.header`
 `;
 
 // export main component
-export default function Nav({ theme }) {
+export default function Nav() {
   return (
     <HeaderWrap id="navbar">
       <Banner />

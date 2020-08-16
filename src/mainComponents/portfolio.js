@@ -22,7 +22,6 @@ const H3Style = styled.h3`
   font-size: ${fontSizes.sm3};
 `;
 const ULWrapper = styled.ul`
-  color: white;
   padding: 0 40px;
 `;
 const LIWrapper = styled.li`

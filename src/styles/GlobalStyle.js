@@ -35,19 +35,19 @@ const GlobalStyle = createGlobalStyle`
      }
 
    }
-  body {
+  html, body {
     margin: 0;
     font-size: ${fontSizes.sm3};
     font-family: ${fonts.Lucida};
     background-size: 100%;
+    // background-size: cover;
     background-position-y: top;
     background: ${({ theme }) => theme.body} url(${({ theme }) => theme.background}) repeat-y center;
     color: ${({ theme }) => theme.textColor};
-    text: ${({ theme }) => theme.textColor};
 
     @media (max-width: 600px) {
       background: ${({ theme }) => theme.body} url(${({ theme }) => theme.backgroundSm}) repeat-y center;
-      min-width: 600px;
+      max-width: 600px;
     }
 
     @media ${media.tablet} {
@@ -125,6 +125,10 @@ const GlobalStyle = createGlobalStyle`
   li {
     text-shadow: black .5px .5px;
     color: ${({ theme }) => theme.textColor};
+  }
+  a {
+    color: ${({ theme }) => theme.textColor};
+    text-decoration: none;
   }
 `;
 

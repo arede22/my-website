@@ -23,11 +23,10 @@
 
 ## Yet to-do:
   - Fixup content, pics, project boxes, standardize styles and projects/blogs global styles
-  - LOC, progress bars, trees, timeline, social media display
+  - progress bars, trees, timeline, social media display
   - Think of portfolio and info layouts + act on it
   - Lazy loading: https://css-tricks.com/the-complete-guide-to-lazy-loading-images/, https://css-tricks.com/snippets/javascript/lazy-loading-images/, https://css-tricks.com/tips-for-rolling-your-own-lazy-loading/, https://medium.com/@rossbulat/lazy-image-loading-in-react-the-full-breakdown-4026619de2df
 
-  - Anchorpoints also change url for ##section
   - Get color palette and apply
   - Pre-loading for Git and LOC calls: https://nextjs.org/docs/basic-features/data-fetching##getstaticprops-static-generation, https://nextjs.org/docs/basic-features/data-fetching##getserversideprops-server-side-rendering
 

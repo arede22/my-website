@@ -5,7 +5,6 @@ import { theme } from '@styles';
 const { fontSizes, colors } = theme;
 
 const Link = styled.a`
-  text-decoration: none;
   font-size: ${fontSizes.sm1};
   color: ${colors.skyBlue};
 

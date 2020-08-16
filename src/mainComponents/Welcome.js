@@ -1,8 +1,5 @@
 // general imports
 import styled from 'styled-components';
-import LazyLoad from 'react-lazy-load';
-// components
-import { ImageLoader } from '@components';
 // styles
 import { theme, ResumeBox, WelcomeStyle, H1Style } from '@styles';
 const { fontSizes } = theme;
@@ -13,7 +10,6 @@ const StyledWrapper = styled.div`
   text-align: center;
 `;
 const PStyle = styled.p`
-  color: white;
   line-height: 1.5;
   font-size: ${fontSizes.sm1};
   text-shadow: black 1px 1px;
@@ -34,11 +30,7 @@ export default function Welcome({ theme }) {
       {!!prod &&
         <PStyle>My website looks a lil jank but I'm always tinkering with new things!</PStyle>
       }
-      <LazyLoad
-      debounce={false}
-      offsetVertical={500}>
-        <ImageLoader src={theme.profilePic} alt="This is me!" />
-      </LazyLoad>
+      <img src={theme.profilePic} alt="This is me!" />
 
       <WelcomeStyle>
         <PStyle>
@@ -53,15 +45,15 @@ export default function Welcome({ theme }) {
   )
 };
 
-export async function getStaticProps() {
-  // Get external data from the file system, API, DB, etc.
-  const res = await fetch('https://api.github.com/repos/arede22/theanikarede');
-  const json = await res.json();
-
-  return {
-    props: {
-      json,
-    },
-    // revalidate: 1
-  }
-}
+// export async function getStaticProps() {
+//   // Get external data from the file system, API, DB, etc.
+//   const res = await fetch('https://api.github.com/repos/arede22/theanikarede');
+//   const json = await res.json();
+//
+//   return {
+//     props: {
+//       json,
+//     },
+//     // revalidate: 1
+//   }
+// }

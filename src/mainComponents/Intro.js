@@ -31,11 +31,9 @@ const Cols = styled(StyledWrapper)`
   flex: 50%;
 `;
 const ULWrapper = styled.ul`
-  color: white;
   padding: 0 40px;
 `;
 const LIWrapper = styled.li`
-  color: white;
   line-height: 1.5;
   font-size: ${fontSizes.sm1};
 `;

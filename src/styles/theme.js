@@ -6,15 +6,18 @@ const theme = {
     gradient: 'linear-gradient(#d46079, #ffb6c1)',
     hoverGradient: 'linear-gradient(#d46079, #ffb6c1, #d46079)',
 
+    bannerBg: '#d46c83',
+    bannerFg: '#007ba7',
+
+    navBg: '#303030',
+    navFg: 'white',
+    navHg: 'rgba(197, 239, 247, 1)',
+    navHomeFg: 'rgba(129, 207, 224, 1)',
+    navHomeHg: 'rgba(129, 207, 224, 0.4)',
+
     background: '/static/genImages/new/light.png',
     backgroundSm: '/static/genImages/new/lightSm.png',
     profilePic: '/static/genImages/new/lightProfPic.png',
-    android1: '/static/favicon/light/android-chrome-512x512.png',
-    android2: '/static/favicon/light/android-chrome-192x192.png',
-    apple: '/static/favicon/light/apple-touch-icon.png',
-    large: '/static/favicon/light/static/favicon-32x32.png',
-    small: '/static/favicon/light/static/favicon-16x16.png',
-    reg: '/static/favicon/light/static/favicon.ico',
     up: '/static/genImages/scroll-up-arrow-light.svg',
   },
 
@@ -24,15 +27,18 @@ const theme = {
     gradient: 'linear-gradient(#091236, #00008B)',
     hoverGradient: 'linear-gradient(#091236, #00008B, #091236)',
 
+    bannerBg: 'white',
+    bannerFg: '#f79555',
+
+    navBg: '#303030',
+    navFg: 'white',
+    navHg: 'rgba(197, 239, 247, 1)',
+    navHomeFg: 'rgba(129, 207, 224, 1)',
+    navHomeHg: 'rgba(129, 207, 224, 0.4)',
+
     background: '/static/genImages/new/dark.png',
     backgroundSm: '/static/genImages/new/darkSm.png',
     profilePic: '/static/genImages/new/darkProfPic.png',
-    android1: '/static/favicon/dark/android-chrome-512x512.png',
-    android2: '/static/favicon/dark/android-chrome-192x192.png',
-    apple: '/static/favicon/dark/apple-touch-icon.png',
-    large: '/static/favicon/dark/static/favicon-32x32.png',
-    small: '/static/favicon/dark/static/favicon-16x16.png',
-    reg: '/static/favicon/dark/static/favicon.ico',
     up: '/static/genImages/scroll-up-arrow-dark.svg',
   },
 

@@ -10,7 +10,8 @@ const { colors, fontSizes } = theme;
 const NavWrapper = styled.nav`
   text-align: center;
   padding: 10px 0px;
-  background-color: ${colors.black};
+  /* background-color: ${colors.black}; */
+  background-color: ${({ theme }) => theme.navBg };
   width: 100%;
   margin: 0 auto;
 `;
@@ -37,19 +38,23 @@ const OptLIWrapper = styled(LIWrapper)`
 `;
 const NavLink = styled(Link)`
   font-size: ${fontSizes.sm3};
-  color: white;
+  /* color: white; */
+  color: ${({ theme }) => theme.navFg };
 
   &:hover {
-    color: ${colors.skyBlue};
+    /* color: ${colors.skyBlue}; */
+    color: ${({ theme }) => theme.navHg };
   }
 `;
 const HomeNavLink = styled(NavLink)`
-  color: ${colors.seaBlue};
+  /* color: ${colors.seaBlue}; */
+  color: ${({ theme }) => theme.navHomeFg };
 
   @media (max-width: 600px) {
     &:hover::after {
       content: '';
-      border: solid ${colors.transparentSeaBlue};
+      /* border: solid ${colors.transparentSeaBlue}; */
+      border: solid ${({ theme }) => theme.navHomeHg };
       border-width: 0 3px 3px 0;
       display: inline-block;
       padding: 3px;
@@ -70,7 +75,7 @@ const HomeNavLink = styled(NavLink)`
 `;
 
 // export main component
-export default function StyledNav({ theme }) {
+export default function StyledNav() {
   const [color, setColor] = useState(colors.moreSeaBlue);
 
   const toggleColor = (e) => {
@@ -96,19 +101,22 @@ export default function StyledNav({ theme }) {
           <HomeNavLink href='/' id='home' onMouseOver={onHoverIn} onMouseOut={onHoverOut}> Home </HomeNavLink>
         </LIWrapper>
         <OptLIWrapper className="extra">
-          <NavLink href="#Intro" id='intro' onMouseOver={onHoverIn} onMouseOut={onHoverOut}> Intro </NavLink>
+          <NavLink href="#intro" id='intro' onMouseOver={onHoverIn} onMouseOut={onHoverOut}> Intro </NavLink>
         </OptLIWrapper>
         <OptLIWrapper className="extra">
-          <NavLink href="#Portfolio" id='portfolio' onMouseOver={onHoverIn} onMouseOut={onHoverOut}> Portfolio </NavLink>
+          <NavLink href="#portfolio" id='portfolio' onMouseOver={onHoverIn} onMouseOut={onHoverOut}> Portfolio </NavLink>
         </OptLIWrapper>
         <OptLIWrapper className="extra">
-          <NavLink href="#Contact-Me" id='contact-me' onMouseOver={onHoverIn} onMouseOut={onHoverOut}> Contact Me </NavLink>
+          <NavLink href="#contact-me" id='contact-me' onMouseOver={onHoverIn} onMouseOut={onHoverOut}> Contact Me </NavLink>
         </OptLIWrapper>
         {/*<OptLIWrapper className="extra">
           <NavLink href="/blog" onMouseOver={onHoverIn} onMouseOut={onHoverOut}> Blog </NavLink>
         </OptLIWrapper>*/}
+        {/*<OptLIWrapper className="extra">
+          <NavLink href="/projects" onMouseOver={onHoverIn} onMouseOut={onHoverOut}> Projects </NavLink>
+        </OptLIWrapper>*/}
         <OptLIWrapper className="extra">
-          <NavLink href="resume.pdf" target="_blank" rel="nofollow noopener noreferrer" onMouseOver={e => {e.currentTarget.style.color = colors.moreSeaBlue;}} onMouseOut={e => {e.currentTarget.style.color = 'white'}}> Resume </NavLink>
+          <NavLink href="resume.pdf" target="_blank" rel="nofollow noopener noreferrer" onMouseOver={onHoverIn} onMouseOut={onHoverOut}> Resume </NavLink>
         </OptLIWrapper>
       </ULWrapper>
     </NavWrapper>

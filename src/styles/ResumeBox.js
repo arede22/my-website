@@ -21,8 +21,6 @@ const ResumeButton = styled.a`
   border: 1px solid white;
   border-radius: 8px;
   padding: 7.5px;
-  text-decoration: none;
-  color: white;
   background-color: ${colors.moreSeaBlue};
   font-size: ${fontSizes.sm2};
   text-shadow: black .5px .5px;
@@ -32,7 +30,6 @@ const ResumeButton = styled.a`
   }
 `;
 const PStyle = styled.p`
-  color: white;
   line-height: 1.5;
   font-size: ${fontSizes.sm1};
   text-shadow: black 1px 1px;

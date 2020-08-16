@@ -7,15 +7,12 @@ const { colors, fontSizes } = theme;
 
 // styles and wrappers
 const ULWrapper = styled.ul`
-  color: white;
   padding: 0 40px;
 `;
 const LIWrapper = styled.li`
-  color: white;
   line-height: 1.5;
 `;
 const H3Style = styled.h3`
-  color: white;
   font-size: ${fontSizes.sm3};
   margin: 0;
 `;
