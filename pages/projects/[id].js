@@ -4,7 +4,7 @@ import { getAllProjectIds, getProjectData } from 'lib/projects'
 // components
 import { Header } from '@mainComponents';
 // styles
-import { theme, useDarkMode, ErrorGlobal } from '@styles';
+import { theme, useDarkMode, ProjectsGlobal } from '@styles';
 const { lightTheme, darkTheme } = theme;
 
 export default function Project({ projectData }) {
@@ -17,6 +17,7 @@ export default function Project({ projectData }) {
 
   return (
     <ThemeProvider theme={themeMode}>
+      <ProjectsGlobal />
       <Header title={projectData.title} />
 
       <h1> Projects ❤ </h1>

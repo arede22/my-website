@@ -2,6 +2,7 @@ import colors from './colors';
 
 const theme = {
 
+// largely taken from darktheme, needs specifying
   lightTheme: {
     body: 'white',
     textColor: colors.black,
@@ -38,6 +39,7 @@ const theme = {
     up: '/static/genImages/scroll-up-arrow-light.svg',
   },
 
+// mostly composed
   darkTheme : {
     body: colors.darkGray,
     textColor: 'white',
@@ -123,6 +125,8 @@ const theme = {
   },
 
   imgSrcs: {
+
+    berk: '/static/genImages/fbcoverpic.jpg',
 
     rainbow: '/static/genImages/rainbow.jpg',
 

@@ -1,10 +1,10 @@
 // general imports
 import { createGlobalStyle } from 'styled-components';
-import media from './media';
-import fadeInImg from './fadeInImg';
+import media from '../media';
+import fadeInImg from '../fadeInImg';
 // styles
-import theme from './theme';
-import colors from './colors';
+import theme from '../theme';
+import colors from '../colors';
 const { fonts, imgSrcs, fontSizes } = theme;
 
 const GlobalStyle = createGlobalStyle`
