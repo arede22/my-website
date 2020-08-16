@@ -2,7 +2,7 @@
 import React from 'react';
 import styled from 'styled-components';
 // styles
-import { theme, Anchor } from '@styles';
+import { theme } from '@styles';
 const { colors, fontSizes } = theme;
 
 // styles and wrappers
@@ -41,7 +41,7 @@ const PStyle = styled.p`
 export default function ContactMe({ theme }) {
   return (
     <React.Fragment>
-      <Anchor name="Contact-Me" id="contactme-anchor"></Anchor>
+      <a name="Contact-Me" id="contactme-anchor"></a>
       <StyledWrapper>
         <H2Style> Contact Me </H2Style>
         <ContactBox>

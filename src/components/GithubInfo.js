@@ -1,14 +1,14 @@
 // general imports
 import styled from 'styled-components';
 // styles
-import { theme, Link } from '@styles';
+import { theme } from '@styles';
 const { hrefs, fontSizes, colors, iconSrcs } = theme;
 
 const GithubWrapper = styled.div`
   width: 70%;
   margin: 0 auto;
 `;
-const GithubLink = styled(Link)`
+const GithubLink = styled.a`
   font-size: ${fontSizes.sm1};
 `;
 const StyledGitHubInfo = styled.div`

@@ -73,7 +73,20 @@ const GlobalStyle = createGlobalStyle`
    text-shadow: black 2px 2px;
   }
   h1 {
-    font-size: ${fontSizes.lg};
+    // font-size: ${fontSizes.lg};
+    // from H1Style
+    background-color: ${colors.transparentSeaBlue};
+    width: 50%;
+    border-radius: 12px;
+    text-align: center;
+    font-size: ${fontSizes.med2};
+    padding: 20px 10px;
+    margin: 30px auto;
+
+    &::selection {
+      background-color: ${colors.skyBlue};
+      color: ${colors.darkGray};
+    }
 
     @media (max-width: 600px) {
       font-size: ${fontSizes.med2};
@@ -127,8 +140,13 @@ const GlobalStyle = createGlobalStyle`
     color: ${({ theme }) => theme.textColor};
   }
   a {
-    color: ${({ theme }) => theme.textColor};
     text-decoration: none;
+    font-size: ${fontSizes.sm1};
+    color: ${colors.skyBlue};
+
+    &:hover {
+      color: ${colors.darkSkyBlue};
+    }
   }
 `;
 

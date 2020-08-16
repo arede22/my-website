@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import styled from 'styled-components';
 // styles
-import { theme, Link } from '@styles';
+import { theme } from '@styles';
 const { colors, fontSizes } = theme;
 // dropdown fix: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar
 
@@ -36,7 +36,7 @@ const OptLIWrapper = styled(LIWrapper)`
     display: none;
   }
 `;
-const NavLink = styled(Link)`
+const NavLink = styled.a`
   font-size: ${fontSizes.sm3};
   /* color: white; */
   color: ${({ theme }) => theme.navFg };

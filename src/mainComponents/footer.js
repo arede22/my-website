@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import styled from 'styled-components';
 // styles
-import { theme, Link } from '@styles';
+import { theme } from '@styles';
 const { colors, hrefs, fontSizes, iconSrcs } = theme;
 // stackoverflow, hackerrank, spotify
 // CALHACKS
@@ -98,7 +98,7 @@ export default function Footer({ theme }) {
         }
         <StyledWrapper>
           <PStyle>
-            Made by Anika Rede | <Link target="_blank" href={hrefs.webRepo} rel="nofollow noopener noreferrer"> GitHub </Link>
+            Made by Anika Rede | <a target="_blank" href={hrefs.webRepo} rel="nofollow noopener noreferrer"> GitHub </a>
           </PStyle>
         </StyledWrapper>
       </FooterStyle>

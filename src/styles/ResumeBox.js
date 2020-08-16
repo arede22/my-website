@@ -21,6 +21,7 @@ const ResumeButton = styled.a`
   border: 1px solid white;
   border-radius: 8px;
   padding: 7.5px;
+  color: white;
   background-color: ${colors.moreSeaBlue};
   font-size: ${fontSizes.sm2};
   text-shadow: black .5px .5px;

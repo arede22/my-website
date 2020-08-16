@@ -4,7 +4,7 @@ import styled from 'styled-components';
 // components
 import { WorkExperience } from '@components';
 // styles
-import { theme, Anchor, Box } from '@styles';
+import { theme, Box } from '@styles';
 const { colors, fontSizes } = theme;
 // College info, courses, languages (progress bars), softwares
 // Skills acquired, desired
@@ -46,7 +46,7 @@ export default function Intro({ theme }) {
   return (
     <React.Fragment>
       <StyledWrapper>
-      <Anchor name="Intro" id="intro-anchor"></Anchor>
+      <a name="Intro" id="intro-anchor"></a>
         <H2Style>Intro & About Me ❤</H2Style>
         <StyledWrapper>
           <Box>

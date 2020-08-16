@@ -1,7 +1,7 @@
 // general imports
 import styled from 'styled-components';
 // styles
-import { theme, ResumeBox, WelcomeStyle, H1Style } from '@styles';
+import { theme, ResumeBox, WelcomeStyle } from '@styles';
 const { fontSizes } = theme;
 
 // styles and wrappers
@@ -26,7 +26,7 @@ export default function Welcome({ theme }) {
 
   return (
     <StyledWrapper>
-      <H1Style>Hi, I'm Anika Rede.</H1Style>
+      <h1>Hi, I'm Anika Rede.</h1>
       {!!prod &&
         <PStyle>My website looks a lil jank but I'm always tinkering with new things!</PStyle>
       }

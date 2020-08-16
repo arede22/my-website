@@ -5,7 +5,7 @@ import LazyLoad from 'react-lazy-load';
 // components
 import { ImageLoader, Modal } from '@components';
 // styles
-import { theme, media, Anchor, Link, Box } from '@styles';
+import { theme, media, Box } from '@styles';
 const { colors, fontSizes, hrefs, imgSrcs } = theme;
 // Currently exploring pet projects
 
@@ -31,7 +31,7 @@ const PStyle = styled.p`
   text-align: center;
   margin: 0 auto;
 `;
-const StyledLink = styled(Link)`
+const StyledLink = styled.a`
   text-align: center;
 `;
 const SpaceBetween = styled.div`
@@ -66,7 +66,7 @@ export default function Portfolio({ theme }) {
 
   return (
     <React.Fragment>
-      <Anchor name="Portfolio" id="portfolio-anchor"></Anchor>
+      <a name="Portfolio" id="portfolio-anchor"></a>
       <div>
         <H2Style> Portfolio </H2Style>
           <Box>
