@@ -1,9 +1,5 @@
 // general imports
 import React, { useState, useEffect } from "react";
-import styled from 'styled-components';
-// styles
-import { theme } from '@styles';
-const { colors, fontSizes } = theme;
 
 // const _loaded = {};
 //

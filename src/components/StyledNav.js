@@ -2,8 +2,8 @@
 import { useState, useEffect } from 'react';
 import styled from 'styled-components';
 // styles
-import { theme } from '@styles';
-const { colors, fontSizes } = theme;
+import { theme, colors } from '@styles';
+const { fontSizes } = theme;
 // dropdown fix: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar
 
 // styles and wrappers

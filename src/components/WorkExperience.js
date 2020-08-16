@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 // styles
 import { theme } from '@styles';
-const { colors, fontSizes } = theme;
+const { fontSizes } = theme;
 
 // styles and wrappers
 const ULWrapper = styled.ul`

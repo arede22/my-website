@@ -1,4 +1,5 @@
 // general imports
+import { number } from 'prop-types';
 import { ThemeProvider } from 'styled-components';
 // components
 import { Header } from '@mainComponents';
@@ -37,9 +38,6 @@ export async function getStaticProps({ res, err }) {
   }
 }
 
-// Error.getInitialProps = ({ res, err }) => {
-//   const statusCode = res ? res.statusCode : err ? err.statusCode : 404
-//   return { statusCode }
-// }
-
-// export default Error;
+Error.propTypes = {
+  statusCode: number.isRequired
+}

@@ -2,7 +2,7 @@
 import styled from 'styled-components';
 // styles
 import { theme } from '@styles';
-const { colors, fontSizes } = theme;
+const { fontSizes } = theme;
 
 // styles and wrappers
 const BannerWrapper = styled.div`

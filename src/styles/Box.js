@@ -1,8 +1,7 @@
 // general imports
 import styled from 'styled-components';
 // styles
-import { theme } from '@styles';
-const { colors } = theme;
+import { colors } from '@styles';
 
 const Box = styled.div`
   background-color: ${({ theme }) => theme.boxColor };

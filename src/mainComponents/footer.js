@@ -1,9 +1,10 @@
 // general imports
 import { useState, useEffect } from 'react';
+import { string } from 'prop-types';
 import styled from 'styled-components';
 // styles
 import { theme } from '@styles';
-const { colors, hrefs, fontSizes, iconSrcs } = theme;
+const { hrefs, fontSizes, iconSrcs } = theme;
 // stackoverflow, hackerrank, spotify
 // CALHACKS
 // dailycal
@@ -34,10 +35,10 @@ const FooterStyle = styled.footer`
   margin: 25px auto;
 `;
 const ULWrapper = styled.ul`
-  background-color: ${colors.transparentGray};
+  background-color: ${({ theme }) => theme.footerBg };
   display: flex;
   justify-content: space-around;
-  border-top: 3px solid ${colors.lightGray};
+  border-top: 3px solid ${({ theme }) => theme.footerBorder };
   padding: 10px 25px;
   margin: 10px 15px;
   margin-top: 0;
@@ -105,3 +106,7 @@ export default function Footer({ theme }) {
     </StyledWrapper>
   )
 };
+
+Footer.propTypes = {
+  theme: string.isRequired
+}

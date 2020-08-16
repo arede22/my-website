@@ -4,7 +4,8 @@ import media from './media';
 import fadeInImg from './fadeInImg';
 // styles
 import theme from './theme';
-const { colors, fonts, imgSrcs, fontSizes } = theme;
+import colors from './colors';
+const { fonts, imgSrcs, fontSizes } = theme;
 
 const GlobalStyle = createGlobalStyle`
   .img-loading {
@@ -40,22 +41,21 @@ const GlobalStyle = createGlobalStyle`
     font-size: ${fontSizes.sm3};
     font-family: ${fonts.Lucida};
     background-size: 100%;
-    // background-size: cover;
-    background-position-y: top;
     background: ${({ theme }) => theme.body} url(${({ theme }) => theme.background}) repeat-y center;
+    background-position-y: top;
     color: ${({ theme }) => theme.textColor};
 
     @media (max-width: 600px) {
       background: ${({ theme }) => theme.body} url(${({ theme }) => theme.backgroundSm}) repeat-y center;
-      max-width: 600px;
+      max-width: 550px;
     }
 
     @media ${media.tablet} {
-      max-width: 800px;
+      max-width: 700px;
     }
 
     @media ${media.laptop} {
-      max-width: 1000px;
+      max-width: 950px;
     }
 
     @media ${media.laptopL} {
@@ -73,7 +73,7 @@ const GlobalStyle = createGlobalStyle`
    text-shadow: black 2px 2px;
   }
   h1 {
-    background-color: ${colors.transparentSeaBlue};
+    background-color: ${({ theme }) => theme.h1bg };
     width: 50%;
     border-radius: 12px;
     text-align: center;
@@ -82,8 +82,8 @@ const GlobalStyle = createGlobalStyle`
     margin: 30px auto;
 
     &::selection {
-      background-color: ${colors.skyBlue};
-      color: ${colors.darkGray};
+      background-color: ${({ theme }) => theme.h1selectbg };
+      color: ${({ theme }) => theme.h1selectfg };
     }
 
     @media (max-width: 600px) {

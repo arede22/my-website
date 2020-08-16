@@ -1,9 +1,10 @@
 // general imports
 import React from 'react';
+import { string } from 'prop-types';
 import styled from 'styled-components';
 // styles
 import { theme } from '@styles';
-const { colors, fontSizes } = theme;
+const { fontSizes } = theme;
 
 // styles and wrappers
 const StyledWrapper = styled.div`
@@ -17,7 +18,7 @@ const H2Style = styled.h2`
 `;
 const ContactBox = styled.div`
   margin: 10px auto;
-  background-color: ${colors.transparentSeaBlue};
+  background-color: ${({ theme }) => theme.roundedBoxColor };
   width: 60%;
   border-radius: 15px;
   padding: 25px 20px;
@@ -54,3 +55,7 @@ export default function ContactMe({ theme }) {
     </React.Fragment>
   )
 };
+
+ContactMe.propTypes = {
+  theme: string.isRequired
+}

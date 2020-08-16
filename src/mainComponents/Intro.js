@@ -1,11 +1,12 @@
 // general imports
 import React, { useState, useEffect } from 'react';
+import { string } from 'prop-types';
 import styled from 'styled-components';
 // components
 import { WorkExperience } from '@components';
 // styles
 import { theme, Box } from '@styles';
-const { colors, fontSizes } = theme;
+const { fontSizes } = theme;
 // College info, courses, languages (progress bars), softwares
 // Skills acquired, desired
 // WorkExperience -- timeline w/ work and class extension projects
@@ -154,3 +155,7 @@ export default function Intro({ theme }) {
     </React.Fragment>
   )
 };
+
+Intro.propTypes = {
+  theme: string.isRequired
+}

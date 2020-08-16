@@ -1,4 +1,5 @@
 // general imports
+import { string } from 'prop-types';
 import styled from 'styled-components';
 // styles
 import { theme, ResumeBox, WelcomeStyle } from '@styles';
@@ -57,3 +58,7 @@ export default function Welcome({ theme }) {
 //     // revalidate: 1
 //   }
 // }
+
+Welcome.propTypes = {
+  theme: string.isRequired
+}

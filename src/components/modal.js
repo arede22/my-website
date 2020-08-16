@@ -1,4 +1,5 @@
 // general imports
+import { string } from 'prop-types';
 import styled from 'styled-components';
 import LazyLoad from 'react-lazy-load';
 // components
@@ -29,3 +30,9 @@ export default function Modal({ trigger, img, alt }) {
     </ImgWrapper>
   )
 };
+
+Modal.propTypes = {
+  trigger: string.isRequired,
+  img: string.isRequired,
+  alt: string.isRequired,
+}

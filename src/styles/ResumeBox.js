@@ -2,13 +2,13 @@
 import styled from 'styled-components';
 // styles
 import theme from './theme';
-const { colors, fontSizes } = theme;
+const { fontSizes } = theme;
 
 const ResumeDrop = styled.div`
   width: 40%;
   border-radius: 12px;
   margin: 10px auto;
-  background-color: ${colors.transparentSeaBlue};
+  background-color: ${({ theme }) => theme.roundedBoxColor };
   width: 60%;
   padding: 20px 20px 40px;
 
@@ -22,12 +22,12 @@ const ResumeButton = styled.a`
   border-radius: 8px;
   padding: 7.5px;
   color: white;
-  background-color: ${colors.moreSeaBlue};
+  background-color: ${ ({ theme }) => theme.resumeButtonColor };
   font-size: ${fontSizes.sm2};
   text-shadow: black .5px .5px;
 
   &:hover {
-    color: ${colors.seaBlue};
+    color: ${({ theme }) => theme.resumeHoverFg };
   }
 `;
 const PStyle = styled.p`

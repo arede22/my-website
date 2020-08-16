@@ -1,21 +1,36 @@
+import colors from './colors';
+
 const theme = {
 
   lightTheme: {
-    body: '#ffffff',
-    textColor: '#303030',
-    gradient: 'linear-gradient(#d46079, #ffb6c1)',
-    hoverGradient: 'linear-gradient(#d46079, #ffb6c1, #d46079)',
+    body: 'white',
+    textColor: colors.black,
+    gradient: colors.pinkTwoGradient,
+    hoverGradient: colors.pinkThreeGradient,
 
-    bannerBg: '#d46c83',
-    bannerFg: '#007ba7',
+    h1bg: colors.transparentSeaBlue,
+    h1selectbg: colors.skyBlue,
+    h1selectfg: colors.darkGray,
 
-    navBg: '#303030',
+    bannerBg: colors.lightPink,
+    bannerFg: colors.cerulean,
+
+    navBg: colors.black,
     navFg: 'white',
-    navHg: 'rgba(197, 239, 247, 1)',
-    navHomeFg: 'rgba(129, 207, 224, 1)',
-    navHomeHg: 'rgba(129, 207, 224, 0.4)',
+    navHg: colors.skyBlue,
+    navHomeFg: colors.seaBlue,
+    navHomeHg: colors.transparentSeaBlue,
 
-    boxColor: '#dc8079',
+    buttonBg: colors.palePink,
+    buttonHoverBg: colors.darkPalePink,
+
+    boxColor: colors.palePink,
+    roundedBoxColor: colors.transparentSeaBlue,
+    resumeButtonColor: colors.moreSeaBlue,
+    resumeHoverFg: colors.seaBlue,
+
+    footerBg: colors.transparentGray,
+    footerBorder: colors.lightGray,
 
     background: '/static/genImages/new/light.png',
     backgroundSm: '/static/genImages/new/lightSm.png',
@@ -24,80 +39,39 @@ const theme = {
   },
 
   darkTheme : {
-    body: '#4a4847',
-    textColor: '#ffffff',
-    gradient: 'linear-gradient(#091236, #00008B)',
-    hoverGradient: 'linear-gradient(#091236, #00008B, #091236)',
+    body: colors.darkGray,
+    textColor: 'white',
+    gradient: colors.blueTwoGradient,
+    hoverGradient: colors.blueThreeGradient,
+
+    h1bg: colors.transparentSeaBlue,
+    h1selectbg: colors.skyBlue,
+    h1selectfg: colors.darkGray,
 
     bannerBg: 'white',
-    bannerFg: '#f79555',
+    bannerFg: colors.orange,
 
-    navBg: '#303030',
+    navBg: colors.black,
     navFg: 'white',
-    navHg: 'rgba(197, 239, 247, 1)',
-    navHomeFg: 'rgba(129, 207, 224, 1)',
-    navHomeHg: 'rgba(129, 207, 224, 0.4)',
+    navHg: colors.skyBlue,
+    navHomeFg: colors.seaBlue,
+    navHomeHg: colors.transparentSeaBlue,
 
-    boxColor: 'rgba(166, 166, 166, 0.5)',
+    buttonBg: colors.cerulean,
+    buttonHoverBg: colors.darkCerulean,
+
+    boxColor: colors.halfTransparentGray,
+    roundedBoxColor: colors.transparentSeaBlue,
+    resumeButtonColor: colors.moreSeaBlue,
+    resumeHoverFg: colors.seaBlue,
+
+    footerBg: colors.transparentGray,
+    footerBorder: colors.lightGray,
 
     background: '/static/genImages/new/dark.png',
     backgroundSm: '/static/genImages/new/darkSm.png',
     profilePic: '/static/genImages/new/darkProfPic.png',
     up: '/static/genImages/scroll-up-arrow-dark.svg',
-  },
-
-  colors: {
-
-    // cerulean: #007ba7
-    // seagreen: #00a780
-    // gray-green contrast: #20b286
-
-    // shades/tints of cerulean:
-    //    black: #00070a
-    //      #00161e, #002431, #003345, #004159, #00506c, #005e80, #006d93, #007ba7, #0089bb, #0098ce, #00a6e2, #00b5f5
-    //    periwinkle-dark,light: #a7e8ff, #bbedff
-
-    // tones of cerulean:
-    //    gray: #4d575a
-    //    #475a60, #405d67, #3a606d, #336374, #2d667a, #276980, #206c87, #1a6f8d, #137294, #0d759a, #0678a1
-    //    cerulean: #007ba7
-
-    // check color blindness simulator
-
-    purple: "#9e005d", // unused
-    darkPink: "#d4145a", // unused
-    pink: "#ed1e79", // unused
-    lightPink: "#d46c83", // unused
-    palePink: "#dc8079",
-    darkPalePink: "#d46079",
-
-    orange: "#f79555",
-    darkOrange: '#f4670c', // unused
-
-    cerulean: "#007ba7",
-    darkCerulean: "#0d759a",
-
-    periwinkle: "#bbedff", // unused
-
-    transparentSeaBlue: "rgba(129, 207, 224, 0.4)",
-    moreSeaBlue: "rgba(197, 239, 247, 0.7)",
-    seaBlue: "rgba(129, 207, 224, 1)",
-    skyBlue: "rgba(197, 239, 247, 1)",
-    darkSkyBlue: "rgba(169, 211, 219, 1)",
-
-    deepSeaBlue: "#002431", // unused
-    darkerDeepSeaBlue: "#00070a", // unused
-
-    transparentGray: "rgba(166, 166, 166, 0.3)",
-    halfTransparentGray: "rgba(166, 166, 166, 0.5)",
-    lightestGray: "#f1f1f1", // unused
-    lightGray: "#cfcfcf",
-    medGray: "#bbb", // unused
-    darkGray: "rgba(74, 72, 71, 1)",
-
-    transparentBlack: "rgba(0,0,0,0.9)", // unused
-    black: "#303030",
-
   },
 
   fonts: {
@@ -117,7 +91,7 @@ const theme = {
 
     med1: '36px',
     med2: '40px',
-    
+
     lg: '48px'
 
   },
@@ -151,11 +125,13 @@ const theme = {
   imgSrcs: {
 
     rainbow: '/static/genImages/rainbow.jpg',
+
+    tree: '/static/portfolio/tree.png',
+
     car: '/static/portfolio/car.png',
     map: '/static/portfolio/map.png',
     randRooms: '/static/portfolio/random-room.png',
     boss: '/static/portfolio/boss.png',
-    tree: '/static/portfolio/tree.png',
 
   }
 

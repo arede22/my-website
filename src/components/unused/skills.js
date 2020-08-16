@@ -2,7 +2,7 @@
 import styled from 'styled-components';
 // styles
 import { theme, Box } from '@styles';
-const { colors, fontSizes } = theme;
+const { fontSizes } = theme;
 // bootstrap and js progress bars
 
 // export main component
