@@ -1,7 +1,7 @@
 // general imports
 import styled from 'styled-components';
 // styles
-import theme from './theme';
+import { theme } from '@styles';
 const { fontSizes } = theme;
 
 const ResumeDrop = styled.div`

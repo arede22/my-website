@@ -17,7 +17,7 @@ const H3Style = styled.h3`
   margin: 0;
 `;
 // design as timeline (vertical; med-thick w/ stops; ul-clickable and hover-info)
-// timeline https://freefrontend.com/css-timelines/ -- https://codyhouse.co/gem/horizontal-timeline
+// timeline https://freefrontend.com/css-timelines/ -- https://codyhouse.co/gem/horizontal-timeline -- https://www.w3schools.com/howto/howto_css_timeline.asp
 // tooltip for timeline https://www.w3schools.com/howto/howto_css_tooltip.asp
 
 // export main component

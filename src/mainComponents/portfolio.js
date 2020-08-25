@@ -38,6 +38,8 @@ const SpaceBetween = styled.div`
 // https://interactive-img.com/dashboard
 // https://intercom.help/geniallysupport/en/articles/3542392-turn-your-static-images-into-incredible-interactive-images-quickly-and-easily
 
+// https://www.w3schools.com/bootstrap/bootstrap_grid_basic.asp
+
 // Projects&Portfolio Interactive Tree -- class extensions, work, club --> see more pages somehow
 // next is blogscape
 

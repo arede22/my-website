@@ -25,7 +25,7 @@ const colors = {
   purple: "#9e005d", // unused
   darkPink: "#d4145a", // unused
   pink: "#ed1e79", // unused
-  lightPink: "#d46c83", // unused
+  lightPink: "#ffd1dc", // unused
   palePink: "#dc8079",
   darkPalePink: "#d46079",
 
@@ -36,6 +36,7 @@ const colors = {
   darkCerulean: "#0d759a",
 
   periwinkle: "#bbedff", // unused
+  seagreen: '#00a780',
 
   transparentSeaBlue: "rgba(129, 207, 224, 0.4)",
   moreSeaBlue: "rgba(197, 239, 247, 0.7)",

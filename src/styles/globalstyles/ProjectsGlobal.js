@@ -1,8 +1,7 @@
 // general imports
 import { createGlobalStyle } from 'styled-components';
-import media from '../media';
+import { theme } from '@styles';
 // styles
-import theme from '../theme';
 const { fonts, fontSizes, imgSrcs } = theme;
 
 const ProjectsGlobal = createGlobalStyle`

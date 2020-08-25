@@ -7,6 +7,8 @@ import { Header } from '@mainComponents';
 import { theme, useDarkMode, ProjectsGlobal } from '@styles';
 const { lightTheme, darkTheme } = theme;
 
+// https://www.w3schools.com/bootstrap/bootstrap_pagination.asp
+
 export default function Project({ projectData }) {
   const [theme, toggleTheme, componentMounted] = useDarkMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;

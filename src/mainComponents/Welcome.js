@@ -23,6 +23,11 @@ const ImgStyle = styled.img`
 const PStyle = styled.p`
   text-shadow: black 1px 1px;
 `;
+const ImgWrapper = styled(ImageLoader)`
+  max-width: none;
+  width: 70%;
+  height: 70%;
+`;
 
 // export main component
 export default function Welcome({ theme }) {
@@ -37,7 +42,7 @@ export default function Welcome({ theme }) {
       <LazyLoad
       debounce={false}
       offsetVertical={100}>
-        <ImageLoader src={theme.profilePic} alt="This is me!" />
+        <ImgWrapper src={theme.profilePic} alt="This is me!" height="100" width="100" />
       </LazyLoad>
 
       <WelcomeStyle>

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 // components
 import { Banner, StyledNav } from '@components';
 // dropdown fix: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar
+// https://www.w3schools.com/bootstrap/bootstrap_dropdowns.asp
 
 // styles and wrappers
 const HeaderWrap = styled.header`

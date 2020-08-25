@@ -12,6 +12,8 @@ const ImgWrapper = styled.a`
   width: 90%;
 `;
 // W3 Modal
+// https://www.w3schools.com/bootstrap/bootstrap_modal.asp
+// https://www.w3schools.com/bootstrap/bootstrap_carousel.asp
 
 // export main component
 export default function Modal({ trigger, img, alt }) {

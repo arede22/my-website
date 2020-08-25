@@ -24,6 +24,7 @@
 
 ## Yet to-do:
   - Fixup content and project boxes
+  - colors: https://graf1x.com/shades-of-blue-color-palette/ (want to sleek this ish up)
   - progress bars, trees, timeline, social media display
   - Think of portfolio and info layouts + act on it
   - Lazy loading: https://css-tricks.com/the-complete-guide-to-lazy-loading-images/, https://css-tricks.com/snippets/javascript/lazy-loading-images/, https://css-tricks.com/tips-for-rolling-your-own-lazy-loading/, https://medium.com/@rossbulat/lazy-image-loading-in-react-the-full-breakdown-4026619de2df

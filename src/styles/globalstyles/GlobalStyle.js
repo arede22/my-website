@@ -1,46 +1,45 @@
 // general imports
 import { createGlobalStyle } from 'styled-components';
-import media from '../media';
-import fadeInImg from '../fadeInImg';
+import { media, fadeInImg, theme, colors } from '@styles';
 // styles
-import theme from '../theme';
-import colors from '../colors';
 const { fonts, imgSrcs, fontSizes } = theme;
 
-// .img-loading and .img-loaded don't mess with semicolons
+// .img-loading and .img-loaded: don't mess with semicolons
 const GlobalStyle = createGlobalStyle`
   .img-loading {
      opacity: 0
      width: 100%
      height: auto
      margin: 0 auto
+     z-index: -1
 
      @media (max-width: 600px) {
-       margin: 0 30px;
-       max-width: 360px;
+       margin: 0 30px
+       max-width: 360px
      }
-  } .img-loaded {
-    animation: ${fadeInImg} ease 10s;
-    -webkit-animation: ${fadeInImg} ease 10s;
-    -moz-animation: ${fadeInImg} ease 10s;
-    -o-animation: ${fadeInImg} ease 10s;
-    -ms-animation: ${fadeInImg} ease 10s;
+  }
+  .img-loaded {
+    animation: ${fadeInImg} ease 10s
+    -webkit-animation: ${fadeInImg} ease 10s
+    -moz-animation: ${fadeInImg} ease 10s
+    -o-animation: ${fadeInImg} ease 10s
+    -ms-animation: ${fadeInImg} ease 10s
      position: relative
      opacity: 0
-     z-index: -1;
+     z-index: -1
      animation-fill-mode: forwards
      animation-duration: 0.7s
      animation-delay: 0.1s
-     margin: 0 auto;
+     margin: 0 auto
 
      @media (max-width: 600px) {
-       margin: 0 30px;
-       max-width: 360px;
-       height: auto;
+       margin: 0 30px
+       max-width: 360px
+       height: auto
      }
    }
    html, body {
-    margin: 0;
+    margin: 0 auto;
     font-size: ${fontSizes.sm3};
     font-family: ${fonts.Lucida};
     background-size: 100%;
@@ -50,7 +49,9 @@ const GlobalStyle = createGlobalStyle`
 
     @media (max-width: 600px) {
       background: ${({ theme }) => theme.body} url(${({ theme }) => theme.backgroundSm}) repeat-y center;
+      background-position-y: top;
       max-width: 550px;
+      background-size: contain;
     }
 
     @media ${media.tablet} {

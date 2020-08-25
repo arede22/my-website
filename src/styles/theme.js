@@ -2,7 +2,7 @@ import colors from './colors';
 
 const theme = {
 
-// largely taken from darktheme, needs specifying
+// to do:
   lightTheme: {
     body: 'white',
     textColor: colors.black,
@@ -14,7 +14,7 @@ const theme = {
     h1selectfg: colors.darkGray,
 
     bannerBg: colors.lightPink,
-    bannerFg: colors.cerulean,
+    bannerFg: colors.seagreen,
 
     navBg: colors.black,
     navFg: 'white',
@@ -33,13 +33,15 @@ const theme = {
     footerBg: colors.transparentGray,
     footerBorder: colors.lightGray,
 
-    background: '/static/genImages/new/light.png',
-    backgroundSm: '/static/genImages/new/lightSm.png',
+    // background: '/static/genImages/new/light.png',
+    // backgroundSm: '/static/genImages/new/light.png',
+    background: '/static/genImages/new/flowy-light-waterfall.png',
+    backgroundSm: '/static/genImages/new/flowy-light-waterfall.png',
     profilePic: '/static/genImages/new/lightProfPic.png',
     up: '/static/genImages/scroll-up-arrow-light.svg',
   },
 
-// mostly composed
+// mostly complete
   darkTheme : {
     body: colors.darkGray,
     textColor: 'white',
@@ -70,8 +72,10 @@ const theme = {
     footerBg: colors.transparentGray,
     footerBorder: colors.lightGray,
 
-    background: '/static/genImages/new/dark.png',
-    backgroundSm: '/static/genImages/new/darkSm.png',
+    // background: '/static/genImages/new/dark.png',
+    // backgroundSm: '/static/genImages/new/dark.png',
+    background: '/static/genImages/new/flowy-dark-waterfall.png',
+    backgroundSm: '/static/genImages/new/flowy-dark-waterfall.png',
     profilePic: '/static/genImages/new/darkProfPic.png',
     up: '/static/genImages/scroll-up-arrow-dark.svg',
   },
