@@ -32,7 +32,7 @@ export default function Home() {
 
       <Footer theme={themeMode} />
 
-      <TopButton theme={themeMode} />
+      <TopButton theme={themeMode} isLight={isLight} />
       <Toggle toggleTheme={toggleTheme} isLight={isLight} />
 
     </ThemeProvider>

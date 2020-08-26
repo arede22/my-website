@@ -2,7 +2,7 @@
 import React from 'react';
 import styled from 'styled-components';
 // styles
-import { theme } from '@styles';
+import { theme, Box } from '@styles';
 const { fontSizes } = theme;
 
 // styles and wrappers
@@ -23,7 +23,7 @@ const H3Style = styled.h3`
 // export main component
 export default function WorkExperience() {
   return (
-    <React.Fragment>
+    <Box>
       <H3Style> Work experience </H3Style>
       <ULWrapper>
         <LIWrapper> (Computational Linguistics) Research Intern @ICSI (International Computer Science Institute) -- UC-Berkeley, Jan 2020 -- Current
@@ -53,6 +53,6 @@ export default function WorkExperience() {
           </ULWrapper>
         </LIWrapper>
       </ULWrapper>
-    </React.Fragment>
+    </Box>
   )
 };

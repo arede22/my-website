@@ -12,6 +12,7 @@ const HeaderWrap = styled.header`
   transition: top 0.2s ease-in-out;
   width: 100%;
   margin: 0 auto;
+  text-align: center;
 `;
 
 // export main component

@@ -5,36 +5,34 @@ const theme = {
 // to do:
   lightTheme: {
     body: 'white',
-    textColor: colors.black,
+    textColor: colors.palePink,
     gradient: colors.pinkTwoGradient,
     hoverGradient: colors.pinkThreeGradient,
 
-    h1bg: colors.transparentSeaBlue,
-    h1selectbg: colors.skyBlue,
-    h1selectfg: colors.darkGray,
+    h1bg: colors.cream,
+    h1selectbg: colors.lightPink,
+    h1selectfg: 'white',
 
-    bannerBg: colors.lightPink,
-    bannerFg: colors.seagreen,
+    bannerBg: colors.black,
+    bannerFg: colors.periwinkle,
 
-    navBg: colors.black,
-    navFg: 'white',
-    navHg: colors.skyBlue,
-    navHomeFg: colors.seaBlue,
-    navHomeHg: colors.transparentSeaBlue,
+    navBg: 'white',
+    navFg: colors.black,
+    navHg: colors.lightPink,
+    navHomeFg: colors.palePink,
+    navHomeHg: colors.paleTransparentPink,
 
     buttonBg: colors.palePink,
     buttonHoverBg: colors.darkPalePink,
 
-    boxColor: colors.palePink,
-    roundedBoxColor: colors.transparentSeaBlue,
-    resumeButtonColor: colors.moreSeaBlue,
-    resumeHoverFg: colors.seaBlue,
+    boxColor: colors.lightTransparentPink,
+    roundedBoxColor: colors.cream,
+    resumeButtonColor: colors.darkPalePink,
+    resumeHoverFg: colors.lightPink,
 
-    footerBg: colors.transparentGray,
-    footerBorder: colors.lightGray,
+    footerBg: colors.pink,
+    footerBorder: colors.darkPink,
 
-    // background: '/static/genImages/new/light.png',
-    // backgroundSm: '/static/genImages/new/light.png',
     background: '/static/genImages/new/flowy-light-waterfall.png',
     backgroundSm: '/static/genImages/new/flowy-light-waterfall.png',
     profilePic: '/static/genImages/new/lightProfPic.png',
@@ -72,8 +70,6 @@ const theme = {
     footerBg: colors.transparentGray,
     footerBorder: colors.lightGray,
 
-    // background: '/static/genImages/new/dark.png',
-    // backgroundSm: '/static/genImages/new/dark.png',
     background: '/static/genImages/new/flowy-dark-waterfall.png',
     backgroundSm: '/static/genImages/new/flowy-dark-waterfall.png',
     profilePic: '/static/genImages/new/darkProfPic.png',

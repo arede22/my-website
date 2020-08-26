@@ -18,7 +18,7 @@ const Button = styled.button`
   padding: 15px;
   border-radius: 30px;
   font-size: ${fontSizes.sm1};
-  color: ${({ theme }) => theme.textColor};
+  color: ${({ lightTheme }) => lightTheme ? 'black' : 'white'};
 
   &:hover {
     background-color: ${({ theme }) => theme.buttonHoverBg };
@@ -34,10 +34,10 @@ const ImgStyle = styled.img`
   width: 16px;
 `;
 
-export default function TopButton({ theme }) {
+export default function TopButton({ theme, isLight }) {
 
   return (
-    <Button id="scrolltop">Top <ImgStyle src={theme.up} /></Button>
+    <Button id="scrolltop" lightTheme={isLight} >Top <ImgStyle src={theme.up} /></Button>
   )
 };
 

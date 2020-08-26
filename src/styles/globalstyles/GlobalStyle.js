@@ -50,24 +50,35 @@ const GlobalStyle = createGlobalStyle`
     @media (max-width: 600px) {
       background: ${({ theme }) => theme.body} url(${({ theme }) => theme.backgroundSm}) repeat-y center;
       background-position-y: top;
-      max-width: 550px;
       background-size: contain;
     }
 
+    @media ${media.mobileS} {
+      max-width: 320px;
+    }
+
+    @media ${media.mobileM} {
+      max-width: 375px;
+    }
+
+    @media ${media.mobileL} {
+      max-width: 425px;
+    }
+
     @media ${media.tablet} {
-      max-width: 700px;
+      max-width: 768px;
     }
 
     @media ${media.laptop} {
-      max-width: 950px;
+      max-width: 1024px;
     }
 
     @media ${media.laptopL} {
-      max-width: 1200px;
+      max-width: 1440px;
     }
 
     @media ${media.desktop} {
-      max-width: 1400px;
+      max-width: 2560px;
     }
 
   }
@@ -149,6 +160,7 @@ const GlobalStyle = createGlobalStyle`
     color: ${colors.skyBlue};
 
     &:hover {
+      text-decoration: none;
       color: ${colors.darkSkyBlue};
     }
   }

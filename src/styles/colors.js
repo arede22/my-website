@@ -22,20 +22,23 @@ const colors = {
   blueTwoGradient: 'linear-gradient(#091236, #00008B)',
   blueThreeGradient: 'linear-gradient(#091236, #00008B, #091236)',
 
-  purple: "#9e005d", // unused
-  darkPink: "#d4145a", // unused
-  pink: "#ed1e79", // unused
-  lightPink: "#ffd1dc", // unused
+  darkPink: "#d4145a",
+  pink: "rgba(255,158,181, 0.7)",
+  lightPink: "#ffd1dc",
   palePink: "#dc8079",
   darkPalePink: "#d46079",
+  lightTransparentPink: "rgba(255, 209, 220, 0.5)",
 
+  cream: "rgba(255,245,208, 0.8)",
+
+  lightOrange: "#ffddd1", // unused
   orange: "#f79555",
   darkOrange: '#f4670c', // unused
 
   cerulean: "#007ba7",
   darkCerulean: "#0d759a",
 
-  periwinkle: "#bbedff", // unused
+  periwinkle: "#bbedff",
   seagreen: '#00a780',
 
   transparentSeaBlue: "rgba(129, 207, 224, 0.4)",
@@ -51,10 +54,7 @@ const colors = {
   halfTransparentGray: "rgba(166, 166, 166, 0.5)",
   lightestGray: "#f1f1f1", // unused
   lightGray: "#cfcfcf",
-  medGray: "#bbb", // unused
   darkGray: "rgba(74, 72, 71, 1)",
-
-  transparentBlack: "rgba(0,0,0,0.9)", // unused
   black: "#303030",
 
 }
