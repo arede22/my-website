@@ -107,6 +107,9 @@ export default function Portfolio({ theme }) {
             </ULWrapper>
           </Box>
       </div>
+      {/*<div dangerouslySetInnerHTML={{
+        __html: "<applet code='/gamecode/proj3/byow/Core/Main.class' width='300' height='300'> Can't load </applet>" // the whole markup string you want to inject
+      }}></div>*/}
     </React.Fragment>
   )
 };

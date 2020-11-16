@@ -85,6 +85,7 @@ const theme = {
 
   fontSizes: {
 
+    sm000: '11px',
     sm00: '12px',
     sm0: '14px',
     sm1: '16px',

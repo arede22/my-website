@@ -96,13 +96,13 @@ export default function StyledNav() {
           <HomeNavLink href='/' id='home' onMouseOver={onHoverIn} onMouseOut={onHoverOut}> Home </HomeNavLink>
         </LIWrapper>
         <OptLIWrapper className="extra">
-          <NavLink href="#intro" id='intro' onMouseOver={onHoverIn} onMouseOut={onHoverOut}> Intro </NavLink>
+          <NavLink href="#intro-anchor" id='intro' onMouseOver={onHoverIn} onMouseOut={onHoverOut}> Intro </NavLink>
         </OptLIWrapper>
         <OptLIWrapper className="extra">
-          <NavLink href="#portfolio" id='portfolio' onMouseOver={onHoverIn} onMouseOut={onHoverOut}> Portfolio </NavLink>
+          <NavLink href="#portfolio-anchor" id='portfolio' onMouseOver={onHoverIn} onMouseOut={onHoverOut}> Portfolio </NavLink>
         </OptLIWrapper>
         <OptLIWrapper className="extra">
-          <NavLink href="#contact-me" id='contact-me' onMouseOver={onHoverIn} onMouseOut={onHoverOut}> Contact Me </NavLink>
+          <NavLink href="#contactme-anchor" id='contact-me' onMouseOver={onHoverIn} onMouseOut={onHoverOut}> Contact Me </NavLink>
         </OptLIWrapper>
         {/*<OptLIWrapper className="extra">
           <NavLink href="/blog" onMouseOver={onHoverIn} onMouseOut={onHoverOut}> Blog </NavLink>

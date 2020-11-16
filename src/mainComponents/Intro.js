@@ -91,12 +91,12 @@ export default function Intro({ theme }) {
       <StyledWrapper>
       <a name="Intro" id="intro-anchor"></a>
         <H2Style>Intro & About Me ❤</H2Style>
-          <PieChart></PieChart>
+          {/*<PieChart></PieChart>
           <Legend>
             <Key1>Green</Key1>
             <Key2>Blue</Key2>
             <Key3>Red</Key3>
-          </Legend>
+          </Legend>*/}
         <Box>
           <h4> Current Coursework </h4>
           <ULWrapper>
@@ -129,24 +129,21 @@ export default function Intro({ theme }) {
               <LIWrapper> Python </LIWrapper>
               <LIWrapper> Java </LIWrapper>
               <LIWrapper> HTML/CSS </LIWrapper>
+              <LIWrapper> C# </LIWrapper>
               <LIWrapper> Kotlin </LIWrapper>
               <LIWrapper> Swift </LIWrapper>
-              <LIWrapper> C/C++ </LIWrapper>
             </Cols>
             <Cols>
             <h4> Other </h4>
               <LIWrapper> PyTorch </LIWrapper>
-              <LIWrapper> COMSOL </LIWrapper>
               <LIWrapper> AutoCAD </LIWrapper>
               <LIWrapper> Tensorflow </LIWrapper>
               <LIWrapper> React </LIWrapper>
               <LIWrapper> Jupyter Notebook </LIWrapper>
-              <LIWrapper> MATLAB </LIWrapper>
-              <LIWrapper> SolidWorks </LIWrapper>
               <LIWrapper> Photoshop, Illustrator </LIWrapper>
             </Cols>
           </Rows>
-          <h4>% of repo code in language:</h4>
+          {/*<h4>% of repo code in language:</h4>
           <UsedLanguages>
             <ProgressBar className="progress-bar progress-bar-warning" value="99" />
             <p>Jupyter Notebook</p>
@@ -160,7 +157,7 @@ export default function Intro({ theme }) {
             <Language>Java</Language>
               <ProgressBar className="progress-bar progress-bar-danger" value="10" />
           </UsedLanguages>
-          <PieChart className="piechart"></PieChart>
+          <PieChart className="piechart"></PieChart>*/}
         </Box>
         <Box>
           <h4> Skills </h4>
